@@ -14,6 +14,10 @@ includesAll(html, [
   'function renderMemberLock(',
   'function showMembershipModal(',
   'function redeemMembershipCode(',
+  "trial: { label: '体验会员', price: '¥1', days: 1 }",
+  '微信扫码支付 ¥1',
+  '支付宝扫码支付 ¥1',
+  '当前二维码已限制为 1 元体验价',
   'VIP-DEMO-30',
   "./assets/pay-' + payType + '.jpg",
 ]);

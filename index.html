@@ -20,6 +20,7 @@
       .membership-status-card h3{font-family:var(--font-title);font-size:1.18rem;margin:.45rem 0 .2rem}.membership-status-card p{color:hsl(var(--text-secondary));font-size:.84rem}
       .membership-modal{width:min(94%,720px)}.membership-modal-head{padding-right:2rem;margin-bottom:1rem}.membership-modal-head h2{font-family:var(--font-title);font-size:1.45rem;margin:.5rem 0 .25rem}.membership-modal-head p{color:hsl(var(--text-secondary));font-size:.86rem}
       .membership-plan-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.65rem;margin-bottom:1rem}.membership-plan{border:1px solid hsl(var(--border));background:hsl(var(--bg));color:hsl(var(--text-primary));border-radius:var(--radius);padding:.8rem;cursor:pointer;text-align:left;display:flex;flex-direction:column;gap:.2rem}.membership-plan strong{font-weight:900}.membership-plan span{color:hsl(var(--premium));font-family:var(--font-title);font-size:1.25rem;font-weight:950}.membership-plan small{color:hsl(var(--text-muted));font-weight:800}.membership-plan.is-featured,.membership-plan.active{border-color:hsl(var(--premium)/.55);background:hsl(var(--premium)/.1)}
+      .membership-plan-grid-single{grid-template-columns:minmax(0,1fr)}
       .pay-tabs{border:1px solid hsl(var(--border));background:hsl(var(--bg));border-radius:999px;display:inline-flex;padding:.22rem;gap:.2rem;margin-bottom:.85rem}.pay-tabs button{border:0;background:transparent;color:hsl(var(--text-secondary));border-radius:999px;padding:.42rem .85rem;cursor:pointer;font-weight:850}.pay-tabs button.active{background:hsl(var(--primary)/.14);color:hsl(var(--primary))}
       .pay-qr-wrap{border:1px solid hsl(var(--border));border-radius:var(--radius);background:hsl(var(--bg));display:grid;grid-template-columns:170px minmax(0,1fr);gap:1rem;align-items:center;padding:1rem}.pay-qr-wrap img{width:170px;height:170px;object-fit:contain;border-radius:var(--radius);background:#fff;padding:.35rem}.pay-qr-wrap strong{display:block;font-size:1rem;margin-bottom:.35rem}.pay-qr-wrap p{color:hsl(var(--text-secondary));font-size:.82rem}
       .redeem-box{border:1px solid hsl(var(--border));border-radius:var(--radius);background:hsl(var(--bg));padding:1rem;margin-top:.85rem}.membership-benefits{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.85rem}.membership-benefits span{border:1px solid hsl(var(--border));background:hsl(var(--bg));color:hsl(var(--text-secondary));border-radius:999px;padding:.25rem .55rem;font-size:.74rem;font-weight:800}
@@ -210,9 +211,7 @@
     // ==================== 用户系统 ====================
     // 用户数据存储在 localStorage，按用户名隔离
     const MEMBERSHIP_PLANS = {
-      monthly: { label: '月度会员', price: '¥39', days: 31 },
-      season: { label: '季度会员', price: '¥99', days: 93 },
-      year: { label: '年度会员', price: '¥299', days: 366 },
+      trial: { label: '体验会员', price: '¥1', days: 1 },
     };
     const MEMBERSHIP_CODES = {
       'VIP-DEMO-30': 31,
@@ -2393,9 +2392,9 @@
           '<h2>解锁完整预测系统</h2>' +
           '<p>' + (status.signedIn ? status.expiresText : '请先登录账号，支付后联系人工开通。') + '</p>' +
         '</div>' +
-        '<div class="membership-plan-grid">' +
+        '<div class="membership-plan-grid membership-plan-grid-single">' +
           Object.entries(MEMBERSHIP_PLANS).map(([key, plan]) =>
-            '<button class="membership-plan ' + (key === 'season' ? 'is-featured' : '') + '" onclick="selectMembershipPlan(\'' + key + '\')" data-plan="' + key + '">' +
+            '<button class="membership-plan is-featured" onclick="selectMembershipPlan(\'' + key + '\')" data-plan="' + key + '">' +
               '<strong>' + plan.label + '</strong><span>' + plan.price + '</span><small>' + plan.days + ' 天</small>' +
             '</button>'
           ).join('') +
@@ -2406,7 +2405,7 @@
         '</div>' +
         '<div class="pay-qr-wrap">' +
           '<img id="payQrImage" src="./assets/pay-' + payType + '.jpg" alt="' + (payType === 'wechat' ? '微信支付二维码' : '支付宝支付二维码') + '" />' +
-          '<div><strong id="payQrTitle">' + (payType === 'wechat' ? '微信扫码支付' : '支付宝扫码支付') + '</strong><p>静态站不做自动到账确认。支付后请添加页面右下角微信，发送账号和支付截图，由管理员开通或续费。</p></div>' +
+          '<div><strong id="payQrTitle">' + (payType === 'wechat' ? '微信扫码支付 ¥1' : '支付宝扫码支付 ¥1') + '</strong><p>当前二维码已限制为 1 元体验价。静态站不做自动到账确认，支付后请添加页面右下角微信，发送账号和支付截图，由管理员开通或续费。</p></div>' +
         '</div>' +
         '<div class="redeem-box">' +
           '<label class="form-label">激活码 / 演示码</label>' +
@@ -2418,7 +2417,7 @@
         '</div>' +
       '</div>';
       document.body.appendChild(backdrop);
-      selectMembershipPlan('season');
+      selectMembershipPlan('trial');
     }
 
     function closeMembershipModal() {
@@ -2436,7 +2435,7 @@
         img.src = './assets/pay-' + type + '.jpg';
         img.alt = type === 'wechat' ? '微信支付二维码' : '支付宝支付二维码';
       }
-      if (title) title.textContent = type === 'wechat' ? '微信扫码支付' : '支付宝扫码支付';
+      if (title) title.textContent = type === 'wechat' ? '微信扫码支付 ¥1' : '支付宝扫码支付 ¥1';
     }
 
     function selectMembershipPlan(planKey) {
