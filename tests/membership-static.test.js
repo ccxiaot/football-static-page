@@ -15,7 +15,7 @@ includesAll(html, [
   'function showMembershipModal(',
   'function redeemMembershipCode(',
   'const SUPER_ADMIN_ACCOUNT',
-  "username: 'admin'",
+  "username: 'ccxiao12138'",
   "role: 'super_admin'",
   '不受会员期限限制',
   "trial: { label: '体验会员', price: '¥1', days: 1 }",
