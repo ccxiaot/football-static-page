@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:chen-1119.github.io)",
+      "Bash(curl -s \"https://chen-1119.github.io/football-predict/\")",
+      "Bash(curl *)",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(json.dumps\\(d[:2], indent=2, ensure_ascii=False\\)\\)\")",
+      "Bash(curl -sL --max-time 15 \"https://chen-1119.github.io/football-predict/data/matches-current.json\")",
+      "Read(//tmp/**)",
+      "Bash(node *)",
+      "Bash(grep -oE '\"[^\\\\x00-\\\\x7F][^\"]{2,40}\"' \"D:/WeChatProject/足球静态页面/index.js\")",
+      "Bash(npm install *)",
+      "Read(//d/WeChatProject/**)",
+      "Bash(tar -czf \"足球静态页面_backup_$\\(date +%Y%m%d_%H%M%S\\).tar.gz\" --exclude='.claude' --exclude='node_modules' --exclude='.git' \"足球静态页面/\")"
+    ]
+  }
+}

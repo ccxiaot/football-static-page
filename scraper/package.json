@@ -1,0 +1,14 @@
+{
+  "name": "football-data-scraper",
+  "version": "1.0.0",
+  "description": "从中国竞彩网抓取足球赛事数据并生成预测",
+  "scripts": {
+    "fetch": "node fetch-matches.js",
+    "predict": "node generate-predictions.js",
+    "update": "node update-data.js",
+    "serve": "npx serve .. -p 3000"
+  },
+  "dependencies": {
+    "node-fetch": "^2.7.0"
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "version": 1,
+  "updatedAt": "2026-06-06T12:00:00.000Z",
+  "event": {
+    "year": 2026,
+    "name": "2026 世界杯",
+    "hosts": ["美国", "加拿大", "墨西哥"],
+    "teams": 48,
+    "totalMatches": 104,
+    "startDate": "2026-06-11"
+  },
+  "groups": [
+    {
+      "name": "A 组",
+      "description": "墨西哥主场窗口，东道主墨西哥有主场加成，韩国和捷克抢第二，南非看反击质量。",
+      "teams": [
+        { "name": "墨西哥", "code": "MX", "color": "#006847", "note": "东道主，开幕战热度高。", "advanceProbability": 78 },
+        { "name": "韩国", "code": "KR", "color": "#003478", "note": "亚洲强队，跑动和边路压迫稳定。", "advanceProbability": 55 },
+        { "name": "捷克", "code": "CZ", "color": "#11457e", "note": "身体和转换有爆点，但稳定性偏弱。", "advanceProbability": 42 },
+        { "name": "南非", "code": "ZA", "color": "#007749", "note": "定位球和对抗能力是抢分核心。", "advanceProbability": 25 }
+      ]
+    },
+    {
+      "name": "B 组",
+      "description": "加拿大主场窗口，瑞士纸面最稳，加拿大有主场，波黑和卡塔尔争第三弹性。",
+      "teams": [
+        { "name": "瑞士", "code": "CH", "color": "#d52b1e", "note": "大赛稳定性强，防守下限高。", "advanceProbability": 72 },
+        { "name": "加拿大", "code": "CA", "color": "#ff0000", "note": "东道主，节奏和冲击力强。", "advanceProbability": 60 },
+        { "name": "波黑", "code": "BA", "color": "#002366", "note": "锋线对抗不错，需要控制失误。", "advanceProbability": 38 },
+        { "name": "卡塔尔", "code": "QA", "color": "#8d1b3d", "note": "杯赛经验足，但对抗强度是疑问。", "advanceProbability": 30 }
+      ]
+    },
+    {
+      "name": "C 组",
+      "description": "美东强队组，巴西和摩洛哥强度领先，苏格兰具备抢第三甚至第二的硬度。",
+      "teams": [
+        { "name": "巴西", "code": "BR", "color": "#009c3b", "note": "天赋上限高，淘汰赛深度候选。", "advanceProbability": 88 },
+        { "name": "摩洛哥", "code": "MA", "color": "#c1272d", "note": "防守组织强，近年大赛证明过抗压。", "advanceProbability": 62 },
+        { "name": "苏格兰", "code": "GB-SCT", "color": "#003078", "note": "身体对抗和二点球强，能制造硬仗。", "advanceProbability": 35 },
+        { "name": "海地", "code": "HT", "color": "#00209f", "note": "低排名球队，重点看定位球和反击效率。", "advanceProbability": 15 }
+      ]
+    },
+    {
+      "name": "D 组",
+      "description": "美国西海岸路径，美国有主场与速度优势，土耳其天赋高，澳大利亚和巴拉圭都很难缠。",
+      "teams": [
+        { "name": "美国", "code": "US", "color": "#3c3b6e", "note": "东道主，前场速度和主场氛围加分。", "advanceProbability": 75 },
+        { "name": "土耳其", "code": "TR", "color": "#e30a17", "note": "中前场天赋好，但稳定性需要验证。", "advanceProbability": 55 },
+        { "name": "澳大利亚", "code": "AU", "color": "#00008b", "note": "纪律性强，淘汰赛经验丰富。", "advanceProbability": 40 },
+        { "name": "巴拉圭", "code": "PY", "color": "#d52b1e", "note": "防守韧性好，适合低比分拉扯。", "advanceProbability": 30 }
+      ]
+    },
+    {
+      "name": "E 组",
+      "description": "德国领跑组，德国强度占优，厄瓜多尔与科特迪瓦抢第二，库拉索更多看爆冷。",
+      "teams": [
+        { "name": "德国", "code": "DE", "color": "#000000", "note": "阵容深度强，控制力是基本盘。", "advanceProbability": 85 },
+        { "name": "厄瓜多尔", "code": "EC", "color": "#ffdd00", "note": "南美强度好，防守质量稳定。", "advanceProbability": 50 },
+        { "name": "科特迪瓦", "code": "CI", "color": "#f77f00", "note": "身体和冲击力强，具备爆点。", "advanceProbability": 45 },
+        { "name": "库拉索", "code": "CW", "color": "#002b7f", "note": "世界杯新军，容错率偏低。", "advanceProbability": 20 }
+      ]
+    },
+    {
+      "name": "F 组",
+      "description": "荷兰日本焦点组，荷兰和日本是出线热门，瑞典冲击第二，突尼斯有低比分搅局能力。",
+      "teams": [
+        { "name": "荷兰", "code": "NL", "color": "#ff6600", "note": "攻防框架成熟，强强战下限高。", "advanceProbability": 80 },
+        { "name": "日本", "code": "JP", "color": "#bc002d", "note": "转换和压迫成熟，冷门能力强。", "advanceProbability": 65 },
+        { "name": "瑞典", "code": "SE", "color": "#006aa7", "note": "身体和定位球稳定，适合杯赛。", "advanceProbability": 40 },
+        { "name": "突尼斯", "code": "TN", "color": "#e70013", "note": "防守密度好，进攻效率是关键。", "advanceProbability": 15 }
+      ]
+    },
+    {
+      "name": "G 组",
+      "description": "比利时埃及伊朗混战，比利时纸面领先，伊朗和埃及风格差距不大，新西兰看防守抗压。",
+      "teams": [
+        { "name": "比利时", "code": "BE", "color": "#000000", "note": "仍有顶级个人能力，防线更新是变量。", "advanceProbability": 70 },
+        { "name": "埃及", "code": "EG", "color": "#ce1126", "note": "核心带动明显，反击质量高。", "advanceProbability": 48 },
+        { "name": "伊朗", "code": "IR", "color": "#239f40", "note": "组织纪律强，低比分稳定。", "advanceProbability": 45 },
+        { "name": "新西兰", "code": "NZ", "color": "#00247d", "note": "长传和对抗有特点，但整体强度吃亏。", "advanceProbability": 37 }
+      ]
+    },
+    {
+      "name": "H 组",
+      "description": "西班牙乌拉圭强强组，西班牙和乌拉圭强度突出，沙特与佛得角要争第三窗口。",
+      "teams": [
+        { "name": "西班牙", "code": "ES", "color": "#aa151b", "note": "控球和压迫兼具，争冠第一档。", "advanceProbability": 85 },
+        { "name": "乌拉圭", "code": "UY", "color": "#0038a8", "note": "压迫和对抗强，淘汰赛潜力高。", "advanceProbability": 65 },
+        { "name": "沙特阿拉伯", "code": "SA", "color": "#006c35", "note": "杯赛韧性不错，但防守连续性要看。", "advanceProbability": 30 },
+        { "name": "佛得角", "code": "CV", "color": "#003893", "note": "世界杯新军，锋线速度有威胁。", "advanceProbability": 20 }
+      ]
+    },
+    {
+      "name": "I 组",
+      "description": "死亡组候选，法国第一档，塞内加尔和挪威争第二，伊拉克需要把比赛拖进低比分。",
+      "teams": [
+        { "name": "法国", "code": "FR", "color": "#002395", "note": "阵容厚度和速度顶级，争冠核心。", "advanceProbability": 90 },
+        { "name": "塞内加尔", "code": "SN", "color": "#00853f", "note": "身体强度和大赛经验都在线。", "advanceProbability": 52 },
+        { "name": "挪威", "code": "NO", "color": "#ba0c2f", "note": "锋线天赋高，防守平衡是关键。", "advanceProbability": 40 },
+        { "name": "伊拉克", "code": "IQ", "color": "#007a3d", "note": "需要纪律性和定位球抢分。", "advanceProbability": 18 }
+      ]
+    },
+    {
+      "name": "J 组",
+      "description": "阿根廷卫冕组，阿根廷目标头名，奥地利整体性强，阿尔及利亚和约旦看第三。",
+      "teams": [
+        { "name": "阿根廷", "code": "AR", "color": "#74acdf", "note": "卫冕冠军，经验和控场能力强。", "advanceProbability": 88 },
+        { "name": "奥地利", "code": "AT", "color": "#ed2939", "note": "压迫体系成熟，能打高强度。", "advanceProbability": 55 },
+        { "name": "阿尔及利亚", "code": "DZ", "color": "#006233", "note": "前场个人能力好，节奏波动需控制。", "advanceProbability": 35 },
+        { "name": "约旦", "code": "JO", "color": "#007a33", "note": "世界杯新军，反击效率决定上限。", "advanceProbability": 22 }
+      ]
+    },
+    {
+      "name": "K 组",
+      "description": "葡萄牙哥伦比亚焦点，葡萄牙和哥伦比亚明显领先，刚果民主共和国与乌兹别克斯坦抢第三。",
+      "teams": [
+        { "name": "葡萄牙", "code": "PT", "color": "#006600", "note": "阵容深度强，进攻选择丰富。", "advanceProbability": 82 },
+        { "name": "哥伦比亚", "code": "CO", "color": "#fcd116", "note": "南美强队，反击与个人能力兼具。", "advanceProbability": 65 },
+        { "name": "刚果民主共和国", "code": "CD", "color": "#007fff", "note": "身体冲击力强，杯赛变数大。", "advanceProbability": 30 },
+        { "name": "乌兹别克斯坦", "code": "UZ", "color": "#0099b3", "note": "世界杯新军，体系纪律性不错。", "advanceProbability": 23 }
+      ]
+    },
+    {
+      "name": "L 组",
+      "description": "英格兰克罗地亚焦点，英格兰纸面强度高，克罗地亚经验足，巴拿马和加纳争第三。",
+      "teams": [
+        { "name": "英格兰", "code": "GB-ENG", "color": "#cf081f", "note": "阵容深度顶级，争冠候选。", "advanceProbability": 85 },
+        { "name": "克罗地亚", "code": "HR", "color": "#171796", "note": "大赛经验强，中场控制仍是优势。", "advanceProbability": 60 },
+        { "name": "加纳", "code": "GH", "color": "#006b3f", "note": "身体条件好，但防守稳定性需验证。", "advanceProbability": 32 },
+        { "name": "巴拿马", "code": "PA", "color": "#003da5", "note": "排名不低，纪律性和反击值得看。", "advanceProbability": 23 }
+      ]
+    }
+  ],
+  "contenders": [
+    { "name": "巴西", "code": "BR", "score": 92, "note": "天赋上限高，淘汰赛深度候选。" },
+    { "name": "法国", "code": "FR", "score": 90, "note": "阵容厚度和速度顶级，争冠核心。" },
+    { "name": "英格兰", "code": "GB-ENG", "score": 88, "note": "阵容深度顶级，争冠候选。" },
+    { "name": "阿根廷", "code": "AR", "score": 87, "note": "卫冕冠军，经验和控场能力强。" },
+    { "name": "西班牙", "code": "ES", "score": 86, "note": "控球和压迫兼具，争冠第一档。" },
+    { "name": "德国", "code": "DE", "score": 84, "note": "阵容深度强，控制力是基本盘。" },
+    { "name": "荷兰", "code": "NL", "score": 82, "note": "攻防框架成熟，强强战下限高。" },
+    { "name": "葡萄牙", "code": "PT", "score": 80, "note": "阵容深度强，进攻选择丰富。" }
+  ],
+  "knockoutStages": [
+    { "stage": "32 强", "description": "12 个小组前二 + 8 个最佳第三进入单场淘汰。" },
+    { "stage": "16 强", "description": "强队交叉区开始显著影响争冠路径。" },
+    { "stage": "四分之一决赛", "description": "模型重点看赛程消耗、伤停和临场赔率。" },
+    { "stage": "半决赛", "description": "路径强度和阵容深度权重提高。" },
+    { "stage": "三四名", "description": "战意和轮换风险高，不按常规淘汰赛强度处理。" },
+    { "stage": "决赛", "description": "最终预测只保留赛前锁定版本，赛后只做复盘。" }
+  ]
+}

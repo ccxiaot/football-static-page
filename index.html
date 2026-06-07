@@ -1,0 +1,2352 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="./shuqian.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>足球预测 · 竞彩数据看板</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Outfit:wght@700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/index.css" />
+  </head>
+  <body>
+    <div id="root">
+      <div class="app-frame" style="display:flex">
+        <!-- Header -->
+        <header class="glass-header">
+          <div class="container nav-shell">
+            <button class="brand-button" onclick="navigateTo('home')">
+              <span class="brand-mark">⚽</span>
+              <span class="brand-copy">
+                <span class="brand-title">足球预测</span>
+                <span class="brand-subtitle">竞彩数据看板</span>
+              </span>
+            </button>
+            <nav class="nav-links" id="navLinks">
+              <button class="nav-link active" data-page="home" onclick="navigateTo('home')">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h18v18H3z"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+                <span>赛事预测</span>
+              </button>
+              <button class="nav-link" data-page="history" onclick="navigateTo('history')">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <span>历史赛果</span>
+              </button>
+              <button class="nav-link" data-page="betslip" onclick="navigateTo('betslip')">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                <span>投注单</span>
+              </button>
+              <button class="nav-link" data-page="challenge" onclick="navigateTo('challenge')">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/></svg>
+                <span>命中挑战</span>
+              </button>
+              <button class="nav-link" data-page="worldcup" onclick="navigateTo('worldcup')">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                <span>世界杯</span>
+              </button>
+              <button class="nav-link" data-page="mine" onclick="navigateTo('mine')">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                <span>我的</span>
+              </button>
+            </nav>
+            <div class="nav-actions" id="navActions">
+              <button class="status-pill" onclick="toggleLang()">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                <span>中文</span>
+              </button>
+              <button class="status-pill is-premium" id="userBtn" onclick="handleUserClick()">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                <span id="userBtnText">登录</span>
+              </button>
+            </div>
+          </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="page-main">
+          <div class="container dashboard-stack" id="pageContent">
+            <!-- Dynamic content loaded here -->
+          </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+          <div class="container footer-inner">
+            <div class="footer-main">
+              <div class="footer-brand">
+                <div class="footer-brand-row">
+                  <span class="footer-mark">⚽</span>
+                  足球预测
+                </div>
+                <p>基于中国竞彩网官方赛程与 SP 快照，提供轻量化赛前数据看板。数据每 5 分钟自动同步，页面每 30 秒检查更新。</p>
+              </div>
+              <div class="footer-section">
+                <div class="footer-section-title">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                  <h3>常用赛事</h3>
+                </div>
+                <div class="footer-chip-list">
+                  <span>英格兰超级联赛</span><span>西班牙甲级联赛</span><span>德国甲级联赛</span>
+                  <span>意大利甲级联赛</span><span>法国甲级联赛</span><span>欧洲冠军联赛</span><span>世界杯</span>
+                </div>
+              </div>
+              <div class="footer-section">
+                <div class="footer-section-title">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                  <h3>联系方式</h3>
+                </div>
+                <div class="footer-chip-list">
+                  <span style="cursor:pointer" onclick="openContact()">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    微信咨询
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="footer-notice">
+              <div class="footer-notice-title">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                理性提示
+              </div>
+              <p>本平台仅提供数据分析与预测参考，不保证赛果。请保持娱乐心态，禁止未成年人参与，切勿盲目跟单。</p>
+            </div>
+            <div class="footer-bottom">
+              <span>© 2026 足球预测 · 竞彩数据看板</span>
+              <nav><a href="javascript:void(0)">关于我们</a><a href="javascript:void(0)">服务条款</a><a href="javascript:void(0)">隐私政策</a></nav>
+            </div>
+          </div>
+        </footer>
+
+        <!-- Contact Dock Button -->
+        <button class="contact-dock-button" onclick="openContact()">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          <span>微信联系</span>
+        </button>
+
+        <!-- Contact Drawer -->
+        <div class="contact-drawer-backdrop" id="contactBackdrop" onclick="closeContact()"></div>
+        <div class="contact-drawer" id="contactDrawer">
+          <div class="contact-drawer-head">
+            <div>
+              <span class="contact-drawer-kicker">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                联系方式
+              </span>
+              <h2>微信咨询</h2>
+            </div>
+            <button class="contact-drawer-close" onclick="closeContact()">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>
+          </div>
+          <div class="contact-drawer-body">
+            <div class="contact-drawer-qr"><img src="./contact-qr-code.jpg" alt="微信二维码" /></div>
+            <div class="contact-drawer-copy">
+              <strong>陈先生</strong>
+              <p>扫码添加微信，咨询赛事数据、合作与会员服务。</p>
+            </div>
+            <small>微信：请联系扫码添加</small>
+            <div class="contact-drawer-tags">
+              <span>赛事数据</span><span>合作咨询</span><span>会员服务</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 投注单浮动面板 -->
+        <div id="betslipFloat" style="display:none;position:fixed;bottom:4.5rem;right:1.25rem;left:1.25rem;max-width:480px;margin:0 auto;z-index:100;background:hsl(var(--bg-card));border:1px solid hsl(var(--primary)/.45);border-radius:var(--radius);padding:.65rem 1rem;box-shadow:0 12px 32px rgba(0,0,0,.4);justify-content:space-between;align-items:center">
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== SVG ICONS ==================== -->
+    <template id="icon-chevron-down">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+    </template>
+    <template id="icon-check">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+    </template>
+    <template id="icon-copy">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+    </template>
+    <template id="icon-target">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+    </template>
+    <template id="icon-trophy">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
+    </template>
+
+    <script>
+    // ==================== GLOBAL STATE ====================
+    let matchesData = [];
+    let syncMeta = null;
+    let historyData = [];
+    let currentPage = 'home';
+    let selectedDate = 'today';
+    let selectedLeague = ''; // 赛事筛选 ('' = 全部)
+    let expandedMatchId = null;
+    let detailMatchId = null;
+    let historyPage = 1;
+    const HISTORY_PAGE_SIZE = 20;
+    let challengeSelections = {};
+    let betslipGenerated = null;
+    let worldcupData = null;
+    let homeRenderTimer = null; // BUG-04 fix: track setTimeout
+
+    // ==================== 用户系统 ====================
+    // 用户数据存储在 localStorage，按用户名隔离
+    function getUsers() {
+      try { return JSON.parse(localStorage.getItem('fp_users') || '{}'); } catch { return {}; }
+    }
+    function saveUsers(users) {
+      try {
+        localStorage.setItem('fp_users', JSON.stringify(users));
+      } catch (e) {
+        console.error('保存用户数据失败 (存储空间可能已满):', e);
+        alert('保存失败，存储空间可能已满。请清理部分数据后重试。');
+      }
+    }
+    function getCurrentUser() {
+      return localStorage.getItem('fp_current_user') || null;
+    }
+    function setCurrentUser(username) {
+      if (username) localStorage.setItem('fp_current_user', username);
+      else localStorage.removeItem('fp_current_user');
+    }
+    function getUserData(username) {
+      const users = getUsers();
+      return users[username] || { challenges: [], betslips: [] };
+    }
+    function saveUserData(username, data) {
+      const users = getUsers();
+      users[username] = data;
+      saveUsers(users);
+    }
+    // 获取今天日期字符串 (用于命中挑战按天隔离)
+    function getTodayKey() {
+      const d = new Date();
+      return d.getFullYear() + '-' + String(d.getMonth()+1).padStart(2,'0') + '-' + String(d.getDate()).padStart(2,'0');
+    }
+    // 注册
+    function registerUser(username, password) {
+      if (!username || !password) return '请输入用户名和密码';
+      if (password.length < 4) return '密码长度不能少于 4 位';
+      const users = getUsers();
+      if (users[username]) return '用户名已存在';
+      users[username] = { password: md5(password), challenges: [], betslips: [] };
+      saveUsers(users);
+      setCurrentUser(username);
+      return null; // 成功
+    }
+    // 登录
+    function loginUser(username, password) {
+      if (!username || !password) return '请输入用户名和密码';
+      const users = getUsers();
+      if (!users[username]) return '用户不存在';
+      if (users[username].password !== md5(password)) return '密码错误';
+      setCurrentUser(username);
+      return null;
+    }
+    // 退出
+    function logoutUser() {
+      setCurrentUser(null);
+      renderPage();
+    }
+
+    // ==================== UTILITIES ====================
+    function formatTime(isoStr) {
+      if (!isoStr) return '--:--';
+      const d = new Date(isoStr);
+      const utc = d.getTime() + d.getTimezoneOffset() * 60000;
+      const tz = getTimezone();
+      const local = new Date(utc + tz.offset * 3600000);
+      return String(local.getHours()).padStart(2, '0') + ':' + String(local.getMinutes()).padStart(2, '0');
+    }
+    function formatDateShort(isoStr) {
+      if (!isoStr) return '';
+      const d = new Date(isoStr);
+      const utc = d.getTime() + d.getTimezoneOffset() * 60000;
+      const tz = getTimezone();
+      const local = new Date(utc + tz.offset * 3600000);
+      return (local.getMonth() + 1) + '/' + local.getDate();
+    }
+    function formatDateCN(isoStr) {
+      if (!isoStr) return '';
+      const d = new Date(isoStr);
+      const utc = d.getTime() + d.getTimezoneOffset() * 60000;
+      const tz = getTimezone();
+      const local = new Date(utc + tz.offset * 3600000);
+      return (local.getMonth() + 1) + '月' + local.getDate() + '日';
+    }
+    function formatRelativeTime(isoStr) {
+      const diff = Date.now() - new Date(isoStr).getTime();
+      const mins = Math.floor(diff / 60000);
+      if (mins < 1) return '刚刚';
+      if (mins < 60) return mins + ' 分钟前';
+      const hrs = Math.floor(mins / 60);
+      if (hrs < 24) return hrs + ' 小时前';
+      return Math.floor(hrs / 24) + ' 天前';
+    }
+    function getHandicapDisplay(line) {
+      if (line === 0) return '0';
+      return line > 0 ? '+' + line : '' + line;
+    }
+    function getSignalLabel(pred) {
+      if (!pred) return { text: '—', cls: 'is-unavailable' };
+      const map = { '1': ['主胜','is-steady'], 'X': ['平局','is-steady'], '2': ['客胜','is-steady'],
+        'O2.5': ['大2.5','is-steady'], 'U2.5': ['小2.5','is-steady'], 'BTTS': ['双方进球','is-steady'],
+        'WATCH': ['观察','is-watch'], 'AVOID': ['回避','is-avoid'] };
+      const [text, cls] = map[pred.tipCode] || [pred.tipCode, ''];
+      return { text, cls };
+    }
+    function getTrustColor(score) {
+      if (score >= 75) return 'var(--success)';
+      if (score >= 55) return 'var(--premium)';
+      return 'var(--danger)';
+    }
+    function getBestPrediction(match) {
+      if (!match.predictions?.length) return null;
+      return match.predictions.reduce((best, p) => (p.trustScore > (best?.trustScore || 0)) ? p : best, null);
+    }
+    function getTeamBadgeHtml(name, logo, logoType, color) {
+      const safeName = escapeHtml(name || '');
+      const initial = name ? name.charAt(0) : '?';
+      const c = color || '#666';
+      // 国旗类型
+      if (logoType === 'flag' || (logo && logo.includes('flagcdn'))) {
+        const iso = logo ? logo.match(/\/([a-z]{2}(?:-[a-z]+)?)\.\w+$/)?.[1] : '';
+        const url = iso ? 'https://flagcdn.com/w80/' + iso + '.png' : '';
+        if (url) {
+          return '<span class="team-badge team-badge-flag" style="--team-color:' + c + '"><img src="' + url + '" alt="' + safeName + '" loading="lazy" onerror="this.style.display=\'none\';this.parentNode.innerHTML=\'' + initial + '\'" /></span>';
+        }
+        return '<span class="team-badge team-badge-flag" style="--team-color:' + c + '">' + initial + '</span>';
+      }
+      // 队徽类型 (必须是 http 开头的有效 URL)
+      if (logoType === 'crest' && logo && (logo.startsWith('http://') || logo.startsWith('https://'))) {
+        return '<span class="team-badge team-badge-crest" style="--team-color:' + c + '"><img src="' + escapeHtml(logo) + '" alt="' + safeName + '" loading="lazy" onerror="this.style.display=\'none\';this.parentNode.innerHTML=\'' + initial + '\'" /></span>';
+      }
+      // 默认: 显示首字
+      return '<span class="team-badge" style="--team-color:' + c + '">' + initial + '</span>';
+    }
+    function escapeHtml(s) {
+      return s ? s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;') : '';
+    }
+    function escapeJs(s) {
+      return s ? s.replace(/\\/g,'\\\\').replace(/'/g,"\\'").replace(/\n/g,'\\n').replace(/\r/g,'\\r') : '';
+    }
+    // MD5 哈希 (用于密码加密存储)
+    function md5(str) {
+      function L(k,d){return(k<<d)|(k>>>(32-d))}function K(G,k){var I,d,F,H,x;F=(G&2147483648);H=(k&2147483648);I=(G&1073741824);d=(k&1073741824);x=(G&1073741823)+(k&1073741823);if(I&d)return(x^2147483648^F^H);if(I|d){if(x&1073741824)return(x^3221225472^F^H);else return(x^1073741824^F^H)}else return(x^F^H)}function r(d,F,k){return(d&F)|((~d)&k)}function q(d,F,k){return(d&k)|(F&(~k))}function p(d,F,k){return(d^F^k)}function n(d,F,k){return(F^(d|(~k)))}function u(G,F,aa,Z,k,H,I){G=K(G,K(K(r(F,aa,Z),k),I));return K(L(G,H),F)}function f(G,F,aa,Z,k,H,I){G=K(G,K(K(q(F,aa,Z),k),I));return K(L(G,H),F)}function D(G,F,aa,Z,k,H,I){G=K(G,K(K(p(F,aa,Z),k),I));return K(L(G,H),F)}function t(G,F,aa,Z,k,H,I){G=K(G,K(K(n(F,aa,Z),k),I));return K(L(G,H),F)}function e(G){var Z;var F=G.length;var x=F+8;var k=(x-(x%64))/64;var I=(k+1)*16;var aa=Array(I-1);var d=0;var H=0;while(H<F){Z=(H-(H%4))/4;d=(H%4)*8;aa[Z]=(aa[Z]|(G.charCodeAt(H)<<d));H++}Z=(H-(H%4))/4;d=(H%4)*8;aa[Z]=aa[Z]|(128<<d);aa[I-2]=F<<3;aa[I-1]=F>>>29;return aa}function B(x){var k="",F="",G,d;for(d=0;d<=3;d++){G=(x>>>(d*8))&255;F="0"+G.toString(16);k=k+F.substr(F.length-2,2)}return k}var C=[];var P,h,E,v,g,Y,X,W,V;var S=7,Q=12,N=17,M=22;var A=5,z=9,y=14,w=20;var o=4,m=11,l=16,j=23;var U=6,T=10,R=15,O=21;str=unescape(encodeURIComponent(str));C=e(str);Y=1732584193;X=4023233417;W=2562383102;V=271733878;for(P=0;P<C.length;P+=16){h=Y;E=X;v=W;g=V;Y=u(Y,X,W,V,C[P],S,3614090360);V=u(V,Y,X,W,C[P+1],Q,3905402710);W=u(W,V,Y,X,C[P+2],N,606105819);X=u(X,W,V,Y,C[P+3],M,3250441966);Y=u(Y,X,W,V,C[P+4],S,4118548399);V=u(V,Y,X,W,C[P+5],Q,1200080426);W=u(W,V,Y,X,C[P+6],N,2821735955);X=u(X,W,V,Y,C[P+7],M,4249261313);Y=u(Y,X,W,V,C[P+8],S,1770035416);V=u(V,Y,X,W,C[P+9],Q,2336552879);W=u(W,V,Y,X,C[P+10],N,4294925233);X=u(X,W,V,Y,C[P+11],M,2304563134);Y=u(Y,X,W,V,C[P+12],S,1804603682);V=u(V,Y,X,W,C[P+13],Q,4254626195);W=u(W,V,Y,X,C[P+14],N,2792965006);X=u(X,W,V,Y,C[P+15],M,1236535329);Y=f(Y,X,W,V,C[P+1],A,4129170786);V=f(V,Y,X,W,C[P+6],z,3225465664);W=f(W,V,Y,X,C[P+11],y,643717713);X=f(X,W,V,Y,C[P],w,3921069994);Y=f(Y,X,W,V,C[P+5],A,3593408605);V=f(V,Y,X,W,C[P+10],z,38016083);W=f(W,V,Y,X,C[P+15],y,3634488961);X=f(X,W,V,Y,C[P+4],w,3889429448);Y=f(Y,X,W,V,C[P+9],A,568446438);V=f(V,Y,X,W,C[P+14],z,3275163606);W=f(W,V,Y,X,C[P+3],y,4107603335);X=f(X,W,V,Y,C[P+8],w,1163531501);Y=f(Y,X,W,V,C[P+13],A,2850285829);V=f(V,Y,X,W,C[P+2],z,4243563512);W=f(W,V,Y,X,C[P+7],y,1735328473);X=f(X,W,V,Y,C[P+12],w,2368359562);Y=D(Y,X,W,V,C[P+5],o,4294588738);V=D(V,Y,X,W,C[P+8],m,2272392833);W=D(W,V,Y,X,C[P+11],l,1839030562);X=D(X,W,V,Y,C[P+14],j,4259657740);Y=D(Y,X,W,V,C[P+1],o,2763975236);V=D(V,Y,X,W,C[P+4],m,1272893353);W=D(W,V,Y,X,C[P+7],l,4139469664);X=D(X,W,V,Y,C[P+10],j,3200236656);Y=D(Y,X,W,V,C[P+13],o,681279174);V=D(V,Y,X,W,C[P],m,3936430074);W=D(W,V,Y,X,C[P+3],l,3572445317);X=D(X,W,V,Y,C[P+6],j,76029189);Y=D(Y,X,W,V,C[P+9],o,3654602809);V=D(V,Y,X,W,C[P+12],m,3873151461);W=D(W,V,Y,X,C[P+15],l,530742520);X=D(X,W,V,Y,C[P+2],j,3299628645);Y=t(Y,X,W,V,C[P],U,4096336452);V=t(V,Y,X,W,C[P+7],T,1126891415);W=t(W,V,Y,X,C[P+14],R,2878612391);X=t(X,W,V,Y,C[P+5],O,4237533241);Y=t(Y,X,W,V,C[P+12],U,1700485571);V=t(V,Y,X,W,C[P+3],T,2399980690);W=t(W,V,Y,X,C[P+10],R,4293915773);X=t(X,W,V,Y,C[P+1],O,2240044497);Y=t(Y,X,W,V,C[P+8],U,1873313359);V=t(V,Y,X,W,C[P+15],T,4264355552);W=t(W,V,Y,X,C[P+6],R,2734768916);X=t(X,W,V,Y,C[P+13],O,1309151649);Y=t(Y,X,W,V,C[P+4],U,4149444226);V=t(V,Y,X,W,C[P+11],T,3174756917);W=t(W,V,Y,X,C[P+2],R,718787259);X=t(X,W,V,Y,C[P+9],O,3951481745);Y=K(Y,h);X=K(X,E);W=K(W,v);V=K(V,g)}return(B(Y)+B(X)+B(W)+B(V)).toLowerCase()}
+
+    // ==================== 页面刷新 ====================
+    function refreshCurrentPage() {
+      const page = currentPage;
+      if (page === 'home' || page === 'challenge') {
+        // 刷新赛事数据
+        fetch('./data/matches-current.json?v=' + Date.now())
+          .then(r => r.json()).then(d => { matchesData = d; settleChallenges(); renderPage(); });
+      } else if (page === 'history') {
+        // 刷新历史数据
+        fetch('./data/matches-history.json?v=' + Date.now())
+          .then(r => r.json()).then(d => { historyData = d; renderPage(); });
+      } else if (page === 'worldcup') {
+        // 刷新世界杯数据
+        fetch('./data/worldcup.json?v=' + Date.now())
+          .then(r => r.json()).then(d => { worldcupData = d; renderPage(); });
+      } else if (page === 'detail') {
+        // 刷新所有数据
+        Promise.all([
+          fetch('./data/matches-current.json?v=' + Date.now()).then(r => r.json()),
+          fetch('./data/matches-history.json?v=' + Date.now()).then(r => r.json()),
+        ]).then(([c, h]) => { matchesData = c; historyData = h; settleChallenges(); renderPage(); });
+      } else {
+        renderPage();
+      }
+    }
+
+    function refreshBtnHtml(small) {
+      const size = small ? '12' : '14';
+      const style = small ? 'font-size:.78rem' : '';
+      return '<button class="btn btn-secondary" style="padding:.3rem .6rem;' + style + '" onclick="refreshCurrentPage()">' +
+        '<svg width="' + size + '" height="' + size + '" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>' +
+        (small ? '' : ' 刷新') + '</button>';
+    }
+
+    // ==================== NAVIGATION ====================
+    function navigateTo(page, params) {
+      currentPage = page;
+      if (params) {
+        if (params.matchId) detailMatchId = params.matchId;
+        if (params.date) selectedDate = params.date;
+      }
+      // Update nav active state
+      document.querySelectorAll('.nav-link').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.page === page);
+      });
+      renderPage();
+      window.scrollTo(0, 0);
+    }
+
+    function renderPage() {
+      const el = document.getElementById('pageContent');
+      updateNavUser();
+      switch (currentPage) {
+        case 'home': el.innerHTML = renderHomePage(); break;
+        case 'history': el.innerHTML = renderHistoryPage(); break;
+        case 'betslip': el.innerHTML = renderBetslipPage(); break;
+        case 'challenge': el.innerHTML = renderChallengePage(); break;
+        case 'worldcup': el.innerHTML = renderWorldCupPage(); break;
+        case 'detail': el.innerHTML = renderDetailPage(); break;
+        case 'mine': el.innerHTML = renderMinePage(); break;
+        default: el.innerHTML = renderHomePage();
+      }
+    }
+
+    // ==================== PAGE: HOME (赛事预测) ====================
+    function renderHomePage() {
+      let html = '';
+      // Notice banner
+      html += '<div class="notice-banner"><div class="notice-copy">';
+      html += '<div class="notice-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></div>';
+      html += '<div class="notice-text"><strong>理性提示</strong>：本平台仅提供数据分析与预测参考，不保证赛果。请保持娱乐心态，禁止未成年人参与，切勿盲目跟单。</div>';
+      html += '</div></div>';
+
+      // Metrics
+      html += '<div class="metrics-grid" id="metricsGrid"></div>';
+      // Sync strip + refresh
+      html += '<div style="display:flex;gap:.5rem;align-items:stretch">';
+      html += '<div class="data-sync-strip is-ready" id="syncStrip" style="flex:1"></div>';
+      html += refreshBtnHtml(true);
+      html += '</div>';
+      // Date toolbar + league filter + timezone
+      html += '<div style="display:flex;gap:.5rem;align-items:center;flex-wrap:wrap">';
+      html += '<div class="date-toolbar" id="dateToolbar" style="flex:1;min-width:0"></div>';
+      html += leagueFilterHtml();
+      html += timezoneSelectorHtml();
+      html += '</div>';
+      // League stack
+      html += '<div class="league-stack" id="leagueStack"></div>';
+
+      // Render after DOM update (clear previous timer to avoid race condition)
+      if (homeRenderTimer) clearTimeout(homeRenderTimer);
+      homeRenderTimer = setTimeout(() => {
+        homeRenderTimer = null;
+        renderMetrics();
+        renderSyncStrip();
+        renderDateToolbar();
+        renderLeagueStack();
+      }, 10);
+      return html;
+    }
+
+    function renderMetrics() {
+      const grid = document.getElementById('metricsGrid');
+      if (!grid) return;
+      // 使用筛选后的数据统计
+      const filtered = getFilteredMatches();
+      const total = filtered.length;
+      const withOdds = filtered.filter(m => m.odds).length;
+      const withPred = filtered.filter(m => m.predictions?.length > 0).length;
+      const highTrust = filtered.filter(m => { const b = getBestPrediction(m); return b && b.trustScore >= 70; }).length;
+      grid.innerHTML = [
+        { icon: '📊', label: '今日赛事', value: total, note: '场待分析', accent: '' },
+        { icon: '📈', label: '已接赔率', value: withOdds, note: '场有 SP 数据', accent: 'accent' },
+        { icon: '🎯', label: '已出预测', value: withPred, note: '场有推荐', accent: 'premium' },
+        { icon: '✅', label: '高可信候选', value: highTrust, note: '场 ≥70 分', accent: 'success' },
+      ].map(m => '<div class="metric-card"><div class="metric-head"><div class="metric-icon ' + m.accent + '">' + m.icon + '</div><span class="metric-label">' + m.label + '</span></div><span class="metric-value">' + m.value + '</span><span class="metric-note">' + m.note + '</span></div>').join('');
+    }
+
+    function renderSyncStrip() {
+      const strip = document.getElementById('syncStrip');
+      if (!strip) return;
+      if (!syncMeta) { strip.innerHTML = '<div class="data-sync-copy"><span>数据加载中...</span></div>'; return; }
+      strip.innerHTML = '<div class="data-sync-copy"><span class="data-sync-dot"></span><span><strong>' + formatRelativeTime(syncMeta.updatedAt) + '</strong> 同步 · ' + (syncMeta.source || 'sporttery') + '</span></div>' +
+        '<div class="data-sync-items"><span>当前 <strong>' + (syncMeta.files?.current || 0) + '</strong> 场</span><span>历史 <strong>' + (syncMeta.files?.history || 0) + '</strong> 场</span><span>球队 <strong>' + (syncMeta.files?.teams || 0) + '</strong> 支</span></div>';
+    }
+
+    function renderDateToolbar() {
+      const toolbar = document.getElementById('dateToolbar');
+      if (!toolbar) return;
+      const dates = [...new Set(matchesData.map(m => m.kickoffDate || formatDateCN(m.kickoffTime)))];
+      const today = new Date();
+      let html = '<div class="date-quick-row">';
+      html += '<button class="date-chip ' + (selectedDate === 'today' ? 'active' : '') + '" onclick="selectDate(\'today\')"><span class="date-label">今天</span><span class="date-value">' + formatDateCN(today.toISOString()) + '</span></button>';
+      dates.forEach(d => {
+        html += '<button class="date-chip ' + (selectedDate === d ? 'active' : '') + '" onclick="selectDate(\'' + d + '\')"><span class="date-label">' + d + '</span></button>';
+      });
+      html += '</div>';
+      toolbar.innerHTML = html;
+    }
+
+    function selectDate(date) {
+      selectedDate = date;
+      renderDateToolbar();
+      renderLeagueStack();
+    }
+
+    function getFilteredMatches() {
+      // 赛事预测页只显示未开始的比赛
+      let filtered = matchesData.filter(m => m.status !== 'FINISHED');
+      // 按日期筛选
+      if (selectedDate !== 'today') {
+        filtered = filtered.filter(m => {
+          const d = m.kickoffDate || formatDateCN(m.kickoffTime);
+          return d === selectedDate;
+        });
+      }
+      // 按赛事筛选
+      if (selectedLeague) {
+        filtered = filtered.filter(m => m.leagueName === selectedLeague);
+      }
+      return filtered;
+    }
+
+    function renderLeagueStack() {
+      const stack = document.getElementById('leagueStack');
+      if (!stack) return;
+      const filtered = getFilteredMatches();
+      if (!filtered.length) {
+        stack.innerHTML = '<div class="empty-state"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8 12h8"/></svg><p>该日期暂无赛事数据</p></div>';
+        return;
+      }
+      const groups = {};
+      filtered.forEach(m => {
+        const key = m.leagueName || '未知赛事';
+        if (!groups[key]) groups[key] = { name: key, country: m.countryName || '', matches: [] };
+        groups[key].matches.push(m);
+      });
+      let html = '';
+      Object.values(groups).forEach(league => {
+        html += '<div class="league-card"><div class="league-header"><div class="league-title"><strong>' + league.name + '</strong></div><span class="league-meta">' + league.country + '</span><span class="league-count">' + league.matches.length + ' 场</span></div>';
+        html += '<div class="table-scroll"><table class="responsive-table"><thead><tr><th>时间</th><th>主队</th><th>预测</th><th>客队</th><th>胜平负</th><th>让球</th><th>操作</th></tr></thead><tbody>';
+        league.matches.forEach(m => { html += renderMatchRow(m); });
+        html += '</tbody></table></div></div>';
+      });
+      stack.innerHTML = html;
+    }
+
+    function renderMatchRow(m) {
+      const best = getBestPrediction(m);
+      const signal = getSignalLabel(best);
+      const isExpanded = expandedMatchId === m.id;
+      let html = '<tr class="match-row" onclick="toggleMatchDetail(\'' + m.id + '\')">';
+      html += '<td data-label="时间"><div class="time-stack"><span class="kickoff-time">' + formatTimeTz(m.kickoffTime) + '</span>';
+      if (m.matchNo) html += '<span class="status-note">' + m.matchNo + '</span>';
+      if (m.kickoffDate) html += '<span class="status-note">' + m.kickoffDate + '</span>';
+      html += '</div></td>';
+      html += '<td data-label="主队"><div class="team-stack"><div class="team-line">' + getTeamBadgeHtml(m.homeTeamName, m.homeTeamLogo, m.homeTeamLogoType, m.homeTeamColor) + '<span class="team-name">' + escapeHtml(m.homeTeamName || '未知主队') + '</span></div></div></td>';
+      html += '<td data-label="预测"><div class="prediction-cell">';
+      if (best) {
+        const cls = best.resultStatus === 'HIT' ? 'is-hit' : best.resultStatus === 'MISS' ? 'is-miss' : '';
+        html += '<div class="' + cls + '"><span class="prediction-tip">' + (best.tipLabel?.zh || best.tipCode) + '</span>';
+        if (best.trustScore) html += '<span class="prediction-odds">可信 ' + best.trustScore + '</span>';
+        html += '</div>';
+      } else { html += '<span class="prediction-tip" style="color:hsl(var(--text-muted))">—</span>'; }
+      html += '</div></td>';
+      html += '<td data-label="客队"><div class="team-stack"><div class="team-line">' + getTeamBadgeHtml(m.awayTeamName, m.awayTeamLogo, m.awayTeamLogoType, m.awayTeamColor) + '<span class="team-name">' + escapeHtml(m.awayTeamName || '未知客队') + '</span></div></div></td>';
+      html += '<td data-label="胜平负"><div class="odds-stack">';
+      if (m.odds) {
+        const inSlip = betSlipItems.find(b => b.matchId === m.id);
+        [
+          { pick: '1', label: '主', odds: m.odds.odds1 },
+          { pick: 'X', label: '平', odds: m.odds.oddsX },
+          { pick: '2', label: '客', odds: m.odds.odds2 },
+        ].forEach(opt => {
+          const isActive = inSlip && inSlip.pick === opt.pick;
+          html += '<div class="odds-row" style="cursor:pointer;' + (isActive ? 'background:hsl(var(--primary)/.15);border-radius:4px;padding:0 .25rem' : '') + '" onclick="event.stopPropagation();toggleBetItem(\'' + m.id + '\',\'' + opt.pick + '\',\'' + (opt.pick === '1' ? '主胜' : opt.pick === 'X' ? '平局' : '客胜') + '\',' + opt.odds + ',\'' + escapeJs(m.homeTeamName) + '\',\'' + escapeJs(m.awayTeamName) + '\',\'' + escapeJs(m.leagueName || '') + '\')">';
+          html += '<span>' + opt.label + '</span><strong style="' + (isActive ? 'color:hsl(var(--primary))' : '') + '">' + opt.odds + '</strong></div>';
+        });
+      }
+      html += '</div></td>';
+      html += '<td data-label="让球"><div class="odds-stack">';
+      if (m.handicapOdds) {
+        html += '<div class="odds-row"><span>' + getHandicapDisplay(m.handicapLine || 0) + '</span></div>';
+        html += '<div class="odds-row"><span>主</span><strong>' + m.handicapOdds.odds1 + '</strong></div>';
+        html += '<div class="odds-row"><span>平</span><strong>' + m.handicapOdds.oddsX + '</strong></div>';
+        html += '<div class="odds-row"><span>客</span><strong>' + m.handicapOdds.odds2 + '</strong></div>';
+      }
+      html += '</div></td>';
+      html += '<td data-label="操作"><div class="match-signal-line"><span class="signal-badge ' + signal.cls + '">' + signal.text + '</span>';
+      if (best?.riskTags?.length) html += '<span class="signal-risk-count">' + best.riskTags.length + ' 风险</span>';
+      html += '</div><button class="details-button" onclick="event.stopPropagation();navigateTo(\'detail\',{matchId:\'' + m.id + '\'})"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg> 详情</button></td>';
+      html += '</tr>';
+      if (isExpanded) {
+        html += '<tr><td colspan="7" style="padding:0;border:none">' + renderMatchDetailInline(m) + '</td></tr>';
+      }
+      return html;
+    }
+
+    function toggleMatchDetail(matchId) {
+      expandedMatchId = expandedMatchId === matchId ? null : matchId;
+      renderLeagueStack();
+    }
+
+    function renderMatchDetailInline(m) {
+      let html = '<div style="padding:1.25rem;background:hsl(var(--bg-card));border:1px solid hsl(var(--border));border-radius:var(--radius);margin:0.5rem 0">';
+      if (m.predictions?.length) {
+        m.predictions.forEach(pred => { html += renderPredictionCard(pred, m); });
+      }
+      if (m.probabilityModel) html += renderProbabilityModelCard(m.probabilityModel, m);
+      if (m.stats) html += renderStatsCard(m.stats);
+      if (m.oddsTrend) html += renderOddsTrendCard(m.oddsTrend);
+      html += '<button class="btn btn-primary" style="margin-top:1rem" onclick="event.stopPropagation();navigateTo(\'detail\',{matchId:\'' + m.id + '\'})">查看完整分析 →</button>';
+      html += '</div>';
+      return html;
+    }
+
+    // ==================== SHARED COMPONENTS ====================
+    function renderPredictionCard(pred, m) {
+      const signal = getSignalLabel(pred);
+      const isPremium = pred.visibilityStatus === 'PREMIUM';
+      let html = '<div class="card" style="margin-bottom:1rem;' + (isPremium ? 'border-color:hsl(var(--premium)/.36);background:hsl(var(--premium-soft)/.5)' : '') + '">';
+      html += '<div class="signal-summary-card"><div>';
+      html += '<span class="badge ' + (signal.cls === 'is-steady' ? 'badge-success' : signal.cls === 'is-watch' ? 'badge-premium' : 'badge') + '">' + (pred.marketType || '') + ' · ' + signal.text + '</span>';
+      html += '<h3>' + escapeHtml(pred.tipLabel?.zh || pred.tipCode) + '</h3>';
+      if (pred.explanation?.zh) html += '<p>' + escapeHtml(pred.explanation.zh) + '</p>';
+      if (pred.riskTags?.length) {
+        html += '<div class="risk-tag-row">';
+        pred.riskTags.forEach(tag => { html += '<span class="risk-tag">' + escapeHtml(tag.zh || tag) + '</span>'; });
+        html += '</div>';
+      }
+      html += '</div><div class="signal-summary-meta">';
+      if (pred.trustScore) {
+        html += '<div class="trust-meter"><span class="trust-value" style="--trust-color:' + getTrustColor(pred.trustScore) + '">' + pred.trustScore + '</span><div class="trust-bar"><span style="--trust:' + pred.trustScore + '%;background:' + getTrustColor(pred.trustScore) + '"></span></div></div>';
+      }
+      if (isPremium) html += '<span class="badge badge-premium">🔒 会员</span>';
+      html += '</div></div>';
+      if (pred.analysisItems?.length) {
+        html += '<div class="signal-summary-trend"><ul class="prediction-analysis-list">';
+        pred.analysisItems.forEach(item => { html += '<li>' + escapeHtml(item.zh || item) + '</li>'; });
+        html += '</ul></div>';
+      }
+      html += '</div>';
+      return html;
+    }
+
+    function renderProbabilityModelCard(pm, m) {
+      let html = '<div class="probability-model-card" style="margin-bottom:1rem">';
+      html += '<div class="probability-model-head"><div><h3>概率模型</h3><p>' + escapeHtml(pm.basis?.zh || '') + '</p></div><span>' + (pm.version || '') + '</span></div>';
+      html += '<div class="probability-model-grid">';
+      if (pm.oneXTwo) {
+        html += '<div class="probability-panel is-wide"><h4>胜平负概率</h4><div class="probability-triplet">';
+        ['home','draw','away'].forEach(side => {
+          const label = side === 'home' ? '主胜' : side === 'draw' ? '平局' : '客胜';
+          const val = pm.oneXTwo.final?.[side];
+          if (val !== undefined) html += '<div class="probability-outcome"><div><span>' + label + '</span><strong>' + val.toFixed(1) + '%</strong></div><em style="width:' + val + '%"></em></div>';
+        });
+        html += '</div>';
+        if (pm.ensembleWeights) {
+          html += '<div class="probability-subline"><span class="probability-weight-line">集成权重：</span>';
+          Object.entries(pm.ensembleWeights).forEach(([k,v]) => { html += '<span>' + k + ' ' + (v*100).toFixed(0) + '%</span>'; });
+          html += '</div>';
+        }
+        html += '</div>';
+      }
+      if (pm.goalLines) {
+        html += '<div class="probability-panel"><h4>进球线</h4><div class="score-probability-list">';
+        if (pm.goalLines.over25 !== undefined) html += '<span>大2.5球<strong>' + pm.goalLines.over25.toFixed(1) + '%</strong></span>';
+        if (pm.goalLines.under25 !== undefined) html += '<span>小2.5球<strong>' + pm.goalLines.under25.toFixed(1) + '%</strong></span>';
+        html += '</div></div>';
+      }
+      if (pm.bothTeamsToScore) {
+        html += '<div class="probability-panel"><h4>双方进球</h4><div class="probability-pair-grid">';
+        if (pm.bothTeamsToScore.yes !== undefined) html += '<span>是<strong>' + pm.bothTeamsToScore.yes.toFixed(1) + '%</strong></span>';
+        if (pm.bothTeamsToScore.no !== undefined) html += '<span>否<strong>' + pm.bothTeamsToScore.no.toFixed(1) + '%</strong></span>';
+        html += '</div></div>';
+      }
+      if (pm.scoreDistribution?.length) {
+        html += '<div class="probability-panel"><h4>比分分布</h4><div class="score-probability-list">';
+        pm.scoreDistribution.slice(0,8).forEach(s => {
+          html += '<span>' + (s.home||0) + '-' + (s.away||0) + '<strong>' + (s.probability?.toFixed(1)||'') + '%</strong></span>';
+        });
+        html += '</div></div>';
+      }
+      if (m.handicapOdds) {
+        html += '<div class="probability-panel"><h4>让球胜平负 (' + getHandicapDisplay(m.handicapLine||0) + ')</h4><div class="score-probability-list">';
+        html += '<span>主胜<strong>' + m.handicapOdds.odds1 + '</strong></span><span>平局<strong>' + m.handicapOdds.oddsX + '</strong></span><span>客胜<strong>' + m.handicapOdds.odds2 + '</strong></span>';
+        html += '</div></div>';
+      }
+      html += '</div></div>';
+      return html;
+    }
+
+    function renderStatsCard(stats) {
+      let html = '<div class="insight-card" style="margin-bottom:1rem"><div class="insight-head"><div><h3>赛前数据参考</h3><p>模型输出的攻防指标，仅供参考</p></div></div>';
+      html += '<div class="insight-metric-grid">';
+      const items = [
+        ['xG 主', stats.xG?.home?.toFixed(2)], ['xG 客', stats.xG?.away?.toFixed(2)],
+        ['控球率 主', stats.possession?.home ? stats.possession.home+'%' : null], ['控球率 客', stats.possession?.away ? stats.possession.away+'%' : null],
+        ['射门 主', stats.shots?.home], ['射门 客', stats.shots?.away],
+        ['射正 主', stats.shotsOnTarget?.home], ['射正 客', stats.shotsOnTarget?.away],
+      ];
+      items.forEach(([label, val]) => {
+        html += '<div class="insight-metric"><span>' + label + '</span><strong>' + (val || '—') + '</strong></div>';
+      });
+      html += '</div></div>';
+      return html;
+    }
+
+    function renderOddsTrendCard(trend) {
+      let html = '<div class="sp-trend-box"><strong>SP 走势</strong>';
+      if (trend.summary?.zh) html += '<p>' + escapeHtml(trend.summary.zh) + '</p>';
+      html += '<div style="display:flex;gap:0.5rem;flex-wrap:wrap;margin-top:0.3rem">';
+      if (trend.sampleSize) html += '<span>快照 ' + trend.sampleSize + ' 次</span>';
+      if (trend.direction) html += '<span>方向: ' + trend.direction + '</span>';
+      html += '</div></div>';
+      return html;
+    }
+
+    // ==================== PAGE: DETAIL (比赛详情) ====================
+    function renderDetailPage() {
+      // 从当前赛事或历史赛事中查找
+      const m = matchesData.find(x => x.id === detailMatchId) || historyData.find(x => x.id === detailMatchId);
+      if (!m) return '<div class="empty-state"><p>比赛不存在</p><button class="btn btn-primary" onclick="navigateTo(\'home\')">返回列表</button></div>';
+
+      const isFinished = m.status === 'FINISHED';
+      const hasScore = m.scoreHome !== undefined && m.scoreHome !== null;
+      const best = getBestPrediction(m);
+      let html = '';
+
+      // Back button - 返回到来源页面
+      const backPage = isFinished ? 'history' : 'home';
+      html += '<button class="btn btn-secondary" style="margin-bottom:1rem" onclick="navigateTo(\'' + backPage + '\')">';
+      html += '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg> 返回列表</button>';
+
+      // Match header card
+      html += '<div class="card" style="margin-bottom:1.25rem">';
+      html += '<div style="display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap">';
+      html += '<div><span class="badge">' + escapeHtml(m.leagueName || '未知赛事') + '</span>';
+      if (m.matchNo) html += ' <span class="badge">' + m.matchNo + '</span>';
+      if (isFinished) html += ' <span class="badge badge-success">已完场</span>';
+      html += '</div>';
+      html += '<span style="color:hsl(var(--text-muted));font-size:.82rem">' + formatTimeTz(m.kickoffTime) + ' ' + (m.kickoffDate || formatDateCN(m.kickoffTime)) + ' (' + getTimezone().label + ')</span>';
+      html += '</div>';
+
+      // Teams & Score
+      html += '<div style="display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:1rem;margin:1.5rem 0">';
+      html += '<div style="text-align:center">' + getTeamBadgeHtml(m.homeTeamName, m.homeTeamLogo, m.homeTeamLogoType, m.homeTeamColor).replace('width:30px', 'width:64px;height:64px;font-size:1.7rem') + '<div class="team-name" style="margin-top:.5rem;font-size:1.1rem">' + escapeHtml(m.homeTeamName || '未知') + '</div></div>';
+
+      if (isFinished && hasScore) {
+        // 已完场: 显示最终比分
+        const homeWin = m.scoreHome > m.scoreAway;
+        const draw = m.scoreHome === m.scoreAway;
+        const scoreColor = homeWin ? 'var(--primary)' : draw ? 'var(--text-muted)' : 'var(--danger)';
+        html += '<div style="text-align:center">';
+        html += '<div style="font-size:2.5rem;font-weight:950;font-family:var(--font-title);color:' + scoreColor + '">' + m.scoreHome + ' - ' + m.scoreAway + '</div>';
+        html += '<div style="color:hsl(var(--text-muted));font-size:.78rem;margin-top:.25rem">全场比分</div>';
+        html += '</div>';
+      } else {
+        // 未开始: 显示 VS
+        html += '<div style="text-align:center"><span style="font-size:1.5rem;font-weight:900;color:hsl(var(--text-muted))">VS</span></div>';
+      }
+
+      html += '<div style="text-align:center">' + getTeamBadgeHtml(m.awayTeamName, m.awayTeamLogo, m.awayTeamLogoType, m.awayTeamColor).replace('width:30px', 'width:64px;height:64px;font-size:1.7rem') + '<div class="team-name" style="margin-top:.5rem;font-size:1.1rem">' + escapeHtml(m.awayTeamName || '未知') + '</div></div>';
+      html += '</div>';
+
+      // 已完场: 显示预测命中结果
+      if (isFinished && hasScore && best) {
+        const actualResult = m.scoreHome > m.scoreAway ? '1' : m.scoreHome === m.scoreAway ? 'X' : '2';
+        const isHit = best.tipCode === actualResult;
+        const resultCls = isHit ? 'badge-success' : 'badge';
+        const resultText = isHit ? '✅ 预测命中' : '❌ 预测未中';
+        html += '<div style="text-align:center;margin-bottom:1rem">';
+        html += '<span class="badge ' + resultCls + '" style="font-size:.86rem;padding:.35rem .75rem">' + resultText + '</span>';
+        html += '<div style="color:hsl(var(--text-muted));font-size:.78rem;margin-top:.35rem">推荐: ' + escapeHtml(best.tipLabel?.zh || best.tipCode) + ' (可信 ' + best.trustScore + ')</div>';
+        html += '</div>';
+      }
+
+      // Odds row (未完场才显示赔率)
+      if (!isFinished && m.odds) {
+        html += '<div style="display:flex;justify-content:center;gap:1.5rem;margin-bottom:1rem">';
+        html += '<div class="odds-stack" style="align-items:center"><span style="font-size:.76rem">主胜</span><strong style="font-size:1.1rem">' + m.odds.odds1 + '</strong></div>';
+        html += '<div class="odds-stack" style="align-items:center"><span style="font-size:.76rem">平局</span><strong style="font-size:1.1rem">' + m.odds.oddsX + '</strong></div>';
+        html += '<div class="odds-stack" style="align-items:center"><span style="font-size:.76rem">客胜</span><strong style="font-size:1.1rem">' + m.odds.odds2 + '</strong></div>';
+        if (m.handicapOdds) {
+          html += '<div style="border-left:1px solid hsl(var(--border));padding-left:1.5rem;display:flex;gap:1.5rem">';
+          html += '<div class="odds-stack" style="align-items:center"><span style="font-size:.76rem">让球 ' + getHandicapDisplay(m.handicapLine||0) + '</span></div>';
+          html += '<div class="odds-stack" style="align-items:center"><span style="font-size:.76rem">主</span><strong style="font-size:1.1rem">' + m.handicapOdds.odds1 + '</strong></div>';
+          html += '<div class="odds-stack" style="align-items:center"><span style="font-size:.76rem">平</span><strong style="font-size:1.1rem">' + m.handicapOdds.oddsX + '</strong></div>';
+          html += '<div class="odds-stack" style="align-items:center"><span style="font-size:.76rem">客</span><strong style="font-size:1.1rem">' + m.handicapOdds.odds2 + '</strong></div>';
+          html += '</div>';
+        }
+        html += '</div>';
+      }
+      html += '</div>';
+
+      // Tabs - 已完场和未开始显示不同标签
+      html += '<div class="tabs-container" id="detailTabs">';
+      const tabs = isFinished
+        ? [
+            { id: 'result', label: '赛果复盘' },
+            { id: 'stats', label: '数据统计' },
+            { id: 'history', label: '近期战绩' },
+            { id: 'h2h', label: '交锋历史' },
+          ]
+        : [
+            { id: 'predictions', label: '预测推荐' },
+            { id: 'probability', label: '概率预测系统' },
+            { id: 'stats', label: '数据统计' },
+            { id: 'history', label: '近期战绩' },
+            { id: 'h2h', label: '交锋历史' },
+          ];
+      tabs.forEach((tab, i) => {
+        html += '<button class="tab-btn ' + (i === 0 ? 'active' : '') + '" onclick="switchDetailTab(\'' + tab.id + '\',this)">' + tab.label + '</button>';
+      });
+      html += '</div>';
+
+      // Tab content
+      html += '<div id="detailTabContent">';
+      const defaultTab = isFinished ? 'result' : 'predictions';
+      html += renderDetailTabContent(defaultTab, m);
+      html += '</div>';
+
+      return html;
+    }
+
+    function switchDetailTab(tabId, btn) {
+      document.querySelectorAll('#detailTabs .tab-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const m = matchesData.find(x => x.id === detailMatchId) || historyData.find(x => x.id === detailMatchId);
+      if (m) document.getElementById('detailTabContent').innerHTML = renderDetailTabContent(tabId, m);
+    }
+
+    function renderDetailTabContent(tabId, m) {
+      switch (tabId) {
+        case 'result': return renderDetailResult(m);
+        case 'predictions': return renderDetailPredictions(m);
+        case 'probability': return renderDetailProbability(m);
+        case 'stats': return renderDetailStats(m);
+        case 'history': return renderDetailHistory(m);
+        case 'h2h': return renderDetailH2H(m);
+        default: return '';
+      }
+    }
+
+    function renderDetailResult(m) {
+      const hasScore = m.scoreHome !== undefined && m.scoreHome !== null;
+      const best = getBestPrediction(m);
+      let html = '';
+
+      // 最终比分
+      if (hasScore) {
+        const homeWin = m.scoreHome > m.scoreAway;
+        const draw = m.scoreHome === m.scoreAway;
+        html += '<div class="card" style="margin-bottom:1rem;text-align:center">';
+        html += '<h4 style="margin-bottom:.75rem">全场比分</h4>';
+        html += '<div style="font-size:3rem;font-weight:950;font-family:var(--font-title);color:' + (homeWin ? 'var(--primary)' : draw ? 'var(--text-muted)' : 'var(--danger)') + '">' + m.scoreHome + ' - ' + m.scoreAway + '</div>';
+        html += '<div style="color:hsl(var(--text-secondary));margin-top:.5rem">' + escapeHtml(m.homeTeamName) + ' vs ' + escapeHtml(m.awayTeamName) + '</div>';
+        html += '</div>';
+      }
+
+      // 赛前预测复盘
+      if (best && hasScore) {
+        const actualResult = m.scoreHome > m.scoreAway ? '1' : m.scoreHome === m.scoreAway ? 'X' : '2';
+        const isHit = best.tipCode === actualResult;
+
+        html += '<div class="card" style="margin-bottom:1rem;border-color:' + (isHit ? 'hsl(var(--success)/.36)' : 'hsl(var(--danger)/.36)') + '">';
+        html += '<div class="signal-summary-card"><div>';
+        html += '<span class="badge ' + (isHit ? 'badge-success' : 'badge') + '">' + (isHit ? '✅ 命中' : '❌ 未中') + '</span>';
+        html += '<h3>赛前预测: ' + escapeHtml(best.tipLabel?.zh || best.tipCode) + '</h3>';
+        if (best.explanation?.zh) html += '<p>' + escapeHtml(best.explanation.zh) + '</p>';
+        html += '</div><div class="signal-summary-meta">';
+        if (best.trustScore) {
+          html += '<div class="trust-meter"><span class="trust-value" style="--trust-color:' + getTrustColor(best.trustScore) + '">' + best.trustScore + '</span><div class="trust-bar"><span style="--trust:' + best.trustScore + '%;background:' + getTrustColor(best.trustScore) + '"></span></div></div>';
+        }
+        html += '</div></div>';
+        html += '</div>';
+      }
+
+      // 所有预测复盘
+      if (m.predictions?.length && hasScore) {
+        const actualResult = m.scoreHome > m.scoreAway ? '1' : m.scoreHome === m.scoreAway ? 'X' : '2';
+        html += '<div class="card" style="margin-bottom:1rem">';
+        html += '<h4 style="margin-bottom:.75rem">已结算推荐</h4>';
+        m.predictions.forEach(pred => {
+          const signal = getSignalLabel(pred);
+          let hitStatus = '';
+          if (pred.marketType === '1X2') {
+            hitStatus = pred.tipCode === actualResult ? '命中' : pred.tipCode === 'WATCH' ? '观察' : '未中';
+          }
+          html += '<div style="display:flex;justify-content:space-between;align-items:center;padding:.5rem 0;border-bottom:1px solid hsl(var(--border))">';
+          html += '<div><span class="badge ' + (signal.cls === 'is-steady' ? 'badge-success' : signal.cls === 'is-watch' ? 'badge-premium' : 'badge') + '">' + pred.marketType + '</span> ';
+          html += '<span style="font-size:.86rem">' + escapeHtml(pred.tipLabel?.zh || pred.tipCode) + '</span></div>';
+          html += '<div style="display:flex;align-items:center;gap:.5rem">';
+          if (pred.trustScore) html += '<span style="color:hsl(var(--text-muted));font-size:.78rem">可信 ' + pred.trustScore + '</span>';
+          if (hitStatus) html += '<span class="badge ' + (hitStatus === '命中' ? 'badge-success' : hitStatus === '观察' ? 'badge-premium' : 'badge') + '">' + hitStatus + '</span>';
+          html += '</div></div>';
+        });
+        html += '</div>';
+      }
+
+      // 赛前概率分布
+      if (m.probabilityModel) {
+        html += '<div class="card" style="margin-bottom:1rem">';
+        html += '<h4 style="margin-bottom:.5rem">赛前概率分布</h4>';
+        html += '<div style="color:hsl(var(--text-muted));font-size:.78rem;margin-bottom:.5rem">基于赛前官方 SP 快照生成的推荐已按最终比分自动结算。</div>';
+        if (m.probabilityModel.oneXTwo?.final) {
+          const f = m.probabilityModel.oneXTwo.final;
+          html += '<div class="score-probability-list">';
+          html += '<span>主胜<strong>' + f.home.toFixed(1) + '%</strong></span>';
+          html += '<span>平局<strong>' + f.draw.toFixed(1) + '%</strong></span>';
+          html += '<span>客胜<strong>' + f.away.toFixed(1) + '%</strong></span>';
+          html += '</div>';
+        }
+        html += '</div>';
+      }
+
+      // 赔率快照
+      if (m.odds) {
+        html += '<div class="card" style="margin-bottom:1rem">';
+        html += '<h4 style="margin-bottom:.5rem">赛前快照</h4>';
+        html += '<div class="score-probability-list">';
+        html += '<span>主胜<strong>' + m.odds.odds1 + '</strong></span>';
+        html += '<span>平局<strong>' + m.odds.oddsX + '</strong></span>';
+        html += '<span>客胜<strong>' + m.odds.odds2 + '</strong></span>';
+        html += '</div>';
+        if (m.handicapOdds) {
+          html += '<div style="margin-top:.5rem"><span style="color:hsl(var(--text-muted));font-size:.78rem">让球 ' + getHandicapDisplay(m.handicapLine || 0) + '</span></div>';
+          html += '<div class="score-probability-list">';
+          html += '<span>主<strong>' + m.handicapOdds.odds1 + '</strong></span>';
+          html += '<span>平<strong>' + m.handicapOdds.oddsX + '</strong></span>';
+          html += '<span>客<strong>' + m.handicapOdds.odds2 + '</strong></span>';
+          html += '</div>';
+        }
+        html += '</div>';
+      }
+
+      if (!html) {
+        html = '<div class="empty-state"><p>本场已完场，当前只保留赛果、历史复盘与已生成的赛前预测记录。</p></div>';
+      }
+      return html;
+    }
+
+    function renderDetailPredictions(m) {
+      let html = '';
+      if (!m.predictions?.length) {
+        html += '<div class="empty-state"><p>当前暂无可用精选或观察结论。请稍后再试。</p></div>';
+        return html;
+      }
+      m.predictions.forEach(pred => {
+        const signal = getSignalLabel(pred);
+        const isPremium = pred.visibilityStatus === 'PREMIUM';
+        html += '<div class="card" style="margin-bottom:1rem;' + (isPremium ? 'border-color:hsl(var(--premium)/.36);background:hsl(var(--premium-soft)/.5)' : '') + '">';
+        html += '<div class="signal-summary-card"><div>';
+        html += '<span class="badge ' + (signal.cls === 'is-steady' ? 'badge-success' : signal.cls === 'is-watch' ? 'badge-premium' : 'badge') + '">' + (pred.marketType || '') + ' · ' + signal.text + '</span>';
+        html += '<h3>' + escapeHtml(pred.tipLabel?.zh || pred.tipCode) + '</h3>';
+        if (pred.explanation?.zh) html += '<p>' + escapeHtml(pred.explanation.zh) + '</p>';
+        if (pred.riskTags?.length) {
+          html += '<div class="risk-tag-row">';
+          pred.riskTags.forEach(tag => { html += '<span class="risk-tag">' + escapeHtml(tag.zh || tag) + '</span>'; });
+          html += '</div>';
+        }
+        html += '</div><div class="signal-summary-meta">';
+        if (pred.trustScore) {
+          html += '<div class="trust-meter"><span class="trust-value" style="--trust-color:' + getTrustColor(pred.trustScore) + '">' + pred.trustScore + '</span><div class="trust-bar"><span style="--trust:' + pred.trustScore + '%;background:' + getTrustColor(pred.trustScore) + '"></span></div></div>';
+        }
+        if (isPremium) html += '<span class="badge badge-premium">🔒 会员</span>';
+        html += '</div></div>';
+        if (pred.analysisItems?.length) {
+          html += '<div class="signal-summary-trend"><ul class="prediction-analysis-list">';
+          pred.analysisItems.forEach(item => { html += '<li>' + escapeHtml(item.zh || item) + '</li>'; });
+          html += '</ul></div>';
+        }
+        html += '</div>';
+      });
+
+      // Professional framework
+      html += renderProfessionalFramework(m);
+      return html;
+    }
+
+    function renderProfessionalFramework(m) {
+      let html = '<div class="professional-framework-card" style="margin-top:1rem">';
+      html += '<div class="professional-framework-head"><div><h3>专业分析框架</h3><p>12 项赛前分析框架，每项只使用已接入的官方赛程、让球、快照与历史赛果；缺失数据会直接标记不足。</p></div><span>12 项</span></div>';
+      html += '<div class="professional-framework-grid">';
+
+      const items = [
+        { title: '一、比赛基本面', text: '排名、积分、净胜球和阶段目标暂未接入，因此不把这些当作结论依据。' },
+        { title: '二、近期状态', text: '近一年官方历史样本用于辅助，不替代实时阵容和过程数据。' },
+        { title: '三、主客场表现', text: '当前只从近一年已完场官方结果追溯球队样本，未接入完整主客场积分榜。' },
+        { title: '四、进攻能力', text: '用官方 SP 反推进攻热区和总进球倾向；射门、射正等过程数据不足。' },
+        { title: '五、防守能力', text: '防守稳定性只参考官方赛果、比分和风险标签；被射门等暂未接入。' },
+        { title: '六、伤停与首发', text: '该项数据不足：当前未接入可验证的官方伤停、预计首发。' },
+        { title: '七、战术克制', text: '阵型、高压、反击等暂未接入可验证来源，本场不编造战术细节。' },
+        { title: '八、赛程体能与战意', text: '休息天数、连续客场、杯赛轮换等暂未接入。' },
+        { title: '九、历史交锋', text: '近一年已匹配双方正式交锋；样本会因阵容变化降低参考价值。' },
+        { title: '十、天气场地裁判', text: '该项数据不足：暂无官方天气、场地和裁判数据。' },
+        { title: '十一、赔率盘口', text: '基于中国竞彩网官方 SP 快照和让球盘分析。' },
+        { title: '十二、综合结论', text: '综合以上 11 项，给出稳妥方向、激进方向和风险点。' },
+      ];
+      items.forEach(item => {
+        html += '<div class="professional-framework-item"><strong>' + item.title + '</strong><p>' + item.text + '</p></div>';
+      });
+      html += '</div></div>';
+      return html;
+    }
+
+    function renderDetailProbability(m) {
+      const pm = m.probabilityModel;
+      if (!pm) return '<div class="empty-state"><p>等待模型输出</p></div>';
+
+      let html = '<div class="probability-model-card">';
+      html += '<div class="probability-model-head"><div><h3>概率预测系统</h3><p>' + escapeHtml(pm.basis?.zh || '') + '</p></div><span>' + (pm.version || '') + '</span></div>';
+
+      // 1X2
+      if (pm.oneXTwo) {
+        html += '<div class="card" style="margin-bottom:1rem"><h4 style="margin-bottom:.75rem">胜平负概率</h4>';
+        html += '<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:.75rem">';
+        ['home','draw','away'].forEach(side => {
+          const label = side === 'home' ? '主胜' : side === 'draw' ? '平局' : '客胜';
+          const final = pm.oneXTwo.final?.[side];
+          const market = pm.oneXTwo.market?.[side];
+          const elo = pm.oneXTwo.elo?.[side];
+          const poisson = pm.oneXTwo.poisson?.[side];
+          html += '<div class="probability-panel"><h4>' + label + '</h4>';
+          if (final !== undefined) html += '<div class="probability-outcome"><div><span>最终</span><strong>' + final.toFixed(1) + '%</strong></div><em style="width:' + final + '%"></em></div>';
+          html += '<div class="probability-subline">';
+          if (market !== undefined) html += '<span>市场去水 ' + market.toFixed(1) + '%</span>';
+          if (elo !== undefined) html += '<span>Elo ' + elo.toFixed(1) + '%</span>';
+          if (poisson !== undefined) html += '<span>Poisson ' + poisson.toFixed(1) + '%</span>';
+          html += '</div></div>';
+        });
+        html += '</div>';
+        if (pm.ensembleWeights) {
+          html += '<div style="margin-top:.75rem;padding-top:.75rem;border-top:1px solid hsl(var(--border))"><span class="probability-weight-line">集成权重：</span>';
+          Object.entries(pm.ensembleWeights).forEach(([k,v]) => { html += ' <span class="badge">' + k + ' ' + (v*100).toFixed(0) + '%</span>'; });
+          html += '</div>';
+        }
+        html += '</div>';
+      }
+
+      // Elo
+      if (pm.elo) {
+        html += '<div class="card" style="margin-bottom:1rem"><h4 style="margin-bottom:.5rem">Elo 强度</h4>';
+        html += '<div style="display:grid;grid-template-columns:1fr 1fr;gap:.75rem">';
+        html += '<div><span style="color:hsl(var(--text-muted));font-size:.78rem">主队评分</span><strong style="display:block;font-size:1.1rem">' + (pm.elo.homeRating || '—') + '</strong></div>';
+        html += '<div><span style="color:hsl(var(--text-muted));font-size:.78rem">客队评分</span><strong style="display:block;font-size:1.1rem">' + (pm.elo.awayRating || '—') + '</strong></div>';
+        html += '</div>';
+        if (pm.elo.diff) html += '<p style="margin-top:.5rem;color:hsl(var(--text-muted));font-size:.78rem">差距: ' + pm.elo.diff + '</p>';
+        html += '</div>';
+      }
+
+      // Score distribution
+      if (pm.scoreDistribution?.length) {
+        html += '<div class="card" style="margin-bottom:1rem"><h4 style="margin-bottom:.5rem">比分分布</h4><div class="score-probability-list">';
+        pm.scoreDistribution.forEach(s => {
+          html += '<span>' + (s.home||0) + '-' + (s.away||0) + '<strong>' + (s.probability?.toFixed(1)||'') + '%</strong></span>';
+        });
+        html += '</div></div>';
+      }
+
+      // Goal lines
+      if (pm.goalLines) {
+        html += '<div class="card" style="margin-bottom:1rem"><h4 style="margin-bottom:.5rem">进球概率</h4><div class="score-probability-list">';
+        Object.entries(pm.goalLines).forEach(([k,v]) => {
+          const label = k === 'over25' ? '大2.5球' : k === 'under25' ? '小2.5球' : k;
+          html += '<span>' + label + '<strong>' + (typeof v === 'number' ? v.toFixed(1)+'%' : v) + '</strong></span>';
+        });
+        html += '</div></div>';
+      }
+
+      // BTTS
+      if (pm.bothTeamsToScore) {
+        html += '<div class="card" style="margin-bottom:1rem"><h4 style="margin-bottom:.5rem">双方进球</h4><div class="probability-pair-grid">';
+        if (pm.bothTeamsToScore.yes !== undefined) html += '<span>是<strong>' + pm.bothTeamsToScore.yes.toFixed(1) + '%</strong></span>';
+        if (pm.bothTeamsToScore.no !== undefined) html += '<span>否<strong>' + pm.bothTeamsToScore.no.toFixed(1) + '%</strong></span>';
+        html += '</div></div>';
+      }
+
+      // Handicap
+      if (pm.handicap) {
+        html += '<div class="card" style="margin-bottom:1rem"><h4 style="margin-bottom:.5rem">让球概率 (' + (pm.handicap.line || '') + ')</h4>';
+        html += '<div style="display:grid;grid-template-columns:1fr 1fr;gap:.75rem">';
+        if (pm.handicap.market) {
+          html += '<div><span style="color:hsl(var(--text-muted));font-size:.78rem">市场</span><div class="score-probability-list">';
+          html += '<span>主<strong>' + pm.handicap.market.home?.toFixed(1) + '%</strong></span>';
+          html += '<span>平<strong>' + pm.handicap.market.draw?.toFixed(1) + '%</strong></span>';
+          html += '<span>客<strong>' + pm.handicap.market.away?.toFixed(1) + '%</strong></span>';
+          html += '</div></div>';
+        }
+        if (pm.handicap.poisson) {
+          html += '<div><span style="color:hsl(var(--text-muted));font-size:.78rem">Poisson</span><div class="score-probability-list">';
+          html += '<span>主<strong>' + pm.handicap.poisson.home?.toFixed(1) + '%</strong></span>';
+          html += '<span>平<strong>' + pm.handicap.poisson.draw?.toFixed(1) + '%</strong></span>';
+          html += '<span>客<strong>' + pm.handicap.poisson.away?.toFixed(1) + '%</strong></span>';
+          html += '</div></div>';
+        }
+        html += '</div></div>';
+      }
+
+      // Calibration
+      if (pm.calibration) {
+        html += '<div class="card" style="margin-bottom:1rem"><h4 style="margin-bottom:.5rem">校准状态</h4>';
+        html += '<p style="color:hsl(var(--text-secondary));font-size:.82rem">' + escapeHtml(pm.calibration.zh || pm.calibration.status || '') + '</p></div>';
+      }
+
+      html += '</div>';
+      return html;
+    }
+
+    function renderDetailStats(m) {
+      let html = '';
+      // xG & match stats
+      if (m.stats) {
+        html += '<div class="card" style="margin-bottom:1rem"><h4 style="margin-bottom:.75rem">模型参数预测</h4>';
+        html += '<div class="insight-metric-grid">';
+        const items = [
+          ['期望进球 主', m.stats.xG?.home?.toFixed(2)], ['期望进球 客', m.stats.xG?.away?.toFixed(2)],
+          ['控球率 主', m.stats.possession?.home ? m.stats.possession.home+'%' : null], ['控球率 客', m.stats.possession?.away ? m.stats.possession.away+'%' : null],
+          ['射门数 主', m.stats.shots?.home], ['射门数 客', m.stats.shots?.away],
+          ['射正数 主', m.stats.shotsOnTarget?.home], ['射正数 客', m.stats.shotsOnTarget?.away],
+          ['角球 主', m.stats.corners?.home], ['角球 客', m.stats.corners?.away],
+          ['犯规 主', m.stats.fouls?.home], ['犯规 客', m.stats.fouls?.away],
+          ['黄牌 主', m.stats.yellowCards?.home], ['黄牌 客', m.stats.yellowCards?.away],
+        ];
+        items.forEach(([label, val]) => {
+          html += '<div class="insight-metric"><span>' + label + '</span><strong>' + (val ?? '—') + '</strong></div>';
+        });
+        html += '</div></div>';
+      }
+
+      // Projected score
+      if (m.projectedScoreHome !== undefined) {
+        html += '<div class="card" style="margin-bottom:1rem"><h4 style="margin-bottom:.5rem">比分推演</h4>';
+        html += '<div style="text-align:center;font-size:2rem;font-weight:900;font-family:var(--font-title);color:hsl(var(--primary))">' + m.projectedScoreHome + ' - ' + m.projectedScoreAway + '</div>';
+        html += '<p style="text-align:center;color:hsl(var(--text-muted));font-size:.78rem">模型预测比分</p></div>';
+      }
+
+      if (!m.stats && m.projectedScoreHome === undefined) {
+        html += '<div class="empty-state"><p>这场比赛当前只有官方赛果记录，没有可验证的赛前模型参数，因此不展示模拟统计。</p></div>';
+      }
+      return html;
+    }
+
+    function renderDetailHistory(m) {
+      if (!historyData.length) {
+        return '<div class="empty-state"><p>历史数据加载中...</p></div>';
+      }
+      const teamName = m.homeTeamName;
+      const awayName = m.awayTeamName;
+      const homeHistory = historyData.filter(h => h.homeTeamName === teamName || h.awayTeamName === teamName).slice(0, 10);
+      const awayHistory = historyData.filter(h => h.homeTeamName === awayName || h.awayTeamName === awayName).slice(0, 10);
+
+      let html = '<div class="team-history-card">';
+      html += '<div class="history-card-head"><h3>双方近一年官方赛果</h3><p>从已同步的中国竞彩网历史赛果中追溯近一年同队比赛，单队最多展示最近 10 场。</p></div>';
+      html += '<div class="team-history-grid">';
+
+      // Home team history
+      html += '<div class="team-history-column"><h5>' + escapeHtml(teamName || '主队') + '</h5><div class="team-history-list">';
+      if (homeHistory.length) {
+        homeHistory.forEach(h => {
+          const isHome = h.homeTeamName === teamName;
+          const opponent = isHome ? h.awayTeamName : h.homeTeamName;
+          const score = isHome ? (h.scoreHome + '-' + h.scoreAway) : (h.scoreAway + '-' + h.scoreHome);
+          const won = isHome ? h.scoreHome > h.scoreAway : h.scoreAway > h.scoreHome;
+          const draw = h.scoreHome === h.scoreAway;
+          html += '<div class="team-history-row"><div class="history-row-copy"><strong>' + escapeHtml(opponent || '') + '</strong>';
+          html += '<div class="history-row-meta"><span>' + (h.leagueName || '') + '</span><span>' + formatDateShort(h.kickoffTime) + '</span></div></div>';
+          html += '<span class="history-score ' + (won ? 'is-win' : draw ? '' : 'is-loss') + '">' + score + '</span></div>';
+        });
+      } else {
+        html += '<div class="history-empty">近一年历史库暂无该队已完场记录</div>';
+      }
+      html += '</div></div>';
+
+      // Away team history
+      html += '<div class="team-history-column"><h5>' + escapeHtml(awayName || '客队') + '</h5><div class="team-history-list">';
+      if (awayHistory.length) {
+        awayHistory.forEach(h => {
+          const isHome = h.homeTeamName === awayName;
+          const opponent = isHome ? h.awayTeamName : h.homeTeamName;
+          const score = isHome ? (h.scoreHome + '-' + h.scoreAway) : (h.scoreAway + '-' + h.scoreHome);
+          const won = isHome ? h.scoreHome > h.scoreAway : h.scoreAway > h.scoreHome;
+          const draw = h.scoreHome === h.scoreAway;
+          html += '<div class="team-history-row"><div class="history-row-copy"><strong>' + escapeHtml(opponent || '') + '</strong>';
+          html += '<div class="history-row-meta"><span>' + (h.leagueName || '') + '</span><span>' + formatDateShort(h.kickoffTime) + '</span></div></div>';
+          html += '<span class="history-score ' + (won ? 'is-win' : draw ? '' : 'is-loss') + '">' + score + '</span></div>';
+        });
+      } else {
+        html += '<div class="history-empty">近一年历史库暂无该队已完场记录</div>';
+      }
+      html += '</div></div>';
+
+      html += '</div></div>';
+      return html;
+    }
+
+    function renderDetailH2H(m) {
+      if (!historyData.length) {
+        return '<div class="empty-state"><p>历史数据加载中...</p></div>';
+      }
+      const teamA = m.homeTeamName;
+      const teamB = m.awayTeamName;
+      const h2h = historyData.filter(h =>
+        (h.homeTeamName === teamA && h.awayTeamName === teamB) ||
+        (h.homeTeamName === teamB && h.awayTeamName === teamA)
+      ).slice(0, 10);
+
+      let html = '<div class="h2h-card">';
+      html += '<div class="history-card-head"><h3>近一年直接交锋</h3><p>仅展示当前历史库里近一年已同步到的双方正式交锋结果。</p></div>';
+      html += '<div class="h2h-list">';
+      if (h2h.length) {
+        h2h.forEach(h => {
+          html += '<div class="h2h-row"><div class="h2h-match-line">';
+          html += '<span>' + escapeHtml(h.homeTeamName || '') + '</span>';
+          html += '<strong>' + (h.scoreHome ?? '?') + ' - ' + (h.scoreAway ?? '?') + '</strong>';
+          html += '<span>' + escapeHtml(h.awayTeamName || '') + '</span>';
+          html += '</div>';
+          html += '<div class="history-row-meta" style="margin-top:.25rem"><span>' + (h.leagueName || '') + '</span><span>' + formatDateShort(h.kickoffTime) + '</span></div>';
+          html += '</div>';
+        });
+      } else {
+        html += '<div class="history-empty">近一年官方历史库暂未匹配到这两队的直接交锋。</div>';
+      }
+      html += '</div></div>';
+      return html;
+    }
+
+    // ==================== PAGE: HISTORY (历史赛果) ====================
+    function renderHistoryPage() {
+      let html = '';
+      html += '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.5rem">';
+      html += '<h2 style="font-family:var(--font-title);font-size:1.35rem;font-weight:950">历史赛果</h2>';
+      html += refreshBtnHtml(false);
+      html += '</div>';
+      html += '<p style="color:hsl(var(--text-secondary));font-size:.84rem;margin-bottom:1.25rem">近一年官方历史库，共 ' + historyData.length + ' 场已完场记录。</p>';
+
+      // 从数据中动态提取联赛列表，按比赛数量排序
+      const leagueCount = {};
+      historyData.forEach(m => {
+        if (m.leagueName) leagueCount[m.leagueName] = (leagueCount[m.leagueName] || 0) + 1;
+      });
+      const leagues = Object.entries(leagueCount)
+        .sort((a, b) => b[1] - a[1])
+        .map(([name, count]) => ({ name, count }));
+
+      // Date filter
+      html += '<div class="date-toolbar" style="margin-bottom:1rem">';
+      html += '<div class="history-date-select"><span style="color:hsl(var(--text-muted));font-size:.82rem;font-weight:700">赛事筛选</span>';
+      html += '<select onchange="filterHistoryByLeague(this.value)"><option value="">全部赛事 (' + historyData.length + ')</option>';
+      leagues.forEach(l => {
+        html += '<option value="' + escapeHtml(l.name) + '">' + escapeHtml(l.name) + ' (' + l.count + ')</option>';
+      });
+      html += '</select></div>';
+      html += '<span style="color:hsl(var(--text-muted));font-size:.78rem">共 ' + leagues.length + ' 个赛事</span>';
+      html += '</div>';
+
+      // History table
+      html += '<div id="historyTableContainer">';
+      html += renderHistoryTable(historyData);
+      html += '</div>';
+
+      return html;
+    }
+
+    let historyFilterLeague = '';
+    function filterHistoryByLeague(league) {
+      historyFilterLeague = league;
+      historyPage = 1; // 重置分页
+      const filtered = league ? historyData.filter(m => m.leagueName === league) : historyData;
+      document.getElementById('historyTableContainer').innerHTML = renderHistoryTable(filtered);
+    }
+
+    function renderHistoryTable(data) {
+      const pageData = data.slice(0, historyPage * HISTORY_PAGE_SIZE);
+      let html = '<div class="league-card"><div class="table-scroll"><table class="responsive-table">';
+      html += '<thead><tr><th>日期</th><th>赛事</th><th>主队</th><th>比分</th><th>客队</th><th>操作</th></tr></thead><tbody>';
+
+      pageData.forEach(m => {
+        const draw = m.scoreHome === m.scoreAway;
+        const homeWin = m.scoreHome > m.scoreAway;
+        html += '<tr class="match-row">';
+        html += '<td data-label="日期"><span style="font-size:.82rem">' + formatDateShort(m.kickoffTime) + '</span></td>';
+        html += '<td data-label="赛事"><span class="badge">' + escapeHtml(m.leagueName || '—') + '</span></td>';
+        html += '<td data-label="主队"><div class="team-line">' + getTeamBadgeHtml(m.homeTeamName, m.homeTeamLogo, m.homeTeamLogoType, m.homeTeamColor) + '<span class="team-name">' + escapeHtml(m.homeTeamName || '未知') + '</span></div></td>';
+        html += '<td data-label="比分"><span class="history-score ' + (homeWin ? 'is-win' : draw ? '' : 'is-loss') + '" style="font-size:1rem">' + (m.scoreHome ?? '?') + ' - ' + (m.scoreAway ?? '?') + '</span></td>';
+        html += '<td data-label="客队"><div class="team-line">' + getTeamBadgeHtml(m.awayTeamName, m.awayTeamLogo, m.awayTeamLogoType, m.awayTeamColor) + '<span class="team-name">' + escapeHtml(m.awayTeamName || '未知') + '</span></div></td>';
+        html += '<td data-label="操作"><button class="details-button" onclick="navigateTo(\'detail\',{matchId:\'' + m.id + '\'})">查看</button></td>';
+        html += '</tr>';
+      });
+
+      html += '</tbody></table></div></div>';
+      if (data.length > pageData.length) {
+        html += '<div style="text-align:center;margin-top:1rem"><button class="btn btn-secondary" onclick="loadMoreHistory()">加载更多 (' + pageData.length + '/' + data.length + ')</button></div>';
+      }
+      return html;
+    }
+
+    function loadMoreHistory() {
+      historyPage++;
+      const filtered = historyFilterLeague ? historyData.filter(m => m.leagueName === historyFilterLeague) : historyData;
+      document.getElementById('historyTableContainer').innerHTML = renderHistoryTable(filtered);
+    }
+
+    // ==================== 时区设置 ====================
+    const TIMEZONES = [
+      { id: 'Asia/Shanghai', label: '北京时间', offset: 8, flag: '🇨🇳' },
+      { id: 'Asia/Tokyo', label: '东京时间', offset: 9, flag: '🇯🇵' },
+      { id: 'Europe/London', label: '伦敦时间', offset: 0, flag: '🇬🇧' },
+      { id: 'Europe/Berlin', label: '柏林时间', offset: 1, flag: '🇩🇪' },
+      { id: 'America/New_York', label: '纽约时间', offset: -5, flag: '🇺🇸' },
+      { id: 'America/Los_Angeles', label: '洛杉矶时间', offset: -8, flag: '🇺🇸' },
+    ];
+    let currentTimezone = localStorage.getItem('fp_timezone') || 'Asia/Shanghai';
+
+    function getTimezone() {
+      return TIMEZONES.find(tz => tz.id === currentTimezone) || TIMEZONES[0];
+    }
+
+    function setTimezone(tzId) {
+      currentTimezone = tzId;
+      localStorage.setItem('fp_timezone', tzId);
+      renderPage();
+      updateBetslipPanel();
+    }
+
+    // 格式化时间 (带时区转换)
+    function formatTimeTz(isoStr) {
+      if (!isoStr) return '--:--';
+      const d = new Date(isoStr);
+      const tz = getTimezone();
+      // 获取 UTC 时间，然后加上时区偏移
+      const utc = d.getTime() + d.getTimezoneOffset() * 60000;
+      const local = new Date(utc + tz.offset * 3600000);
+      return String(local.getHours()).padStart(2, '0') + ':' + String(local.getMinutes()).padStart(2, '0');
+    }
+
+    function formatDateTz(isoStr) {
+      if (!isoStr) return '';
+      const d = new Date(isoStr);
+      const tz = getTimezone();
+      const utc = d.getTime() + d.getTimezoneOffset() * 60000;
+      const local = new Date(utc + tz.offset * 3600000);
+      return (local.getMonth() + 1) + '/' + local.getDate();
+    }
+
+    function formatDateTimeTz(isoStr) {
+      if (!isoStr) return '';
+      const d = new Date(isoStr);
+      const tz = getTimezone();
+      const utc = d.getTime() + d.getTimezoneOffset() * 60000;
+      const local = new Date(utc + tz.offset * 3600000);
+      const mm = String(local.getMonth() + 1).padStart(2, '0');
+      const dd = String(local.getDate()).padStart(2, '0');
+      const hh = String(local.getHours()).padStart(2, '0');
+      const mi = String(local.getMinutes()).padStart(2, '0');
+      return mm + '/' + dd + ' ' + hh + ':' + mi;
+    }
+
+    function leagueFilterHtml() {
+      // 从当前赛事数据中提取联赛列表
+      const leagueCount = {};
+      matchesData.filter(m => m.status !== 'FINISHED').forEach(m => {
+        if (m.leagueName) leagueCount[m.leagueName] = (leagueCount[m.leagueName] || 0) + 1;
+      });
+      const leagues = Object.entries(leagueCount)
+        .sort((a, b) => b[1] - a[1])
+        .map(([name, count]) => ({ name, count }));
+
+      if (leagues.length <= 1) return ''; // 只有一个联赛时不显示
+
+      let html = '<div class="history-date-select" style="min-width:auto">';
+      html += '<select onchange="selectLeague(this.value)">';
+      html += '<option value="">全部赛事</option>';
+      leagues.forEach(l => {
+        html += '<option value="' + escapeHtml(l.name) + '"' + (selectedLeague === l.name ? ' selected' : '') + '>' + escapeHtml(l.name) + ' (' + l.count + ')</option>';
+      });
+      html += '</select></div>';
+      return html;
+    }
+
+    function selectLeague(league) {
+      selectedLeague = league;
+      renderMetrics();
+      renderLeagueStack();
+    }
+
+    function timezoneSelectorHtml() {
+      const tz = getTimezone();
+      let html = '<div class="history-date-select" style="min-width:auto">';
+      html += '<select onchange="setTimezone(this.value)">';
+      TIMEZONES.forEach(t => {
+        html += '<option value="' + t.id + '"' + (t.id === currentTimezone ? ' selected' : '') + '>' + t.flag + ' ' + t.label + '</option>';
+      });
+      html += '</select></div>';
+      return html;
+    }
+
+    // ==================== 投注单状态 ====================
+    // 当前正在编辑的投注项 (购物车)
+    let betSlipItems = []; // [{matchId, homeTeam, awayTeam, league, pick, pickLabel, odds}]
+    let betSlipMode = 'single'; // single = 单关, parlay = 串关
+    let betSlipStake = 10; // 每注金额
+
+    // 添加/移除投注项
+    function toggleBetItem(matchId, pick, pickLabel, odds, homeTeam, awayTeam, league) {
+      const idx = betSlipItems.findIndex(b => b.matchId === matchId);
+      if (idx >= 0) {
+        if (betSlipItems[idx].pick === pick) {
+          betSlipItems.splice(idx, 1); // 取消
+        } else {
+          betSlipItems[idx] = { matchId, homeTeam, awayTeam, league, pick, pickLabel, odds };
+        }
+      } else {
+        betSlipItems.push({ matchId, homeTeam, awayTeam, league, pick, pickLabel, odds });
+      }
+      updateBetslipPanel();
+    }
+
+    function removeBetItem(matchId) {
+      betSlipItems = betSlipItems.filter(b => b.matchId !== matchId);
+      updateBetslipPanel();
+      if (currentPage === 'betslip') renderPage();
+    }
+
+    function clearBetSlip() {
+      betSlipItems = [];
+      updateBetslipPanel();
+      if (currentPage === 'betslip') renderPage();
+    }
+
+    function setBetSlipMode(mode) {
+      betSlipMode = mode;
+      if (currentPage === 'betslip') renderPage();
+      updateBetslipPanel();
+    }
+
+    // 计算当前选择的总赔率
+    function calcCurrentOdds() {
+      if (betSlipItems.length === 0) return 0;
+      return betSlipMode === 'parlay'
+        ? betSlipItems.reduce((acc, b) => acc * (b.odds || 1), 1)
+        : betSlipItems.reduce((acc, b) => acc + (b.odds || 1), 0);
+    }
+
+    function updateBetslipPanel() {
+      let panel = document.getElementById('betslipFloat');
+      if (!panel) return;
+      if (betSlipItems.length === 0) {
+        panel.style.display = 'none';
+        return;
+      }
+      panel.style.display = 'flex';
+      const totalOdds = calcCurrentOdds();
+      const potentialWin = betSlipMode === 'parlay'
+        ? (betSlipStake * totalOdds).toFixed(2)
+        : betSlipItems.reduce((acc, b) => acc + betSlipStake * (b.odds || 1), 0).toFixed(2);
+
+      panel.innerHTML =
+        '<div style="display:flex;align-items:center;gap:.75rem">' +
+          '<span class="badge badge-success">' + betSlipItems.length + ' 场</span>' +
+          '<span style="font-size:.82rem">' + (betSlipMode === 'parlay' ? '串关' : '单关') + '</span>' +
+        '</div>' +
+        '<button class="btn btn-primary" style="padding:.45rem 1rem" onclick="navigateTo(\'betslip\')">查看 · 预计 ' + potentialWin + '</button>';
+    }
+
+    // ==================== PAGE: BETSLIP (投注单) ====================
+    function renderBetslipPage() {
+      const scheduled = matchesData.filter(m => m.status === 'SCHEDULED');
+      const user = getCurrentUser();
+      let html = '';
+
+      html += '<h2 style="font-family:var(--font-title);font-size:1.35rem;font-weight:950;margin-bottom:.25rem">投注单</h2>';
+      html += '<p style="color:hsl(var(--text-secondary));font-size:.84rem;margin-bottom:1.25rem">点击赔率选比赛 → 选好后提交为一注 → 可以反复下多注。</p>';
+
+      // ========== 当前选择 (购物车) ==========
+      html += '<div class="card" style="margin-bottom:1rem;border-color:hsl(var(--primary)/.3)">';
+      html += '<div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:.5rem;margin-bottom:.75rem">';
+      html += '<h3>当前选择 <span class="badge">' + betSlipItems.length + ' 场</span></h3>';
+      html += '<div class="segmented">';
+      html += '<button class="segment-btn ' + (betSlipMode === 'single' ? 'active' : '') + '" onclick="setBetSlipMode(\'single\')">单关</button>';
+      html += '<button class="segment-btn ' + (betSlipMode === 'parlay' ? 'active' : '') + '" onclick="setBetSlipMode(\'parlay\')">串关</button>';
+      html += '</div></div>';
+
+      if (betSlipItems.length === 0) {
+        html += '<div style="text-align:center;padding:1.5rem;color:hsl(var(--text-muted));font-size:.86rem">';
+        html += '在下方比赛列表中点击赔率，添加到投注单';
+        html += '</div>';
+      } else {
+        // 已选列表
+        betSlipItems.forEach((item, i) => {
+          html += '<div style="display:flex;justify-content:space-between;align-items:center;padding:.5rem 0;' + (i > 0 ? 'border-top:1px solid hsl(var(--border))' : '') + '">';
+          html += '<div style="min-width:0">';
+          html += '<span style="color:hsl(var(--text-muted));font-size:.72rem">' + escapeHtml(item.league || '') + '</span><br>';
+          html += '<span style="font-size:.84rem;font-weight:700">' + escapeHtml(item.homeTeam) + ' vs ' + escapeHtml(item.awayTeam) + '</span>';
+          html += '</div>';
+          html += '<div style="display:flex;align-items:center;gap:.5rem;flex:none">';
+          html += '<span class="badge badge-success">' + escapeHtml(item.pickLabel) + '</span>';
+          html += '<strong style="color:hsl(var(--primary))">' + (item.odds || '—') + '</strong>';
+          html += '<button style="background:none;border:none;color:hsl(var(--text-muted));cursor:pointer;font-size:1.1rem" onclick="removeBetItem(\'' + item.matchId + '\')">×</button>';
+          html += '</div></div>';
+        });
+
+        // 金额 + 收益
+        const totalOdds = calcCurrentOdds();
+        const totalStake = betSlipMode === 'parlay' ? betSlipStake : betSlipStake * betSlipItems.length;
+        const potentialWin = betSlipMode === 'parlay'
+          ? (betSlipStake * totalOdds).toFixed(2)
+          : betSlipItems.reduce((acc, b) => acc + betSlipStake * (b.odds || 1), 0).toFixed(2);
+
+        html += '<div style="border-top:1px solid hsl(var(--border));padding-top:.75rem;margin-top:.5rem">';
+        html += '<div style="display:flex;align-items:center;gap:.5rem;flex-wrap:wrap;margin-bottom:.75rem">';
+        html += '<span style="font-size:.82rem;color:hsl(var(--text-muted))">每注:</span>';
+        [5, 10, 20, 50, 100].forEach(v => {
+          html += '<button class="filter-chip ' + (betSlipStake === v ? 'active' : '') + '" style="min-width:2.5rem" onclick="betSlipStake=' + v + ';updateBetslipPanel();renderPage()">' + v + '</button>';
+        });
+        html += '</div>';
+
+        html += '<div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:.5rem;text-align:center;margin-bottom:.75rem">';
+        html += '<div><div style="font-size:.72rem;color:hsl(var(--text-muted))">本金</div><strong>' + totalStake + '</strong></div>';
+        html += '<div><div style="font-size:.72rem;color:hsl(var(--text-muted))">赔率</div><strong style="color:hsl(var(--premium))">' + totalOdds.toFixed(2) + 'x</strong></div>';
+        html += '<div><div style="font-size:.72rem;color:hsl(var(--text-muted))">预计收益</div><strong style="color:hsl(var(--success))">' + potentialWin + '</strong></div>';
+        html += '</div>';
+
+        html += '<div style="display:flex;gap:.5rem">';
+        html += '<button class="btn btn-secondary" style="flex:1" onclick="clearBetSlip()">清空</button>';
+        html += '<button class="btn btn-primary" style="flex:2" onclick="submitBetslip()">确认下注</button>';
+        html += '</div>';
+        html += '</div>';
+      }
+      html += '</div>';
+
+      // ========== 我的注单 (已提交) ==========
+      if (user) {
+        const userData = getUserData(user);
+        if (userData.betslips.length > 0) {
+          html += '<div class="card" style="margin-bottom:1rem">';
+          html += '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.75rem">';
+          html += '<h3>我的注单 <span class="badge">' + userData.betslips.length + ' 注</span></h3>';
+          html += '</div>';
+
+          const sorted = [...userData.betslips].reverse();
+          sorted.forEach((slip, idx) => {
+            const mode = slip.mode === 'parlay' ? '串关' : '单关';
+            html += '<div style="border:1px solid hsl(var(--border));border-radius:var(--radius);padding:.75rem;margin-bottom:.5rem">';
+            html += '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.5rem">';
+            html += '<div><span style="font-size:.78rem;color:hsl(var(--text-muted))">' + slip.createdAt + '</span> ';
+            html += '<span class="badge">' + mode + '</span></div>';
+            html += '<div style="text-align:right"><span style="font-size:.72rem;color:hsl(var(--text-muted))">赔率 </span><strong style="color:hsl(var(--premium))">' + (slip.totalOdds || 0).toFixed(2) + 'x</strong></div>';
+            html += '</div>';
+
+            (slip.picks || []).forEach(p => {
+              html += '<div style="display:flex;justify-content:space-between;align-items:center;font-size:.82rem;padding:.25rem 0">';
+              html += '<span>' + escapeHtml(p.homeTeam || '') + ' vs ' + escapeHtml(p.awayTeam || '') + '</span>';
+              html += '<span style="display:flex;align-items:center;gap:.35rem"><span class="badge badge-success" style="font-size:.7rem">' + escapeHtml(p.pickLabel || p.pick || '') + '</span><strong>' + (p.odds || '—') + '</strong></span>';
+              html += '</div>';
+            });
+
+            if (slip.stake) {
+              html += '<div style="margin-top:.35rem;padding-top:.35rem;border-top:1px dashed hsl(var(--border));font-size:.78rem;color:hsl(var(--text-muted))">';
+              html += '本金: ' + (slip.totalStake || slip.stake) + ' · 预计收益: ' + ((slip.stake || 0) * (slip.totalOdds || 1)).toFixed(2);
+              html += '</div>';
+            }
+            html += '</div>';
+          });
+          html += '</div>';
+        }
+      }
+
+      // ========== 选择比赛 ==========
+      html += '<div style="margin-top:.5rem">';
+      html += '<h3 style="margin-bottom:.75rem">选择比赛</h3>';
+
+      if (!scheduled.length) {
+        html += '<div class="empty-state"><p>当前没有可投注的比赛</p></div>';
+      } else {
+        const groups = {};
+        scheduled.forEach(m => {
+          const key = m.leagueName || '未知赛事';
+          if (!groups[key]) groups[key] = [];
+          groups[key].push(m);
+        });
+
+        Object.entries(groups).forEach(([league, matches]) => {
+          html += '<div class="league-card" style="margin-bottom:1rem">';
+          html += '<div class="league-header"><div class="league-title"><strong>' + escapeHtml(league) + '</strong></div><span class="league-count">' + matches.length + ' 场</span></div>';
+
+          matches.forEach(m => {
+            if (!m.odds) return;
+            const inSlip = betSlipItems.find(b => b.matchId === m.id);
+            const best = getBestPrediction(m);
+
+            html += '<div style="padding:.65rem 1rem;border-bottom:1px solid hsl(var(--border))">';
+            html += '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.35rem">';
+            html += '<span style="color:hsl(var(--text-muted));font-size:.72rem">' + formatTimeTz(m.kickoffTime) + (best ? ' · 可信 ' + best.trustScore : '') + '</span>';
+            if (m.matchNo) html += '<span style="color:hsl(var(--text-muted));font-size:.72rem">' + m.matchNo + '</span>';
+            html += '</div>';
+
+            html += '<div style="display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:.35rem;margin-bottom:.35rem">';
+            html += '<div style="display:flex;align-items:center;gap:.3rem">' + getTeamBadgeHtml(m.homeTeamName, m.homeTeamLogo, m.homeTeamLogoType, m.homeTeamColor) + '<span style="font-size:.82rem;font-weight:700">' + escapeHtml(m.homeTeamName) + '</span></div>';
+            html += '<span style="color:hsl(var(--text-muted));font-size:.72rem">VS</span>';
+            html += '<div style="display:flex;align-items:center;gap:.3rem;justify-content:flex-end">' + getTeamBadgeHtml(m.awayTeamName, m.awayTeamLogo, m.awayTeamLogoType, m.awayTeamColor) + '<span style="font-size:.82rem;font-weight:700">' + escapeHtml(m.awayTeamName) + '</span></div>';
+            html += '</div>';
+
+            html += '<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:.3rem">';
+            [
+              { pick: '1', label: '主胜', odds: m.odds.odds1 },
+              { pick: 'X', label: '平局', odds: m.odds.oddsX },
+              { pick: '2', label: '客胜', odds: m.odds.odds2 },
+            ].forEach(opt => {
+              const isActive = inSlip && inSlip.pick === opt.pick;
+              html += '<button class="btn ' + (isActive ? 'btn-primary' : 'btn-secondary') + '" style="padding:.3rem;font-size:.76rem;flex-direction:column;gap:0" onclick="toggleBetItem(\'' + m.id + '\',\'' + opt.pick + '\',\'' + opt.label + '\',' + opt.odds + ',\'' + escapeJs(m.homeTeamName) + '\',\'' + escapeJs(m.awayTeamName) + '\',\'' + escapeJs(m.leagueName || '') + '\');updateBetslipPanel()">';
+              html += '<span>' + opt.label + '</span><strong>' + opt.odds + '</strong></button>';
+            });
+            html += '</div></div>';
+          });
+          html += '</div>';
+        });
+      }
+      html += '</div>';
+      return html;
+    }
+
+    function submitBetslip() {
+      if (betSlipItems.length === 0) return;
+
+      const user = getCurrentUser();
+      if (!user) {
+        showAuthModal('login');
+        return;
+      }
+
+      const totalOdds = calcCurrentOdds();
+      const totalStake = betSlipMode === 'parlay' ? betSlipStake : betSlipStake * betSlipItems.length;
+
+      const userData = getUserData(user);
+      userData.betslips.push({
+        id: 'slip_' + Date.now(),
+        createdAt: new Date().toLocaleString('zh-CN'),
+        mode: betSlipMode,
+        stake: betSlipStake,
+        totalOdds: totalOdds,
+        totalStake: totalStake,
+        picks: betSlipItems.map(b => ({ ...b })),
+        settled: false,
+        results: [],
+      });
+      saveUserData(user, userData);
+
+      // 清空购物车，可以继续下注
+      betSlipItems = [];
+      updateBetslipPanel();
+      renderPage();
+    }
+
+    // ==================== PAGE: CHALLENGE (命中挑战) ====================
+    function renderChallengePage() {
+      const user = getCurrentUser();
+      const todayKey = getTodayKey();
+      let todayEntry = null;
+      if (user) {
+        const userData = getUserData(user);
+        todayEntry = userData.challenges.find(c => c.date === todayKey);
+      }
+
+      // 如果今天已提交，显示提交结果
+      if (todayEntry) {
+        return renderChallengeResult(todayEntry);
+      }
+
+      const scheduled = matchesData.filter(m => m.status === 'SCHEDULED').slice(0, 5);
+      let html = '';
+      html += '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:1.5rem">';
+      html += '<div style="text-align:center;flex:1">';
+      html += '<h2 style="font-family:var(--font-title);font-size:1.5rem;font-weight:950">命中赢奖大挑战</h2>';
+      html += '<p style="color:hsl(var(--text-secondary));font-size:.84rem;margin-top:.25rem">展示您的足球推演天赋，完美命中即可免单。</p>';
+      html += '</div>';
+      html += refreshBtnHtml(true);
+      html += '</div>';
+
+      // Rules
+      html += '<div class="card" style="margin-bottom:1.25rem;border-color:hsl(var(--premium)/.3)">';
+      html += '<h3 style="margin-bottom:.75rem">挑战规则</h3>';
+      html += '<ul class="prediction-analysis-list">';
+      html += '<li>平台每日精选 ' + scheduled.length + ' 场热门赛事。</li>';
+      html += '<li>针对每场比赛，选择主胜、平局或客胜；对应竞彩代码为 1、X、2。</li>';
+      html += '<li>每日仅限提交一张竞猜票据，提交后不可修改。</li>';
+      html += '<li>' + scheduled.length + ' 场预测完美命中，即刻赢取平台【终身免费订阅】！</li>';
+      html += '</ul></div>';
+
+      if (!user) {
+        html += '<div class="card" style="margin-bottom:1rem;text-align:center;padding:1.5rem">';
+        html += '<p style="color:hsl(var(--text-secondary));margin-bottom:1rem">登录后可提交今日竞猜</p>';
+        html += '<button class="btn btn-primary" onclick="showAuthModal(\'login\')">登录</button>';
+        html += '</div>';
+      }
+
+      // Match cards
+      if (!scheduled.length) {
+        html += '<div class="empty-state"><p>当前没有可用的比赛</p></div>';
+        return html;
+      }
+
+      html += '<div style="display:grid;gap:1rem">';
+      scheduled.forEach((m, idx) => {
+        const sel = challengeSelections[m.id];
+        html += '<div class="card">';
+        html += '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.75rem">';
+        html += '<span class="badge">' + escapeHtml(m.leagueName || '') + '</span>';
+        html += '<span style="color:hsl(var(--text-muted));font-size:.78rem">' + formatTimeTz(m.kickoffTime) + '</span></div>';
+        html += '<div style="display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:.75rem;margin-bottom:1rem">';
+        html += '<div style="text-align:center">' + getTeamBadgeHtml(m.homeTeamName, m.homeTeamLogo, m.homeTeamLogoType, m.homeTeamColor) + '<div class="team-name" style="margin-top:.35rem">' + escapeHtml(m.homeTeamName || '未知') + '</div></div>';
+        html += '<span style="color:hsl(var(--text-muted));font-weight:700">VS</span>';
+        html += '<div style="text-align:center">' + getTeamBadgeHtml(m.awayTeamName, m.awayTeamLogo, m.awayTeamLogoType, m.awayTeamColor) + '<div class="team-name" style="margin-top:.35rem">' + escapeHtml(m.awayTeamName || '未知') + '</div></div>';
+        html += '</div>';
+        html += '<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:.5rem">';
+        [['1', '主胜', m.odds?.odds1], ['X', '平局', m.odds?.oddsX], ['2', '客胜', m.odds?.odds2]].forEach(([code, label, odds]) => {
+          const isActive = sel === code;
+          html += '<button class="btn ' + (isActive ? 'btn-primary' : 'btn-secondary') + '" style="flex-direction:column;gap:.2rem" onclick="selectChallenge(\'' + m.id + '\',\'' + code + '\')">';
+          html += '<span style="font-size:.78rem">' + label + ' (' + code + ')</span>';
+          html += '<strong>' + (odds || '—') + '</strong>';
+          html += '</button>';
+        });
+        html += '</div></div>';
+      });
+      html += '</div>';
+
+      // Submit area
+      const allSelected = scheduled.every(m => challengeSelections[m.id]);
+      html += '<div style="margin-top:1.25rem;display:flex;gap:.75rem">';
+      html += '<button class="btn btn-secondary" style="flex:1" onclick="resetChallenge()">重置选择</button>';
+      html += '<button class="btn ' + (allSelected ? 'btn-primary' : 'btn-secondary') + '" style="flex:1"' + (allSelected ? '' : ' disabled') + ' onclick="submitChallenge()">提交今日竞猜</button>';
+      html += '</div>';
+
+      return html;
+    }
+
+    function selectChallenge(matchId, code) {
+      challengeSelections[matchId] = code;
+      renderPage();
+    }
+
+    function resetChallenge() {
+      challengeSelections = {};
+      renderPage();
+    }
+
+    function submitChallenge() {
+      const user = getCurrentUser();
+      if (!user) {
+        showAuthModal('login');
+        return;
+      }
+      const scheduled = matchesData.filter(m => m.status === 'SCHEDULED').slice(0, 5);
+      const allSelected = scheduled.every(m => challengeSelections[m.id]);
+      if (!allSelected) {
+        alert('请在提交前完成全部 ' + scheduled.length + ' 场比赛的预测选择！');
+        return;
+      }
+
+      // 保存到用户数据
+      const todayKey = getTodayKey();
+      const userData = getUserData(user);
+      // 检查今天是否已提交
+      const existing = userData.challenges.find(c => c.date === todayKey);
+      if (existing) {
+        alert('您今日已提交过竞猜，不可重复提交。');
+        return;
+      }
+
+      const entry = {
+        date: todayKey,
+        submittedAt: new Date().toISOString(),
+        selections: scheduled.map(m => ({
+          matchId: m.id,
+          homeTeam: m.homeTeamName,
+          awayTeam: m.awayTeamName,
+          league: m.leagueName,
+          kickoffTime: m.kickoffTime,
+          pick: challengeSelections[m.id],
+          pickLabel: challengeSelections[m.id] === '1' ? '主胜' : challengeSelections[m.id] === 'X' ? '平局' : '客胜',
+          result: null, // 赛后更新
+          isHit: null,
+        })),
+        settled: false,
+        hitCount: 0,
+        totalMatches: scheduled.length,
+      };
+
+      userData.challenges.push(entry);
+      saveUserData(user, userData);
+      challengeSelections = {};
+      alert('您已提交今日的命中赢奖竞猜！请关注赛后结算。');
+      navigateTo('mine');
+    }
+
+    // ==================== PAGE: MINE (我的) ====================
+    function renderMinePage() {
+      const user = getCurrentUser();
+      if (!user) {
+        return '<div class="empty-state">' +
+          '<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>' +
+          '<p>请先登录后查看个人数据</p>' +
+          '<button class="btn btn-primary" style="margin-top:1rem" onclick="showAuthModal(\'login\')">登录</button>' +
+          '<button class="btn btn-secondary" style="margin-top:.5rem" onclick="showAuthModal(\'register\')">注册新账户</button>' +
+        '</div>';
+      }
+
+      const userData = getUserData(user);
+      let html = '';
+
+      // 用户信息
+      html += '<div class="card" style="margin-bottom:1.25rem">';
+      html += '<div style="display:flex;justify-content:space-between;align-items:center">';
+      html += '<div><h2 style="font-family:var(--font-title);font-size:1.35rem;font-weight:950">' + escapeHtml(user) + '</h2>';
+      html += '<p style="color:hsl(var(--text-muted));font-size:.82rem">我的竞猜记录</p></div>';
+      html += '<button class="btn btn-secondary" onclick="logoutUser()">退出登录</button>';
+      html += '</div></div>';
+
+      // 命中挑战记录
+      html += '<div class="card" style="margin-bottom:1.25rem">';
+      html += '<h3 style="margin-bottom:1rem">命中挑战记录</h3>';
+
+      if (!userData.challenges.length) {
+        html += '<div class="empty-state" style="min-height:120px"><p>暂无竞猜记录，去参加命中挑战吧！</p></div>';
+      } else {
+        // 按日期倒序
+        const sorted = [...userData.challenges].reverse();
+        sorted.forEach(entry => {
+          const isToday = entry.date === getTodayKey();
+          html += '<div style="border:1px solid hsl(var(--border));border-radius:var(--radius);padding:1rem;margin-bottom:.75rem">';
+          html += '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.75rem">';
+          html += '<div><strong>' + entry.date + '</strong>';
+          if (isToday) html += ' <span class="badge badge-success">今日</span>';
+          html += '</div>';
+
+          if (entry.settled) {
+            const allHit = entry.hitCount === entry.totalMatches;
+            html += '<span class="badge ' + (allHit ? 'badge-success' : 'badge') + '">' + entry.hitCount + '/' + entry.totalMatches + ' 命中</span>';
+          } else {
+            html += '<span class="badge badge-premium">待结算</span>';
+          }
+          html += '</div>';
+
+          // 各场选择
+          html += '<div style="display:grid;gap:.35rem">';
+          entry.selections.forEach(sel => {
+            const hasResult = sel.result !== null && sel.result !== undefined;
+            html += '<div style="display:flex;justify-content:space-between;align-items:center;padding:.4rem 0;border-bottom:1px solid hsl(var(--border));font-size:.82rem">';
+            html += '<div style="min-width:0">';
+            html += '<span style="color:hsl(var(--text-muted));font-size:.72rem">' + escapeHtml(sel.league || '') + '</span><br>';
+            html += '<span>' + escapeHtml(sel.homeTeam) + ' vs ' + escapeHtml(sel.awayTeam) + '</span>';
+            html += '</div>';
+            html += '<div style="display:flex;align-items:center;gap:.5rem;flex:none">';
+            html += '<span style="font-weight:800">' + escapeHtml(sel.pickLabel) + '</span>';
+            if (hasResult) {
+              html += '<span class="badge ' + (sel.isHit ? 'badge-success' : 'badge') + '">' + (sel.isHit ? '✅' : '❌') + '</span>';
+              html += '<span style="color:hsl(var(--text-muted));font-size:.78rem">' + sel.result + '</span>';
+            }
+            html += '</div></div>';
+          });
+          html += '</div></div>';
+        });
+      }
+      html += '</div>';
+
+      // 投注单记录
+      html += '<div class="card">';
+      html += '<h3 style="margin-bottom:1rem">投注单记录</h3>';
+
+      if (!userData.betslips.length) {
+        html += '<div class="empty-state" style="min-height:120px"><p>暂无投注单记录，去投注单页面选择比赛吧</p></div>';
+      } else {
+        const sorted = [...userData.betslips].reverse();
+        sorted.forEach(slip => {
+          const mode = slip.mode === 'parlay' ? '串关' : '单关';
+          html += '<div style="border:1px solid hsl(var(--border));border-radius:var(--radius);padding:1rem;margin-bottom:.75rem">';
+          html += '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.5rem">';
+          html += '<div><span style="color:hsl(var(--text-muted));font-size:.78rem">' + slip.createdAt + '</span> ';
+          html += '<span class="badge">' + mode + '</span></div>';
+          html += '<div style="text-align:right"><div style="font-size:.72rem;color:hsl(var(--text-muted))">赔率</div>';
+          html += '<strong style="color:hsl(var(--premium))">' + (slip.totalOdds || 0).toFixed(2) + 'x</strong></div>';
+          html += '</div>';
+          slip.picks.forEach(p => {
+            html += '<div style="display:flex;justify-content:space-between;align-items:center;font-size:.82rem;padding:.3rem 0;border-bottom:1px solid hsl(var(--border))">';
+            html += '<span>' + escapeHtml(p.homeTeam || '') + ' vs ' + escapeHtml(p.awayTeam || '') + '</span>';
+            html += '<span style="display:flex;align-items:center;gap:.35rem"><span class="badge badge-success" style="font-size:.72rem">' + escapeHtml(p.pickLabel || p.pick || '') + '</span><strong>' + (p.odds || '—') + '</strong></span>';
+            html += '</div>';
+          });
+          if (slip.stake) {
+            html += '<div style="margin-top:.5rem;font-size:.78rem;color:hsl(var(--text-muted))">本金: ' + (slip.totalStake || slip.stake) + ' · 预计收益: ' + ((slip.stake || 0) * (slip.totalOdds || 1)).toFixed(2) + '</div>';
+          }
+          html += '</div>';
+        });
+      }
+      html += '</div>';
+
+      return html;
+    }
+
+    // 显示今日已提交的竞猜结果
+    function renderChallengeResult(entry) {
+      let html = '';
+      html += '<div style="text-align:center;margin-bottom:1.5rem">';
+      html += '<h2 style="font-family:var(--font-title);font-size:1.5rem;font-weight:950">今日竞猜</h2>';
+      html += '<p style="color:hsl(var(--text-secondary));font-size:.84rem;margin-top:.25rem">已提交 · ' + entry.date + '</p>';
+      html += '</div>';
+
+      // 状态卡片
+      html += '<div class="card" style="margin-bottom:1.25rem;text-align:center">';
+      if (entry.settled) {
+        const allHit = entry.hitCount === entry.totalMatches;
+        html += '<div style="font-size:3rem;margin-bottom:.5rem">' + (allHit ? '🎉' : '😢') + '</div>';
+        html += '<h3>' + (allHit ? '全部命中！恭喜！' : entry.hitCount + ' / ' + entry.totalMatches + ' 命中') + '</h3>';
+        if (allHit) {
+          html += '<p style="color:hsl(var(--success));margin-top:.5rem">完美命中，赢取终身免费订阅！</p>';
+        }
+      } else {
+        html += '<div style="font-size:3rem;margin-bottom:.5rem">⏳</div>';
+        html += '<h3>等待比赛结果</h3>';
+        html += '<p style="color:hsl(var(--text-muted));margin-top:.5rem">部分比赛尚未结束，赛后自动结算</p>';
+      }
+      html += '</div>';
+
+      // 各场比赛
+      html += '<div style="display:grid;gap:.75rem">';
+      entry.selections.forEach(sel => {
+        const hasResult = sel.result !== null;
+        html += '<div class="card">';
+        html += '<div style="display:flex;justify-content:space-between;align-items:center">';
+        html += '<div>';
+        html += '<span style="color:hsl(var(--text-muted));font-size:.72rem">' + escapeHtml(sel.league || '') + '</span><br>';
+        html += '<strong>' + escapeHtml(sel.homeTeam) + ' vs ' + escapeHtml(sel.awayTeam) + '</strong>';
+        html += '</div>';
+        html += '<div style="text-align:right">';
+        html += '<div style="font-weight:800">我的选择: ' + escapeHtml(sel.pickLabel) + '</div>';
+        if (hasResult) {
+          html += '<div style="margin-top:.25rem">';
+          html += '<span class="badge ' + (sel.isHit ? 'badge-success' : 'badge') + '">' + (sel.isHit ? '✅ 命中' : '❌ 未中') + '</span>';
+          html += ' <span style="color:hsl(var(--text-muted));font-size:.78rem">比分: ' + sel.result + '</span>';
+          html += '</div>';
+        } else {
+          html += '<span class="badge badge-premium" style="margin-top:.25rem">待结算</span>';
+        }
+        html += '</div></div></div>';
+      });
+      html += '</div>';
+
+      html += '<div style="margin-top:1.25rem;text-align:center">';
+      html += '<button class="btn btn-secondary" onclick="navigateTo(\'mine\')">查看我的记录</button>';
+      html += '</div>';
+
+      return html;
+    }
+
+    // ==================== PAGE: WORLDCUP (世界杯) ====================
+    function renderWorldCupPage() {
+      if (!worldcupData) {
+        return '<div class="empty-state"><p>世界杯数据加载中...</p></div>';
+      }
+
+      const evt = worldcupData.event || {};
+      const groups = worldcupData.groups || [];
+      const contenders = worldcupData.contenders || [];
+      const knockoutStages = worldcupData.knockoutStages || [];
+
+      let html = '';
+
+      // Refresh button
+      html += '<div style="display:flex;justify-content:flex-end;margin-bottom:.5rem">' + refreshBtnHtml(false) + '</div>';
+
+      // Hero panel
+      html += '<div class="worldcup-hero-panel">';
+      html += '<div class="worldcup-hero-copy">';
+      html += '<div class="worldcup-kicker"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/></svg> 世界杯专栏</div>';
+      html += '<h1>' + escapeHtml(evt.name || '世界杯') + '</h1>';
+      html += '<p>世界杯小组赛与淘汰赛预测已接入。先展示 A~L 组基准预测、32 强路径和争冠层级；世界杯竞彩 SP 上线后，单场模型会自动滚动修正。</p>';
+      html += '<div class="worldcup-hero-meta">';
+      if (evt.hosts) html += '<span>举办地：' + evt.hosts.join('·') + '</span>';
+      if (evt.teams) html += '<span>参赛队 ' + evt.teams + ' 支</span>';
+      if (evt.totalMatches) html += '<span>总场次 ' + evt.totalMatches + ' 场</span>';
+      html += '</div></div>';
+      html += '<div class="worldcup-countdown-card"><span>距开赛</span><strong>' + (evt.startDate || '—') + '</strong><span>' + (evt.startDate || '') + '</span></div>';
+      html += '</div>';
+
+      // KPI grid
+      html += '<div class="worldcup-kpi-grid">';
+      [
+        { icon: '📊', label: '小组赛预测', value: '' + groups.length, unit: '组' },
+        { icon: '🏆', label: '淘汰赛路径', value: '' + knockoutStages.length, unit: '轮' },
+        { icon: '🎯', label: '冠军候选观察', value: '' + contenders.length, unit: '队' },
+        { icon: '📈', label: '数据更新', value: worldcupData.updatedAt ? formatRelativeTime(worldcupData.updatedAt) : '—', unit: '' },
+      ].forEach(kpi => {
+        html += '<article><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/></svg>';
+        html += '<span>' + kpi.label + '</span><strong>' + kpi.value + kpi.unit + '</strong></article>';
+      });
+      html += '</div>';
+
+      // 计算小组实际战绩
+      const allMatches = [...matchesData, ...historyData];
+      function getGroupResults(group) {
+        const teamNames = group.teams.map(t => t.name);
+        const results = {};
+        teamNames.forEach(name => {
+          results[name] = { played: 0, won: 0, drawn: 0, lost: 0, gf: 0, ga: 0, points: 0, recentMatches: [] };
+        });
+
+        // 找出该小组队伍之间的所有已完场比赛
+        const groupMatches = allMatches.filter(m =>
+          m.status === 'FINISHED' &&
+          teamNames.includes(m.homeTeamName) &&
+          teamNames.includes(m.awayTeamName) &&
+          m.scoreHome !== null && m.scoreHome !== undefined
+        );
+
+        groupMatches.forEach(m => {
+          const home = results[m.homeTeamName];
+          const away = results[m.awayTeamName];
+          if (!home || !away) return;
+
+          home.played++; away.played++;
+          home.gf += m.scoreHome; home.ga += m.scoreAway;
+          away.gf += m.scoreAway; away.ga += m.scoreHome;
+
+          if (m.scoreHome > m.scoreAway) {
+            home.won++; home.points += 3;
+            away.lost++;
+          } else if (m.scoreHome < m.scoreAway) {
+            away.won++; away.points += 3;
+            home.lost++;
+          } else {
+            home.drawn++; home.points += 1;
+            away.drawn++; away.points += 1;
+          }
+
+          home.recentMatches.push({ opponent: m.awayTeamName, score: m.scoreHome + '-' + m.scoreAway, isHome: true, won: m.scoreHome > m.scoreAway, draw: m.scoreHome === m.scoreAway });
+          away.recentMatches.push({ opponent: m.homeTeamName, score: m.scoreAway + '-' + m.scoreHome, isHome: false, won: m.scoreAway > m.scoreHome, draw: m.scoreHome === m.scoreAway });
+        });
+
+        // 按积分排序
+        const sorted = teamNames.map(name => ({ name, ...results[name] }))
+          .sort((a, b) => b.points - a.points || (b.gf - b.ga) - (a.gf - a.ga) || b.gf - a.gf);
+
+        return { sorted, totalMatches: groupMatches.length };
+      }
+
+      // Groups
+      html += '<div class="worldcup-section" style="margin-top:1rem">';
+      html += '<div class="worldcup-section-head"><div><h3>小组赛预测</h3><p>' + groups.length + ' 个小组，每组前二直接出线 + 8 个最佳第三进入 32 强淘汰赛。</p></div></div>';
+      html += '<div class="worldcup-group-grid">';
+      groups.forEach(group => {
+        const { sorted, totalMatches } = getGroupResults(group);
+        const hasResults = totalMatches > 0;
+
+        html += '<div class="worldcup-group-card">';
+        html += '<header><span>' + escapeHtml(group.name) + '</span>';
+        html += '<strong>' + (hasResults ? totalMatches + ' 场已赛' : group.teams.length + ' 队') + '</strong></header>';
+        html += '<p>' + escapeHtml(group.description) + '</p>';
+
+        // 如果有实际比赛结果，显示积分榜
+        if (hasResults) {
+          html += '<div style="margin-bottom:.5rem">';
+          html += '<div style="display:grid;grid-template-columns:1fr repeat(5,auto);gap:.25rem;font-size:.72rem;color:hsl(var(--text-muted));padding:.25rem 0;border-bottom:1px solid hsl(var(--border))">';
+          html += '<span></span><span style="text-align:center">场</span><span style="text-align:center">胜</span><span style="text-align:center">平</span><span style="text-align:center">负</span><span style="text-align:center;font-weight:800">积分</span>';
+          html += '</div>';
+          sorted.forEach((team, rank) => {
+            const groupTeam = group.teams.find(t => t.name === team.name);
+            const isQualified = rank < 2;
+            html += '<div style="display:grid;grid-template-columns:1fr repeat(5,auto);gap:.25rem;padding:.35rem 0;border-bottom:1px solid hsl(var(--border));' + (isQualified ? 'background:hsl(var(--success)/.05)' : '') + '">';
+            html += '<div style="display:flex;align-items:center;gap:.35rem">';
+            html += '<span style="font-size:.72rem;color:hsl(var(--text-muted));width:1.2rem">' + (rank + 1) + '</span>';
+            html += '<span class="worldcup-team-flag" style="background:' + (groupTeam?.color || '#333') + ';width:1.5rem;height:1.05rem;font-size:.48rem;border-radius:.2rem"><b>' + escapeHtml(groupTeam?.code || '') + '</b></span>';
+            html += '<span style="font-size:.82rem;font-weight:800">' + escapeHtml(team.name) + '</span>';
+            html += '</div>';
+            html += '<span style="text-align:center;font-size:.82rem">' + team.played + '</span>';
+            html += '<span style="text-align:center;font-size:.82rem;color:hsl(var(--success))">' + team.won + '</span>';
+            html += '<span style="text-align:center;font-size:.82rem">' + team.drawn + '</span>';
+            html += '<span style="text-align:center;font-size:.82rem;color:hsl(var(--danger))">' + team.lost + '</span>';
+            html += '<span style="text-align:center;font-size:.86rem;font-weight:900;color:hsl(var(--primary))">' + team.points + '</span>';
+            html += '</div>';
+          });
+          html += '</div>';
+        }
+
+        // 队伍列表 (预测出线概率)
+        html += '<div class="worldcup-group-team-list">';
+        group.teams.forEach(team => {
+          const prob = team.advanceProbability || 50;
+          // 查找该队实际积分
+          const actual = sorted.find(s => s.name === team.name);
+          const hasActual = actual && actual.played > 0;
+
+          html += '<div class="worldcup-group-team-row">';
+          html += '<span class="worldcup-team-flag" style="background:' + (team.color || '#333') + '"><b>' + escapeHtml(team.code) + '</b></span>';
+          html += '<div class="worldcup-team-copy"><strong>' + escapeHtml(team.name) + '</strong>';
+          if (hasActual) {
+            html += '<small style="color:hsl(var(--primary))">积分 ' + actual.points + ' · ' + actual.won + '胜' + actual.drawn + '平' + actual.lost + '负</small>';
+          } else {
+            html += '<small>' + escapeHtml(team.note) + '</small>';
+          }
+          html += '</div>';
+          html += '<div class="worldcup-team-prob">';
+          if (hasActual) {
+            html += '<b style="color:hsl(var(--primary))">' + actual.points + '分</b><small>实际积分</small>';
+          } else {
+            html += '<b>' + prob + '%</b><small>出线</small>';
+          }
+          html += '</div>';
+          html += '</div>';
+          html += '<div class="worldcup-team-meter"><span style="--advance:' + (hasActual ? Math.min(100, actual.points * 10) : prob) + '%"></span></div>';
+        });
+        html += '</div></div>';
+      });
+      html += '</div></div>';
+
+      // Knockout stages - 从实际数据中读取淘汰赛结果
+      const allWCMatches = [...matchesData, ...historyData];
+      const wcTeamNames = groups.flatMap(g => g.teams.map(t => t.name));
+
+      // 找出淘汰赛相关比赛 (世界杯队伍之间，且不是小组赛内部对阵)
+      // 这里用联赛名+非小组内部来判断淘汰赛
+      html += '<div class="worldcup-section" style="margin-top:1rem">';
+      html += '<div class="worldcup-section-head"><div><h3>淘汰赛路径预测</h3><p>32 强路径先按小组基准预测生成，后续会随官方赛程、SP 快照、伤停与赛果自动滚动更新。</p></div></div>';
+      html += '<div class="worldcup-stage-grid">';
+
+      knockoutStages.forEach(stage => {
+        // 检查该阶段是否有实际比赛数据
+        const stageMatches = allWCMatches.filter(m =>
+          m.leagueName && (
+            m.leagueName.includes(stage.stage) ||
+            (stage.stage === '32 强' && m.leagueName.includes('世界杯') && m.matchNo && m.matchNo.includes('32'))
+          ) &&
+          m.status === 'FINISHED'
+        );
+
+        const hasResults = stageMatches.length > 0;
+        const statusText = hasResults ? stageMatches.length + ' 场已赛' : (stage.status || '待更新');
+
+        html += '<div class="worldcup-stage-card">';
+        html += '<span>' + escapeHtml(stage.stage) + '</span>';
+        html += '<strong style="' + (hasResults ? 'color:hsl(var(--success))' : '') + '">' + statusText + '</strong>';
+        html += '<p>' + escapeHtml(stage.description) + '</p>';
+
+        // 如果有比赛结果，显示具体比分
+        if (hasResults) {
+          html += '<div style="margin-top:.5rem;display:grid;gap:.35rem">';
+          stageMatches.slice(0, 4).forEach(m => {
+            const homeWin = m.scoreHome > m.scoreAway;
+            html += '<div style="display:flex;justify-content:space-between;align-items:center;font-size:.78rem;padding:.25rem 0;border-bottom:1px solid hsl(var(--border))">';
+            html += '<span style="' + (homeWin ? 'color:hsl(var(--primary));font-weight:800' : '') + '">' + escapeHtml(m.homeTeamName) + '</span>';
+            html += '<strong style="font-family:var(--font-title)">' + m.scoreHome + ' - ' + m.scoreAway + '</strong>';
+            html += '<span style="' + (!homeWin ? 'color:hsl(var(--primary));font-weight:800' : '') + '">' + escapeHtml(m.awayTeamName) + '</span>';
+            html += '</div>';
+          });
+          html += '</div>';
+        }
+
+        html += '</div>';
+      });
+
+      html += '</div></div>';
+
+      // Contenders
+      html += '<div class="worldcup-section" style="margin-top:1rem">';
+      html += '<div class="worldcup-section-head"><div><h3>争冠路径池</h3><p>世界杯相关场次里市场支持、模型可信和走势更强的球队提出来跟踪。</p></div></div>';
+      html += '<div class="worldcup-contender-list">';
+      contenders.forEach(c => {
+        html += '<div class="worldcup-contender-card">';
+        html += '<div class="worldcup-contender-team"><span class="team-badge" style="--team-color:#333">' + escapeHtml(c.code || '').substring(0,2) + '</span><div><strong>' + escapeHtml(c.name) + '</strong><small>' + escapeHtml(c.note) + '</small></div></div>';
+        html += '<div><div class="worldcup-scorebar"><span style="--score:' + (c.score || 0) + '%"></span></div></div>';
+        html += '<div class="worldcup-contender-meta"><b>' + (c.score || 0) + '</b><small>争冠指数</small></div>';
+        html += '</div>';
+      });
+      html += '</div></div>';
+
+      // Current observation pool - 显示未开始和最近已完场的比赛
+      html += '<div class="worldcup-section" style="margin-top:1rem">';
+      html += '<div class="worldcup-section-head"><div><h3>当前推荐观察池</h3><p>优先展示中国竞彩网同步到的世界杯、世预赛、国际赛相关场次。</p></div></div>';
+
+      const wcLeagueFilter = m => m.leagueName && (m.leagueName.includes('世界杯') || m.leagueName.includes('世预赛') || m.leagueName.includes('国际赛'));
+      const scheduledWC = matchesData.filter(wcLeagueFilter);
+      const finishedWC = historyData.filter(wcLeagueFilter).slice(0, 5);
+      const observationMatches = [...scheduledWC, ...finishedWC].slice(0, 8);
+
+      if (observationMatches.length) {
+        html += '<div class="worldcup-pipeline-list">';
+        observationMatches.forEach(m => {
+          const isFinished = m.status === 'FINISHED';
+          const hasScore = m.scoreHome !== null && m.scoreHome !== undefined;
+          const best = getBestPrediction(m);
+          const signal = getSignalLabel(best);
+
+          html += '<article>';
+          html += '<span>' + escapeHtml(m.leagueName || '') + ' · ' + formatTimeTz(m.kickoffTime);
+          if (isFinished) html += ' · <span style="color:hsl(var(--success))">已完场</span>';
+          html += '</span>';
+
+          if (isFinished && hasScore) {
+            html += '<strong>' + escapeHtml(m.homeTeamName) + ' ' + m.scoreHome + ' - ' + m.scoreAway + ' ' + escapeHtml(m.awayTeamName) + '</strong>';
+          } else {
+            html += '<strong>' + escapeHtml(m.homeTeamName) + ' vs ' + escapeHtml(m.awayTeamName) + '</strong>';
+          }
+
+          html += '<div style="margin-top:.35rem">';
+          if (isFinished && hasScore && best) {
+            const actualResult = m.scoreHome > m.scoreAway ? '1' : m.scoreHome === m.scoreAway ? 'X' : '2';
+            const isHit = best.tipCode === actualResult;
+            html += '<span class="badge ' + (isHit ? 'badge-success' : 'badge') + '">' + (isHit ? '✅ 命中' : '❌ 未中') + '</span>';
+          } else if (!isFinished) {
+            html += '<span class="signal-badge ' + signal.cls + '">' + signal.text + '</span>';
+            if (best?.trustScore) html += ' <span style="color:hsl(var(--text-muted));font-size:.72rem">可信 ' + best.trustScore + '</span>';
+          }
+          html += '</div>';
+          html += '</article>';
+        });
+        html += '</div>';
+      } else {
+        html += '<div class="worldcup-empty">当前暂无世界杯相关赛程，等待下一次官方数据同步。</div>';
+      }
+      html += '</div>';
+
+      return html;
+    }
+
+    // ==================== CONTACT DRAWER ====================
+    function openContact() {
+      document.getElementById('contactDrawer').classList.add('is-open');
+      document.getElementById('contactBackdrop').classList.add('is-open');
+    }
+    function closeContact() {
+      document.getElementById('contactDrawer').classList.remove('is-open');
+      document.getElementById('contactBackdrop').classList.remove('is-open');
+    }
+    function toggleLang() {}
+
+    // ==================== 用户界面 ====================
+    function updateNavUser() {
+      const user = getCurrentUser();
+      const btnText = document.getElementById('userBtnText');
+      if (btnText) btnText.textContent = user || '登录';
+    }
+
+    function handleUserClick() {
+      const user = getCurrentUser();
+      if (user) {
+        navigateTo('mine');
+      } else {
+        showAuthModal();
+      }
+    }
+
+    function showAuthModal(mode) {
+      const isLogin = mode !== 'register';
+      const backdrop = document.createElement('div');
+      backdrop.className = 'modal-backdrop';
+      backdrop.id = 'authModal';
+      backdrop.innerHTML = '<div class="modal-content">' +
+        '<div class="tabs-container" style="margin-bottom:1.25rem">' +
+          '<button class="tab-btn ' + (isLogin ? 'active' : '') + '" onclick="closeAuthModal();showAuthModal(\'login\')">登录</button>' +
+          '<button class="tab-btn ' + (!isLogin ? 'active' : '') + '" onclick="closeAuthModal();showAuthModal(\'register\')">注册</button>' +
+        '</div>' +
+        '<div class="form-group"><label class="form-label">用户名</label><input class="form-input" id="authUsername" placeholder="请输入用户名" /></div>' +
+        '<div class="form-group"><label class="form-label">密码</label><input class="form-input" id="authPassword" type="password" placeholder="请输入密码" /></div>' +
+        '<p id="authError" style="color:hsl(var(--danger));font-size:.82rem;margin-bottom:1rem;display:none"></p>' +
+        '<button class="btn btn-primary" style="width:100%" onclick="submitAuth(\'' + (isLogin ? 'login' : 'register') + '\')">' + (isLogin ? '登录' : '注册') + '</button>' +
+        '<button class="btn btn-secondary" style="width:100%;margin-top:.5rem" onclick="closeAuthModal()">取消</button>' +
+      '</div>';
+      document.body.appendChild(backdrop);
+    }
+
+    function closeAuthModal() {
+      const el = document.getElementById('authModal');
+      if (el) el.remove();
+    }
+
+    function submitAuth(mode) {
+      const username = document.getElementById('authUsername').value.trim();
+      const password = document.getElementById('authPassword').value;
+      const errEl = document.getElementById('authError');
+      let err;
+      if (mode === 'login') err = loginUser(username, password);
+      else err = registerUser(username, password);
+      if (err) {
+        errEl.textContent = err;
+        errEl.style.display = 'block';
+      } else {
+        closeAuthModal();
+        renderPage();
+      }
+    }
+
+    // ==================== DATA LOADING ====================
+    async function loadData() {
+      try {
+        const [matchesRes, syncRes] = await Promise.all([
+          fetch('./data/matches-current.json?v=' + Date.now()),
+          fetch('./data/sync-meta.json?v=' + Date.now())
+        ]);
+        matchesData = await matchesRes.json();
+        syncMeta = await syncRes.json();
+        settleChallenges(); // 数据更新后自动结算命中挑战
+        renderPage();
+      } catch (err) {
+        console.error('Failed to load current data:', err);
+      }
+    }
+
+    // 结算命中挑战: 检查已提交的竞猜中是否有比赛已结束
+    function settleChallenges() {
+      const user = getCurrentUser();
+      if (!user) return;
+      const userData = getUserData(user);
+      if (!userData.challenges.length) return;
+
+      const allMatches = [...matchesData, ...historyData];
+      let updated = false;
+
+      userData.challenges.forEach(entry => {
+        if (entry.settled) return; // 已结算的跳过
+        let allDone = true;
+        let hitCount = 0;
+
+        entry.selections.forEach(sel => {
+          if (sel.result !== null) return; // 已有结果
+          const match = allMatches.find(m => m.id === sel.matchId);
+          if (match && match.status === 'FINISHED' && match.scoreHome !== null) {
+            sel.result = match.scoreHome + '-' + match.scoreAway;
+            const actual = match.scoreHome > match.scoreAway ? '1' : match.scoreHome === match.scoreAway ? 'X' : '2';
+            sel.isHit = sel.pick === actual;
+            if (sel.isHit) hitCount++;
+            updated = true;
+          } else {
+            allDone = false;
+          }
+        });
+
+        if (allDone && entry.selections.every(s => s.result !== null)) {
+          entry.settled = true;
+          entry.hitCount = hitCount;
+          updated = true;
+        }
+      });
+
+      if (updated) saveUserData(user, userData);
+    }
+
+    async function loadHistoryData() {
+      try {
+        const res = await fetch('./data/matches-history.json?v=' + Date.now());
+        historyData = await res.json();
+        // 历史数据加载完成后，如果当前在历史页或详情页，都要重新渲染
+        if (currentPage === 'history' || currentPage === 'detail') renderPage();
+      } catch (err) {
+        console.error('Failed to load history data:', err);
+      }
+    }
+
+    async function loadWorldCupData() {
+      try {
+        const res = await fetch('./data/worldcup.json?v=' + Date.now());
+        worldcupData = await res.json();
+        if (currentPage === 'worldcup') renderPage();
+      } catch (err) {
+        console.error('Failed to load worldcup data:', err);
+      }
+    }
+
+    // ==================== INIT ====================
+    loadData();
+    loadHistoryData();
+    loadWorldCupData();
+    setInterval(loadData, 30000);
+    </script>
+  </body>
+</html>
