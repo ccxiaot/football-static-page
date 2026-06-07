@@ -9,6 +9,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Outfit:wght@700;800;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/index.css" />
+    <style>
+      .modal-x{position:absolute;top:.75rem;right:.75rem;border:1px solid hsl(var(--border));background:hsl(var(--bg));color:hsl(var(--text-secondary));width:34px;height:34px;border-radius:var(--radius);cursor:pointer;font-size:1.2rem;line-height:1}
+      .modal-x:hover{color:hsl(var(--text-primary));background:hsl(var(--bg-card-hover))}
+      .member-lock-card{border:1px solid hsl(var(--premium)/.38);border-radius:var(--radius);background:linear-gradient(135deg,hsl(var(--premium)/.13),hsl(var(--bg)/.76));display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;gap:.85rem;padding:.95rem;margin-top:.85rem}
+      .member-lock-card.is-compact{padding:.75rem;margin-top:.65rem}
+      .member-lock-icon{border:1px solid hsl(var(--premium)/.45);background:hsl(var(--premium)/.14);color:hsl(var(--premium));border-radius:var(--radius);width:42px;height:42px;display:flex;align-items:center;justify-content:center;font-family:var(--font-title);font-weight:950;font-size:.82rem}
+      .member-lock-copy strong{display:block;color:hsl(var(--text-primary));font-weight:900}.member-lock-copy p{color:hsl(var(--text-secondary));font-size:.8rem;margin-top:.16rem}.member-lock-action{display:flex;justify-content:flex-end}
+      .membership-status-card{border:1px solid hsl(var(--premium)/.34);border-radius:var(--radius);background:linear-gradient(135deg,hsl(var(--premium)/.12),hsl(var(--primary)/.08));display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1rem}
+      .membership-status-card h3{font-family:var(--font-title);font-size:1.18rem;margin:.45rem 0 .2rem}.membership-status-card p{color:hsl(var(--text-secondary));font-size:.84rem}
+      .membership-modal{width:min(94%,720px)}.membership-modal-head{padding-right:2rem;margin-bottom:1rem}.membership-modal-head h2{font-family:var(--font-title);font-size:1.45rem;margin:.5rem 0 .25rem}.membership-modal-head p{color:hsl(var(--text-secondary));font-size:.86rem}
+      .membership-plan-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.65rem;margin-bottom:1rem}.membership-plan{border:1px solid hsl(var(--border));background:hsl(var(--bg));color:hsl(var(--text-primary));border-radius:var(--radius);padding:.8rem;cursor:pointer;text-align:left;display:flex;flex-direction:column;gap:.2rem}.membership-plan strong{font-weight:900}.membership-plan span{color:hsl(var(--premium));font-family:var(--font-title);font-size:1.25rem;font-weight:950}.membership-plan small{color:hsl(var(--text-muted));font-weight:800}.membership-plan.is-featured,.membership-plan.active{border-color:hsl(var(--premium)/.55);background:hsl(var(--premium)/.1)}
+      .pay-tabs{border:1px solid hsl(var(--border));background:hsl(var(--bg));border-radius:999px;display:inline-flex;padding:.22rem;gap:.2rem;margin-bottom:.85rem}.pay-tabs button{border:0;background:transparent;color:hsl(var(--text-secondary));border-radius:999px;padding:.42rem .85rem;cursor:pointer;font-weight:850}.pay-tabs button.active{background:hsl(var(--primary)/.14);color:hsl(var(--primary))}
+      .pay-qr-wrap{border:1px solid hsl(var(--border));border-radius:var(--radius);background:hsl(var(--bg));display:grid;grid-template-columns:170px minmax(0,1fr);gap:1rem;align-items:center;padding:1rem}.pay-qr-wrap img{width:170px;height:170px;object-fit:contain;border-radius:var(--radius);background:#fff;padding:.35rem}.pay-qr-wrap strong{display:block;font-size:1rem;margin-bottom:.35rem}.pay-qr-wrap p{color:hsl(var(--text-secondary));font-size:.82rem}
+      .redeem-box{border:1px solid hsl(var(--border));border-radius:var(--radius);background:hsl(var(--bg));padding:1rem;margin-top:.85rem}.membership-benefits{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.85rem}.membership-benefits span{border:1px solid hsl(var(--border));background:hsl(var(--bg));color:hsl(var(--text-secondary));border-radius:999px;padding:.25rem .55rem;font-size:.74rem;font-weight:800}
+      @media (max-width: 720px){.member-lock-card{grid-template-columns:1fr}.member-lock-action{justify-content:flex-start}.membership-status-card{align-items:flex-start;flex-direction:column}.membership-plan-grid{grid-template-columns:1fr}.pay-qr-wrap{grid-template-columns:1fr}.pay-qr-wrap img{width:100%;height:auto;max-height:280px}.membership-modal{width:min(96%,420px);padding:1rem}}
+    </style>
   </head>
   <body>
     <div id="root">
@@ -193,6 +209,16 @@
 
     // ==================== 用户系统 ====================
     // 用户数据存储在 localStorage，按用户名隔离
+    const MEMBERSHIP_PLANS = {
+      monthly: { label: '月度会员', price: '¥39', days: 31 },
+      season: { label: '季度会员', price: '¥99', days: 93 },
+      year: { label: '年度会员', price: '¥299', days: 366 },
+    };
+    const MEMBERSHIP_CODES = {
+      'VIP-DEMO-30': 31,
+      'VIP-DEMO-90': 93,
+      'VIP-DEMO-365': 366,
+    };
     function getUsers() {
       try { return JSON.parse(localStorage.getItem('fp_users') || '{}'); } catch { return {}; }
     }
@@ -211,14 +237,75 @@
       if (username) localStorage.setItem('fp_current_user', username);
       else localStorage.removeItem('fp_current_user');
     }
+    function normalizeUserData(data) {
+      const normalized = data && typeof data === 'object' ? { ...data } : {};
+      if (!Array.isArray(normalized.challenges)) normalized.challenges = [];
+      if (!Array.isArray(normalized.betslips)) normalized.betslips = [];
+      if (!normalized.membership || typeof normalized.membership !== 'object') {
+        normalized.membership = { tier: 'free', expiresAt: null, activatedAt: null, source: null };
+      }
+      if (!normalized.membership.tier) normalized.membership.tier = 'free';
+      if (!normalized.membership.expiresAt) normalized.membership.expiresAt = null;
+      return normalized;
+    }
     function getUserData(username) {
       const users = getUsers();
-      return users[username] || { challenges: [], betslips: [] };
+      return normalizeUserData(users[username] || {});
     }
     function saveUserData(username, data) {
       const users = getUsers();
-      users[username] = data;
+      users[username] = normalizeUserData(data);
       saveUsers(users);
+    }
+    function getCurrentUserProfile() {
+      const username = getCurrentUser();
+      if (!username) return null;
+      return { username, data: getUserData(username) };
+    }
+    function getMembershipStatus() {
+      const profile = getCurrentUserProfile();
+      if (!profile) return { signedIn: false, active: false, label: '未登录', expiresText: '登录后可开通会员' };
+      const membership = profile.data.membership || {};
+      const expiresAt = membership.expiresAt ? new Date(membership.expiresAt) : null;
+      const active = membership.tier === 'member' && expiresAt && expiresAt.getTime() > Date.now();
+      if (active) {
+        return {
+          signedIn: true,
+          active: true,
+          label: '会员',
+          expiresAt: membership.expiresAt,
+          expiresText: '有效期至 ' + expiresAt.toLocaleDateString('zh-CN'),
+        };
+      }
+      return { signedIn: true, active: false, label: '普通用户', expiresText: '当前未开通会员' };
+    }
+    function isMember() {
+      return getMembershipStatus().active;
+    }
+    function activateMembership(days, source) {
+      const profile = getCurrentUserProfile();
+      if (!profile) return '请先登录后再开通会员';
+      const current = profile.data.membership || {};
+      const now = new Date();
+      const base = current.expiresAt && new Date(current.expiresAt).getTime() > now.getTime()
+        ? new Date(current.expiresAt)
+        : now;
+      base.setDate(base.getDate() + days);
+      profile.data.membership = {
+        tier: 'member',
+        expiresAt: base.toISOString(),
+        activatedAt: now.toISOString(),
+        source: source || 'manual',
+      };
+      saveUserData(profile.username, profile.data);
+      return null;
+    }
+    function redeemMembershipCode(code) {
+      const normalized = (code || '').trim().toUpperCase();
+      if (!normalized) return '请输入激活码';
+      const days = MEMBERSHIP_CODES[normalized];
+      if (!days) return '激活码无效，请确认后重试';
+      return activateMembership(days, normalized);
     }
     // 获取今天日期字符串 (用于命中挑战按天隔离)
     function getTodayKey() {
@@ -231,7 +318,7 @@
       if (password.length < 4) return '密码长度不能少于 4 位';
       const users = getUsers();
       if (users[username]) return '用户名已存在';
-      users[username] = { password: md5(password), challenges: [], betslips: [] };
+      users[username] = normalizeUserData({ password: md5(password), challenges: [], betslips: [] });
       saveUsers(users);
       setCurrentUser(username);
       return null; // 成功
@@ -242,6 +329,8 @@
       const users = getUsers();
       if (!users[username]) return '用户不存在';
       if (users[username].password !== md5(password)) return '密码错误';
+      users[username] = normalizeUserData(users[username]);
+      saveUsers(users);
       setCurrentUser(username);
       return null;
     }
@@ -584,8 +673,8 @@
       if (m.predictions?.length) {
         m.predictions.forEach(pred => { html += renderPredictionCard(pred, m); });
       }
-      if (m.probabilityModel) html += renderProbabilityModelCard(m.probabilityModel, m);
-      if (m.stats) html += renderStatsCard(m.stats);
+      if (m.probabilityModel) html += renderPremiumGate(renderProbabilityModelCard(m.probabilityModel, m), '会员概率模型', '解锁 1X2、进球线、比分分布和盘口概率。');
+      if (m.stats) html += renderPremiumGate(renderStatsCard(m.stats), '会员赛前参数', '解锁 xG、控球、射门、角球等模型参数。');
       if (m.oddsTrend) html += renderOddsTrendCard(m.oddsTrend);
       html += '<button class="btn btn-primary" style="margin-top:1rem" onclick="event.stopPropagation();navigateTo(\'detail\',{matchId:\'' + m.id + '\'})">查看完整分析 →</button>';
       html += '</div>';
@@ -593,9 +682,41 @@
     }
 
     // ==================== SHARED COMPONENTS ====================
+    function renderMemberLock(title, description, compact) {
+      const status = getMembershipStatus();
+      const action = status.signedIn
+        ? '<button class="btn btn-premium" onclick="event.stopPropagation();showMembershipModal()">开通会员</button>'
+        : '<button class="btn btn-primary" onclick="event.stopPropagation();showAuthModal(\'login\')">登录后开通</button>';
+      return '<div class="member-lock-card ' + (compact ? 'is-compact' : '') + '">' +
+        '<div class="member-lock-icon">VIP</div>' +
+        '<div class="member-lock-copy">' +
+          '<strong>' + escapeHtml(title || '会员内容') + '</strong>' +
+          '<p>' + escapeHtml(description || '开通会员后解锁完整模型、风险提示和深度分析。') + '</p>' +
+        '</div>' +
+        '<div class="member-lock-action">' + action + '</div>' +
+      '</div>';
+    }
+
+    function renderPremiumGate(html, title, description) {
+      if (isMember()) return html;
+      return renderMemberLock(title, description, false);
+    }
+
     function renderPredictionCard(pred, m) {
       const signal = getSignalLabel(pred);
       const isPremium = pred.visibilityStatus === 'PREMIUM';
+      if (isPremium && !isMember()) {
+        return '<div class="card premium-card" style="margin-bottom:1rem">' +
+          '<div class="signal-summary-card"><div>' +
+            '<span class="badge badge-premium">' + escapeHtml(pred.marketType || '精选') + ' · 会员精选</span>' +
+            '<h3>会员推荐已生成</h3>' +
+            '<p>本场包含完整推荐方向、可信度、赔率风险与模型解释。普通用户仅展示基础赛事信息。</p>' +
+          '</div><div class="signal-summary-meta">' +
+            (pred.trustScore ? '<div class="trust-meter"><span class="trust-value" style="--trust-color:hsl(var(--premium))">VIP</span><div class="trust-bar"><span style="--trust:' + pred.trustScore + '%;background:hsl(var(--premium))"></span></div></div>' : '') +
+          '</div></div>' +
+          renderMemberLock('解锁本场会员推荐', '查看具体方向、分析条目、风险标签和可信度评分。', true) +
+        '</div>';
+      }
       let html = '<div class="card" style="margin-bottom:1rem;' + (isPremium ? 'border-color:hsl(var(--premium)/.36);background:hsl(var(--premium-soft)/.5)' : '') + '">';
       html += '<div class="signal-summary-card"><div>';
       html += '<span class="badge ' + (signal.cls === 'is-steady' ? 'badge-success' : signal.cls === 'is-watch' ? 'badge-premium' : 'badge') + '">' + (pred.marketType || '') + ' · ' + signal.text + '</span>';
@@ -925,34 +1046,11 @@
         return html;
       }
       m.predictions.forEach(pred => {
-        const signal = getSignalLabel(pred);
-        const isPremium = pred.visibilityStatus === 'PREMIUM';
-        html += '<div class="card" style="margin-bottom:1rem;' + (isPremium ? 'border-color:hsl(var(--premium)/.36);background:hsl(var(--premium-soft)/.5)' : '') + '">';
-        html += '<div class="signal-summary-card"><div>';
-        html += '<span class="badge ' + (signal.cls === 'is-steady' ? 'badge-success' : signal.cls === 'is-watch' ? 'badge-premium' : 'badge') + '">' + (pred.marketType || '') + ' · ' + signal.text + '</span>';
-        html += '<h3>' + escapeHtml(pred.tipLabel?.zh || pred.tipCode) + '</h3>';
-        if (pred.explanation?.zh) html += '<p>' + escapeHtml(pred.explanation.zh) + '</p>';
-        if (pred.riskTags?.length) {
-          html += '<div class="risk-tag-row">';
-          pred.riskTags.forEach(tag => { html += '<span class="risk-tag">' + escapeHtml(tag.zh || tag) + '</span>'; });
-          html += '</div>';
-        }
-        html += '</div><div class="signal-summary-meta">';
-        if (pred.trustScore) {
-          html += '<div class="trust-meter"><span class="trust-value" style="--trust-color:' + getTrustColor(pred.trustScore) + '">' + pred.trustScore + '</span><div class="trust-bar"><span style="--trust:' + pred.trustScore + '%;background:' + getTrustColor(pred.trustScore) + '"></span></div></div>';
-        }
-        if (isPremium) html += '<span class="badge badge-premium">🔒 会员</span>';
-        html += '</div></div>';
-        if (pred.analysisItems?.length) {
-          html += '<div class="signal-summary-trend"><ul class="prediction-analysis-list">';
-          pred.analysisItems.forEach(item => { html += '<li>' + escapeHtml(item.zh || item) + '</li>'; });
-          html += '</ul></div>';
-        }
-        html += '</div>';
+        html += renderPredictionCard(pred, m);
       });
 
       // Professional framework
-      html += renderProfessionalFramework(m);
+      html += renderPremiumGate(renderProfessionalFramework(m), '会员专业分析框架', '解锁 12 项赛前分析框架，包括盘口变化、近期状态、风险因子和综合结论。');
       return html;
     }
 
@@ -983,6 +1081,7 @@
     }
 
     function renderDetailProbability(m) {
+      if (!isMember()) return renderMemberLock('会员概率预测系统', '解锁市场去水、Elo、Poisson、比分热区、进球线和让球概率。');
       const pm = m.probabilityModel;
       if (!pm) return '<div class="empty-state"><p>等待模型输出</p></div>';
 
@@ -1086,6 +1185,7 @@
     }
 
     function renderDetailStats(m) {
+      if (!isMember()) return renderMemberLock('会员赛前参数', '解锁模型参数预测、比分推演、过程数据和高级复盘指标。');
       let html = '';
       // xG & match stats
       if (m.stats) {
@@ -1501,8 +1601,11 @@
 
         html += '<div style="display:flex;gap:.5rem">';
         html += '<button class="btn btn-secondary" style="flex:1" onclick="clearBetSlip()">清空</button>';
-        html += '<button class="btn btn-primary" style="flex:2" onclick="submitBetslip()">确认下注</button>';
+        html += '<button class="btn btn-primary" style="flex:2" onclick="submitBetslip()">保存注单</button>';
         html += '</div>';
+        if (!isMember()) {
+          html += '<div style="margin-top:.75rem">' + renderMemberLock('会员可保存注单记录', '普通用户可以临时计算组合，会员可保存历史注单并用于复盘。', true) + '</div>';
+        }
         html += '</div>';
       }
       html += '</div>';
@@ -1604,6 +1707,10 @@
       const user = getCurrentUser();
       if (!user) {
         showAuthModal('login');
+        return;
+      }
+      if (!isMember()) {
+        showMembershipModal();
         return;
       }
 
@@ -1784,15 +1891,23 @@
       }
 
       const userData = getUserData(user);
+      const membership = getMembershipStatus();
       let html = '';
 
       // 用户信息
       html += '<div class="card" style="margin-bottom:1.25rem">';
       html += '<div style="display:flex;justify-content:space-between;align-items:center">';
       html += '<div><h2 style="font-family:var(--font-title);font-size:1.35rem;font-weight:950">' + escapeHtml(user) + '</h2>';
-      html += '<p style="color:hsl(var(--text-muted));font-size:.82rem">我的竞猜记录</p></div>';
+      html += '<p style="color:hsl(var(--text-muted));font-size:.82rem">' + membership.label + ' · ' + membership.expiresText + '</p></div>';
       html += '<button class="btn btn-secondary" onclick="logoutUser()">退出登录</button>';
       html += '</div></div>';
+
+      html += '<div class="membership-status-card" style="margin-bottom:1.25rem">';
+      html += '<div><span class="badge ' + (membership.active ? 'badge-premium' : '') + '">' + membership.label + '</span>';
+      html += '<h3>' + (membership.active ? '会员权益已解锁' : '升级会员解锁深度预测') + '</h3>';
+      html += '<p>' + (membership.active ? membership.expiresText + '，可查看所有模型、保存注单和完整复盘。' : '解锁会员预测、概率模型、赛前参数、世界杯路径池、注单保存和挑战复盘。') + '</p></div>';
+      html += '<button class="btn btn-premium" onclick="showMembershipModal()">' + (membership.active ? '续费会员' : '开通会员') + '</button>';
+      html += '</div>';
 
       // 命中挑战记录
       html += '<div class="card" style="margin-bottom:1.25rem">';
@@ -1803,7 +1918,8 @@
       } else {
         // 按日期倒序
         const sorted = [...userData.challenges].reverse();
-        sorted.forEach(entry => {
+        const visibleChallenges = isMember() ? sorted : sorted.slice(0, 1);
+        visibleChallenges.forEach(entry => {
           const isToday = entry.date === getTodayKey();
           html += '<div style="border:1px solid hsl(var(--border));border-radius:var(--radius);padding:1rem;margin-bottom:.75rem">';
           html += '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:.75rem">';
@@ -1838,6 +1954,9 @@
           });
           html += '</div></div>';
         });
+        if (!isMember() && sorted.length > 1) {
+          html += renderMemberLock('会员查看完整挑战记录', '普通用户仅显示最近 1 条，会员可查看全部历史挑战与赛后结算。', true);
+        }
       }
       html += '</div>';
 
@@ -2100,7 +2219,7 @@
       html += '<div class="worldcup-section-head"><div><h3>淘汰赛路径预测</h3><p>32 强路径先按小组基准预测生成，后续会随官方赛程、SP 快照、伤停与赛果自动滚动更新。</p></div></div>';
       html += '<div class="worldcup-stage-grid">';
 
-      knockoutStages.forEach(stage => {
+      (isMember() ? knockoutStages : knockoutStages.slice(0, 2)).forEach(stage => {
         // 检查该阶段是否有实际比赛数据
         const stageMatches = allWCMatches.filter(m =>
           m.leagueName && (
@@ -2136,12 +2255,15 @@
       });
 
       html += '</div></div>';
+      if (!isMember() && knockoutStages.length > 2) {
+        html += '<div style="margin-top:.75rem">' + renderMemberLock('会员解锁完整淘汰赛路径', '查看 32 强到决赛的完整路径预测、阶段状态与赛果滚动修正。', true) + '</div>';
+      }
 
       // Contenders
       html += '<div class="worldcup-section" style="margin-top:1rem">';
       html += '<div class="worldcup-section-head"><div><h3>争冠路径池</h3><p>世界杯相关场次里市场支持、模型可信和走势更强的球队提出来跟踪。</p></div></div>';
       html += '<div class="worldcup-contender-list">';
-      contenders.forEach(c => {
+      (isMember() ? contenders : contenders.slice(0, 4)).forEach(c => {
         html += '<div class="worldcup-contender-card">';
         html += '<div class="worldcup-contender-team"><span class="team-badge" style="--team-color:#333">' + escapeHtml(c.code || '').substring(0,2) + '</span><div><strong>' + escapeHtml(c.name) + '</strong><small>' + escapeHtml(c.note) + '</small></div></div>';
         html += '<div><div class="worldcup-scorebar"><span style="--score:' + (c.score || 0) + '%"></span></div></div>';
@@ -2149,6 +2271,9 @@
         html += '</div>';
       });
       html += '</div></div>';
+      if (!isMember() && contenders.length > 4) {
+        html += '<div style="margin-top:.75rem">' + renderMemberLock('会员解锁完整争冠观察池', '查看全部冠军候选、争冠指数排序和后续走势跟踪。', true) + '</div>';
+      }
 
       // Current observation pool - 显示未开始和最近已完场的比赛
       html += '<div class="worldcup-section" style="margin-top:1rem">';
@@ -2214,7 +2339,10 @@
     function updateNavUser() {
       const user = getCurrentUser();
       const btnText = document.getElementById('userBtnText');
-      if (btnText) btnText.textContent = user || '登录';
+      const userBtn = document.getElementById('userBtn');
+      const status = getMembershipStatus();
+      if (btnText) btnText.textContent = user ? (status.active ? '会员 · ' + user : user) : '登录';
+      if (userBtn) userBtn.classList.toggle('is-premium', status.active);
     }
 
     function handleUserClick() {
@@ -2248,6 +2376,88 @@
     function closeAuthModal() {
       const el = document.getElementById('authModal');
       if (el) el.remove();
+    }
+
+    function showMembershipModal(defaultPay) {
+      const existing = document.getElementById('membershipModal');
+      if (existing) existing.remove();
+      const status = getMembershipStatus();
+      const payType = defaultPay || 'wechat';
+      const backdrop = document.createElement('div');
+      backdrop.className = 'modal-backdrop';
+      backdrop.id = 'membershipModal';
+      backdrop.innerHTML = '<div class="modal-content membership-modal">' +
+        '<button class="modal-x" onclick="closeMembershipModal()">×</button>' +
+        '<div class="membership-modal-head">' +
+          '<span class="badge badge-premium">VIP 会员</span>' +
+          '<h2>解锁完整预测系统</h2>' +
+          '<p>' + (status.signedIn ? status.expiresText : '请先登录账号，支付后联系人工开通。') + '</p>' +
+        '</div>' +
+        '<div class="membership-plan-grid">' +
+          Object.entries(MEMBERSHIP_PLANS).map(([key, plan]) =>
+            '<button class="membership-plan ' + (key === 'season' ? 'is-featured' : '') + '" onclick="selectMembershipPlan(\'' + key + '\')" data-plan="' + key + '">' +
+              '<strong>' + plan.label + '</strong><span>' + plan.price + '</span><small>' + plan.days + ' 天</small>' +
+            '</button>'
+          ).join('') +
+        '</div>' +
+        '<div class="pay-tabs">' +
+          '<button class="' + (payType === 'wechat' ? 'active' : '') + '" onclick="switchPayTab(\'wechat\')">微信支付</button>' +
+          '<button class="' + (payType === 'alipay' ? 'active' : '') + '" onclick="switchPayTab(\'alipay\')">支付宝</button>' +
+        '</div>' +
+        '<div class="pay-qr-wrap">' +
+          '<img id="payQrImage" src="./assets/pay-' + payType + '.jpg" alt="' + (payType === 'wechat' ? '微信支付二维码' : '支付宝支付二维码') + '" />' +
+          '<div><strong id="payQrTitle">' + (payType === 'wechat' ? '微信扫码支付' : '支付宝扫码支付') + '</strong><p>静态站不做自动到账确认。支付后请添加页面右下角微信，发送账号和支付截图，由管理员开通或续费。</p></div>' +
+        '</div>' +
+        '<div class="redeem-box">' +
+          '<label class="form-label">激活码 / 演示码</label>' +
+          '<div style="display:flex;gap:.5rem"><input class="form-input" id="membershipCode" placeholder="例如 VIP-DEMO-30" /><button class="btn btn-secondary" onclick="submitMembershipCode()">激活</button></div>' +
+          '<p id="membershipError" style="color:hsl(var(--danger));font-size:.78rem;margin-top:.5rem;display:none"></p>' +
+        '</div>' +
+        '<div class="membership-benefits">' +
+          '<span>完整会员推荐</span><span>概率模型</span><span>赛前参数</span><span>注单保存</span><span>世界杯路径池</span><span>挑战复盘</span>' +
+        '</div>' +
+      '</div>';
+      document.body.appendChild(backdrop);
+      selectMembershipPlan('season');
+    }
+
+    function closeMembershipModal() {
+      const el = document.getElementById('membershipModal');
+      if (el) el.remove();
+    }
+
+    function switchPayTab(type) {
+      const modal = document.getElementById('membershipModal');
+      if (!modal) return;
+      modal.querySelectorAll('.pay-tabs button').forEach(btn => btn.classList.toggle('active', btn.textContent.includes(type === 'wechat' ? '微信' : '支付宝')));
+      const img = document.getElementById('payQrImage');
+      const title = document.getElementById('payQrTitle');
+      if (img) {
+        img.src = './assets/pay-' + type + '.jpg';
+        img.alt = type === 'wechat' ? '微信支付二维码' : '支付宝支付二维码';
+      }
+      if (title) title.textContent = type === 'wechat' ? '微信扫码支付' : '支付宝扫码支付';
+    }
+
+    function selectMembershipPlan(planKey) {
+      document.querySelectorAll('.membership-plan').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.plan === planKey);
+      });
+    }
+
+    function submitMembershipCode() {
+      const input = document.getElementById('membershipCode');
+      const errEl = document.getElementById('membershipError');
+      const err = redeemMembershipCode(input ? input.value : '');
+      if (err) {
+        if (errEl) {
+          errEl.textContent = err;
+          errEl.style.display = 'block';
+        }
+        return;
+      }
+      closeMembershipModal();
+      renderPage();
     }
 
     function submitAuth(mode) {
