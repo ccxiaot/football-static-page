@@ -152,6 +152,12 @@ async function main() {
   try {
     console.log('[3/3] 拉取同步元数据...');
     const meta = await fetchJson('sync-meta.json');
+    meta.lastAttemptAt = new Date().toISOString();
+    meta.refreshPolicy = {
+      ...(meta.refreshPolicy || {}),
+      workflowMinutes: 30,
+      pagePollSeconds: 30,
+    };
     // 更新本地元数据，补充缓存统计
     const localHistory = readLocal('matches-history.json');
     if (localHistory) {

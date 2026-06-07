@@ -397,6 +397,15 @@
       if (hrs < 24) return hrs + ' 小时前';
       return Math.floor(hrs / 24) + ' 天前';
     }
+    function getSyncDisplayTime(meta) {
+      return meta?.lastAttemptAt || meta?.cacheInfo?.lastCacheUpdate || meta?.capturedAt || meta?.updatedAt;
+    }
+    function getSourceDataTime(meta) {
+      if (!meta?.updatedAt) return '';
+      const syncTime = getSyncDisplayTime(meta);
+      if (!syncTime || syncTime === meta.updatedAt) return '';
+      return ' · 数据源 ' + formatRelativeTime(meta.updatedAt);
+    }
     function getHandicapDisplay(line) {
       if (line === 0) return '0';
       return line > 0 ? '+' + line : '' + line;
@@ -570,7 +579,8 @@
       const strip = document.getElementById('syncStrip');
       if (!strip) return;
       if (!syncMeta) { strip.innerHTML = '<div class="data-sync-copy"><span>数据加载中...</span></div>'; return; }
-      strip.innerHTML = '<div class="data-sync-copy"><span class="data-sync-dot"></span><span><strong>' + formatRelativeTime(syncMeta.updatedAt) + '</strong> 同步 · ' + (syncMeta.source || 'sporttery') + '</span></div>' +
+      const syncTime = getSyncDisplayTime(syncMeta);
+      strip.innerHTML = '<div class="data-sync-copy"><span class="data-sync-dot"></span><span><strong>' + formatRelativeTime(syncTime) + '</strong> 检查 · ' + (syncMeta.source || 'sporttery') + getSourceDataTime(syncMeta) + '</span></div>' +
         '<div class="data-sync-items"><span>当前 <strong>' + (syncMeta.files?.current || 0) + '</strong> 场</span><span>历史 <strong>' + (syncMeta.files?.history || 0) + '</strong> 场</span><span>球队 <strong>' + (syncMeta.files?.teams || 0) + '</strong> 支</span></div>';
     }
 
