@@ -4,7 +4,7 @@
  * 用法:
  *   node update-data.js          拉取最新数据
  *
- * 定时任务 (建议每 5 分钟):
+ * 定时任务 (建议每 30 分钟):
  *   node update-data.js
  *
  * 数据源: chen-1119.github.io (原站 GitHub Actions 每小时更新)

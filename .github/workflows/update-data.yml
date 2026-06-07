@@ -2,8 +2,8 @@ name: Update Football Data
 
 on:
   schedule:
-    # 每小时整点运行一次
-    - cron: '0 * * * *'
+    # 每 30 分钟运行一次
+    - cron: '*/30 * * * *'
   workflow_dispatch: # 允许手动触发
 
 permissions:
