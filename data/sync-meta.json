@@ -1,28 +1,29 @@
 {
   "version": 1,
   "source": "sporttery",
-  "updatedAt": "2026-06-06T23:40:03.632Z",
-  "capturedAt": "2026-06-06T23:40:03.632Z",
-  "officialOddsMatches": 0,
-  "officialHandicapOddsMatches": 0,
-  "officialResultMatches": 0,
+  "updatedAt": "2026-06-07T07:57:39.913Z",
+  "capturedAt": "2026-06-07T07:57:39.913Z",
+  "lastAttemptAt": "2026-06-07T08:30:20.713Z",
+  "officialOddsMatches": 4,
+  "officialHandicapOddsMatches": 4,
+  "officialResultMatches": 3004,
   "skippedWithoutOfficialOdds": 0,
   "byStatus": {
-    "SCHEDULED": 10,
-    "FINISHED": 3006
+    "SCHEDULED": 4,
+    "FINISHED": 3004
   },
   "coverage": {
-    "first": "2025-11-19",
-    "last": "2026-06-07"
+    "first": "2025-11-20",
+    "last": "2026-06-08"
   },
   "window": {
     "backDays": 365,
     "forwardDays": 14
   },
   "files": {
-    "current": 10,
-    "history": 3006,
-    "teams": 628
+    "current": 4,
+    "history": 3004,
+    "teams": 625
   },
   "refreshPolicy": {
     "workflowMinutes": 5,
@@ -30,8 +31,15 @@
     "oddsHistoryBucketMinutes": 5,
     "note": "GitHub Pages serves static JSON. The page checks for newer JSON regularly; GitHub Actions refreshes the source files on schedule."
   },
+  "attempt": {
+    "capturedAt": "2026-06-07T08:30:20.713Z",
+    "officialOddsMatches": 0,
+    "officialHandicapOddsMatches": 0,
+    "officialResultMatches": 0,
+    "publishableMatches": 0
+  },
   "oddsHistory": {
-    "rows": 521,
+    "rows": 2383,
     "appended": 0,
     "updated": 0,
     "skipped": "Sporttery returned no publishable matches; kept existing match store"
@@ -40,11 +48,11 @@
     "keptExisting": true,
     "mergedPartialFresh": false,
     "reason": "Sporttery returned no publishable matches; kept existing match store",
-    "existingMatches": 3016,
+    "existingMatches": 3008,
     "freshPublishableMatches": 0
   },
   "cacheInfo": {
-    "localHistoryCount": 3006,
-    "lastCacheUpdate": "2026-06-07T00:54:15.638Z"
+    "localHistoryCount": 3017,
+    "lastCacheUpdate": "2026-06-07T08:32:48.560Z"
   }
 }
