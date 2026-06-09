@@ -3359,7 +3359,7 @@
     "leagueId": "league_116p1yc",
     "countryId": "world",
     "kickoffTime": "2026-06-09T19:35:00+08:00",
-    "status": "SCHEDULED",
+    "status": "LIVE",
     "predictions": [],
     "matchDate": "2026-06-09",
     "kickoffDate": "2026-06-09",
@@ -3588,14 +3588,14 @@
         }
       },
       "snapshot": {
-        "phase": "late",
+        "phase": "locked",
         "total": 0,
         "phases": {}
       }
     },
     "externalSignals": {
       "source": "500.com:jczq",
-      "updatedAt": "2026-06-09T10:27:29.207Z",
+      "updatedAt": "2026-06-09T11:32:29.937Z",
       "sourceMatchId": "2040186",
       "fixtureId": "1411534",
       "matchNo": "周二201",
@@ -3607,24 +3607,24 @@
       "handicapLine": "-1",
       "externalOdds": {
         "source": "500.com",
-        "odds1": 1.71,
-        "oddsX": 3.28,
-        "odds2": 4.17,
+        "odds1": 1.75,
+        "oddsX": 3.14,
+        "odds2": 4.18,
         "summary": {
-          "zh": "500彩票网胜平负参考：1.71 / 3.28 / 4.17",
-          "en": "500.com 1X2 reference: 1.71 / 3.28 / 4.17"
+          "zh": "500彩票网胜平负参考：1.75 / 3.14 / 4.18",
+          "en": "500.com 1X2 reference: 1.75 / 3.14 / 4.18"
         }
       },
       "bookmakerOdds": {
         "had": {
-          "odds1": 1.71,
-          "oddsX": 3.28,
-          "odds2": 4.17
+          "odds1": 1.75,
+          "oddsX": 3.14,
+          "odds2": 4.18
         },
         "hhad": {
-          "odds1": 3.66,
+          "odds1": 3.82,
           "oddsX": 3.11,
-          "odds2": 1.87
+          "odds2": 1.83
         }
       }
     }
@@ -3865,14 +3865,14 @@
         }
       },
       "snapshot": {
-        "phase": "baseline",
+        "phase": "mid",
         "total": 0,
         "phases": {}
       }
     },
     "externalSignals": {
       "source": "500.com:jczq",
-      "updatedAt": "2026-06-09T10:27:29.207Z",
+      "updatedAt": "2026-06-09T13:23:45.738Z",
       "sourceMatchId": "2040187",
       "fixtureId": "1412421",
       "matchNo": "周二202",
@@ -3885,23 +3885,23 @@
       "externalOdds": {
         "source": "500.com",
         "odds1": 1.17,
-        "oddsX": 5.35,
-        "odds2": 11.5,
+        "oddsX": 5.45,
+        "odds2": 11,
         "summary": {
-          "zh": "500彩票网胜平负参考：1.17 / 5.35 / 11.50",
-          "en": "500.com 1X2 reference: 1.17 / 5.35 / 11.50"
+          "zh": "500彩票网胜平负参考：1.17 / 5.45 / 11.00",
+          "en": "500.com 1X2 reference: 1.17 / 5.45 / 11.00"
         }
       },
       "bookmakerOdds": {
         "had": {
           "odds1": 1.17,
-          "oddsX": 5.35,
-          "odds2": 11.5
+          "oddsX": 5.45,
+          "odds2": 11
         },
         "hhad": {
-          "odds1": 3.11,
+          "odds1": 3.34,
           "oddsX": 3.3,
-          "odds2": 1.98
+          "odds2": 1.9
         }
       }
     }
@@ -4149,7 +4149,7 @@
     },
     "externalSignals": {
       "source": "500.com:jczq",
-      "updatedAt": "2026-06-09T10:27:29.207Z",
+      "updatedAt": "2026-06-09T13:23:45.738Z",
       "sourceMatchId": "2040188",
       "fixtureId": "1405672",
       "matchNo": "周二203",
@@ -4161,18 +4161,18 @@
       "handicapLine": "-2",
       "externalOdds": {
         "source": "500.com",
-        "odds1": 2.31,
-        "oddsX": 3.28,
+        "odds1": 2.34,
+        "oddsX": 3.23,
         "odds2": 2.55,
         "summary": {
-          "zh": "500彩票网让球参考(-2)：2.31 / 3.28 / 2.55",
-          "en": "500.com handicap reference (-2): 2.31 / 3.28 / 2.55"
+          "zh": "500彩票网让球参考(-2)：2.34 / 3.23 / 2.55",
+          "en": "500.com handicap reference (-2): 2.34 / 3.23 / 2.55"
         }
       },
       "bookmakerOdds": {
         "hhad": {
-          "odds1": 2.31,
-          "oddsX": 3.28,
+          "odds1": 2.34,
+          "oddsX": 3.23,
           "odds2": 2.55
         }
       }
@@ -5477,7 +5477,7 @@
     ],
     "externalSignals": {
       "source": "500.com:jczq",
-      "updatedAt": "2026-06-09T10:27:29.207Z",
+      "updatedAt": "2026-06-09T13:23:45.738Z",
       "sourceMatchId": "2040162",
       "fixtureId": "1359172",
       "matchNo": "周四001",
@@ -6630,7 +6630,7 @@
     ],
     "externalSignals": {
       "source": "500.com:jczq",
-      "updatedAt": "2026-06-09T10:27:29.207Z",
+      "updatedAt": "2026-06-09T13:23:45.738Z",
       "sourceMatchId": "2040163",
       "fixtureId": "1359224",
       "matchNo": "周四002",
@@ -7773,7 +7773,7 @@
     ],
     "externalSignals": {
       "source": "500.com:jczq",
-      "updatedAt": "2026-06-09T10:27:29.207Z",
+      "updatedAt": "2026-06-09T13:23:45.738Z",
       "sourceMatchId": "2040164",
       "fixtureId": "1359182",
       "matchNo": "周五003",
@@ -8924,7 +8924,7 @@
     ],
     "externalSignals": {
       "source": "500.com:jczq",
-      "updatedAt": "2026-06-09T10:27:29.207Z",
+      "updatedAt": "2026-06-09T13:23:45.738Z",
       "sourceMatchId": "2040165",
       "fixtureId": "1359189",
       "matchNo": "周五004",
@@ -8936,24 +8936,24 @@
       "handicapLine": "-1",
       "externalOdds": {
         "source": "500.com",
-        "odds1": 1.87,
-        "oddsX": 3.02,
-        "odds2": 3.8,
+        "odds1": 1.83,
+        "oddsX": 3.05,
+        "odds2": 3.92,
         "summary": {
-          "zh": "500彩票网胜平负参考：1.87 / 3.02 / 3.80",
-          "en": "500.com 1X2 reference: 1.87 / 3.02 / 3.80"
+          "zh": "500彩票网胜平负参考：1.83 / 3.05 / 3.92",
+          "en": "500.com 1X2 reference: 1.83 / 3.05 / 3.92"
         }
       },
       "bookmakerOdds": {
         "had": {
-          "odds1": 1.87,
-          "oddsX": 3.02,
-          "odds2": 3.8
+          "odds1": 1.83,
+          "oddsX": 3.05,
+          "odds2": 3.92
         },
         "hhad": {
-          "odds1": 3.95,
-          "oddsX": 3.4,
-          "odds2": 1.72
+          "odds1": 3.8,
+          "oddsX": 3.35,
+          "odds2": 1.76
         }
       }
     },
@@ -10028,7 +10028,7 @@
     ],
     "externalSignals": {
       "source": "500.com:jczq",
-      "updatedAt": "2026-06-09T10:27:29.207Z",
+      "updatedAt": "2026-06-09T13:23:45.738Z",
       "sourceMatchId": "2040166",
       "fixtureId": "1359227",
       "matchNo": "周六005",
@@ -11149,7 +11149,7 @@
     ],
     "externalSignals": {
       "source": "500.com:jczq",
-      "updatedAt": "2026-06-09T10:27:29.207Z",
+      "updatedAt": "2026-06-09T13:23:45.738Z",
       "sourceMatchId": "2040167",
       "fixtureId": "1359195",
       "matchNo": "周六006",
@@ -12286,7 +12286,7 @@
     ],
     "externalSignals": {
       "source": "500.com:jczq",
-      "updatedAt": "2026-06-09T10:27:29.207Z",
+      "updatedAt": "2026-06-09T13:23:45.738Z",
       "sourceMatchId": "2040168",
       "fixtureId": "1359230",
       "matchNo": "周六007",
@@ -13417,7 +13417,7 @@
     ],
     "externalSignals": {
       "source": "500.com:jczq",
-      "updatedAt": "2026-06-09T10:27:29.207Z",
+      "updatedAt": "2026-06-09T13:23:45.738Z",
       "sourceMatchId": "2040169",
       "fixtureId": "1359233",
       "matchNo": "周六008",
@@ -14529,7 +14529,7 @@
     ],
     "externalSignals": {
       "source": "500.com:jczq",
-      "updatedAt": "2026-06-09T10:27:29.207Z",
+      "updatedAt": "2026-06-09T13:23:45.738Z",
       "sourceMatchId": "2040170",
       "fixtureId": "1359200",
       "matchNo": "周日009",
@@ -15667,7 +15667,7 @@
     ],
     "externalSignals": {
       "source": "500.com:jczq",
-      "updatedAt": "2026-06-09T10:27:29.207Z",
+      "updatedAt": "2026-06-09T13:23:45.738Z",
       "sourceMatchId": "2040171",
       "fixtureId": "1359203",
       "matchNo": "周日010",
@@ -16808,7 +16808,7 @@
     ],
     "externalSignals": {
       "source": "500.com:jczq",
-      "updatedAt": "2026-06-09T10:27:29.207Z",
+      "updatedAt": "2026-06-09T13:23:45.738Z",
       "sourceMatchId": "2040172",
       "fixtureId": "1359236",
       "matchNo": "周日011",
@@ -17959,7 +17959,7 @@
     ],
     "externalSignals": {
       "source": "500.com:jczq",
-      "updatedAt": "2026-06-09T10:27:29.207Z",
+      "updatedAt": "2026-06-09T13:23:45.738Z",
       "sourceMatchId": "2040173",
       "fixtureId": "1359239",
       "matchNo": "周日012",
@@ -19063,7 +19063,7 @@
     ],
     "externalSignals": {
       "source": "500.com:jczq",
-      "updatedAt": "2026-06-09T10:27:29.207Z",
+      "updatedAt": "2026-06-09T13:23:45.738Z",
       "sourceMatchId": "2040174",
       "fixtureId": "1359209",
       "matchNo": "周一013",
@@ -20183,7 +20183,7 @@
     ],
     "externalSignals": {
       "source": "500.com:jczq",
-      "updatedAt": "2026-06-09T10:27:29.207Z",
+      "updatedAt": "2026-06-09T13:23:45.738Z",
       "sourceMatchId": "2040175",
       "fixtureId": "1359206",
       "matchNo": "周一014",
@@ -21320,7 +21320,7 @@
     ],
     "externalSignals": {
       "source": "500.com:jczq",
-      "updatedAt": "2026-06-09T10:27:29.207Z",
+      "updatedAt": "2026-06-09T13:23:45.738Z",
       "sourceMatchId": "2040176",
       "fixtureId": "1359245",
       "matchNo": "周一015",
@@ -22462,7 +22462,7 @@
     ],
     "externalSignals": {
       "source": "500.com:jczq",
-      "updatedAt": "2026-06-09T10:27:29.207Z",
+      "updatedAt": "2026-06-09T13:23:45.738Z",
       "sourceMatchId": "2040177",
       "fixtureId": "1359242",
       "matchNo": "周一016",
@@ -23610,7 +23610,7 @@
     ],
     "externalSignals": {
       "source": "500.com:jczq",
-      "updatedAt": "2026-06-09T10:27:29.207Z",
+      "updatedAt": "2026-06-09T13:23:45.738Z",
       "sourceMatchId": "2040178",
       "fixtureId": "1359212",
       "matchNo": "周二017",
@@ -24722,7 +24722,7 @@
     ],
     "externalSignals": {
       "source": "500.com:jczq",
-      "updatedAt": "2026-06-09T10:27:29.207Z",
+      "updatedAt": "2026-06-09T13:23:45.738Z",
       "sourceMatchId": "2040179",
       "fixtureId": "1359248",
       "matchNo": "周二018",
@@ -25849,7 +25849,7 @@
     ],
     "externalSignals": {
       "source": "500.com:jczq",
-      "updatedAt": "2026-06-09T10:27:29.207Z",
+      "updatedAt": "2026-06-09T13:23:45.738Z",
       "sourceMatchId": "2040180",
       "fixtureId": "1359215",
       "matchNo": "周二019",
@@ -27006,7 +27006,7 @@
     ],
     "externalSignals": {
       "source": "500.com:jczq",
-      "updatedAt": "2026-06-09T10:27:29.207Z",
+      "updatedAt": "2026-06-09T13:23:45.738Z",
       "sourceMatchId": "2040181",
       "fixtureId": "1359251",
       "matchNo": "周二020",
@@ -28171,7 +28171,7 @@
     ],
     "externalSignals": {
       "source": "500.com:jczq",
-      "updatedAt": "2026-06-09T10:27:29.207Z",
+      "updatedAt": "2026-06-09T13:23:45.738Z",
       "sourceMatchId": "2040182",
       "fixtureId": "1359218",
       "matchNo": "周三021",
@@ -29314,7 +29314,7 @@
     ],
     "externalSignals": {
       "source": "500.com:jczq",
-      "updatedAt": "2026-06-09T10:27:29.207Z",
+      "updatedAt": "2026-06-09T13:23:45.738Z",
       "sourceMatchId": "2040183",
       "fixtureId": "1359221",
       "matchNo": "周三022",
@@ -30465,7 +30465,7 @@
     ],
     "externalSignals": {
       "source": "500.com:jczq",
-      "updatedAt": "2026-06-09T10:27:29.207Z",
+      "updatedAt": "2026-06-09T13:23:45.738Z",
       "sourceMatchId": "2040184",
       "fixtureId": "1359257",
       "matchNo": "周三023",
@@ -31602,7 +31602,7 @@
     ],
     "externalSignals": {
       "source": "500.com:jczq",
-      "updatedAt": "2026-06-09T10:27:29.207Z",
+      "updatedAt": "2026-06-09T13:23:45.738Z",
       "sourceMatchId": "2040185",
       "fixtureId": "1359254",
       "matchNo": "周三024",
