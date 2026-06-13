@@ -1,9 +1,9 @@
 {
   "version": 1,
   "source": "sporttery",
-  "updatedAt": "2026-06-13T19:07:55.893Z",
-  "capturedAt": "2026-06-13T19:07:55.893Z",
-  "lastAttemptAt": "2026-06-13T19:09:09.133Z",
+  "updatedAt": "2026-06-13T20:42:57.982Z",
+  "capturedAt": "2026-06-13T20:42:57.982Z",
+  "lastAttemptAt": "2026-06-13T20:45:19.143Z",
   "officialOddsMatches": 16,
   "officialHandicapOddsMatches": 20,
   "displayOddsMatches": 22,
@@ -40,7 +40,7 @@
     "note": "GitHub Pages serves static JSON. The page checks for newer JSON regularly; GitHub Actions refreshes the source files on schedule."
   },
   "attempt": {
-    "capturedAt": "2026-06-13T19:07:55.893Z",
+    "capturedAt": "2026-06-13T20:42:57.982Z",
     "officialOddsMatches": 0,
     "officialHandicapOddsMatches": 0,
     "officialResultMatches": 0,
@@ -70,7 +70,7 @@
   },
   "externalSignals": {
     "source": "external-signals",
-    "updatedAt": "2026-06-13T19:07:53.908Z",
+    "updatedAt": "2026-06-13T20:42:55.525Z",
     "matches": 185
   },
   "modelCalibration": {
@@ -139,6 +139,6 @@
   },
   "cacheInfo": {
     "localHistoryCount": 3033,
-    "lastCacheUpdate": "2026-06-13T19:09:09.171Z"
+    "lastCacheUpdate": "2026-06-13T20:45:19.181Z"
   }
 }
