@@ -1,9 +1,9 @@
 {
   "version": 1,
   "source": "sporttery",
-  "updatedAt": "2026-06-13T16:01:57.481Z",
-  "capturedAt": "2026-06-13T16:01:57.481Z",
-  "lastAttemptAt": "2026-06-13T16:08:48.175Z",
+  "updatedAt": "2026-06-13T17:49:55.251Z",
+  "capturedAt": "2026-06-13T17:49:55.251Z",
+  "lastAttemptAt": "2026-06-13T17:51:10.411Z",
   "officialOddsMatches": 16,
   "officialHandicapOddsMatches": 20,
   "displayOddsMatches": 22,
@@ -14,8 +14,8 @@
   "skippedWithoutOfficialOdds": 0,
   "byStatus": {
     "FINISHED": 2953,
-    "PENDING_RESULT": 3,
-    "LIVE": 4,
+    "PENDING_RESULT": 5,
+    "LIVE": 2,
     "SCHEDULED": 20
   },
   "coverage": {
@@ -40,14 +40,14 @@
     "note": "GitHub Pages serves static JSON. The page checks for newer JSON regularly; GitHub Actions refreshes the source files on schedule."
   },
   "attempt": {
-    "capturedAt": "2026-06-13T16:01:57.481Z",
+    "capturedAt": "2026-06-13T17:49:55.251Z",
     "officialOddsMatches": 0,
     "officialHandicapOddsMatches": 0,
     "officialResultMatches": 0,
     "fallbackResultMatches": 11,
     "publishableMatches": 0,
-    "fiveHundredFallbackMatches": 26,
-    "combinedPublishableMatches": 26
+    "fiveHundredFallbackMatches": 24,
+    "combinedPublishableMatches": 24
   },
   "oddsHistory": {
     "rows": 40613,
@@ -70,7 +70,7 @@
   },
   "externalSignals": {
     "source": "external-signals",
-    "updatedAt": "2026-06-13T16:01:54.748Z",
+    "updatedAt": "2026-06-13T17:49:52.508Z",
     "matches": 185
   },
   "modelCalibration": {
@@ -132,13 +132,13 @@
     "mergedPartialFresh": true,
     "reason": "fresh Sporttery odds unavailable; keeping existing 2980 matches",
     "existingMatches": 2980,
-    "freshPublishableMatches": 26,
+    "freshPublishableMatches": 24,
     "sportteryPublishableMatches": 0,
-    "fiveHundredFallbackMatches": 26,
+    "fiveHundredFallbackMatches": 24,
     "fiveHundredResultMatches": 11
   },
   "cacheInfo": {
     "localHistoryCount": 3033,
-    "lastCacheUpdate": "2026-06-13T16:08:48.212Z"
+    "lastCacheUpdate": "2026-06-13T17:51:10.448Z"
   }
 }
