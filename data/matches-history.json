@@ -1,5 +1,2481 @@
 [
   {
+    "id": "sporttery_2040169",
+    "homeTeamId": "team_5pe44o",
+    "awayTeamId": "team_1qmc1dv",
+    "leagueId": "league_1gj294g",
+    "countryId": "world",
+    "kickoffTime": "2026-06-14T12:00:00+08:00",
+    "status": "FINISHED",
+    "externalSignals": {
+      "source": "500.com:jczq+500.com:details",
+      "updatedAt": "2026-06-14T10:00:26.685Z",
+      "sourceMatchId": "2040169",
+      "fixtureId": "1359233",
+      "matchNo": "周六008",
+      "leagueName": "世界杯",
+      "homeTeamName": "澳大利亚",
+      "awayTeamName": "土耳其",
+      "kickoffTime": "2026-06-14T12:00:00+08:00",
+      "buyEndTime": "2026-06-14 12:00:00",
+      "handicapLine": "1",
+      "externalOdds": {
+        "source": "500.com:average-europe",
+        "odds1": 4.21,
+        "oddsX": 3.5,
+        "odds2": 1.81,
+        "summary": {
+          "zh": "500欧赔均值 4.21 / 3.50 / 1.81；风险 high。",
+          "en": "500欧赔均值 4.21 / 3.50 / 1.81; risk high."
+        }
+      },
+      "bookmakerOdds": {
+        "had": {
+          "odds1": 5.55,
+          "oddsX": 3.78,
+          "odds2": 1.46,
+          "source": "500.com:jczq",
+          "updatedAt": "2026-06-14T10:00:26.685Z"
+        },
+        "hhad": {
+          "odds1": 2.28,
+          "oddsX": 2.95,
+          "odds2": 2.84,
+          "source": "500.com:jczq",
+          "handicapLine": "1",
+          "updatedAt": "2026-06-14T10:00:26.685Z"
+        }
+      },
+      "fiveHundred": {
+        "source": "500.com",
+        "updatedAt": "2026-06-14T10:00:26.685Z",
+        "fixtureId": "1359233",
+        "infoMatchId": "164900",
+        "matchNo": "周六008",
+        "urls": {
+          "analysis": "https://odds.500.com/fenxi/shuju-1359233.shtml",
+          "asianHandicap": "https://odds.500.com/fenxi/yazhi-1359233.shtml",
+          "europeOdds": "https://odds.500.com/fenxi/ouzhi-1359233.shtml",
+          "recommendation": "https://odds.500.com/fenxi/youliao-1359233.shtml?channel=pc_trade"
+        },
+        "sale": {
+          "buyEndTime": "2026-06-14 12:00:00",
+          "availability": {
+            "spfdg": false,
+            "spfgg": true,
+            "bfdg": true,
+            "bfgg": true,
+            "jqdg": true,
+            "jqgg": true,
+            "bqdg": true,
+            "bqgg": true,
+            "nspfdg": true,
+            "nspfgg": true,
+            "dxqdg": false,
+            "dxqgg": false
+          }
+        },
+        "rank": {
+          "home": {
+            "teamName": "澳大利亚",
+            "fifaRank": 27,
+            "rankChange": 0,
+            "fifaPoints": 1580,
+            "pointsChange": 6,
+            "sampleMonth": "2026年04月"
+          },
+          "away": {
+            "teamName": "土耳其",
+            "fifaRank": 22,
+            "rankChange": 3,
+            "fifaPoints": 1599,
+            "pointsChange": 17,
+            "sampleMonth": "2026年04月"
+          }
+        },
+        "recentForm": {
+          "home": {
+            "teamName": "澳大利亚",
+            "sampleSize": 10,
+            "record": "5-1-4",
+            "goalsForAvg": 1.3,
+            "goalsAgainstAvg": 1,
+            "over25Rate": 0.4,
+            "bttsRate": 0.4,
+            "handicapWinRate": 0.5,
+            "rows": [
+              {
+                "competition": "友谊赛",
+                "date": "26-06-07",
+                "homeTeamName": "澳大利亚",
+                "scoreText": "1 : 1",
+                "awayTeamName": "瑞士",
+                "handicap": "0.75",
+                "halfTime": "0 :1",
+                "result": "平",
+                "handicapResult": "赢",
+                "totalGoalsResult": "小"
+              },
+              {
+                "competition": "友谊赛",
+                "date": "26-05-31",
+                "homeTeamName": "墨西哥",
+                "scoreText": "1: 0",
+                "awayTeamName": "澳大利亚",
+                "handicap": "-0.75",
+                "halfTime": "1: 0",
+                "result": "负",
+                "handicapResult": "输",
+                "totalGoalsResult": "小"
+              },
+              {
+                "competition": "世界杯预赛",
+                "date": "26-03-31",
+                "homeTeamName": "澳大利亚",
+                "scoreText": "5 :1",
+                "awayTeamName": "库拉索",
+                "handicap": "-1.5",
+                "halfTime": "1 :0",
+                "result": "胜",
+                "handicapResult": "赢",
+                "totalGoalsResult": "大"
+              },
+              {
+                "competition": "世界杯预赛",
+                "date": "26-03-27",
+                "homeTeamName": "澳大利亚",
+                "scoreText": "1 :0",
+                "awayTeamName": "喀麦隆",
+                "handicap": "-0.5",
+                "halfTime": "0 : 0",
+                "result": "胜",
+                "handicapResult": "赢",
+                "totalGoalsResult": "小"
+              },
+              {
+                "competition": "友谊赛",
+                "date": "25-11-19",
+                "homeTeamName": "哥伦比亚",
+                "scoreText": "3: 0",
+                "awayTeamName": "澳大利亚",
+                "handicap": "-1.25",
+                "halfTime": "0 : 0",
+                "result": "负",
+                "handicapResult": "输",
+                "totalGoalsResult": "大"
+              },
+              {
+                "competition": "友谊赛",
+                "date": "25-11-15",
+                "homeTeamName": "委内瑞拉",
+                "scoreText": "1: 0",
+                "awayTeamName": "澳大利亚",
+                "handicap": "0.25",
+                "halfTime": "1: 0",
+                "result": "负",
+                "handicapResult": "输",
+                "totalGoalsResult": "小"
+              },
+              {
+                "competition": "友谊赛",
+                "date": "25-10-15",
+                "homeTeamName": "美国",
+                "scoreText": "2: 1",
+                "awayTeamName": "澳大利亚",
+                "handicap": "-0.75",
+                "halfTime": "1 : 1",
+                "result": "负",
+                "handicapResult": "输",
+                "totalGoalsResult": "大"
+              },
+              {
+                "competition": "友谊赛",
+                "date": "25-10-11",
+                "homeTeamName": "加拿大",
+                "scoreText": "0: 1",
+                "awayTeamName": "澳大利亚",
+                "handicap": "-0.75",
+                "halfTime": "0 : 0",
+                "result": "胜",
+                "handicapResult": "赢",
+                "totalGoalsResult": "小"
+              }
+            ]
+          },
+          "away": {
+            "teamName": "土耳其",
+            "sampleSize": 10,
+            "record": "8-1-1",
+            "goalsForAvg": 2.5,
+            "goalsAgainstAvg": 1.3,
+            "over25Rate": 0.7,
+            "bttsRate": 0.5,
+            "handicapWinRate": 0.6,
+            "rows": [
+              {
+                "competition": "友谊赛",
+                "date": "26-06-07",
+                "homeTeamName": "委内瑞拉",
+                "scoreText": "1: 2",
+                "awayTeamName": "土耳其",
+                "handicap": "1",
+                "halfTime": "1 : 1",
+                "result": "胜",
+                "handicapResult": "走",
+                "totalGoalsResult": "大"
+              },
+              {
+                "competition": "友谊赛",
+                "date": "26-06-02",
+                "homeTeamName": "土耳其",
+                "scoreText": "4 :0",
+                "awayTeamName": "北马其顿",
+                "handicap": "-2",
+                "halfTime": "2 :0",
+                "result": "胜",
+                "handicapResult": "赢",
+                "totalGoalsResult": "大"
+              },
+              {
+                "competition": "世外欧洲",
+                "date": "26-04-01",
+                "homeTeamName": "科索沃",
+                "scoreText": "0: 1",
+                "awayTeamName": "土耳其",
+                "handicap": "0.5",
+                "halfTime": "0 : 0",
+                "result": "胜",
+                "handicapResult": "赢",
+                "totalGoalsResult": "小"
+              },
+              {
+                "competition": "世外欧洲",
+                "date": "26-03-27",
+                "homeTeamName": "土耳其",
+                "scoreText": "1 :0",
+                "awayTeamName": "罗马尼亚",
+                "handicap": "-1.25",
+                "halfTime": "0 : 0",
+                "result": "胜",
+                "handicapResult": "输",
+                "totalGoalsResult": "小"
+              },
+              {
+                "competition": "世外欧洲",
+                "date": "25-11-19",
+                "homeTeamName": "西班牙",
+                "scoreText": "2 : 2",
+                "awayTeamName": "土耳其",
+                "handicap": "-2",
+                "halfTime": "1 : 1",
+                "result": "平",
+                "handicapResult": "赢",
+                "totalGoalsResult": "大"
+              },
+              {
+                "competition": "世外欧洲",
+                "date": "25-11-16",
+                "homeTeamName": "土耳其",
+                "scoreText": "2 :0",
+                "awayTeamName": "保加利亚",
+                "handicap": "-2.5",
+                "halfTime": "1 :0",
+                "result": "胜",
+                "handicapResult": "输",
+                "totalGoalsResult": "小"
+              },
+              {
+                "competition": "世外欧洲",
+                "date": "25-10-15",
+                "homeTeamName": "土耳其",
+                "scoreText": "4 :1",
+                "awayTeamName": "格鲁吉亚",
+                "handicap": "-1",
+                "halfTime": "3 :0",
+                "result": "胜",
+                "handicapResult": "赢",
+                "totalGoalsResult": "大"
+              },
+              {
+                "competition": "世外欧洲",
+                "date": "25-10-12",
+                "homeTeamName": "保加利亚",
+                "scoreText": "1: 6",
+                "awayTeamName": "土耳其",
+                "handicap": "1.5",
+                "halfTime": "1 : 1",
+                "result": "胜",
+                "handicapResult": "赢",
+                "totalGoalsResult": "大"
+              }
+            ]
+          }
+        },
+        "futureSchedule": {
+          "home": {
+            "nextGapDays": 6,
+            "rows": [
+              {
+                "competition": "世界杯",
+                "date": "2026-06-20",
+                "homeTeamName": "美国",
+                "awayTeamName": "澳大利亚",
+                "gapText": "6天",
+                "gapDays": 6
+              },
+              {
+                "competition": "世界杯",
+                "date": "2026-06-26",
+                "homeTeamName": "巴拉圭",
+                "awayTeamName": "澳大利亚",
+                "gapText": "12天",
+                "gapDays": 12
+              },
+              {
+                "competition": "亚洲杯",
+                "date": "2027-01-09",
+                "homeTeamName": "澳大利亚",
+                "awayTeamName": "新加坡",
+                "gapText": "209天",
+                "gapDays": 209
+              },
+              {
+                "competition": "亚洲杯",
+                "date": "2027-01-14",
+                "homeTeamName": "伊拉克",
+                "awayTeamName": "澳大利亚",
+                "gapText": "214天",
+                "gapDays": 214
+              },
+              {
+                "competition": "亚洲杯",
+                "date": "2027-01-19",
+                "homeTeamName": "澳大利亚",
+                "awayTeamName": "塔吉克斯坦",
+                "gapText": "219天",
+                "gapDays": 219
+              }
+            ]
+          },
+          "away": {
+            "nextGapDays": 6,
+            "rows": [
+              {
+                "competition": "世界杯",
+                "date": "2026-06-20",
+                "homeTeamName": "土耳其",
+                "awayTeamName": "巴拉圭",
+                "gapText": "6天",
+                "gapDays": 6
+              },
+              {
+                "competition": "世界杯",
+                "date": "2026-06-26",
+                "homeTeamName": "土耳其",
+                "awayTeamName": "美国",
+                "gapText": "12天",
+                "gapDays": 12
+              },
+              {
+                "competition": "欧国联",
+                "date": "2026-09-26",
+                "homeTeamName": "土耳其",
+                "awayTeamName": "法国",
+                "gapText": "104天",
+                "gapDays": 104
+              },
+              {
+                "competition": "欧国联",
+                "date": "2026-09-29",
+                "homeTeamName": "土耳其",
+                "awayTeamName": "意大利",
+                "gapText": "107天",
+                "gapDays": 107
+              },
+              {
+                "competition": "欧国联",
+                "date": "2026-10-03",
+                "homeTeamName": "比利时",
+                "awayTeamName": "土耳其",
+                "gapText": "111天",
+                "gapDays": 111
+              },
+              {
+                "competition": "欧国联",
+                "date": "2026-10-06",
+                "homeTeamName": "意大利",
+                "awayTeamName": "土耳其",
+                "gapText": "114天",
+                "gapDays": 114
+              }
+            ]
+          }
+        },
+        "europeOdds": {
+          "url": "https://odds.500.com/fenxi/ouzhi-1359233.shtml",
+          "rows": [
+            {
+              "company": "竞*官*",
+              "current": {
+                "odds1": 5.15,
+                "oddsX": 3.45,
+                "odds2": 1.55
+              },
+              "initial": {
+                "odds1": 5.15,
+                "oddsX": 3.45,
+                "odds2": 1.55
+              },
+              "currentProbability": {
+                "home": 0.172,
+                "draw": 0.2567,
+                "away": 0.5713
+              },
+              "initialProbability": {
+                "home": 0.172,
+                "draw": 0.2567,
+                "away": 0.5713
+              },
+              "returnRateCurrent": 88.56,
+              "returnRateInitial": 88.56,
+              "kellyCurrent": {
+                "odds1": 0.95,
+                "oddsX": 0.87,
+                "odds2": 0.87
+              }
+            },
+            {
+              "company": "威**尔",
+              "current": {
+                "odds1": 4.4,
+                "oddsX": 3.4,
+                "odds2": 1.75
+              },
+              "initial": {
+                "odds1": 4.8,
+                "oddsX": 3.6,
+                "odds2": 1.67
+              },
+              "currentProbability": {
+                "home": 0.208,
+                "draw": 0.2691,
+                "away": 0.5229
+              },
+              "initialProbability": {
+                "home": 0.192,
+                "draw": 0.256,
+                "away": 0.5519
+              },
+              "returnRateCurrent": 91.51,
+              "returnRateInitial": 92.17,
+              "kellyCurrent": {
+                "odds1": 0.81,
+                "oddsX": 0.86,
+                "odds2": 0.98
+              }
+            },
+            {
+              "company": "*门",
+              "current": {
+                "odds1": 3.55,
+                "oddsX": 3.35,
+                "odds2": 1.88
+              },
+              "initial": {
+                "odds1": 4.35,
+                "oddsX": 3.5,
+                "odds2": 1.68
+              },
+              "currentProbability": {
+                "home": 0.2533,
+                "draw": 0.2684,
+                "away": 0.4783
+              },
+              "initialProbability": {
+                "home": 0.2069,
+                "draw": 0.2572,
+                "away": 0.5358
+              },
+              "returnRateCurrent": 89.92,
+              "returnRateInitial": 90.02,
+              "kellyCurrent": {
+                "odds1": 0.66,
+                "oddsX": 0.85,
+                "odds2": 1.06
+              }
+            },
+            {
+              "company": "立*",
+              "current": {
+                "odds1": 4.2,
+                "oddsX": 3.4,
+                "odds2": 1.85
+              },
+              "initial": {
+                "odds1": 4.8,
+                "oddsX": 3.7,
+                "odds2": 1.73
+              },
+              "currentProbability": {
+                "home": 0.2219,
+                "draw": 0.2742,
+                "away": 0.5039
+              },
+              "initialProbability": {
+                "home": 0.1972,
+                "draw": 0.2558,
+                "away": 0.5471
+              },
+              "returnRateCurrent": 93.22,
+              "returnRateInitial": 94.64,
+              "kellyCurrent": {
+                "odds1": 0.78,
+                "oddsX": 0.86,
+                "odds2": 1.04
+              }
+            },
+            {
+              "company": "**t3*5",
+              "current": {
+                "odds1": 4,
+                "oddsX": 3.6,
+                "odds2": 1.8
+              },
+              "initial": {
+                "odds1": 5,
+                "oddsX": 3.75,
+                "odds2": 1.7
+              },
+              "currentProbability": {
+                "home": 0.2308,
+                "draw": 0.2564,
+                "away": 0.5128
+              },
+              "initialProbability": {
+                "home": 0.1896,
+                "draw": 0.2528,
+                "away": 0.5576
+              },
+              "returnRateCurrent": 92.31,
+              "returnRateInitial": 94.8,
+              "kellyCurrent": {
+                "odds1": 0.74,
+                "oddsX": 0.91,
+                "odds2": 1.01
+              }
+            },
+            {
+              "company": "I***rw**t*n",
+              "current": {
+                "odds1": 4.2,
+                "oddsX": 3.55,
+                "odds2": 1.9
+              },
+              "initial": {
+                "odds1": 5.25,
+                "oddsX": 3.8,
+                "odds2": 1.67
+              },
+              "currentProbability": {
+                "home": 0.2276,
+                "draw": 0.2693,
+                "away": 0.5031
+              },
+              "initialProbability": {
+                "home": 0.181,
+                "draw": 0.25,
+                "away": 0.569
+              },
+              "returnRateCurrent": 95.59,
+              "returnRateInitial": 95.02,
+              "kellyCurrent": {
+                "odds1": 0.78,
+                "oddsX": 0.9,
+                "odds2": 1.07
+              }
+            },
+            {
+              "company": "S**I",
+              "current": {
+                "odds1": 4.25,
+                "oddsX": 3.55,
+                "odds2": 1.8
+              },
+              "initial": {
+                "odds1": 4.25,
+                "oddsX": 3.55,
+                "odds2": 1.8
+              },
+              "currentProbability": {
+                "home": 0.2194,
+                "draw": 0.2626,
+                "away": 0.518
+              },
+              "initialProbability": {
+                "home": 0.2194,
+                "draw": 0.2626,
+                "away": 0.518
+              },
+              "returnRateCurrent": 93.24,
+              "returnRateInitial": 93.24,
+              "kellyCurrent": {
+                "odds1": 0.79,
+                "oddsX": 0.9,
+                "odds2": 1.01
+              }
+            },
+            {
+              "company": "*冠",
+              "current": {
+                "odds1": 3.9,
+                "oddsX": 3.55,
+                "odds2": 1.85
+              },
+              "initial": {
+                "odds1": 5,
+                "oddsX": 3.8,
+                "odds2": 1.7
+              },
+              "currentProbability": {
+                "home": 0.2377,
+                "draw": 0.2612,
+                "away": 0.5011
+              },
+              "initialProbability": {
+                "home": 0.1902,
+                "draw": 0.2503,
+                "away": 0.5595
+              },
+              "returnRateCurrent": 92.71,
+              "returnRateInitial": 95.11,
+              "kellyCurrent": {
+                "odds1": 0.72,
+                "oddsX": 0.9,
+                "odds2": 1.04
+              }
+            },
+            {
+              "company": "易*博",
+              "current": {
+                "odds1": 4.1,
+                "oddsX": 3.5,
+                "odds2": 1.78
+              },
+              "initial": {
+                "odds1": 5.1,
+                "oddsX": 3.8,
+                "odds2": 1.71
+              },
+              "currentProbability": {
+                "home": 0.2235,
+                "draw": 0.2618,
+                "away": 0.5147
+              },
+              "initialProbability": {
+                "home": 0.1878,
+                "draw": 0.2521,
+                "away": 0.5601
+              },
+              "returnRateCurrent": 91.62,
+              "returnRateInitial": 95.78,
+              "kellyCurrent": {
+                "odds1": 0.76,
+                "oddsX": 0.89,
+                "odds2": 1
+              }
+            },
+            {
+              "company": "伟*",
+              "current": {
+                "odds1": 4.2,
+                "oddsX": 3.3,
+                "odds2": 1.8
+              },
+              "initial": {
+                "odds1": 5.25,
+                "oddsX": 3.7,
+                "odds2": 1.67
+              },
+              "currentProbability": {
+                "home": 0.2171,
+                "draw": 0.2763,
+                "away": 0.5066
+              },
+              "initialProbability": {
+                "home": 0.1798,
+                "draw": 0.2551,
+                "away": 0.5651
+              },
+              "returnRateCurrent": 91.18,
+              "returnRateInitial": 94.38,
+              "kellyCurrent": {
+                "odds1": 0.78,
+                "oddsX": 0.84,
+                "odds2": 1.01
+              }
+            },
+            {
+              "company": "B**n",
+              "current": {
+                "odds1": 4.4,
+                "oddsX": 3.5,
+                "odds2": 1.83
+              },
+              "initial": {
+                "odds1": 4.8,
+                "oddsX": 3.7,
+                "odds2": 1.72
+              },
+              "currentProbability": {
+                "home": 0.2145,
+                "draw": 0.2697,
+                "away": 0.5158
+              },
+              "initialProbability": {
+                "home": 0.1965,
+                "draw": 0.255,
+                "away": 0.5485
+              },
+              "returnRateCurrent": 94.39,
+              "returnRateInitial": 94.34,
+              "kellyCurrent": {
+                "odds1": 0.81,
+                "oddsX": 0.89,
+                "odds2": 1.03
+              }
+            },
+            {
+              "company": "Pi****le平*",
+              "current": {
+                "odds1": 4.1,
+                "oddsX": 3.42,
+                "odds2": 1.89
+              },
+              "initial": {
+                "odds1": 5.07,
+                "oddsX": 3.8,
+                "odds2": 1.74
+              },
+              "currentProbability": {
+                "home": 0.2289,
+                "draw": 0.2744,
+                "away": 0.4966
+              },
+              "initialProbability": {
+                "home": 0.1905,
+                "draw": 0.2542,
+                "away": 0.5552
+              },
+              "returnRateCurrent": 93.86,
+              "returnRateInitial": 96.61,
+              "kellyCurrent": {
+                "odds1": 0.76,
+                "oddsX": 0.87,
+                "odds2": 1.06
+              }
+            },
+            {
+              "company": "10**t",
+              "current": {
+                "odds1": 4.1,
+                "oddsX": 3.55,
+                "odds2": 1.87
+              },
+              "initial": {
+                "odds1": 5.2,
+                "oddsX": 3.9,
+                "odds2": 1.68
+              },
+              "currentProbability": {
+                "home": 0.23,
+                "draw": 0.2657,
+                "away": 0.5043
+              },
+              "initialProbability": {
+                "home": 0.1842,
+                "draw": 0.2456,
+                "away": 0.5702
+              },
+              "returnRateCurrent": 94.31,
+              "returnRateInitial": 95.79,
+              "kellyCurrent": {
+                "odds1": 0.76,
+                "oddsX": 0.9,
+                "odds2": 1.05
+              }
+            },
+            {
+              "company": "C***l",
+              "current": {
+                "odds1": 4.4,
+                "oddsX": 3.5,
+                "odds2": 1.83
+              },
+              "initial": {
+                "odds1": 5.25,
+                "oddsX": 3.8,
+                "odds2": 1.67
+              },
+              "currentProbability": {
+                "home": 0.2145,
+                "draw": 0.2697,
+                "away": 0.5158
+              },
+              "initialProbability": {
+                "home": 0.181,
+                "draw": 0.25,
+                "away": 0.569
+              },
+              "returnRateCurrent": 94.39,
+              "returnRateInitial": 95.02,
+              "kellyCurrent": {
+                "odds1": 0.81,
+                "oddsX": 0.89,
+                "odds2": 1.03
+              }
+            },
+            {
+              "company": "利*",
+              "current": {
+                "odds1": 3.82,
+                "oddsX": 3.17,
+                "odds2": 1.84
+              },
+              "initial": {
+                "odds1": 5.1,
+                "oddsX": 3.76,
+                "odds2": 1.67
+              },
+              "currentProbability": {
+                "home": 0.2336,
+                "draw": 0.2815,
+                "away": 0.4849
+              },
+              "initialProbability": {
+                "home": 0.1848,
+                "draw": 0.2507,
+                "away": 0.5645
+              },
+              "returnRateCurrent": 89.23,
+              "returnRateInitial": 94.27,
+              "kellyCurrent": {
+                "odds1": 0.71,
+                "oddsX": 0.8,
+                "odds2": 1.03
+              }
+            },
+            {
+              "company": "U****t (优*客)",
+              "current": {
+                "odds1": 4.5,
+                "oddsX": 3.45,
+                "odds2": 1.79
+              },
+              "initial": {
+                "odds1": 5.75,
+                "oddsX": 3.75,
+                "odds2": 1.63
+              },
+              "currentProbability": {
+                "home": 0.2075,
+                "draw": 0.2707,
+                "away": 0.5218
+              },
+              "initialProbability": {
+                "home": 0.165,
+                "draw": 0.253,
+                "away": 0.582
+              },
+              "returnRateCurrent": 93.39,
+              "returnRateInitial": 94.87,
+              "kellyCurrent": {
+                "odds1": 0.83,
+                "oddsX": 0.87,
+                "odds2": 1.01
+              }
+            },
+            {
+              "company": "S***t**g**t (博*堂)",
+              "current": {
+                "odds1": 4.4,
+                "oddsX": 3.5,
+                "odds2": 1.83
+              },
+              "initial": {
+                "odds1": 4.8,
+                "oddsX": 3.7,
+                "odds2": 1.72
+              },
+              "currentProbability": {
+                "home": 0.2145,
+                "draw": 0.2697,
+                "away": 0.5158
+              },
+              "initialProbability": {
+                "home": 0.1965,
+                "draw": 0.255,
+                "away": 0.5485
+              },
+              "returnRateCurrent": 94.39,
+              "returnRateInitial": 94.34,
+              "kellyCurrent": {
+                "odds1": 0.81,
+                "oddsX": 0.89,
+                "odds2": 1.03
+              }
+            },
+            {
+              "company": "IBC**t (沙*)",
+              "current": {
+                "odds1": 3.6,
+                "oddsX": 3.45,
+                "odds2": 1.81
+              },
+              "initial": {
+                "odds1": 5.6,
+                "oddsX": 3.85,
+                "odds2": 1.61
+              },
+              "currentProbability": {
+                "home": 0.248,
+                "draw": 0.2588,
+                "away": 0.4932
+              },
+              "initialProbability": {
+                "home": 0.1686,
+                "draw": 0.2452,
+                "away": 0.5863
+              },
+              "returnRateCurrent": 89.28,
+              "returnRateInitial": 94.39,
+              "kellyCurrent": {
+                "odds1": 0.67,
+                "oddsX": 0.87,
+                "odds2": 1.02
+              }
+            },
+            {
+              "company": "M****on88 (明*)",
+              "current": {
+                "odds1": 3.6,
+                "oddsX": 3.35,
+                "odds2": 1.84
+              },
+              "initial": {
+                "odds1": 4.8,
+                "oddsX": 3.7,
+                "odds2": 1.72
+              },
+              "currentProbability": {
+                "home": 0.2481,
+                "draw": 0.2666,
+                "away": 0.4854
+              },
+              "initialProbability": {
+                "home": 0.1965,
+                "draw": 0.255,
+                "away": 0.5485
+              },
+              "returnRateCurrent": 89.3,
+              "returnRateInitial": 94.34,
+              "kellyCurrent": {
+                "odds1": 0.67,
+                "oddsX": 0.85,
+                "odds2": 1.03
+              }
+            },
+            {
+              "company": "金*博",
+              "current": {
+                "odds1": 4,
+                "oddsX": 3.55,
+                "odds2": 1.82
+              },
+              "initial": {
+                "odds1": 4,
+                "oddsX": 3.55,
+                "odds2": 1.82
+              },
+              "currentProbability": {
+                "home": 0.2312,
+                "draw": 0.2605,
+                "away": 0.5082
+              },
+              "initialProbability": {
+                "home": 0.2312,
+                "draw": 0.2605,
+                "away": 0.5082
+              },
+              "returnRateCurrent": 92.49,
+              "returnRateInitial": 92.49,
+              "kellyCurrent": {
+                "odds1": 0.74,
+                "oddsX": 0.9,
+                "odds2": 1.02
+              }
+            },
+            {
+              "company": "香**会",
+              "current": {
+                "odds1": 4.95,
+                "oddsX": 3.55,
+                "odds2": 1.57
+              },
+              "initial": {
+                "odds1": 4.95,
+                "oddsX": 3.55,
+                "odds2": 1.57
+              },
+              "currentProbability": {
+                "home": 0.1803,
+                "draw": 0.2514,
+                "away": 0.5684
+              },
+              "initialProbability": {
+                "home": 0.1803,
+                "draw": 0.2514,
+                "away": 0.5684
+              },
+              "returnRateCurrent": 89.23,
+              "returnRateInitial": 89.23,
+              "kellyCurrent": {
+                "odds1": 0.91,
+                "oddsX": 0.9,
+                "odds2": 0.88
+              }
+            },
+            {
+              "company": "12**t (壹*博)",
+              "current": {
+                "odds1": 3.6,
+                "oddsX": 3.35,
+                "odds2": 1.84
+              },
+              "initial": {
+                "odds1": 4.8,
+                "oddsX": 3.7,
+                "odds2": 1.72
+              },
+              "currentProbability": {
+                "home": 0.2481,
+                "draw": 0.2666,
+                "away": 0.4854
+              },
+              "initialProbability": {
+                "home": 0.1965,
+                "draw": 0.255,
+                "away": 0.5485
+              },
+              "returnRateCurrent": 89.3,
+              "returnRateInitial": 94.34,
+              "kellyCurrent": {
+                "odds1": 0.67,
+                "oddsX": 0.85,
+                "odds2": 1.03
+              }
+            },
+            {
+              "company": "88******",
+              "current": {
+                "odds1": 3.75,
+                "oddsX": 3.5,
+                "odds2": 1.83
+              },
+              "initial": {
+                "odds1": 4.75,
+                "oddsX": 3.5,
+                "odds2": 1.66
+              },
+              "currentProbability": {
+                "home": 0.2427,
+                "draw": 0.26,
+                "away": 0.4973
+              },
+              "initialProbability": {
+                "home": 0.1916,
+                "draw": 0.2601,
+                "away": 0.5483
+              },
+              "returnRateCurrent": 91.01,
+              "returnRateInitial": 91.02,
+              "kellyCurrent": {
+                "odds1": 0.69,
+                "oddsX": 0.89,
+                "odds2": 1.03
+              }
+            },
+            {
+              "company": "必*",
+              "current": {
+                "odds1": 4.9,
+                "oddsX": 3.8,
+                "odds2": 1.85
+              },
+              "initial": {
+                "odds1": 6,
+                "oddsX": 4,
+                "odds2": 1.7
+              },
+              "currentProbability": {
+                "home": 0.2025,
+                "draw": 0.2611,
+                "away": 0.5364
+              },
+              "initialProbability": {
+                "home": 0.1659,
+                "draw": 0.2488,
+                "away": 0.5854
+              },
+              "returnRateCurrent": 99.23,
+              "returnRateInitial": 99.51,
+              "kellyCurrent": {
+                "odds1": 0.91,
+                "oddsX": 0.96,
+                "odds2": 1.04
+              }
+            }
+          ],
+          "companies": 30,
+          "currentAverage": {
+            "odds1": 4.21,
+            "oddsX": 3.5,
+            "odds2": 1.81
+          },
+          "initialAverage": {
+            "odds1": 5.05,
+            "oddsX": 3.72,
+            "odds2": 1.69
+          },
+          "currentProbabilityAverage": {
+            "home": 0.2208,
+            "draw": 0.2656,
+            "away": 0.5136
+          },
+          "official": {
+            "company": "竞*官*",
+            "current": {
+              "odds1": 5.15,
+              "oddsX": 3.45,
+              "odds2": 1.55
+            },
+            "initial": {
+              "odds1": 5.15,
+              "oddsX": 3.45,
+              "odds2": 1.55
+            },
+            "currentProbability": {
+              "home": 0.172,
+              "draw": 0.2567,
+              "away": 0.5713
+            },
+            "initialProbability": {
+              "home": 0.172,
+              "draw": 0.2567,
+              "away": 0.5713
+            },
+            "returnRateCurrent": 88.56,
+            "returnRateInitial": 88.56,
+            "kellyCurrent": {
+              "odds1": 0.95,
+              "oddsX": 0.87,
+              "odds2": 0.87
+            }
+          },
+          "summary": "500欧赔均值 4.21 / 3.50 / 1.81"
+        },
+        "asianHandicap": {
+          "url": "https://odds.500.com/fenxi/yazhi-1359233.shtml",
+          "rows": [
+            {
+              "company": "威**尔",
+              "currentHomeWater": 0.86,
+              "currentLine": "受半球/一球 降",
+              "currentLineValue": 0.75,
+              "currentAwayWater": 0.75,
+              "initialHomeWater": 1,
+              "initialLine": "受半球",
+              "initialLineValue": 0.5,
+              "initialAwayWater": 0.75
+            },
+            {
+              "company": "*门",
+              "currentHomeWater": 0.94,
+              "currentLine": "受半球/一球 降",
+              "currentLineValue": 0.75,
+              "currentAwayWater": 0.9,
+              "initialHomeWater": 1,
+              "initialLine": "受半球",
+              "initialLineValue": 0.5,
+              "initialAwayWater": 0.84
+            },
+            {
+              "company": "立*",
+              "currentHomeWater": 1.1,
+              "currentLine": "受半球",
+              "currentLineValue": 0.5,
+              "currentAwayWater": 0.67,
+              "initialHomeWater": 1,
+              "initialLine": "受半球",
+              "initialLineValue": 0.5,
+              "initialAwayWater": 0.7
+            },
+            {
+              "company": "**t3*5",
+              "currentHomeWater": 0.93,
+              "currentLine": "受半球/一球 降",
+              "currentLineValue": 0.75,
+              "currentAwayWater": 0.93,
+              "initialHomeWater": 1.05,
+              "initialLine": "受半球",
+              "initialLineValue": 0.5,
+              "initialAwayWater": 0.8
+            },
+            {
+              "company": "I***rw**t*n",
+              "currentHomeWater": 0.67,
+              "currentLine": "受一球 降",
+              "currentLineValue": 1,
+              "currentAwayWater": 1.1,
+              "initialHomeWater": 0.95,
+              "initialLine": "受半球",
+              "initialLineValue": 0.5,
+              "initialAwayWater": 0.83
+            },
+            {
+              "company": "*冠",
+              "currentHomeWater": 0.95,
+              "currentLine": "受半球/一球",
+              "currentLineValue": 0.75,
+              "currentAwayWater": 0.92,
+              "initialHomeWater": 0.9,
+              "initialLine": "受半球/一球",
+              "initialLineValue": 0.75,
+              "initialAwayWater": 0.98
+            },
+            {
+              "company": "易*博",
+              "currentHomeWater": 0.93,
+              "currentLine": "受半球/一球",
+              "currentLineValue": 0.75,
+              "currentAwayWater": 0.93,
+              "initialHomeWater": 0.82,
+              "initialLine": "受半球/一球",
+              "initialLineValue": 0.75,
+              "initialAwayWater": 0.99
+            },
+            {
+              "company": "伟*",
+              "currentHomeWater": 0.93,
+              "currentLine": "受半球/一球",
+              "currentLineValue": 0.75,
+              "currentAwayWater": 0.9,
+              "initialHomeWater": 0.9,
+              "initialLine": "受半球/一球",
+              "initialLineValue": 0.75,
+              "initialAwayWater": 0.82
+            },
+            {
+              "company": "on**",
+              "currentHomeWater": 0.94,
+              "currentLine": "受半球/一球",
+              "currentLineValue": 0.75,
+              "currentAwayWater": 0.87,
+              "initialHomeWater": 0.9,
+              "initialLine": "受半球/一球",
+              "initialLineValue": 0.75,
+              "initialAwayWater": 0.82
+            },
+            {
+              "company": "Pi****le平*",
+              "currentHomeWater": 0.93,
+              "currentLine": "受半球/一球",
+              "currentLineValue": 0.75,
+              "currentAwayWater": 0.97,
+              "initialHomeWater": 0.85,
+              "initialLine": "受半球/一球",
+              "initialLineValue": 0.75,
+              "initialAwayWater": 1.01
+            },
+            {
+              "company": "利*",
+              "currentHomeWater": 0.96,
+              "currentLine": "受半球/一球",
+              "currentLineValue": 0.75,
+              "currentAwayWater": 0.94,
+              "initialHomeWater": 0.8,
+              "initialLine": "受半球/一球",
+              "initialLineValue": 0.75,
+              "initialAwayWater": 1.04
+            },
+            {
+              "company": "M****on88 (明*)",
+              "currentHomeWater": 0.95,
+              "currentLine": "受半球/一球",
+              "currentLineValue": 0.75,
+              "currentAwayWater": 0.95,
+              "initialHomeWater": 0.94,
+              "initialLine": "受半球/一球",
+              "initialLineValue": 0.75,
+              "initialAwayWater": 0.9
+            },
+            {
+              "company": "金*博",
+              "currentHomeWater": 1.01,
+              "currentLine": "受半球",
+              "currentLineValue": 0.5,
+              "currentAwayWater": 0.83,
+              "initialHomeWater": 1.03,
+              "initialLine": "受半球",
+              "initialLineValue": 0.5,
+              "initialAwayWater": 0.81
+            },
+            {
+              "company": "香**会",
+              "currentHomeWater": 0.94,
+              "currentLine": "受半球/一球",
+              "currentLineValue": 0.75,
+              "currentAwayWater": 0.88,
+              "initialHomeWater": 0.92,
+              "initialLine": "受半球/一球",
+              "initialLineValue": 0.75,
+              "initialAwayWater": 0.84
+            },
+            {
+              "company": "12**t (壹*博)",
+              "currentHomeWater": 1.03,
+              "currentLine": "受半球/一球",
+              "currentLineValue": 0.75,
+              "currentAwayWater": 0.87,
+              "initialHomeWater": 0.92,
+              "initialLine": "受半球/一球",
+              "initialLineValue": 0.75,
+              "initialAwayWater": 0.92
+            },
+            {
+              "company": "18**t",
+              "currentHomeWater": 0.94,
+              "currentLine": "受半球/一球",
+              "currentLineValue": 0.75,
+              "currentAwayWater": 0.85,
+              "initialHomeWater": 0.78,
+              "initialLine": "受半球/一球",
+              "initialLineValue": 0.75,
+              "initialAwayWater": 0.97
+            },
+            {
+              "company": "W****t (盈*)",
+              "currentHomeWater": 0.93,
+              "currentLine": "受半球/一球",
+              "currentLineValue": 0.75,
+              "currentAwayWater": 0.95,
+              "initialHomeWater": 1.03,
+              "initialLine": "受半球/一球",
+              "initialLineValue": 0.75,
+              "initialAwayWater": 0.79
+            }
+          ],
+          "companies": 17,
+          "currentAverageLine": 0.735,
+          "initialAverageLine": 0.662,
+          "lineMovement": 0.073,
+          "summary": "500亚盘均线 0.735，初盘 0.662"
+        },
+        "marketConsensus": {
+          "officialHadProbability": {
+            "home": 0.1595,
+            "draw": 0.2342,
+            "away": 0.6063
+          },
+          "europeAverageProbability": {
+            "home": 0.2208,
+            "draw": 0.2656,
+            "away": 0.5136
+          },
+          "homeProbabilityGap": -0.0613,
+          "handicapLineGap": 0.265,
+          "hhadAvailable": true,
+          "riskLevel": "high",
+          "notes": [
+            "竞彩主胜热度低于欧赔均值",
+            "竞彩让球深于亚盘均线"
+          ]
+        },
+        "macauTip": {
+          "pick": "土耳其",
+          "summary": "澳大利亚 (中) 近况走势 - D L W W L L 盘路赢输 - W 1/ L W W L L 土耳其 近况走势 - W W W W D W 盘路赢输 - D W W 1/ L W L 推介 - 土耳其 贏 对赛成绩 - 澳大利亚 0胜0和0负 虽然今届是土耳其2002年后首次参加世界盃，但球队如今阵容可谓星光熠熠，有不少在欧洲五大联赛效力的球员，面对如今竞争力大不如前的澳洲，土耳其赢球有把握。 ( W = 胜 、 D = 和 、 L = 负 )"
+        },
+        "result": {
+          "source": "500.com:jczq-result",
+          "updatedAt": "2026-06-14T10:00:26.685Z",
+          "status": "FINISHED",
+          "scoreHome": 2,
+          "scoreAway": 0,
+          "scoreText": "2:0"
+        }
+      },
+      "lineups": {
+        "source": "500.com",
+        "summary": {
+          "zh": "500预计名单：澳大利亚 26 泰特·延吉(前锋)、4 雅各布·伊塔利亚诺(后卫)、17 内斯托里·伊兰昆达(中场)、12 保罗·伊佐(守门员)；土耳其 9 德尼兹·居尔(前锋)、24 奥古兹·艾登(中场)、21 巴里斯·阿尔佩尔·伊尔马兹(前锋)、25 萨梅特·阿卡伊丁(后卫)。",
+          "en": "500 projected squads: 澳大利亚 26 泰特·延吉(前锋), 4 雅各布·伊塔利亚诺(后卫), 17 内斯托里·伊兰昆达(中场), 12 保罗·伊佐(守门员); 土耳其 9 德尼兹·居尔(前锋), 24 奥古兹·艾登(中场), 21 巴里斯·阿尔佩尔·伊尔马兹(前锋), 25 萨梅特·阿卡伊丁(后卫)."
+        }
+      },
+      "venue": {
+        "name": "SoFi Stadium",
+        "city": "Los Angeles",
+        "country": "United States",
+        "latitude": 33.9535,
+        "longitude": -118.3392,
+        "verified": false,
+        "source": "world-cup-host-rotation-estimate",
+        "summary": {
+          "zh": "SoFi Stadium，Los Angeles。当前为场地估算，后续可用官方球场覆盖。",
+          "en": "SoFi Stadium, Los Angeles. Venue is estimated and can be replaced by official venue data."
+        }
+      },
+      "weather": {
+        "source": "open-meteo",
+        "provider": "open-meteo",
+        "updatedAt": "2026-06-14T06:58:51.745Z",
+        "forecastTime": "2026-06-14T04:00Z",
+        "verified": false,
+        "confidence": "estimated-location",
+        "locationSource": "world-cup-host-rotation-estimate",
+        "condition": {
+          "zh": "雾",
+          "en": "Fog"
+        },
+        "temperatureC": 17.4,
+        "windKph": 9.4,
+        "windGustKph": 13,
+        "precipitationMm": 0,
+        "weatherCode": 45,
+        "riskLevel": "low",
+        "summary": {
+          "zh": "Los Angeles 场地估算天气：雾，17.4C，风速 9.4km/h，降水 0mm，环境低风险。",
+          "en": "Los Angeles venue estimated weather: Fog, 17.4C, wind 9.4km/h, precipitation 0mm, low risk."
+        },
+        "impact": {
+          "zh": "天气扰动较低，按中性环境处理。",
+          "en": "Weather disruption is low and treated as a neutral environment."
+        }
+      }
+    },
+    "matchDate": "2026-06-14",
+    "kickoffDate": "2026-06-14",
+    "businessDate": "2026-06-13",
+    "homeTeamName": "澳大利亚",
+    "homeTeamNameEn": "澳大利亚",
+    "homeRank": "27",
+    "homeTeamLogo": "https://flagcdn.com/w80/au.png",
+    "homeTeamLogoType": "flag",
+    "homeTeamCountryIso": "AU",
+    "homeTeamColor": "#148ff9",
+    "awayTeamName": "土耳其",
+    "awayTeamNameEn": "土耳其",
+    "awayRank": "22",
+    "awayTeamLogo": "https://flagcdn.com/w80/tr.png",
+    "awayTeamLogoType": "flag",
+    "awayTeamCountryIso": "TR",
+    "awayTeamColor": "#e1b020",
+    "leagueName": "世界杯",
+    "leagueNameEn": "International",
+    "leagueShortName": "国际赛",
+    "leagueShortNameEn": "Internationa",
+    "countryName": "国际",
+    "countryNameEn": "World",
+    "countryFlag": "🌐",
+    "source": "sporttery",
+    "sourceMethod": "500-fallback",
+    "sourceUrl": "https://odds.500.com/fenxi/shuju-1359233.shtml",
+    "sourceMatchId": "2040169",
+    "matchNo": "周六008",
+    "predictionMeta": {
+      "policyVersion": "sporttery-day-formula-trace-v33",
+      "promptVersion": "professional-football-analyst-v16",
+      "strategyVersion": "self-optimization-v1",
+      "trainingVersion": "none",
+      "trainingSource": "none",
+      "trainingSignature": "none|kimi-worldcup-dataset-v1|065363d19babce35|teams:48|fixtures:104",
+      "worldCupPriorSignature": "kimi-worldcup-dataset-v1|065363d19babce35|teams:48|fixtures:104",
+      "generatedAt": "2026-06-08T01:19:18.762Z",
+      "updatedAt": "2026-06-14T03:54:56.385Z",
+      "cutoffTime": "2026-06-14 12:00:00",
+      "dataPolicy": {
+        "zh": "竞彩截止前，赛前分析先由 Elo 强度、长期历史样本、近一年状态、赛程密度、世界杯先验、比分分布与公开赛前信息层生成独立预测；官方 HAD/HHAD SP 和 SP 走势只用于校验市场分歧与价值风险。截止后保留历史预测，只结算赛果，不回写旧推荐。",
+        "en": "Before the Sporttery cutoff, pre-match reads first build an independent forecast from Elo strength, long-run history, recent form, schedule density, World Cup priors, score distribution, and public pre-match signals. Official HAD/HHAD SP and SP movement are used only to validate market disagreement and value risk. After cutoff, the historical prediction is kept and only settlement is added."
+      },
+      "analystRuntime": {
+        "model": "5.5",
+        "reasoningEffort": "high",
+        "promptDocument": "docs/professional-analysis-prompt.md"
+      },
+      "analystFramework": {
+        "version": "professional-football-analyst-v16",
+        "role": {
+          "zh": "专业足球赛事分析师",
+          "en": "Professional football analyst"
+        },
+        "runtime": {
+          "model": "5.5",
+          "reasoningEffort": "high",
+          "promptDocument": "docs/professional-analysis-prompt.md"
+        },
+        "outputSections": [
+          {
+            "id": "baseline",
+            "zh": "一、比赛基本面分析",
+            "en": "1. Fixture baseline"
+          },
+          {
+            "id": "recent-form",
+            "zh": "二、近期状态分析",
+            "en": "2. Recent form"
+          },
+          {
+            "id": "home-away",
+            "zh": "三、主客场表现分析",
+            "en": "3. Home and away split"
+          },
+          {
+            "id": "attack",
+            "zh": "四、进攻能力分析",
+            "en": "4. Attack"
+          },
+          {
+            "id": "defense",
+            "zh": "五、防守能力分析",
+            "en": "5. Defense"
+          },
+          {
+            "id": "lineup",
+            "zh": "六、伤停与首发阵容分析",
+            "en": "6. Injuries and starting XI"
+          },
+          {
+            "id": "tactics",
+            "zh": "七、战术风格与克制关系分析",
+            "en": "7. Tactical matchup"
+          },
+          {
+            "id": "schedule-motivation",
+            "zh": "八、赛程体能与战意分析",
+            "en": "8. Schedule, fitness, motivation"
+          },
+          {
+            "id": "h2h",
+            "zh": "九、历史交锋分析",
+            "en": "9. Head to head"
+          },
+          {
+            "id": "environment-referee",
+            "zh": "十、天气、场地与裁判因素",
+            "en": "10. Weather, pitch, referee"
+          },
+          {
+            "id": "market",
+            "zh": "十一、赔率与盘口分析",
+            "en": "11. Odds and market"
+          },
+          {
+            "id": "verdict",
+            "zh": "十二、综合判断与预测结论",
+            "en": "12. Verdict"
+          }
+        ],
+        "probabilityPrinciples": {
+          "zh": [
+            "先输出胜平负、比分分布、大小球、双方进球和让球概率，不把任务简化成只猜胜负。",
+            "独立概率先由 Elo 强度、Poisson 比分模型、近一年攻防、长期历史样本、世界杯先验和赛程密度生成；官方 SP 只作为市场校验和价值差参考。",
+            "推荐阈值跟随 model-calibration 动态变化；低命中联赛、市场或方向自动降权并提高概率差与让球支持要求。",
+            "回测必须按时间滚动，严禁赛后 xG、赛后射门、最终排名、未公开首发或时间点不一致的临场赔率泄漏。",
+            "评估以 log loss、Brier score、校准误差和分桶可靠性为主，命中率只作为辅助观察。"
+          ],
+          "en": [
+            "Output 1X2, score distribution, totals, BTTS, and handicap probabilities first instead of reducing the task to one winner.",
+            "Independent probabilities are generated first from Elo strength, Poisson score modelling, last-year attack/defense form, long-run history, World Cup priors, and schedule density; official SP is only market validation and value-gap reference.",
+            "Recommendation gates follow model-calibration dynamically; cold leagues, markets, or directions are down-weighted with higher probability-gap and handicap-support requirements.",
+            "Backtests must be time-ordered and must not leak post-match xG, post-match shots, final table rank, unpublished lineups, or late odds into earlier forecast nodes.",
+            "Evaluate with log loss, Brier score, calibration error, and bucket reliability; hit rate is only a secondary diagnostic."
+          ]
+        },
+        "forecastTargets": [
+          {
+            "id": "one-x-two",
+            "zh": "胜平负：主胜、平局、客胜三项概率",
+            "en": "1X2: home, draw, away probabilities"
+          },
+          {
+            "id": "score-distribution",
+            "zh": "比分分布：2-3 个最高概率比分",
+            "en": "Score distribution: top 2-3 scorelines"
+          },
+          {
+            "id": "goal-lines",
+            "zh": "大小球：大/小 2.5 概率",
+            "en": "Goal line: over/under 2.5 probabilities"
+          },
+          {
+            "id": "btts",
+            "zh": "双方进球：BTTS Yes/No 概率",
+            "en": "BTTS: yes/no probabilities"
+          },
+          {
+            "id": "handicap",
+            "zh": "让球概率：当前官方让球线支持率",
+            "en": "Handicap: support at the current official line"
+          }
+        ],
+        "modelingStack": [
+          {
+            "id": "independent-baseline",
+            "zh": "独立基准：Elo、历史样本、世界杯先验与 Poisson 概率",
+            "en": "Independent baseline: Elo, historical samples, World Cup priors, and Poisson probabilities"
+          },
+          {
+            "id": "elo",
+            "zh": "Elo/Glicko 强度：球队动态评分、主场优势和强弱差",
+            "en": "Elo/Glicko strength: dynamic rating, home advantage, team gap"
+          },
+          {
+            "id": "poisson",
+            "zh": "Poisson/Dixon-Coles：进球期望、比分矩阵、大小球和让球聚合",
+            "en": "Poisson/Dixon-Coles: goal expectations, score matrix, totals, handicap aggregation"
+          },
+          {
+            "id": "ml",
+            "zh": "机器学习层：仅在基准稳定并完成时间滚动回测后加入",
+            "en": "ML layer: added only after stable baselines and time-ordered backtests"
+          },
+          {
+            "id": "ensemble",
+            "zh": "集成层：用滚动验证集优化强度/Elo/Poisson/ML 权重",
+            "en": "Ensemble: optimize strength/Elo/Poisson/ML weights on rolling validation"
+          },
+          {
+            "id": "calibration",
+            "zh": "校准层：可靠性曲线、Platt、isotonic、联赛和场景分桶",
+            "en": "Calibration: reliability curves, Platt, isotonic, league and profile buckets"
+          }
+        ],
+        "featurePriority": [
+          "long-term-team-strength",
+          "independent-model-probability",
+          "xg-xga-gap-when-connected",
+          "home-away-split-and-travel",
+          "injuries-and-lineup-quality",
+          "rest-days-and-schedule-density",
+          "style-matchup",
+          "motivation",
+          "weather-and-pitch",
+          "referee-tendency"
+        ],
+        "qualityStandards": {
+          "zh": [
+            "必须输出概率，而不是只输出胜负结论。",
+            "必须按时间滚动回测，不能随机切分。",
+            "必须校准概率，并按联赛、场景和赔率区间分桶评估。",
+            "必须避免未来信息泄漏。",
+            "必须长期接近或优于简单赔率基准，否则不升格为推荐。",
+            "必须保留赛前快照，赛后只结算和复盘，不改写原方向。"
+          ],
+          "en": [
+            "Output probabilities, not just a winner.",
+            "Use time-ordered rolling backtests, not random splits.",
+            "Calibrate probabilities and evaluate by league, profile, and odds bucket.",
+            "Avoid future-information leakage.",
+            "Approach or beat the simple market baseline long term before promoting recommendations.",
+            "Keep pre-match snapshots; after kickoff only settle and review, never rewrite the original direction."
+          ]
+        },
+        "finalVerdict": {
+          "zh": "结论必须区分稳妥方向和激进方向；胜平负与让球方向保持一致；数据不足时明确标注，不为推荐而硬推。",
+          "en": "The verdict must split conservative and aggressive directions; 1X2 and handicap views must stay consistent; missing data is labelled and no pick is forced."
+        }
+      },
+      "updateReason": {
+        "zh": "竞彩截止或开赛后，历史预测已冻结；后续同步只更新赛果和命中结算，不重算推荐、概率和预测比分。",
+        "en": "After Sporttery cutoff or kickoff, the historical forecast is frozen; later syncs only settle results and never recalculate picks, probabilities, or projected score."
+      },
+      "snapshot": {
+        "phase": "locked",
+        "total": 8,
+        "phases": {
+          "baseline": 4,
+          "mid": 1,
+          "late": 1,
+          "final": 1,
+          "locked": 1
+        },
+        "latestAt": "2026-06-14T03:59:55.795Z",
+        "latestSignature": "1X2:HAD:2:reference|BEST:HAD:2:reference|GOALS::U2.5:reference|5.15/3.45/1.55|+1.00:2.11/3.25/2.88|35/28/37"
+      },
+      "lockedAt": "2026-06-14T04:04:57.754Z",
+      "lockedReason": "cutoff"
+    },
+    "worldCupPrior": {
+      "source": "kimi-worldcup-dataset",
+      "version": "kimi-worldcup-dataset-v1",
+      "signature": "kimi-worldcup-dataset-v1|065363d19babce35|teams:48|fixtures:104",
+      "policy": "usable-as-pre-match-prior",
+      "rawPolicy": "audit-only",
+      "strengthDiff": -0.0891,
+      "fixture": null,
+      "home": {
+        "key": "australia",
+        "nameZh": "澳大利亚",
+        "nameEn": "Australia",
+        "group": "D",
+        "fifaRank": 36,
+        "elo": 1625,
+        "squadValueM": 80,
+        "avgAge": 26.2,
+        "corePlayer": "Kanno",
+        "qualityTier": "estimated",
+        "recent10": {
+          "raw": "3胜2平4负",
+          "wins": 3,
+          "draws": 2,
+          "losses": 4,
+          "points": 11
+        },
+        "groupOutlook": {
+          "group": "G",
+          "projectedRank": 4,
+          "projectedPoints": 3.2,
+          "wins": 0.7,
+          "draws": 1.1,
+          "losses": 1.2,
+          "goalsFor": 3.3,
+          "goalsAgainst": 4.1,
+          "goalDiff": -0.8,
+          "advanceProbability": 5,
+          "groupWinProbability": 5
+        },
+        "modelStrengthNormalized": 0.4994
+      },
+      "away": {
+        "key": "turkey",
+        "nameZh": "土耳其",
+        "nameEn": "Turkey",
+        "group": "D",
+        "fifaRank": 28,
+        "elo": 1670,
+        "squadValueM": 150.5,
+        "avgAge": 25.8,
+        "corePlayer": "Ivanov",
+        "qualityTier": "estimated",
+        "recent10": {
+          "raw": "5胜3平1负",
+          "wins": 5,
+          "draws": 3,
+          "losses": 1,
+          "points": 18
+        },
+        "groupOutlook": {
+          "group": "G",
+          "projectedRank": 3,
+          "projectedPoints": 3.7,
+          "wins": 0.9,
+          "draws": 1.1,
+          "losses": 1,
+          "goalsFor": 3.5,
+          "goalsAgainst": 3.6,
+          "goalDiff": -0.1,
+          "advanceProbability": 50,
+          "groupWinProbability": 10
+        },
+        "modelStrengthNormalized": 0.5885
+      }
+    },
+    "buyEndTime": "2026-06-14 12:00:00",
+    "scoreHome": 2,
+    "scoreAway": 0,
+    "resultSource": "500.com:jczq-result",
+    "resultUpdatedAt": "2026-06-14T10:00:26.685Z",
+    "probabilityModel": {
+      "version": "independent-elo-form-poisson-v7",
+      "generatedAt": "2026-06-12T10:44:47.528Z",
+      "basis": {
+        "zh": "模型按竞彩日归档、按官方开赛时间排序；先用 Elo、长期历史样本、近一年状态、世界杯先验、赛程密度与 Poisson 比分分布生成独立足球预测。官方 SP/让球 SP 只用于市场校验、价值差比较和风险标签，不再驱动最终概率。",
+        "en": "Schedules are grouped by Sporttery day and sorted by official kickoff time. The model first builds an independent football forecast from Elo, long-run history, recent form, World Cup priors, and Poisson score distribution. Official SP/handicap SP are used only for market validation, value comparison, and risk tags; they do not drive the final probability."
+      },
+      "ensembleWeights": {
+        "market": 0,
+        "teamStrength": 0.476,
+        "elo": 0,
+        "poisson": 0.344,
+        "worldCupPrior": 0.18
+      },
+      "calculationTrace": {
+        "version": "formula-trace-v2",
+        "policy": {
+          "zh": "公式先算独立足球概率，官方 SP 只做市场校验和风险提示，权重固定为 0。",
+          "en": "The formula first computes independent football probabilities. Official SP is validation and risk context only, with weight fixed at 0."
+        },
+        "outcome": {
+          "formula": {
+            "zh": "P_raw(o)=w_strength*S(o)+w_elo*E(o)+w_poisson*Q(o)+w_wc*W(o)；P_final(o)=calibrate(normalize(P_raw(o)))。",
+            "en": "P_raw(o)=w_strength*S(o)+w_elo*E(o)+w_poisson*Q(o)+w_wc*W(o); P_final(o)=calibrate(normalize(P_raw(o)))."
+          },
+          "weights": {
+            "market": 0,
+            "teamStrength": 0.476,
+            "elo": 0,
+            "poisson": 0.344,
+            "worldCupPrior": 0.18
+          },
+          "components": [
+            {
+              "key": "teamStrength",
+              "label": {
+                "zh": "球队强度/长期样本",
+                "en": "Team strength / long sample"
+              },
+              "weight": 0.476,
+              "probabilities": {
+                "home": 35,
+                "draw": 25.1,
+                "away": 39.9
+              },
+              "role": "model"
+            },
+            {
+              "key": "poisson",
+              "label": {
+                "zh": "Poisson 比分分布",
+                "en": "Poisson score distribution"
+              },
+              "weight": 0.344,
+              "probabilities": {
+                "home": 31,
+                "draw": 26.3,
+                "away": 42.7
+              },
+              "role": "model"
+            },
+            {
+              "key": "worldCupPrior",
+              "label": {
+                "zh": "世界杯先验",
+                "en": "World Cup prior"
+              },
+              "weight": 0.18,
+              "probabilities": {
+                "home": 27.5,
+                "draw": 24.6,
+                "away": 48
+              },
+              "role": "model"
+            },
+            {
+              "key": "market",
+              "label": {
+                "zh": "官方 SP 去水",
+                "en": "Official SP de-vig"
+              },
+              "weight": 0,
+              "probabilities": {
+                "home": 17.2,
+                "draw": 25.7,
+                "away": 57.1
+              },
+              "role": "validation-only"
+            }
+          ],
+          "raw": {
+            "home": 32.3,
+            "draw": 25.4,
+            "away": 42.3
+          },
+          "final": {
+            "home": 34.5,
+            "draw": 28.1,
+            "away": 37.3
+          },
+          "expressions": {
+            "home": "0.476*35% + 0.344*31% + 0.18*27.5% = 32.3%",
+            "draw": "0.476*25.1% + 0.344*26.3% + 0.18*24.6% = 25.4%",
+            "away": "0.476*39.9% + 0.344*42.7% + 0.18*48% = 42.3%"
+          },
+          "calibration": {
+            "applied": true,
+            "reasons": [
+              "international-low-sp-shrink"
+            ],
+            "adjustments": [
+              {
+                "code": "2",
+                "reason": "international-low-sp-shrink",
+                "penalty": 0.05
+              }
+            ],
+            "before": {
+              "home": 32.3,
+              "draw": 25.4,
+              "away": 42.3
+            },
+            "after": {
+              "home": 34.5,
+              "draw": 28.1,
+              "away": 37.3
+            }
+          }
+        },
+        "expectedGoals": {
+          "formula": {
+            "zh": "lambda0 来自独立强度差和战平压力；lambda_league=(1-wL)*lambda0+wL*leagueAvg；lambda_final=(1-wF)*lambda_league+wF*formLambda。",
+            "en": "lambda0 comes from independent strength edge and draw pressure; lambda_league=(1-wL)*lambda0+wL*leagueAvg; lambda_final=(1-wF)*lambda_league+wF*formLambda."
+          },
+          "values": {
+            "independentHome": 1.11,
+            "independentAway": 1.23,
+            "independentTotal": 2.34,
+            "independentHomeShare": 0.473,
+            "leagueHome": 0,
+            "leagueAway": 0,
+            "leagueWeight": 0,
+            "formHome": 1.3,
+            "formAway": 1.87,
+            "formWeight": 0.283,
+            "finalHome": 1.16,
+            "finalAway": 1.41
+          }
+        },
+        "poisson": {
+          "formula": {
+            "zh": "P(score h-a)=Pois(h;lambda_home)*Pois(a;lambda_away)，其中 Pois(k;lambda)=e^-lambda*lambda^k/k!。",
+            "en": "P(score h-a)=Pois(h;lambda_home)*Pois(a;lambda_away), where Pois(k;lambda)=e^-lambda*lambda^k/k!."
+          },
+          "lambdas": {
+            "home": 1.16,
+            "away": 1.41
+          },
+          "topScores": [
+            {
+              "home": 1,
+              "away": 1,
+              "label": "1-1",
+              "probability": 12.5
+            },
+            {
+              "home": 0,
+              "away": 2,
+              "label": "0-2",
+              "probability": 7.6
+            },
+            {
+              "home": 1,
+              "away": 2,
+              "label": "1-2",
+              "probability": 8.8
+            },
+            {
+              "home": 2,
+              "away": 1,
+              "label": "2-1",
+              "probability": 7.3
+            },
+            {
+              "home": 2,
+              "away": 2,
+              "label": "2-2",
+              "probability": 5.1
+            },
+            {
+              "home": 0,
+              "away": 1,
+              "label": "0-1",
+              "probability": 10.8
+            }
+          ]
+        },
+        "goals": {
+          "formula": {
+            "zh": "P(大2.5)=1-sum_{g=0..2}Pois(g;lambda_home+lambda_away)；P(BTTS)=(1-e^-lambda_home)*(1-e^-lambda_away)。",
+            "en": "P(Over2.5)=1-sum_{g=0..2}Pois(g;lambda_home+lambda_away); P(BTTS)=(1-e^-lambda_home)*(1-e^-lambda_away)."
+          },
+          "values": {
+            "over25": 48,
+            "under25": 52,
+            "bttsYes": 51.6,
+            "bttsNo": 48.4
+          }
+        },
+        "marketUse": {
+          "formula": "marketWeight=0",
+          "zh": "SP 不进入最终概率加权，只用于比较模型方向与市场是否偏离，并生成风险/价值提示。",
+          "en": "SP is not weighted into final probabilities; it only compares model direction against the market for risk/value notes."
+        }
+      },
+      "dynamicCalibration": {
+        "version": "none",
+        "profileKey": "international",
+        "gate": null,
+        "metrics": null,
+        "strategy": null
+      },
+      "calibrationAdjustment": {
+        "oneXTwo": {
+          "applied": true,
+          "reasons": [
+            "international-low-sp-shrink"
+          ],
+          "adjustments": [
+            {
+              "code": "2",
+              "reason": "international-low-sp-shrink",
+              "penalty": 0.05
+            }
+          ],
+          "before": {
+            "home": 32.3,
+            "draw": 25.4,
+            "away": 42.3
+          },
+          "after": {
+            "home": 34.5,
+            "draw": 28.1,
+            "away": 37.3
+          }
+        },
+        "goals": {
+          "applied": true,
+          "reasons": [
+            "international-goal-volatility"
+          ],
+          "shrinkFactor": 0.82,
+          "before": {
+            "over25": 47.5,
+            "btts": 52
+          },
+          "after": {
+            "over25": 48,
+            "btts": 51.6
+          }
+        }
+      },
+      "lambdaBlend": {
+        "marketHomeLambda": 1.11,
+        "marketAwayLambda": 1.23,
+        "independentHomeLambda": 1.11,
+        "independentAwayLambda": 1.23,
+        "independentTotalLambda": 2.34,
+        "independentHomeShare": 0.473,
+        "leagueHomeLambda": null,
+        "leagueAwayLambda": null,
+        "leagueWeight": 0,
+        "leaguePriorKey": null,
+        "formHomeLambda": 1.3,
+        "formAwayLambda": 1.87,
+        "formWeight": 0.283
+      },
+      "oneXTwo": {
+        "market": {
+          "home": 17.2,
+          "draw": 25.7,
+          "away": 57.1
+        },
+        "teamStrength": {
+          "home": 35,
+          "draw": 25.1,
+          "away": 39.9
+        },
+        "elo": null,
+        "poisson": {
+          "home": 31,
+          "draw": 26.3,
+          "away": 42.7
+        },
+        "worldCupPrior": {
+          "home": 27.5,
+          "draw": 24.6,
+          "away": 48
+        },
+        "final": {
+          "home": 34.5,
+          "draw": 28.1,
+          "away": 37.3
+        }
+      },
+      "worldCupPrior": {
+        "source": "kimi-worldcup-dataset",
+        "version": "kimi-worldcup-dataset-v1",
+        "signature": "kimi-worldcup-dataset-v1|065363d19babce35|teams:48|fixtures:104",
+        "policy": "usable-as-pre-match-prior",
+        "rawPolicy": "audit-only",
+        "strengthDiff": -0.0891,
+        "fixture": null,
+        "home": {
+          "key": "australia",
+          "nameZh": "澳大利亚",
+          "nameEn": "Australia",
+          "group": "D",
+          "fifaRank": 36,
+          "elo": 1625,
+          "squadValueM": 80,
+          "avgAge": 26.2,
+          "corePlayer": "Kanno",
+          "qualityTier": "estimated",
+          "modelStrengthNormalized": 0.4994,
+          "recent10": {
+            "raw": "3胜2平4负",
+            "wins": 3,
+            "draws": 2,
+            "losses": 4,
+            "points": 11
+          },
+          "groupOutlook": {
+            "group": "G",
+            "projectedRank": 4,
+            "projectedPoints": 3.2,
+            "wins": 0.7,
+            "draws": 1.1,
+            "losses": 1.2,
+            "goalsFor": 3.3,
+            "goalsAgainst": 4.1,
+            "goalDiff": -0.8,
+            "advanceProbability": 5,
+            "groupWinProbability": 5
+          }
+        },
+        "away": {
+          "key": "turkey",
+          "nameZh": "土耳其",
+          "nameEn": "Turkey",
+          "group": "D",
+          "fifaRank": 28,
+          "elo": 1670,
+          "squadValueM": 150.5,
+          "avgAge": 25.8,
+          "corePlayer": "Ivanov",
+          "qualityTier": "estimated",
+          "modelStrengthNormalized": 0.5885,
+          "recent10": {
+            "raw": "5胜3平1负",
+            "wins": 5,
+            "draws": 3,
+            "losses": 1,
+            "points": 18
+          },
+          "groupOutlook": {
+            "group": "G",
+            "projectedRank": 3,
+            "projectedPoints": 3.7,
+            "wins": 0.9,
+            "draws": 1.1,
+            "losses": 1,
+            "goalsFor": 3.5,
+            "goalsAgainst": 3.6,
+            "goalDiff": -0.1,
+            "advanceProbability": 50,
+            "groupWinProbability": 10
+          }
+        }
+      },
+      "elo": null,
+      "form": null,
+      "leaguePrior": null,
+      "modelHealth": null,
+      "scoreDistribution": [
+        {
+          "home": 1,
+          "away": 1,
+          "label": "1-1",
+          "probability": 12.5
+        },
+        {
+          "home": 0,
+          "away": 2,
+          "label": "0-2",
+          "probability": 7.6
+        },
+        {
+          "home": 1,
+          "away": 2,
+          "label": "1-2",
+          "probability": 8.8
+        },
+        {
+          "home": 2,
+          "away": 1,
+          "label": "2-1",
+          "probability": 7.3
+        },
+        {
+          "home": 2,
+          "away": 2,
+          "label": "2-2",
+          "probability": 5.1
+        },
+        {
+          "home": 0,
+          "away": 1,
+          "label": "0-1",
+          "probability": 10.8
+        }
+      ],
+      "goalLines": {
+        "over25": 48,
+        "under25": 52
+      },
+      "bothTeamsToScore": {
+        "yes": 51.6,
+        "no": 48.4
+      },
+      "handicap": {
+        "line": "+1.00",
+        "market": {
+          "home": 42,
+          "draw": 27.3,
+          "away": 30.8
+        },
+        "poisson": {
+          "home": 57.3,
+          "draw": 22.4,
+          "away": 20.4
+        }
+      },
+      "calibration": {
+        "status": "baseline",
+        "zh": "当前为轻量级赛前校准：已加入历史 form 修正和近期命中率冷却；后续仍需要用时间滚动回测做 Brier / log loss / reliability 正式校准。",
+        "en": "This is a lightweight pre-match calibration with rolling-form correction and recent hit-rate cooldown; Brier, log loss, and reliability calibration are still needed."
+      }
+    },
+    "projectedScoreHome": 1,
+    "projectedScoreAway": 2,
+    "stats": {
+      "xG": {
+        "home": 1.16,
+        "away": 1.41
+      },
+      "possession": {
+        "home": 52,
+        "away": 48
+      },
+      "shots": {
+        "home": 7,
+        "away": 9
+      },
+      "shotsOnTarget": {
+        "home": 4,
+        "away": 5
+      },
+      "corners": {
+        "home": 6,
+        "away": 2
+      },
+      "fouls": {
+        "home": 15,
+        "away": 8
+      },
+      "offsides": {
+        "home": 1,
+        "away": 2
+      },
+      "yellowCards": {
+        "home": 3,
+        "away": 2
+      },
+      "redCards": {
+        "home": 0,
+        "away": 0
+      }
+    },
+    "odds": {
+      "odds1": 5.15,
+      "oddsX": 3.45,
+      "odds2": 1.55
+    },
+    "oddsSource": "sporttery:HAD",
+    "oddsPoolCode": "HAD",
+    "oddsSourceMethod": "current",
+    "oddsSourceUrl": "https://webapi.sporttery.cn/gateway/uniform/football/getMatchListV1.qry?clientCode=3001",
+    "handicapOdds": {
+      "odds1": 2.11,
+      "oddsX": 3.25,
+      "odds2": 2.88
+    },
+    "handicapLine": "+1.00",
+    "handicapOddsSource": "sporttery:HHAD",
+    "handicapOddsPoolCode": "HHAD",
+    "handicapOddsSourceMethod": "current",
+    "handicapOddsSourceUrl": "https://webapi.sporttery.cn/gateway/uniform/football/getMatchListV1.qry?clientCode=3001",
+    "oddsTrend": {
+      "sampleSize": 681,
+      "firstCapturedAt": "2026-06-08T07:04:18.034Z",
+      "lastCapturedAt": "2026-06-12T01:41:12.466Z",
+      "odds1Change": 0,
+      "oddsXChange": 0,
+      "odds2Change": 0,
+      "direction": "flat",
+      "summary": {
+        "zh": "已记录 681 次官方 SP 快照，胜平负主盘基本没动；这种场次不把静态赔率写成推荐，临场继续看让球盘是否补强。",
+        "en": "681 official SP snapshots recorded; the 1X2 board is essentially flat, so a static board is not packaged as a pick. Keep watching handicap confirmation."
+      }
+    },
+    "predictions": [
+      {
+        "marketType": "1X2",
+        "oddsPoolCode": "HAD",
+        "handicapLine": "0",
+        "tipCode": "2",
+        "tipLabel": {
+          "zh": "参考倾向 客胜 土耳其",
+          "en": "Reference lean: Away Win (土耳其)"
+        },
+        "odds": 1.55,
+        "trustScore": 34,
+        "recommendationAction": "reference",
+        "recommendationTier": "reference",
+        "explanation": {
+          "zh": "中国竞彩网官方 HAD 胜平负条件未齐：低赔、平局压力、让球确认或风险标签存在不一致，只保留为参考推荐。",
+          "en": "Reference lean: Away Win (土耳其). This 1X2 market did not pass the strong recommendation gate, so the direction is shown for user judgement only."
+        },
+        "analysisItems": [
+          {
+            "zh": "中国竞彩网官方 HAD 胜平负 SP：主胜 5.15 / 平局 3.45 / 客胜 1.55；去水支持率约 主胜 17% / 平局 26% / 客胜 57%。",
+            "en": "official Sporttery HAD SP: 5.15 / 3.45 / 1.55; normalized support is about home 17% / draw 26% / away 57%."
+          },
+          {
+            "zh": "参考理由：独立模型优势约 3 个百分点，市场分歧约 31 个百分点，让球同向支持约 31%；条件没有同时闭合，暂不输出单一胜平负方向。",
+            "en": "Watch reason: independent model edge is about 3 points, market disagreement about 31 points, same-side handicap support about 31%; no single 1X2 pick is promoted."
+          },
+          {
+            "zh": "平局支持率未明显压低主方向，但仍需留意赛前 SP 变化。 中国竞彩网官方 HAD 胜平负 SP 来自本次中国竞彩网同步快照。",
+            "en": "Draw support is not dominant, but late SP movement still matters. official Sporttery HAD SP came from this Sporttery sync snapshot."
+          }
+        ],
+        "riskTags": [
+          {
+            "zh": "价值边际不足",
+            "en": "No value edge"
+          },
+          {
+            "zh": "EV不足",
+            "en": "Flat expected value"
+          },
+          {
+            "zh": "让球支持不足",
+            "en": "Handicap support weak"
+          },
+          {
+            "zh": "进球临界",
+            "en": "Goal-model borderline"
+          },
+          {
+            "zh": "盘口分歧",
+            "en": "Market disagreement"
+          },
+          {
+            "zh": "条件未齐",
+            "en": "Conditions not aligned"
+          }
+        ],
+        "visibilityStatus": "FREE",
+        "resultStatus": "LOST"
+      },
+      {
+        "marketType": "GOALS",
+        "tipCode": "U2.5",
+        "tipLabel": {
+          "zh": "进球参考 小2.5球（≤2球）",
+          "en": "Goals reference: Under 2.5 goals"
+        },
+        "odds": 1.92,
+        "trustScore": 50,
+        "recommendationAction": "reference",
+        "recommendationTier": "reference",
+        "explanation": {
+          "zh": "进球趋势条件未齐：总进球期望约 2.58，大 2.5 概率约 48%，边际不足时不强行给大/小球方向。",
+          "en": "The goals trend did not pass the recommendation gate. Total expected goals are about 2.58, over 2.5 probability about 48%, so no over/under pick is promoted."
+        },
+        "analysisItems": [
+          {
+            "zh": "比分热区：1-2 附近；候选方向 小2.5球（≤2球） 的模型概率约 52%，低于强推阈值。",
+            "en": "Score heat zone: around 1-2; candidate Under 2.5 goals is about 52%, below the promotion threshold."
+          },
+          {
+            "zh": "大 2.5 球概率约 48%，该指标用于走势参考，不等同于官方总进球 SP。",
+            "en": "Over 2.5 probability is about 48%. This is a model reference, not official Sporttery total-goals SP."
+          }
+        ],
+        "riskTags": [
+          {
+            "zh": "进球临界",
+            "en": "Goal-model borderline"
+          },
+          {
+            "zh": "进球条件未齐",
+            "en": "Goals conditions not aligned"
+          }
+        ],
+        "visibilityStatus": "FREE",
+        "resultStatus": "WON"
+      },
+      {
+        "marketType": "BEST",
+        "oddsPoolCode": "HAD",
+        "handicapLine": "0",
+        "tipCode": "2",
+        "tipLabel": {
+          "zh": "参考倾向 客胜 土耳其",
+          "en": "Reference lean: Away Win (土耳其)"
+        },
+        "odds": 1.55,
+        "trustScore": 28,
+        "recommendationAction": "reference",
+        "recommendationTier": "reference",
+        "explanation": {
+          "zh": "这场先不把客胜 土耳其包装成高可信。HAD 方向虽然清楚，但让球同向支持约 31%，盘口确认不够完整。",
+          "en": "This is not packaged as high confidence. Away Win (土耳其) leads the HAD read, but same-side handicap support is about 31%, so confirmation is incomplete."
+        },
+        "analysisItems": [
+          {
+            "zh": "降级原因：风险标签叠加为 价值边际不足、EV不足、让球支持不足、进球临界、盘口分歧，当前不适合只给单一方向。",
+            "en": "Downgrade reason: risk tags overlap: No value edge, Flat expected value, Handicap support weak, Goal-model borderline, Market disagreement. A single pick is not justified yet."
+          },
+          {
+            "zh": "进球侧：比分热区 1-2，总期望 2.58，大 2.5 约 48%，双方进球约 52%。",
+            "en": "Goals: score heat zone 1-2, total xG 2.58, over 2.5 about 48%, BTTS about 52%."
+          },
+          {
+            "zh": "临场复核：价值边际不足、EV不足、让球支持不足、进球临界、盘口分歧。如果赛前 SP 继续降赔但让球支持不上来，仍按参考处理。",
+            "en": "Late check: No value edge, Flat expected value, Handicap support weak, Goal-model borderline, Market disagreement. If SP shortens without handicap confirmation, keep this as reference-only."
+          }
+        ],
+        "riskTags": [
+          {
+            "zh": "价值边际不足",
+            "en": "No value edge"
+          },
+          {
+            "zh": "EV不足",
+            "en": "Flat expected value"
+          },
+          {
+            "zh": "让球支持不足",
+            "en": "Handicap support weak"
+          },
+          {
+            "zh": "进球临界",
+            "en": "Goal-model borderline"
+          },
+          {
+            "zh": "盘口分歧",
+            "en": "Market disagreement"
+          },
+          {
+            "zh": "条件未齐",
+            "en": "Conditions not aligned"
+          }
+        ],
+        "visibilityStatus": "FREE",
+        "resultStatus": "LOST"
+      }
+    ]
+  },
+  {
     "id": "sporttery_2040168",
     "homeTeamId": "team_1p8nble",
     "awayTeamId": "team_1d16pk2",
