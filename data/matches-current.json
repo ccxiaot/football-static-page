@@ -8833,7 +8833,7 @@
     "status": "FINISHED",
     "externalSignals": {
       "source": "500.com:jczq+500.com:details",
-      "updatedAt": "2026-06-14T12:15:31.128Z",
+      "updatedAt": "2026-06-14T14:33:21.750Z",
       "sourceMatchId": "2040166",
       "fixtureId": "1359227",
       "matchNo": "周六005",
@@ -8860,12 +8860,12 @@
           "odds2": 2.43,
           "source": "500.com:jczq",
           "handicapLine": "2",
-          "updatedAt": "2026-06-14T12:15:31.128Z"
+          "updatedAt": "2026-06-14T14:33:21.750Z"
         }
       },
       "fiveHundred": {
         "source": "500.com",
-        "updatedAt": "2026-06-14T12:15:31.128Z",
+        "updatedAt": "2026-06-14T14:33:21.750Z",
         "fixtureId": "1359227",
         "infoMatchId": "164897",
         "matchNo": "周六005",
@@ -10189,7 +10189,7 @@
         },
         "result": {
           "source": "500.com:jczq-result",
-          "updatedAt": "2026-06-14T12:15:31.128Z",
+          "updatedAt": "2026-06-14T14:33:21.750Z",
           "status": "FINISHED",
           "scoreHome": 1,
           "scoreAway": 1,
@@ -10580,7 +10580,7 @@
     "scoreHome": 1,
     "scoreAway": 1,
     "resultSource": "500.com:jczq-result",
-    "resultUpdatedAt": "2026-06-14T12:15:31.128Z",
+    "resultUpdatedAt": "2026-06-14T14:33:21.750Z",
     "probabilityModel": {
       "version": "independent-elo-form-poisson-v7",
       "generatedAt": "2026-06-12T10:44:47.526Z",
@@ -11219,7 +11219,7 @@
     "status": "FINISHED",
     "externalSignals": {
       "source": "500.com:jczq+500.com:details",
-      "updatedAt": "2026-06-14T12:15:31.128Z",
+      "updatedAt": "2026-06-14T14:33:21.750Z",
       "sourceMatchId": "2040167",
       "fixtureId": "1359195",
       "matchNo": "周六006",
@@ -11245,7 +11245,7 @@
           "oddsX": 3.6,
           "odds2": 5.4,
           "source": "500.com:jczq",
-          "updatedAt": "2026-06-14T12:15:31.128Z"
+          "updatedAt": "2026-06-14T14:33:21.750Z"
         },
         "hhad": {
           "odds1": 2.95,
@@ -11253,12 +11253,12 @@
           "odds2": 2.24,
           "source": "500.com:jczq",
           "handicapLine": "-1",
-          "updatedAt": "2026-06-14T12:15:31.128Z"
+          "updatedAt": "2026-06-14T14:33:21.750Z"
         }
       },
       "fiveHundred": {
         "source": "500.com",
-        "updatedAt": "2026-06-14T12:15:31.128Z",
+        "updatedAt": "2026-06-14T14:33:21.750Z",
         "fixtureId": "1359195",
         "infoMatchId": "164898",
         "matchNo": "周六006",
@@ -12557,7 +12557,7 @@
         },
         "result": {
           "source": "500.com:jczq-result",
-          "updatedAt": "2026-06-14T12:15:31.128Z",
+          "updatedAt": "2026-06-14T14:33:21.750Z",
           "status": "FINISHED",
           "scoreHome": 1,
           "scoreAway": 1,
@@ -12947,7 +12947,7 @@
     "scoreHome": 1,
     "scoreAway": 1,
     "resultSource": "500.com:jczq-result",
-    "resultUpdatedAt": "2026-06-14T12:15:31.128Z",
+    "resultUpdatedAt": "2026-06-14T14:33:21.750Z",
     "probabilityModel": {
       "version": "independent-elo-form-poisson-v7",
       "generatedAt": "2026-06-12T10:44:47.527Z",
@@ -13648,7 +13648,7 @@
     "status": "FINISHED",
     "externalSignals": {
       "source": "500.com:jczq+500.com:details",
-      "updatedAt": "2026-06-14T12:15:31.128Z",
+      "updatedAt": "2026-06-14T14:33:21.750Z",
       "sourceMatchId": "2040168",
       "fixtureId": "1359230",
       "matchNo": "周六007",
@@ -13674,7 +13674,7 @@
           "oddsX": 4.12,
           "odds2": 1.33,
           "source": "500.com:jczq",
-          "updatedAt": "2026-06-14T12:15:31.128Z"
+          "updatedAt": "2026-06-14T14:33:21.750Z"
         },
         "hhad": {
           "odds1": 2.7,
@@ -13682,12 +13682,12 @@
           "odds2": 2.03,
           "source": "500.com:jczq",
           "handicapLine": "1",
-          "updatedAt": "2026-06-14T12:15:31.128Z"
+          "updatedAt": "2026-06-14T14:33:21.750Z"
         }
       },
       "fiveHundred": {
         "source": "500.com",
-        "updatedAt": "2026-06-14T12:15:31.128Z",
+        "updatedAt": "2026-06-14T14:33:21.750Z",
         "fixtureId": "1359230",
         "infoMatchId": "164899",
         "matchNo": "周六007",
@@ -14970,7 +14970,7 @@
         },
         "result": {
           "source": "500.com:jczq-result",
-          "updatedAt": "2026-06-14T12:15:31.128Z",
+          "updatedAt": "2026-06-14T14:33:21.750Z",
           "status": "FINISHED",
           "scoreHome": 0,
           "scoreAway": 1,
@@ -15352,7 +15352,7 @@
     "scoreHome": 0,
     "scoreAway": 1,
     "resultSource": "500.com:jczq-result",
-    "resultUpdatedAt": "2026-06-14T12:15:31.128Z",
+    "resultUpdatedAt": "2026-06-14T14:33:21.750Z",
     "probabilityModel": {
       "version": "independent-elo-form-poisson-v7",
       "generatedAt": "2026-06-12T10:44:47.527Z",
@@ -16037,7 +16037,7 @@
     "status": "FINISHED",
     "externalSignals": {
       "source": "500.com:jczq+500.com:details",
-      "updatedAt": "2026-06-14T12:15:31.128Z",
+      "updatedAt": "2026-06-14T14:33:21.750Z",
       "sourceMatchId": "2040169",
       "fixtureId": "1359233",
       "matchNo": "周六008",
@@ -16063,7 +16063,7 @@
           "oddsX": 3.78,
           "odds2": 1.46,
           "source": "500.com:jczq",
-          "updatedAt": "2026-06-14T12:15:31.128Z"
+          "updatedAt": "2026-06-14T14:33:21.750Z"
         },
         "hhad": {
           "odds1": 2.28,
@@ -16071,12 +16071,12 @@
           "odds2": 2.84,
           "source": "500.com:jczq",
           "handicapLine": "1",
-          "updatedAt": "2026-06-14T12:15:31.128Z"
+          "updatedAt": "2026-06-14T14:33:21.750Z"
         }
       },
       "fiveHundred": {
         "source": "500.com",
-        "updatedAt": "2026-06-14T12:15:31.128Z",
+        "updatedAt": "2026-06-14T14:33:21.750Z",
         "fixtureId": "1359233",
         "infoMatchId": "164900",
         "matchNo": "周六008",
@@ -17434,7 +17434,7 @@
         },
         "result": {
           "source": "500.com:jczq-result",
-          "updatedAt": "2026-06-14T12:15:31.128Z",
+          "updatedAt": "2026-06-14T14:33:21.750Z",
           "status": "FINISHED",
           "scoreHome": 2,
           "scoreAway": 0,
@@ -17820,7 +17820,7 @@
     "scoreHome": 2,
     "scoreAway": 0,
     "resultSource": "500.com:jczq-result",
-    "resultUpdatedAt": "2026-06-14T12:15:31.128Z",
+    "resultUpdatedAt": "2026-06-14T14:33:21.750Z",
     "probabilityModel": {
       "version": "independent-elo-form-poisson-v7",
       "generatedAt": "2026-06-12T10:44:47.528Z",
@@ -19093,7 +19093,7 @@
     ],
     "externalSignals": {
       "source": "500.com:jczq+500.com:details",
-      "updatedAt": "2026-06-14T12:15:34.661Z",
+      "updatedAt": "2026-06-14T14:33:26.971Z",
       "sourceMatchId": "2040170",
       "fixtureId": "1359200",
       "matchNo": "周日009",
@@ -20394,24 +20394,24 @@
       "weather": {
         "source": "open-meteo",
         "provider": "open-meteo",
-        "updatedAt": "2026-06-14T12:15:34.661Z",
+        "updatedAt": "2026-06-14T14:33:26.971Z",
         "forecastTime": "2026-06-14T17:00Z",
         "verified": false,
         "confidence": "estimated-location",
         "locationSource": "world-cup-host-rotation-estimate",
         "condition": {
-          "zh": "多云",
-          "en": "Cloudy"
+          "zh": "毛毛雨",
+          "en": "Drizzle"
         },
-        "temperatureC": 22.6,
-        "windKph": 3.6,
-        "windGustKph": 16.9,
-        "precipitationMm": 0,
-        "weatherCode": 3,
+        "temperatureC": 20.1,
+        "windKph": 2.2,
+        "windGustKph": 13,
+        "precipitationMm": 0.2,
+        "weatherCode": 51,
         "riskLevel": "low",
         "summary": {
-          "zh": "Guadalajara 场地估算天气：多云，22.6C，风速 3.6km/h，降水 0mm，环境低风险。",
-          "en": "Guadalajara venue estimated weather: Cloudy, 22.6C, wind 3.6km/h, precipitation 0mm, low risk."
+          "zh": "Guadalajara 场地估算天气：毛毛雨，20.1C，风速 2.2km/h，降水 0.2mm，环境低风险。",
+          "en": "Guadalajara venue estimated weather: Drizzle, 20.1C, wind 2.2km/h, precipitation 0.2mm, low risk."
         },
         "impact": {
           "zh": "天气扰动较低，按中性环境处理。",
@@ -20500,7 +20500,7 @@
       "trainingSignature": "none|kimi-worldcup-dataset-v1|065363d19babce35|teams:48|fixtures:104",
       "worldCupPriorSignature": "kimi-worldcup-dataset-v1|065363d19babce35|teams:48|fixtures:104",
       "generatedAt": "2026-06-08T01:19:18.762Z",
-      "updatedAt": "2026-06-14T12:15:37.175Z",
+      "updatedAt": "2026-06-14T14:33:28.988Z",
       "cutoffTime": "2026-06-14 23:00:00",
       "dataPolicy": {
         "zh": "竞彩截止前，赛前分析先由 Elo 强度、长期历史样本、近一年状态、赛程密度、世界杯先验、比分分布与公开赛前信息层生成独立预测；官方 HAD/HHAD SP 和 SP 走势只用于校验市场分歧与价值风险。截止后保留历史预测，只结算赛果，不回写旧推荐。",
@@ -21433,7 +21433,7 @@
     ],
     "externalSignals": {
       "source": "500.com:jczq+500.com:details",
-      "updatedAt": "2026-06-14T12:15:34.661Z",
+      "updatedAt": "2026-06-14T14:33:26.971Z",
       "sourceMatchId": "2040171",
       "fixtureId": "1359203",
       "matchNo": "周日010",
@@ -22846,28 +22846,28 @@
       "weather": {
         "source": "open-meteo",
         "provider": "open-meteo",
-        "updatedAt": "2026-06-14T12:15:34.661Z",
+        "updatedAt": "2026-06-14T14:33:26.971Z",
         "forecastTime": "2026-06-14T20:00Z",
         "verified": false,
         "confidence": "estimated-location",
         "locationSource": "world-cup-host-rotation-estimate",
         "condition": {
-          "zh": "雨",
-          "en": "Rain"
+          "zh": "毛毛雨",
+          "en": "Drizzle"
         },
-        "temperatureC": 15.2,
-        "windKph": 11.4,
-        "windGustKph": 13.3,
-        "precipitationMm": 2.5,
-        "weatherCode": 63,
-        "riskLevel": "medium",
+        "temperatureC": 15.7,
+        "windKph": 2.9,
+        "windGustKph": 8.6,
+        "precipitationMm": 1.1,
+        "weatherCode": 55,
+        "riskLevel": "low",
         "summary": {
-          "zh": "Toronto 场地估算天气：雨，15.2C，风速 11.4km/h，降水 2.5mm，环境中等风险。",
-          "en": "Toronto venue estimated weather: Rain, 15.2C, wind 11.4km/h, precipitation 2.5mm, medium risk."
+          "zh": "Toronto 场地估算天气：毛毛雨，15.7C，风速 2.9km/h，降水 1.1mm，环境低风险。",
+          "en": "Toronto venue estimated weather: Drizzle, 15.7C, wind 2.9km/h, precipitation 1.1mm, low risk."
         },
         "impact": {
-          "zh": "天气存在扰动，主要作为进球数与让球信心的轻量修正。",
-          "en": "Weather adds some noise, mainly as a light modifier for goals and handicap confidence."
+          "zh": "天气扰动较低，按中性环境处理。",
+          "en": "Weather disruption is low and treated as a neutral environment."
         }
       }
     },
@@ -22956,7 +22956,7 @@
       "trainingSignature": "none|kimi-worldcup-dataset-v1|065363d19babce35|teams:48|fixtures:104",
       "worldCupPriorSignature": "kimi-worldcup-dataset-v1|065363d19babce35|teams:48|fixtures:104",
       "generatedAt": "2026-06-08T01:19:18.762Z",
-      "updatedAt": "2026-06-14T12:15:37.175Z",
+      "updatedAt": "2026-06-14T14:33:28.988Z",
       "cutoffTime": "2026-06-14 23:00:00",
       "dataPolicy": {
         "zh": "竞彩截止前，赛前分析先由 Elo 强度、长期历史样本、近一年状态、赛程密度、世界杯先验、比分分布与公开赛前信息层生成独立预测；官方 HAD/HHAD SP 和 SP 走势只用于校验市场分歧与价值风险。截止后保留历史预测，只结算赛果，不回写旧推荐。",
@@ -23155,12 +23155,13 @@
         "en": "Prompt and display rules were upgraded while the pre-match direction did not materially change; the old forecast is kept and only the analysis text is refreshed."
       },
       "snapshot": {
-        "phase": "baseline",
-        "total": 6,
+        "phase": "mid",
+        "total": 7,
         "phases": {
-          "baseline": 6
+          "baseline": 6,
+          "mid": 1
         },
-        "latestAt": "2026-06-12T10:44:37.850Z",
+        "latestAt": "2026-06-14T14:03:37.716Z",
         "latestSignature": "1X2:HAD:1:reference|BEST:HAD:1:reference|GOALS::U2.5:reference|1.75/3.30/3.92|-1.00:3.50/3.45/1.81|39/29/31"
       }
     },
@@ -23893,7 +23894,7 @@
     ],
     "externalSignals": {
       "source": "500.com:jczq+500.com:details",
-      "updatedAt": "2026-06-14T12:15:34.661Z",
+      "updatedAt": "2026-06-14T14:33:26.971Z",
       "sourceMatchId": "2040172",
       "fixtureId": "1359236",
       "matchNo": "周日011",
@@ -25250,7 +25251,7 @@
       "weather": {
         "source": "open-meteo",
         "provider": "open-meteo",
-        "updatedAt": "2026-06-14T12:15:34.661Z",
+        "updatedAt": "2026-06-14T14:33:26.971Z",
         "forecastTime": "2026-06-14T23:00Z",
         "verified": false,
         "confidence": "estimated-location",
@@ -25259,15 +25260,15 @@
           "zh": "少云",
           "en": "Partly cloudy"
         },
-        "temperatureC": 20.9,
-        "windKph": 16.6,
-        "windGustKph": 22.3,
+        "temperatureC": 21.3,
+        "windKph": 17.3,
+        "windGustKph": 22.7,
         "precipitationMm": 0,
         "weatherCode": 1,
         "riskLevel": "low",
         "summary": {
-          "zh": "Los Angeles 场地估算天气：少云，20.9C，风速 16.6km/h，降水 0mm，环境低风险。",
-          "en": "Los Angeles venue estimated weather: Partly cloudy, 20.9C, wind 16.6km/h, precipitation 0mm, low risk."
+          "zh": "Los Angeles 场地估算天气：少云，21.3C，风速 17.3km/h，降水 0mm，环境低风险。",
+          "en": "Los Angeles venue estimated weather: Partly cloudy, 21.3C, wind 17.3km/h, precipitation 0mm, low risk."
         },
         "impact": {
           "zh": "天气扰动较低，按中性环境处理。",
@@ -25360,7 +25361,7 @@
       "trainingSignature": "none|kimi-worldcup-dataset-v1|065363d19babce35|teams:48|fixtures:104",
       "worldCupPriorSignature": "kimi-worldcup-dataset-v1|065363d19babce35|teams:48|fixtures:104",
       "generatedAt": "2026-06-08T01:19:18.762Z",
-      "updatedAt": "2026-06-14T12:15:37.175Z",
+      "updatedAt": "2026-06-14T14:33:28.988Z",
       "cutoffTime": "2026-06-14 23:00:00",
       "dataPolicy": {
         "zh": "竞彩截止前，赛前分析先由 Elo 强度、长期历史样本、近一年状态、赛程密度、世界杯先验、比分分布与公开赛前信息层生成独立预测；官方 HAD/HHAD SP 和 SP 走势只用于校验市场分歧与价值风险。截止后保留历史预测，只结算赛果，不回写旧推荐。",
@@ -26289,7 +26290,7 @@
     ],
     "externalSignals": {
       "source": "500.com:jczq+500.com:details",
-      "updatedAt": "2026-06-14T12:15:34.661Z",
+      "updatedAt": "2026-06-14T14:33:26.971Z",
       "sourceMatchId": "2040173",
       "fixtureId": "1359239",
       "matchNo": "周日012",
@@ -27678,24 +27679,24 @@
       "weather": {
         "source": "open-meteo",
         "provider": "open-meteo",
-        "updatedAt": "2026-06-14T12:15:34.661Z",
+        "updatedAt": "2026-06-14T14:33:26.971Z",
         "forecastTime": "2026-06-15T02:00Z",
         "verified": false,
         "confidence": "estimated-location",
         "locationSource": "world-cup-host-rotation-estimate",
         "condition": {
-          "zh": "少云",
-          "en": "Partly cloudy"
+          "zh": "多云",
+          "en": "Cloudy"
         },
-        "temperatureC": 26.5,
-        "windKph": 13,
-        "windGustKph": 20.5,
+        "temperatureC": 26.3,
+        "windKph": 13.3,
+        "windGustKph": 23,
         "precipitationMm": 0,
-        "weatherCode": 2,
+        "weatherCode": 3,
         "riskLevel": "low",
         "summary": {
-          "zh": "Vancouver 场地估算天气：少云，26.5C，风速 13km/h，降水 0mm，环境低风险。",
-          "en": "Vancouver venue estimated weather: Partly cloudy, 26.5C, wind 13km/h, precipitation 0mm, low risk."
+          "zh": "Vancouver 场地估算天气：多云，26.3C，风速 13.3km/h，降水 0mm，环境低风险。",
+          "en": "Vancouver venue estimated weather: Cloudy, 26.3C, wind 13.3km/h, precipitation 0mm, low risk."
         },
         "impact": {
           "zh": "天气扰动较低，按中性环境处理。",
@@ -27788,7 +27789,7 @@
       "trainingSignature": "none|kimi-worldcup-dataset-v1|065363d19babce35|teams:48|fixtures:104",
       "worldCupPriorSignature": "kimi-worldcup-dataset-v1|065363d19babce35|teams:48|fixtures:104",
       "generatedAt": "2026-06-08T01:19:18.762Z",
-      "updatedAt": "2026-06-14T12:15:37.175Z",
+      "updatedAt": "2026-06-14T14:33:28.988Z",
       "cutoffTime": "2026-06-14 23:00:00",
       "dataPolicy": {
         "zh": "竞彩截止前，赛前分析先由 Elo 强度、长期历史样本、近一年状态、赛程密度、世界杯先验、比分分布与公开赛前信息层生成独立预测；官方 HAD/HHAD SP 和 SP 走势只用于校验市场分歧与价值风险。截止后保留历史预测，只结算赛果，不回写旧推荐。",
@@ -28688,7 +28689,7 @@
     ],
     "externalSignals": {
       "source": "500.com:jczq+500.com:details",
-      "updatedAt": "2026-06-14T12:15:34.661Z",
+      "updatedAt": "2026-06-14T14:33:26.971Z",
       "sourceMatchId": "2040174",
       "fixtureId": "1359209",
       "matchNo": "周一013",
@@ -30037,7 +30038,7 @@
       "weather": {
         "source": "open-meteo",
         "provider": "open-meteo",
-        "updatedAt": "2026-06-14T12:15:34.661Z",
+        "updatedAt": "2026-06-14T14:33:26.971Z",
         "forecastTime": "2026-06-15T16:00Z",
         "verified": false,
         "confidence": "estimated-location",
@@ -30046,15 +30047,15 @@
           "zh": "多云",
           "en": "Cloudy"
         },
-        "temperatureC": 22.1,
-        "windKph": 3.7,
-        "windGustKph": 4,
+        "temperatureC": 21.5,
+        "windKph": 2.5,
+        "windGustKph": 5,
         "precipitationMm": 0,
         "weatherCode": 3,
         "riskLevel": "low",
         "summary": {
-          "zh": "Seattle 场地估算天气：多云，22.1C，风速 3.7km/h，降水 0mm，环境低风险。",
-          "en": "Seattle venue estimated weather: Cloudy, 22.1C, wind 3.7km/h, precipitation 0mm, low risk."
+          "zh": "Seattle 场地估算天气：多云，21.5C，风速 2.5km/h，降水 0mm，环境低风险。",
+          "en": "Seattle venue estimated weather: Cloudy, 21.5C, wind 2.5km/h, precipitation 0mm, low risk."
         },
         "impact": {
           "zh": "天气扰动较低，按中性环境处理。",
@@ -30142,7 +30143,7 @@
       "trainingSignature": "none|kimi-worldcup-dataset-v1|065363d19babce35|teams:48|fixtures:104",
       "worldCupPriorSignature": "kimi-worldcup-dataset-v1|065363d19babce35|teams:48|fixtures:104",
       "generatedAt": "2026-06-08T01:19:18.762Z",
-      "updatedAt": "2026-06-14T12:15:37.175Z",
+      "updatedAt": "2026-06-14T14:33:28.988Z",
       "cutoffTime": "2026-06-15 22:00:00",
       "dataPolicy": {
         "zh": "竞彩截止前，赛前分析先由 Elo 强度、长期历史样本、近一年状态、赛程密度、世界杯先验、比分分布与公开赛前信息层生成独立预测；官方 HAD/HHAD SP 和 SP 走势只用于校验市场分歧与价值风险。截止后保留历史预测，只结算赛果，不回写旧推荐。",
@@ -31066,7 +31067,7 @@
     ],
     "externalSignals": {
       "source": "500.com:jczq+500.com:details",
-      "updatedAt": "2026-06-14T12:15:34.661Z",
+      "updatedAt": "2026-06-14T14:33:26.971Z",
       "sourceMatchId": "2040175",
       "fixtureId": "1359206",
       "matchNo": "周一014",
@@ -32455,7 +32456,7 @@
       "weather": {
         "source": "open-meteo",
         "provider": "open-meteo",
-        "updatedAt": "2026-06-14T12:15:34.661Z",
+        "updatedAt": "2026-06-14T14:33:26.971Z",
         "forecastTime": "2026-06-15T19:00Z",
         "verified": false,
         "confidence": "estimated-location",
@@ -32464,15 +32465,15 @@
           "zh": "晴",
           "en": "Clear"
         },
-        "temperatureC": 19.1,
-        "windKph": 13.2,
-        "windGustKph": 14.8,
+        "temperatureC": 18.8,
+        "windKph": 15.8,
+        "windGustKph": 18.4,
         "precipitationMm": 0,
         "weatherCode": 0,
         "riskLevel": "low",
         "summary": {
-          "zh": "San Francisco Bay Area 场地估算天气：晴，19.1C，风速 13.2km/h，降水 0mm，环境低风险。",
-          "en": "San Francisco Bay Area venue estimated weather: Clear, 19.1C, wind 13.2km/h, precipitation 0mm, low risk."
+          "zh": "San Francisco Bay Area 场地估算天气：晴，18.8C，风速 15.8km/h，降水 0mm，环境低风险。",
+          "en": "San Francisco Bay Area venue estimated weather: Clear, 18.8C, wind 15.8km/h, precipitation 0mm, low risk."
         },
         "impact": {
           "zh": "天气扰动较低，按中性环境处理。",
@@ -32565,7 +32566,7 @@
       "trainingSignature": "none|kimi-worldcup-dataset-v1|065363d19babce35|teams:48|fixtures:104",
       "worldCupPriorSignature": "kimi-worldcup-dataset-v1|065363d19babce35|teams:48|fixtures:104",
       "generatedAt": "2026-06-08T01:19:18.762Z",
-      "updatedAt": "2026-06-14T12:15:37.175Z",
+      "updatedAt": "2026-06-14T14:33:28.988Z",
       "cutoffTime": "2026-06-15 22:00:00",
       "dataPolicy": {
         "zh": "竞彩截止前，赛前分析先由 Elo 强度、长期历史样本、近一年状态、赛程密度、世界杯先验、比分分布与公开赛前信息层生成独立预测；官方 HAD/HHAD SP 和 SP 走势只用于校验市场分歧与价值风险。截止后保留历史预测，只结算赛果，不回写旧推荐。",
@@ -33494,7 +33495,7 @@
     ],
     "externalSignals": {
       "source": "500.com:jczq+500.com:details",
-      "updatedAt": "2026-06-14T12:15:34.661Z",
+      "updatedAt": "2026-06-14T14:33:26.971Z",
       "sourceMatchId": "2040176",
       "fixtureId": "1359245",
       "matchNo": "周一015",
@@ -34875,7 +34876,7 @@
       "weather": {
         "source": "open-meteo",
         "provider": "open-meteo",
-        "updatedAt": "2026-06-14T12:15:34.661Z",
+        "updatedAt": "2026-06-14T14:33:26.971Z",
         "forecastTime": "2026-06-15T22:00Z",
         "verified": false,
         "confidence": "estimated-location",
@@ -34884,19 +34885,19 @@
           "zh": "多云",
           "en": "Cloudy"
         },
-        "temperatureC": 26.4,
-        "windKph": 9.7,
-        "windGustKph": 14,
+        "temperatureC": 30.4,
+        "windKph": 10,
+        "windGustKph": 12.2,
         "precipitationMm": 0,
         "weatherCode": 3,
-        "riskLevel": "low",
+        "riskLevel": "medium",
         "summary": {
-          "zh": "Dallas 场地估算天气：多云，26.4C，风速 9.7km/h，降水 0mm，环境低风险。",
-          "en": "Dallas venue estimated weather: Cloudy, 26.4C, wind 9.7km/h, precipitation 0mm, low risk."
+          "zh": "Dallas 场地估算天气：多云，30.4C，风速 10km/h，降水 0mm，环境中等风险。",
+          "en": "Dallas venue estimated weather: Cloudy, 30.4C, wind 10km/h, precipitation 0mm, medium risk."
         },
         "impact": {
-          "zh": "天气扰动较低，按中性环境处理。",
-          "en": "Weather disruption is low and treated as a neutral environment."
+          "zh": "天气存在扰动，主要作为进球数与让球信心的轻量修正。",
+          "en": "Weather adds some noise, mainly as a light modifier for goals and handicap confidence."
         }
       }
     },
@@ -34984,7 +34985,7 @@
       "trainingSignature": "none|kimi-worldcup-dataset-v1|065363d19babce35|teams:48|fixtures:104",
       "worldCupPriorSignature": "kimi-worldcup-dataset-v1|065363d19babce35|teams:48|fixtures:104",
       "generatedAt": "2026-06-08T01:19:18.762Z",
-      "updatedAt": "2026-06-14T12:15:37.175Z",
+      "updatedAt": "2026-06-14T14:33:28.988Z",
       "cutoffTime": "2026-06-15 22:00:00",
       "dataPolicy": {
         "zh": "竞彩截止前，赛前分析先由 Elo 强度、长期历史样本、近一年状态、赛程密度、世界杯先验、比分分布与公开赛前信息层生成独立预测；官方 HAD/HHAD SP 和 SP 走势只用于校验市场分歧与价值风险。截止后保留历史预测，只结算赛果，不回写旧推荐。",
@@ -35913,7 +35914,7 @@
     ],
     "externalSignals": {
       "source": "500.com:jczq+500.com:details",
-      "updatedAt": "2026-06-14T12:15:34.661Z",
+      "updatedAt": "2026-06-14T14:33:26.971Z",
       "sourceMatchId": "2040177",
       "fixtureId": "1359242",
       "matchNo": "周一016",
@@ -37258,28 +37259,28 @@
       "weather": {
         "source": "open-meteo",
         "provider": "open-meteo",
-        "updatedAt": "2026-06-14T12:15:34.661Z",
+        "updatedAt": "2026-06-14T14:33:26.971Z",
         "forecastTime": "2026-06-16T01:00Z",
         "verified": false,
         "confidence": "estimated-location",
         "locationSource": "world-cup-host-rotation-estimate",
         "condition": {
-          "zh": "雨",
-          "en": "Rain"
+          "zh": "毛毛雨",
+          "en": "Drizzle"
         },
-        "temperatureC": 27,
-        "windKph": 7.6,
-        "windGustKph": 21.6,
-        "precipitationMm": 3.2,
-        "weatherCode": 81,
-        "riskLevel": "medium",
+        "temperatureC": 25.8,
+        "windKph": 6.8,
+        "windGustKph": 14.8,
+        "precipitationMm": 0.4,
+        "weatherCode": 51,
+        "riskLevel": "low",
         "summary": {
-          "zh": "Houston 场地估算天气：雨，27C，风速 7.6km/h，降水 3.2mm，环境中等风险。",
-          "en": "Houston venue estimated weather: Rain, 27C, wind 7.6km/h, precipitation 3.2mm, medium risk."
+          "zh": "Houston 场地估算天气：毛毛雨，25.8C，风速 6.8km/h，降水 0.4mm，环境低风险。",
+          "en": "Houston venue estimated weather: Drizzle, 25.8C, wind 6.8km/h, precipitation 0.4mm, low risk."
         },
         "impact": {
-          "zh": "天气存在扰动，主要作为进球数与让球信心的轻量修正。",
-          "en": "Weather adds some noise, mainly as a light modifier for goals and handicap confidence."
+          "zh": "天气扰动较低，按中性环境处理。",
+          "en": "Weather disruption is low and treated as a neutral environment."
         }
       }
     },
@@ -37367,7 +37368,7 @@
       "trainingSignature": "none|kimi-worldcup-dataset-v1|065363d19babce35|teams:48|fixtures:104",
       "worldCupPriorSignature": "kimi-worldcup-dataset-v1|065363d19babce35|teams:48|fixtures:104",
       "generatedAt": "2026-06-08T01:19:18.762Z",
-      "updatedAt": "2026-06-14T12:15:37.175Z",
+      "updatedAt": "2026-06-14T14:33:28.988Z",
       "cutoffTime": "2026-06-15 22:00:00",
       "dataPolicy": {
         "zh": "竞彩截止前，赛前分析先由 Elo 强度、长期历史样本、近一年状态、赛程密度、世界杯先验、比分分布与公开赛前信息层生成独立预测；官方 HAD/HHAD SP 和 SP 走势只用于校验市场分歧与价值风险。截止后保留历史预测，只结算赛果，不回写旧推荐。",
@@ -38304,7 +38305,7 @@
     ],
     "externalSignals": {
       "source": "500.com:jczq+500.com:details",
-      "updatedAt": "2026-06-14T12:15:34.661Z",
+      "updatedAt": "2026-06-14T14:33:26.971Z",
       "sourceMatchId": "2040178",
       "fixtureId": "1359212",
       "matchNo": "周二017",
@@ -39691,7 +39692,7 @@
       "weather": {
         "source": "open-meteo",
         "provider": "open-meteo",
-        "updatedAt": "2026-06-14T12:15:34.661Z",
+        "updatedAt": "2026-06-14T14:33:26.971Z",
         "forecastTime": "2026-06-16T19:00Z",
         "verified": false,
         "confidence": "estimated-location",
@@ -39702,7 +39703,7 @@
         },
         "temperatureC": 29.3,
         "windKph": 14.6,
-        "windGustKph": 17.6,
+        "windGustKph": 19.4,
         "precipitationMm": 0,
         "weatherCode": 3,
         "riskLevel": "low",
@@ -39801,7 +39802,7 @@
       "trainingSignature": "none|kimi-worldcup-dataset-v1|065363d19babce35|teams:48|fixtures:104",
       "worldCupPriorSignature": "kimi-worldcup-dataset-v1|065363d19babce35|teams:48|fixtures:104",
       "generatedAt": "2026-06-08T01:19:18.762Z",
-      "updatedAt": "2026-06-14T12:15:37.175Z",
+      "updatedAt": "2026-06-14T14:33:28.988Z",
       "cutoffTime": "2026-06-16 22:00:00",
       "dataPolicy": {
         "zh": "竞彩截止前，赛前分析先由 Elo 强度、长期历史样本、近一年状态、赛程密度、世界杯先验、比分分布与公开赛前信息层生成独立预测；官方 HAD/HHAD SP 和 SP 走势只用于校验市场分歧与价值风险。截止后保留历史预测，只结算赛果，不回写旧推荐。",
@@ -40693,7 +40694,7 @@
     ],
     "externalSignals": {
       "source": "500.com:jczq+500.com:details",
-      "updatedAt": "2026-06-14T12:15:34.661Z",
+      "updatedAt": "2026-06-14T14:33:26.971Z",
       "sourceMatchId": "2040179",
       "fixtureId": "1359248",
       "matchNo": "周二018",
@@ -42064,7 +42065,7 @@
       "weather": {
         "source": "open-meteo",
         "provider": "open-meteo",
-        "updatedAt": "2026-06-14T12:15:34.661Z",
+        "updatedAt": "2026-06-14T14:33:26.971Z",
         "forecastTime": "2026-06-16T22:00Z",
         "verified": false,
         "confidence": "estimated-location",
@@ -42075,7 +42076,7 @@
         },
         "temperatureC": 32.9,
         "windKph": 18.9,
-        "windGustKph": 19.8,
+        "windGustKph": 21.2,
         "precipitationMm": 0,
         "weatherCode": 3,
         "riskLevel": "medium",
@@ -42170,7 +42171,7 @@
       "trainingSignature": "none|kimi-worldcup-dataset-v1|065363d19babce35|teams:48|fixtures:104",
       "worldCupPriorSignature": "kimi-worldcup-dataset-v1|065363d19babce35|teams:48|fixtures:104",
       "generatedAt": "2026-06-08T01:19:18.762Z",
-      "updatedAt": "2026-06-14T12:15:37.175Z",
+      "updatedAt": "2026-06-14T14:33:28.988Z",
       "cutoffTime": "2026-06-16 22:00:00",
       "dataPolicy": {
         "zh": "竞彩截止前，赛前分析先由 Elo 强度、长期历史样本、近一年状态、赛程密度、世界杯先验、比分分布与公开赛前信息层生成独立预测；官方 HAD/HHAD SP 和 SP 走势只用于校验市场分歧与价值风险。截止后保留历史预测，只结算赛果，不回写旧推荐。",
@@ -43086,7 +43087,7 @@
     ],
     "externalSignals": {
       "source": "500.com:jczq+500.com:details",
-      "updatedAt": "2026-06-14T12:15:34.661Z",
+      "updatedAt": "2026-06-14T14:33:26.971Z",
       "sourceMatchId": "2040180",
       "fixtureId": "1359215",
       "matchNo": "周二019",
@@ -44443,7 +44444,7 @@
       "weather": {
         "source": "open-meteo",
         "provider": "open-meteo",
-        "updatedAt": "2026-06-14T12:15:34.661Z",
+        "updatedAt": "2026-06-14T14:33:26.971Z",
         "forecastTime": "2026-06-17T01:00Z",
         "verified": false,
         "confidence": "estimated-location",
@@ -44454,7 +44455,7 @@
         },
         "temperatureC": 22.4,
         "windKph": 13,
-        "windGustKph": 28.1,
+        "windGustKph": 27.7,
         "precipitationMm": 0,
         "weatherCode": 0,
         "riskLevel": "low",
@@ -44553,7 +44554,7 @@
       "trainingSignature": "none|kimi-worldcup-dataset-v1|065363d19babce35|teams:48|fixtures:104",
       "worldCupPriorSignature": "kimi-worldcup-dataset-v1|065363d19babce35|teams:48|fixtures:104",
       "generatedAt": "2026-06-08T01:19:18.762Z",
-      "updatedAt": "2026-06-14T12:15:37.175Z",
+      "updatedAt": "2026-06-14T14:33:28.988Z",
       "cutoffTime": "2026-06-16 22:00:00",
       "dataPolicy": {
         "zh": "竞彩截止前，赛前分析先由 Elo 强度、长期历史样本、近一年状态、赛程密度、世界杯先验、比分分布与公开赛前信息层生成独立预测；官方 HAD/HHAD SP 和 SP 走势只用于校验市场分歧与价值风险。截止后保留历史预测，只结算赛果，不回写旧推荐。",
@@ -45490,7 +45491,7 @@
     ],
     "externalSignals": {
       "source": "500.com:jczq+500.com:details",
-      "updatedAt": "2026-06-14T12:15:34.661Z",
+      "updatedAt": "2026-06-14T14:33:26.971Z",
       "sourceMatchId": "2040181",
       "fixtureId": "1359251",
       "matchNo": "周二020",
@@ -46903,24 +46904,24 @@
       "weather": {
         "source": "open-meteo",
         "provider": "open-meteo",
-        "updatedAt": "2026-06-14T12:15:34.661Z",
+        "updatedAt": "2026-06-14T14:33:26.971Z",
         "forecastTime": "2026-06-17T04:00Z",
         "verified": false,
         "confidence": "estimated-location",
         "locationSource": "world-cup-host-rotation-estimate",
         "condition": {
-          "zh": "毛毛雨",
-          "en": "Drizzle"
+          "zh": "少云",
+          "en": "Partly cloudy"
         },
-        "temperatureC": 16.6,
-        "windKph": 2.6,
-        "windGustKph": 7.9,
-        "precipitationMm": 0.3,
-        "weatherCode": 51,
+        "temperatureC": 16.8,
+        "windKph": 2.5,
+        "windGustKph": 4.3,
+        "precipitationMm": 0,
+        "weatherCode": 1,
         "riskLevel": "low",
         "summary": {
-          "zh": "Mexico City 场地估算天气：毛毛雨，16.6C，风速 2.6km/h，降水 0.3mm，环境低风险。",
-          "en": "Mexico City venue estimated weather: Drizzle, 16.6C, wind 2.6km/h, precipitation 0.3mm, low risk."
+          "zh": "Mexico City 场地估算天气：少云，16.8C，风速 2.5km/h，降水 0mm，环境低风险。",
+          "en": "Mexico City venue estimated weather: Partly cloudy, 16.8C, wind 2.5km/h, precipitation 0mm, low risk."
         },
         "impact": {
           "zh": "天气扰动较低，按中性环境处理。",
@@ -47013,7 +47014,7 @@
       "trainingSignature": "none|kimi-worldcup-dataset-v1|065363d19babce35|teams:48|fixtures:104",
       "worldCupPriorSignature": "kimi-worldcup-dataset-v1|065363d19babce35|teams:48|fixtures:104",
       "generatedAt": "2026-06-08T01:19:18.762Z",
-      "updatedAt": "2026-06-14T12:15:37.175Z",
+      "updatedAt": "2026-06-14T14:33:28.988Z",
       "cutoffTime": "2026-06-17 12:00:00",
       "dataPolicy": {
         "zh": "竞彩截止前，赛前分析先由 Elo 强度、长期历史样本、近一年状态、赛程密度、世界杯先验、比分分布与公开赛前信息层生成独立预测；官方 HAD/HHAD SP 和 SP 走势只用于校验市场分歧与价值风险。截止后保留历史预测，只结算赛果，不回写旧推荐。",
@@ -47938,7 +47939,7 @@
     ],
     "externalSignals": {
       "source": "500.com:jczq+500.com:details",
-      "updatedAt": "2026-06-14T12:15:34.661Z",
+      "updatedAt": "2026-06-14T14:33:26.971Z",
       "sourceMatchId": "2040182",
       "fixtureId": "1359218",
       "matchNo": "周三021",
@@ -49328,24 +49329,24 @@
       "weather": {
         "source": "open-meteo",
         "provider": "open-meteo",
-        "updatedAt": "2026-06-14T12:15:34.661Z",
+        "updatedAt": "2026-06-14T14:33:26.971Z",
         "forecastTime": "2026-06-17T17:00Z",
         "verified": false,
         "confidence": "estimated-location",
         "locationSource": "world-cup-host-rotation-estimate",
         "condition": {
-          "zh": "晴",
-          "en": "Clear"
+          "zh": "少云",
+          "en": "Partly cloudy"
         },
-        "temperatureC": 22.9,
-        "windKph": 8.1,
-        "windGustKph": 24.1,
+        "temperatureC": 22.7,
+        "windKph": 7.5,
+        "windGustKph": 22,
         "precipitationMm": 0,
-        "weatherCode": 0,
+        "weatherCode": 1,
         "riskLevel": "low",
         "summary": {
-          "zh": "Guadalajara 场地估算天气：晴，22.9C，风速 8.1km/h，降水 0mm，环境低风险。",
-          "en": "Guadalajara venue estimated weather: Clear, 22.9C, wind 8.1km/h, precipitation 0mm, low risk."
+          "zh": "Guadalajara 场地估算天气：少云，22.7C，风速 7.5km/h，降水 0mm，环境低风险。",
+          "en": "Guadalajara venue estimated weather: Partly cloudy, 22.7C, wind 7.5km/h, precipitation 0mm, low risk."
         },
         "impact": {
           "zh": "天气扰动较低，按中性环境处理。",
@@ -49438,7 +49439,7 @@
       "trainingSignature": "none|kimi-worldcup-dataset-v1|065363d19babce35|teams:48|fixtures:104",
       "worldCupPriorSignature": "kimi-worldcup-dataset-v1|065363d19babce35|teams:48|fixtures:104",
       "generatedAt": "2026-06-08T01:19:18.762Z",
-      "updatedAt": "2026-06-14T12:15:37.175Z",
+      "updatedAt": "2026-06-14T14:33:28.988Z",
       "cutoffTime": "2026-06-17 22:00:00",
       "dataPolicy": {
         "zh": "竞彩截止前，赛前分析先由 Elo 强度、长期历史样本、近一年状态、赛程密度、世界杯先验、比分分布与公开赛前信息层生成独立预测；官方 HAD/HHAD SP 和 SP 走势只用于校验市场分歧与价值风险。截止后保留历史预测，只结算赛果，不回写旧推荐。",
@@ -50367,7 +50368,7 @@
     ],
     "externalSignals": {
       "source": "500.com:jczq+500.com:details",
-      "updatedAt": "2026-06-14T12:15:34.661Z",
+      "updatedAt": "2026-06-14T14:33:26.971Z",
       "sourceMatchId": "2040183",
       "fixtureId": "1359221",
       "matchNo": "周三022",
@@ -51777,7 +51778,7 @@
       "weather": {
         "source": "open-meteo",
         "provider": "open-meteo",
-        "updatedAt": "2026-06-14T12:15:34.661Z",
+        "updatedAt": "2026-06-14T14:33:26.971Z",
         "forecastTime": "2026-06-17T20:00Z",
         "verified": false,
         "confidence": "estimated-location",
@@ -51788,7 +51789,7 @@
         },
         "temperatureC": 21.9,
         "windKph": 19.8,
-        "windGustKph": 27.7,
+        "windGustKph": 33.5,
         "precipitationMm": 0,
         "weatherCode": 0,
         "riskLevel": "low",
@@ -51887,7 +51888,7 @@
       "trainingSignature": "none|kimi-worldcup-dataset-v1|065363d19babce35|teams:48|fixtures:104",
       "worldCupPriorSignature": "kimi-worldcup-dataset-v1|065363d19babce35|teams:48|fixtures:104",
       "generatedAt": "2026-06-08T01:19:18.762Z",
-      "updatedAt": "2026-06-14T12:15:37.175Z",
+      "updatedAt": "2026-06-14T14:33:28.988Z",
       "cutoffTime": "2026-06-17 22:00:00",
       "dataPolicy": {
         "zh": "竞彩截止前，赛前分析先由 Elo 强度、长期历史样本、近一年状态、赛程密度、世界杯先验、比分分布与公开赛前信息层生成独立预测；官方 HAD/HHAD SP 和 SP 走势只用于校验市场分歧与价值风险。截止后保留历史预测，只结算赛果，不回写旧推荐。",
@@ -52808,7 +52809,7 @@
     ],
     "externalSignals": {
       "source": "500.com:jczq+500.com:details",
-      "updatedAt": "2026-06-14T12:15:34.661Z",
+      "updatedAt": "2026-06-14T14:33:26.971Z",
       "sourceMatchId": "2040184",
       "fixtureId": "1359257",
       "matchNo": "周三023",
@@ -54153,7 +54154,7 @@
       "weather": {
         "source": "open-meteo",
         "provider": "open-meteo",
-        "updatedAt": "2026-06-14T12:15:34.661Z",
+        "updatedAt": "2026-06-14T14:33:26.971Z",
         "forecastTime": "2026-06-17T23:00Z",
         "verified": false,
         "confidence": "estimated-location",
@@ -54164,7 +54165,7 @@
         },
         "temperatureC": 23.1,
         "windKph": 18.1,
-        "windGustKph": 11.5,
+        "windGustKph": 10.4,
         "precipitationMm": 0,
         "weatherCode": 0,
         "riskLevel": "low",
@@ -54263,7 +54264,7 @@
       "trainingSignature": "none|kimi-worldcup-dataset-v1|065363d19babce35|teams:48|fixtures:104",
       "worldCupPriorSignature": "kimi-worldcup-dataset-v1|065363d19babce35|teams:48|fixtures:104",
       "generatedAt": "2026-06-08T01:19:18.762Z",
-      "updatedAt": "2026-06-14T12:15:37.175Z",
+      "updatedAt": "2026-06-14T14:33:28.988Z",
       "cutoffTime": "2026-06-17 22:00:00",
       "dataPolicy": {
         "zh": "竞彩截止前，赛前分析先由 Elo 强度、长期历史样本、近一年状态、赛程密度、世界杯先验、比分分布与公开赛前信息层生成独立预测；官方 HAD/HHAD SP 和 SP 走势只用于校验市场分歧与价值风险。截止后保留历史预测，只结算赛果，不回写旧推荐。",
@@ -55091,7 +55092,7 @@
     ],
     "externalSignals": {
       "source": "500.com:jczq+500.com:details",
-      "updatedAt": "2026-06-14T12:15:34.661Z",
+      "updatedAt": "2026-06-14T14:33:26.971Z",
       "sourceMatchId": "2040185",
       "fixtureId": "1359254",
       "matchNo": "周三024",
@@ -56470,7 +56471,7 @@
       "weather": {
         "source": "open-meteo",
         "provider": "open-meteo",
-        "updatedAt": "2026-06-14T12:15:34.661Z",
+        "updatedAt": "2026-06-14T14:33:26.971Z",
         "forecastTime": "2026-06-18T02:00Z",
         "verified": false,
         "confidence": "estimated-location",
@@ -56481,7 +56482,7 @@
         },
         "temperatureC": 19.7,
         "windKph": 7.1,
-        "windGustKph": 11.5,
+        "windGustKph": 7.6,
         "precipitationMm": 0,
         "weatherCode": 0,
         "riskLevel": "low",
@@ -56580,7 +56581,7 @@
       "trainingSignature": "none",
       "worldCupPriorSignature": null,
       "generatedAt": "2026-06-08T01:19:18.762Z",
-      "updatedAt": "2026-06-14T12:15:37.175Z",
+      "updatedAt": "2026-06-14T14:33:28.988Z",
       "cutoffTime": "2026-06-17 22:00:00",
       "dataPolicy": {
         "zh": "竞彩截止前，赛前分析先由 Elo 强度、长期历史样本、近一年状态、赛程密度、世界杯先验、比分分布与公开赛前信息层生成独立预测；官方 HAD/HHAD SP 和 SP 走势只用于校验市场分歧与价值风险。截止后保留历史预测，只结算赛果，不回写旧推荐。",
