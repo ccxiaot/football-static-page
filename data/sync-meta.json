@@ -1,9 +1,9 @@
 {
   "version": 1,
   "source": "sporttery",
-  "updatedAt": "2026-06-15T02:45:32.500Z",
-  "capturedAt": "2026-06-15T02:45:32.500Z",
-  "lastAttemptAt": "2026-06-15T02:48:15.840Z",
+  "updatedAt": "2026-06-15T08:47:28.771Z",
+  "capturedAt": "2026-06-15T08:47:28.771Z",
+  "lastAttemptAt": "2026-06-15T08:50:21.301Z",
   "officialOddsMatches": 13,
   "officialHandicapOddsMatches": 16,
   "displayOddsMatches": 19,
@@ -13,9 +13,8 @@
   "officialResultMatches": 2945,
   "skippedWithoutOfficialOdds": 0,
   "byStatus": {
-    "FINISHED": 2959,
-    "PENDING_RESULT": 8,
-    "LIVE": 1,
+    "FINISHED": 2961,
+    "PENDING_RESULT": 7,
     "SCHEDULED": 12
   },
   "coverage": {
@@ -28,7 +27,7 @@
   },
   "files": {
     "current": 23,
-    "history": 2959,
+    "history": 2961,
     "teams": 630,
     "predictionSnapshots": 305,
     "externalSignals": 185
@@ -40,14 +39,14 @@
     "note": "GitHub Pages serves static JSON. The page checks for newer JSON regularly; GitHub Actions refreshes the source files on schedule."
   },
   "attempt": {
-    "capturedAt": "2026-06-15T02:45:32.500Z",
+    "capturedAt": "2026-06-15T08:47:28.771Z",
     "officialOddsMatches": 0,
     "officialHandicapOddsMatches": 0,
     "officialResultMatches": 0,
-    "fallbackResultMatches": 17,
+    "fallbackResultMatches": 19,
     "publishableMatches": 0,
-    "fiveHundredFallbackMatches": 21,
-    "combinedPublishableMatches": 21
+    "fiveHundredFallbackMatches": 22,
+    "combinedPublishableMatches": 22
   },
   "oddsHistory": {
     "rows": 40613,
@@ -70,7 +69,7 @@
   },
   "externalSignals": {
     "source": "external-signals",
-    "updatedAt": "2026-06-15T02:45:30.361Z",
+    "updatedAt": "2026-06-15T08:47:26.585Z",
     "matches": 185
   },
   "modelCalibration": {
@@ -132,13 +131,13 @@
     "mergedPartialFresh": true,
     "reason": "fresh Sporttery odds unavailable; keeping existing 2980 matches",
     "existingMatches": 2980,
-    "freshPublishableMatches": 21,
+    "freshPublishableMatches": 22,
     "sportteryPublishableMatches": 0,
-    "fiveHundredFallbackMatches": 21,
-    "fiveHundredResultMatches": 17
+    "fiveHundredFallbackMatches": 22,
+    "fiveHundredResultMatches": 19
   },
   "cacheInfo": {
-    "localHistoryCount": 3039,
-    "lastCacheUpdate": "2026-06-15T02:48:15.874Z"
+    "localHistoryCount": 3041,
+    "lastCacheUpdate": "2026-06-15T08:50:21.351Z"
   }
 }
