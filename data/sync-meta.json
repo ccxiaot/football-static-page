@@ -1,9 +1,9 @@
 {
   "version": 1,
   "source": "sporttery",
-  "updatedAt": "2026-06-17T19:30:42.277Z",
-  "capturedAt": "2026-06-17T19:30:42.277Z",
-  "lastAttemptAt": "2026-06-17T19:35:12.948Z",
+  "updatedAt": "2026-06-17T21:51:31.895Z",
+  "capturedAt": "2026-06-17T21:51:31.895Z",
+  "lastAttemptAt": "2026-06-17T21:53:37.365Z",
   "officialOddsMatches": 8,
   "officialHandicapOddsMatches": 8,
   "displayOddsMatches": 17,
@@ -14,9 +14,9 @@
   "skippedWithoutOfficialOdds": 0,
   "byStatus": {
     "FINISHED": 2976,
-    "PENDING_RESULT": 4,
-    "LIVE": 2,
-    "SCHEDULED": 28
+    "PENDING_RESULT": 6,
+    "LIVE": 1,
+    "SCHEDULED": 27
   },
   "coverage": {
     "first": "2025-11-22",
@@ -42,14 +42,14 @@
     "note": "GitHub Pages serves static JSON. The page checks for newer JSON regularly; GitHub Actions refreshes the source files on schedule."
   },
   "attempt": {
-    "capturedAt": "2026-06-17T19:30:42.277Z",
+    "capturedAt": "2026-06-17T21:51:31.895Z",
     "officialOddsMatches": 0,
     "officialHandicapOddsMatches": 0,
     "officialResultMatches": 0,
     "fallbackResultMatches": 33,
     "publishableMatches": 0,
-    "fiveHundredFallbackMatches": 26,
-    "combinedPublishableMatches": 26
+    "fiveHundredFallbackMatches": 22,
+    "combinedPublishableMatches": 22
   },
   "oddsHistory": {
     "rows": 76789,
@@ -89,7 +89,7 @@
   },
   "externalSignals": {
     "source": "external-signals",
-    "updatedAt": "2026-06-17T19:30:39.650Z",
+    "updatedAt": "2026-06-17T21:51:29.173Z",
     "matches": 271
   },
   "preMatchSignals": {
@@ -264,13 +264,13 @@
     "mergedPartialFresh": true,
     "reason": "fresh Sporttery odds unavailable; keeping existing 3010 matches",
     "existingMatches": 3010,
-    "freshPublishableMatches": 26,
+    "freshPublishableMatches": 22,
     "sportteryPublishableMatches": 0,
-    "fiveHundredFallbackMatches": 26,
+    "fiveHundredFallbackMatches": 22,
     "fiveHundredResultMatches": 33
   },
   "cacheInfo": {
     "localHistoryCount": 3064,
-    "lastCacheUpdate": "2026-06-17T19:35:13.004Z"
+    "lastCacheUpdate": "2026-06-17T21:53:37.420Z"
   }
 }
