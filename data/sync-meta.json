@@ -1,9 +1,9 @@
 {
   "version": 1,
   "source": "sporttery",
-  "updatedAt": "2026-06-18T06:50:31.681Z",
-  "capturedAt": "2026-06-18T06:50:31.681Z",
-  "lastAttemptAt": "2026-06-18T06:56:02.621Z",
+  "updatedAt": "2026-06-18T10:59:32.499Z",
+  "capturedAt": "2026-06-18T10:59:32.499Z",
+  "lastAttemptAt": "2026-06-18T11:06:20.006Z",
   "officialOddsMatches": 8,
   "officialHandicapOddsMatches": 8,
   "displayOddsMatches": 20,
@@ -15,7 +15,8 @@
   "byStatus": {
     "FINISHED": 2980,
     "PENDING_RESULT": 5,
-    "SCHEDULED": 25
+    "LIVE": 1,
+    "SCHEDULED": 24
   },
   "coverage": {
     "first": "2025-11-22",
@@ -29,7 +30,7 @@
     "current": 34,
     "history": 2980,
     "teams": 629,
-    "predictionSnapshots": 1084,
+    "predictionSnapshots": 1087,
     "postMatchReviews": 2980,
     "externalSignals": 287,
     "preMatchSignals": 42
@@ -41,7 +42,7 @@
     "note": "GitHub Pages serves static JSON. The page checks for newer JSON regularly; GitHub Actions refreshes the source files on schedule."
   },
   "attempt": {
-    "capturedAt": "2026-06-18T06:50:31.681Z",
+    "capturedAt": "2026-06-18T10:59:32.499Z",
     "officialOddsMatches": 0,
     "officialHandicapOddsMatches": 0,
     "officialResultMatches": 0,
@@ -57,13 +58,13 @@
     "skipped": "fresh Sporttery odds unavailable; keeping existing 3010 matches"
   },
   "predictionSnapshots": {
-    "total": 1084,
+    "total": 1087,
     "byPhase": {
       "review": 85,
-      "mid": 120,
+      "mid": 121,
       "baseline": 805,
-      "late": 36,
-      "final": 24,
+      "late": 37,
+      "final": 25,
       "locked": 14
     },
     "appended": 0,
@@ -88,7 +89,7 @@
   },
   "externalSignals": {
     "source": "external-signals",
-    "updatedAt": "2026-06-18T06:50:29.701Z",
+    "updatedAt": "2026-06-18T10:59:29.803Z",
     "matches": 287
   },
   "preMatchSignals": {
@@ -271,6 +272,6 @@
   },
   "cacheInfo": {
     "localHistoryCount": 3068,
-    "lastCacheUpdate": "2026-06-18T06:56:02.678Z"
+    "lastCacheUpdate": "2026-06-18T11:06:20.051Z"
   }
 }
