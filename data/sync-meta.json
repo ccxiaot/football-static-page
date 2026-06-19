@@ -1,13 +1,13 @@
 {
   "version": 1,
   "source": "sporttery",
-  "updatedAt": "2026-06-19T13:47:37.329Z",
-  "capturedAt": "2026-06-19T13:47:37.329Z",
-  "lastAttemptAt": "2026-06-19T13:53:12.115Z",
-  "officialOddsMatches": 4,
-  "officialHandicapOddsMatches": 4,
-  "displayOddsMatches": 19,
-  "displayHandicapOddsMatches": 22,
+  "updatedAt": "2026-06-19T16:25:37.013Z",
+  "capturedAt": "2026-06-19T16:25:37.013Z",
+  "lastAttemptAt": "2026-06-19T16:28:07.558Z",
+  "officialOddsMatches": 0,
+  "officialHandicapOddsMatches": 0,
+  "displayOddsMatches": 15,
+  "displayHandicapOddsMatches": 18,
   "referenceOddsMatches": 15,
   "referenceHandicapOddsMatches": 18,
   "officialResultMatches": 2966,
@@ -26,7 +26,7 @@
     "forwardDays": 14
   },
   "files": {
-    "current": 30,
+    "current": 26,
     "history": 2984,
     "teams": 629,
     "predictionSnapshots": 1124,
@@ -41,7 +41,7 @@
     "note": "GitHub Pages serves static JSON. The page checks for newer JSON regularly; GitHub Actions refreshes the source files on schedule."
   },
   "attempt": {
-    "capturedAt": "2026-06-19T13:47:37.329Z",
+    "capturedAt": "2026-06-19T16:25:37.013Z",
     "officialOddsMatches": 0,
     "officialHandicapOddsMatches": 0,
     "officialResultMatches": 0,
@@ -66,7 +66,7 @@
       "final": 25,
       "locked": 14
     },
-    "appended": 1,
+    "appended": 0,
     "updated": 0
   },
   "postMatchReviews": {
@@ -88,7 +88,7 @@
   },
   "externalSignals": {
     "source": "external-signals",
-    "updatedAt": "2026-06-19T13:47:35.762Z",
+    "updatedAt": "2026-06-19T16:25:35.319Z",
     "matches": 303
   },
   "preMatchSignals": {
@@ -271,6 +271,6 @@
   },
   "cacheInfo": {
     "localHistoryCount": 3072,
-    "lastCacheUpdate": "2026-06-19T13:53:12.173Z"
+    "lastCacheUpdate": "2026-06-19T16:28:07.619Z"
   }
 }
