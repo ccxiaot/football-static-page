@@ -1,9 +1,9 @@
 {
   "version": 1,
   "source": "sporttery",
-  "updatedAt": "2026-06-21T10:20:48.103Z",
-  "capturedAt": "2026-06-21T10:20:48.103Z",
-  "lastAttemptAt": "2026-06-21T10:25:27.366Z",
+  "updatedAt": "2026-06-21T12:17:52.223Z",
+  "capturedAt": "2026-06-21T12:17:52.223Z",
+  "lastAttemptAt": "2026-06-21T12:23:55.397Z",
   "officialOddsMatches": 0,
   "officialHandicapOddsMatches": 0,
   "displayOddsMatches": 20,
@@ -29,7 +29,7 @@
     "current": 26,
     "history": 2984,
     "teams": 629,
-    "predictionSnapshots": 1194,
+    "predictionSnapshots": 1196,
     "postMatchReviews": 2984,
     "externalSignals": 336,
     "preMatchSignals": 42
@@ -41,7 +41,7 @@
     "note": "GitHub Pages serves static JSON. The page checks for newer JSON regularly; GitHub Actions refreshes the source files on schedule."
   },
   "attempt": {
-    "capturedAt": "2026-06-21T10:20:48.103Z",
+    "capturedAt": "2026-06-21T12:17:52.223Z",
     "officialOddsMatches": 0,
     "officialHandicapOddsMatches": 0,
     "officialResultMatches": 0,
@@ -57,11 +57,11 @@
     "skipped": "fresh Sporttery odds unavailable; keeping existing 3010 matches"
   },
   "predictionSnapshots": {
-    "total": 1194,
+    "total": 1196,
     "byPhase": {
       "review": 85,
-      "mid": 129,
-      "baseline": 896,
+      "mid": 130,
+      "baseline": 897,
       "late": 42,
       "final": 27,
       "locked": 15
@@ -88,7 +88,7 @@
   },
   "externalSignals": {
     "source": "external-signals",
-    "updatedAt": "2026-06-21T10:20:47.033Z",
+    "updatedAt": "2026-06-21T12:17:50.789Z",
     "matches": 336
   },
   "preMatchSignals": {
@@ -271,6 +271,6 @@
   },
   "cacheInfo": {
     "localHistoryCount": 3072,
-    "lastCacheUpdate": "2026-06-21T10:25:27.427Z"
+    "lastCacheUpdate": "2026-06-21T12:23:55.455Z"
   }
 }
