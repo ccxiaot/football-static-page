@@ -1,9 +1,9 @@
 {
   "version": 1,
   "source": "sporttery",
-  "updatedAt": "2026-06-22T17:55:51.304Z",
-  "capturedAt": "2026-06-22T17:55:51.304Z",
-  "lastAttemptAt": "2026-06-22T17:59:54.477Z",
+  "updatedAt": "2026-06-22T20:49:50.454Z",
+  "capturedAt": "2026-06-22T20:49:50.454Z",
+  "lastAttemptAt": "2026-06-22T20:52:27.393Z",
   "officialOddsMatches": 0,
   "officialHandicapOddsMatches": 0,
   "displayOddsMatches": 25,
@@ -14,8 +14,7 @@
   "skippedWithoutOfficialOdds": 0,
   "byStatus": {
     "FINISHED": 2984,
-    "PENDING_RESULT": 18,
-    "LIVE": 1,
+    "PENDING_RESULT": 19,
     "SCHEDULED": 13
   },
   "coverage": {
@@ -42,14 +41,14 @@
     "note": "GitHub Pages serves static JSON. The page checks for newer JSON regularly; GitHub Actions refreshes the source files on schedule."
   },
   "attempt": {
-    "capturedAt": "2026-06-22T17:55:51.304Z",
+    "capturedAt": "2026-06-22T20:49:50.454Z",
     "officialOddsMatches": 0,
     "officialHandicapOddsMatches": 0,
     "officialResultMatches": 0,
     "fallbackResultMatches": 41,
     "publishableMatches": 0,
-    "fiveHundredFallbackMatches": 14,
-    "combinedPublishableMatches": 14
+    "fiveHundredFallbackMatches": 13,
+    "combinedPublishableMatches": 13
   },
   "oddsHistory": {
     "rows": 76789,
@@ -89,7 +88,7 @@
   },
   "externalSignals": {
     "source": "external-signals",
-    "updatedAt": "2026-06-22T17:55:49.958Z",
+    "updatedAt": "2026-06-22T20:49:48.917Z",
     "matches": 366
   },
   "preMatchSignals": {
@@ -265,13 +264,13 @@
     "mergedPartialFresh": true,
     "reason": "fresh Sporttery odds unavailable; keeping existing 3016 matches",
     "existingMatches": 3016,
-    "freshPublishableMatches": 14,
+    "freshPublishableMatches": 13,
     "sportteryPublishableMatches": 0,
-    "fiveHundredFallbackMatches": 14,
+    "fiveHundredFallbackMatches": 13,
     "fiveHundredResultMatches": 41
   },
   "cacheInfo": {
     "localHistoryCount": 3072,
-    "lastCacheUpdate": "2026-06-22T17:59:54.535Z"
+    "lastCacheUpdate": "2026-06-22T20:52:27.453Z"
   }
 }
