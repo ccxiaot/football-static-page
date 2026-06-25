@@ -1,9 +1,9 @@
 {
   "version": 1,
   "source": "sporttery",
-  "updatedAt": "2026-06-25T21:57:57.523Z",
-  "capturedAt": "2026-06-25T21:57:57.523Z",
-  "lastAttemptAt": "2026-06-25T22:02:50.057Z",
+  "updatedAt": "2026-06-25T23:44:53.469Z",
+  "capturedAt": "2026-06-25T23:44:53.469Z",
+  "lastAttemptAt": "2026-06-25T23:49:43.855Z",
   "officialOddsMatches": 0,
   "officialHandicapOddsMatches": 0,
   "displayOddsMatches": 43,
@@ -14,9 +14,9 @@
   "skippedWithoutOfficialOdds": 0,
   "byStatus": {
     "FINISHED": 2984,
-    "PENDING_RESULT": 38,
+    "PENDING_RESULT": 40,
     "LIVE": 2,
-    "SCHEDULED": 16
+    "SCHEDULED": 14
   },
   "coverage": {
     "first": "2025-11-22",
@@ -43,14 +43,14 @@
     "note": "GitHub Pages serves static JSON. The page checks for newer JSON regularly; GitHub Actions refreshes the source files on schedule."
   },
   "attempt": {
-    "capturedAt": "2026-06-25T21:57:57.523Z",
+    "capturedAt": "2026-06-25T23:44:53.469Z",
     "officialOddsMatches": 0,
     "officialHandicapOddsMatches": 0,
     "officialResultMatches": 0,
     "fallbackResultMatches": 41,
     "publishableMatches": 0,
-    "fiveHundredFallbackMatches": 18,
-    "combinedPublishableMatches": 18
+    "fiveHundredFallbackMatches": 16,
+    "combinedPublishableMatches": 16
   },
   "oddsHistory": {
     "rows": 76789,
@@ -69,7 +69,7 @@
       "locked": 15
     },
     "appended": 0,
-    "updated": 7
+    "updated": 0
   },
   "postMatchReviews": {
     "total": 2984,
@@ -90,7 +90,7 @@
   },
   "externalSignals": {
     "source": "external-signals",
-    "updatedAt": "2026-06-25T21:57:36.844Z",
+    "updatedAt": "2026-06-25T23:44:50.027Z",
     "matches": 486,
     "webConsensusMatches": 0
   },
@@ -211,7 +211,7 @@
   },
   "modelStrategy": {
     "version": "self-optimization-v1",
-    "generatedAt": "2026-06-25T21:57:57.441Z",
+    "generatedAt": "2026-06-25T23:44:53.391Z",
     "activation": {
       "mode": "cooling-only",
       "onlineEffect": "guarded-active",
@@ -255,13 +255,13 @@
     "mergedPartialFresh": true,
     "reason": "fresh Sporttery odds unavailable; keeping existing 3040 matches",
     "existingMatches": 3040,
-    "freshPublishableMatches": 18,
+    "freshPublishableMatches": 16,
     "sportteryPublishableMatches": 0,
-    "fiveHundredFallbackMatches": 18,
+    "fiveHundredFallbackMatches": 16,
     "fiveHundredResultMatches": 41
   },
   "cacheInfo": {
     "localHistoryCount": 3072,
-    "lastCacheUpdate": "2026-06-25T22:02:50.117Z"
+    "lastCacheUpdate": "2026-06-25T23:49:43.914Z"
   }
 }
