@@ -1,9 +1,9 @@
 {
   "version": 1,
   "source": "sporttery",
-  "updatedAt": "2026-06-27T22:52:02.022Z",
-  "capturedAt": "2026-06-27T22:52:02.022Z",
-  "lastAttemptAt": "2026-06-27T22:55:20.778Z",
+  "updatedAt": "2026-06-27T23:51:55.556Z",
+  "capturedAt": "2026-06-27T23:51:55.556Z",
+  "lastAttemptAt": "2026-06-27T23:55:29.261Z",
   "officialOddsMatches": 0,
   "officialHandicapOddsMatches": 0,
   "displayOddsMatches": 24,
@@ -14,9 +14,9 @@
   "skippedWithoutOfficialOdds": 0,
   "byStatus": {
     "FINISHED": 3021,
-    "PENDING_RESULT": 19,
+    "PENDING_RESULT": 21,
     "LIVE": 2,
-    "SCHEDULED": 7
+    "SCHEDULED": 5
   },
   "coverage": {
     "first": "2025-11-22",
@@ -43,7 +43,7 @@
     "note": "GitHub Pages serves static JSON. The page checks for newer JSON regularly; GitHub Actions refreshes the source files on schedule."
   },
   "attempt": {
-    "capturedAt": "2026-06-27T22:52:02.022Z",
+    "capturedAt": "2026-06-27T23:51:55.556Z",
     "officialOddsMatches": 0,
     "officialHandicapOddsMatches": 0,
     "officialResultMatches": 0,
@@ -90,7 +90,7 @@
   },
   "externalSignals": {
     "source": "external-signals",
-    "updatedAt": "2026-06-27T22:51:59.394Z",
+    "updatedAt": "2026-06-27T23:51:53.286Z",
     "matches": 569,
     "webConsensusMatches": 0
   },
@@ -240,7 +240,7 @@
   },
   "modelStrategy": {
     "version": "self-optimization-v1",
-    "generatedAt": "2026-06-27T22:52:01.951Z",
+    "generatedAt": "2026-06-27T23:51:55.486Z",
     "activation": {
       "mode": "cooling-only",
       "onlineEffect": "guarded-active",
@@ -291,6 +291,6 @@
   },
   "cacheInfo": {
     "localHistoryCount": 3109,
-    "lastCacheUpdate": "2026-06-27T22:55:20.861Z"
+    "lastCacheUpdate": "2026-06-27T23:55:29.327Z"
   }
 }
