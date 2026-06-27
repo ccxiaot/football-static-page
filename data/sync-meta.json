@@ -1,9 +1,9 @@
 {
   "version": 1,
   "source": "sporttery",
-  "updatedAt": "2026-06-27T09:02:51.019Z",
-  "capturedAt": "2026-06-27T09:02:51.019Z",
-  "lastAttemptAt": "2026-06-27T09:09:14.049Z",
+  "updatedAt": "2026-06-27T11:05:52.143Z",
+  "capturedAt": "2026-06-27T11:05:52.143Z",
+  "lastAttemptAt": "2026-06-27T11:09:15.589Z",
   "officialOddsMatches": 0,
   "officialHandicapOddsMatches": 0,
   "displayOddsMatches": 52,
@@ -15,7 +15,8 @@
   "byStatus": {
     "FINISHED": 2984,
     "PENDING_RESULT": 50,
-    "SCHEDULED": 15
+    "LIVE": 1,
+    "SCHEDULED": 14
   },
   "coverage": {
     "first": "2025-11-22",
@@ -29,7 +30,7 @@
     "current": 65,
     "history": 2984,
     "teams": 629,
-    "predictionSnapshots": 1552,
+    "predictionSnapshots": 1565,
     "postMatchReviews": 2984,
     "externalSignals": 531,
     "preMatchSignals": 42,
@@ -42,7 +43,7 @@
     "note": "GitHub Pages serves static JSON. The page checks for newer JSON regularly; GitHub Actions refreshes the source files on schedule."
   },
   "attempt": {
-    "capturedAt": "2026-06-27T09:02:51.019Z",
+    "capturedAt": "2026-06-27T11:05:52.143Z",
     "officialOddsMatches": 0,
     "officialHandicapOddsMatches": 0,
     "officialResultMatches": 0,
@@ -58,16 +59,16 @@
     "skipped": "fresh Sporttery odds unavailable; keeping existing 3049 matches"
   },
   "predictionSnapshots": {
-    "total": 1552,
+    "total": 1565,
     "byPhase": {
       "review": 85,
-      "mid": 166,
-      "baseline": 1211,
-      "late": 48,
-      "final": 27,
+      "mid": 170,
+      "baseline": 1218,
+      "late": 49,
+      "final": 28,
       "locked": 15
     },
-    "appended": 1,
+    "appended": 0,
     "updated": 0
   },
   "postMatchReviews": {
@@ -89,7 +90,7 @@
   },
   "externalSignals": {
     "source": "external-signals",
-    "updatedAt": "2026-06-27T09:02:49.138Z",
+    "updatedAt": "2026-06-27T11:05:50.237Z",
     "matches": 531,
     "webConsensusMatches": 0
   },
@@ -210,7 +211,7 @@
   },
   "modelStrategy": {
     "version": "self-optimization-v1",
-    "generatedAt": "2026-06-27T09:02:50.946Z",
+    "generatedAt": "2026-06-27T11:05:52.067Z",
     "activation": {
       "mode": "cooling-only",
       "onlineEffect": "guarded-active",
@@ -261,6 +262,6 @@
   },
   "cacheInfo": {
     "localHistoryCount": 3072,
-    "lastCacheUpdate": "2026-06-27T09:09:14.107Z"
+    "lastCacheUpdate": "2026-06-27T11:09:15.648Z"
   }
 }
