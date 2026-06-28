@@ -1,9 +1,9 @@
 {
   "version": 1,
   "source": "sporttery",
-  "updatedAt": "2026-06-28T06:49:57.856Z",
-  "capturedAt": "2026-06-28T06:49:57.856Z",
-  "lastAttemptAt": "2026-06-28T06:55:39.084Z",
+  "updatedAt": "2026-06-28T09:50:55.660Z",
+  "capturedAt": "2026-06-28T09:50:55.660Z",
+  "lastAttemptAt": "2026-06-28T09:54:04.398Z",
   "officialOddsMatches": 0,
   "officialHandicapOddsMatches": 0,
   "displayOddsMatches": 25,
@@ -29,7 +29,7 @@
     "current": 29,
     "history": 3032,
     "teams": 629,
-    "predictionSnapshots": 1610,
+    "predictionSnapshots": 1612,
     "postMatchReviews": 3032,
     "externalSignals": 584,
     "preMatchSignals": 42,
@@ -42,7 +42,7 @@
     "note": "GitHub Pages serves static JSON. The page checks for newer JSON regularly; GitHub Actions refreshes the source files on schedule."
   },
   "attempt": {
-    "capturedAt": "2026-06-28T06:49:57.856Z",
+    "capturedAt": "2026-06-28T09:50:55.660Z",
     "officialOddsMatches": 0,
     "officialHandicapOddsMatches": 0,
     "officialResultMatches": 0,
@@ -58,11 +58,11 @@
     "skipped": "fresh Sporttery odds unavailable; keeping existing 3052 matches"
   },
   "predictionSnapshots": {
-    "total": 1610,
+    "total": 1612,
     "byPhase": {
       "review": 85,
       "mid": 178,
-      "baseline": 1247,
+      "baseline": 1249,
       "late": 54,
       "final": 31,
       "locked": 15
@@ -89,7 +89,7 @@
   },
   "externalSignals": {
     "source": "external-signals",
-    "updatedAt": "2026-06-28T06:49:55.815Z",
+    "updatedAt": "2026-06-28T09:50:53.616Z",
     "matches": 584,
     "webConsensusMatches": 0
   },
@@ -221,7 +221,7 @@
   },
   "modelStrategy": {
     "version": "self-optimization-v1",
-    "generatedAt": "2026-06-28T06:49:57.786Z",
+    "generatedAt": "2026-06-28T09:50:55.601Z",
     "activation": {
       "mode": "cooling-only",
       "onlineEffect": "guarded-active",
@@ -272,6 +272,6 @@
   },
   "cacheInfo": {
     "localHistoryCount": 3120,
-    "lastCacheUpdate": "2026-06-28T06:55:39.200Z"
+    "lastCacheUpdate": "2026-06-28T09:54:04.493Z"
   }
 }
