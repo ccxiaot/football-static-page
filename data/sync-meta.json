@@ -1,21 +1,22 @@
 {
   "version": 1,
   "source": "sporttery",
-  "updatedAt": "2026-06-29T14:25:30.957Z",
-  "capturedAt": "2026-06-29T14:25:30.957Z",
-  "lastAttemptAt": "2026-06-29T14:31:57.378Z",
+  "updatedAt": "2026-06-29T17:21:59.671Z",
+  "capturedAt": "2026-06-29T17:21:59.671Z",
+  "lastAttemptAt": "2026-06-29T17:28:08.960Z",
   "officialOddsMatches": 0,
   "officialHandicapOddsMatches": 0,
-  "displayOddsMatches": 22,
-  "displayHandicapOddsMatches": 24,
-  "referenceOddsMatches": 22,
-  "referenceHandicapOddsMatches": 24,
+  "displayOddsMatches": 21,
+  "displayHandicapOddsMatches": 23,
+  "referenceOddsMatches": 21,
+  "referenceHandicapOddsMatches": 23,
   "officialResultMatches": 2966,
   "skippedWithoutOfficialOdds": 0,
   "byStatus": {
     "FINISHED": 3033,
     "PENDING_RESULT": 14,
-    "SCHEDULED": 9
+    "LIVE": 1,
+    "SCHEDULED": 8
   },
   "coverage": {
     "first": "2025-11-22",
@@ -26,7 +27,7 @@
     "forwardDays": 14
   },
   "files": {
-    "current": 24,
+    "current": 23,
     "history": 3033,
     "teams": 629,
     "predictionSnapshots": 1643,
@@ -42,7 +43,7 @@
     "note": "GitHub Pages serves static JSON. The page checks for newer JSON regularly; GitHub Actions refreshes the source files on schedule."
   },
   "attempt": {
-    "capturedAt": "2026-06-29T14:25:30.957Z",
+    "capturedAt": "2026-06-29T17:21:59.671Z",
     "officialOddsMatches": 0,
     "officialHandicapOddsMatches": 0,
     "officialResultMatches": 0,
@@ -89,7 +90,7 @@
   },
   "externalSignals": {
     "source": "external-signals",
-    "updatedAt": "2026-06-29T14:20:00.558Z",
+    "updatedAt": "2026-06-29T17:21:57.584Z",
     "matches": 604,
     "webConsensusMatches": 0
   },
@@ -214,7 +215,7 @@
   },
   "modelStrategy": {
     "version": "self-optimization-v1",
-    "generatedAt": "2026-06-29T14:25:30.886Z",
+    "generatedAt": "2026-06-29T17:21:59.597Z",
     "activation": {
       "mode": "cooling-only",
       "onlineEffect": "guarded-active",
@@ -265,6 +266,6 @@
   },
   "cacheInfo": {
     "localHistoryCount": 3121,
-    "lastCacheUpdate": "2026-06-29T14:31:57.472Z"
+    "lastCacheUpdate": "2026-06-29T17:28:09.055Z"
   }
 }
