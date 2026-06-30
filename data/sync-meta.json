@@ -3,7 +3,7 @@
   "source": "sporttery",
   "updatedAt": "2026-06-30T07:59:03.874Z",
   "capturedAt": "2026-06-30T07:59:03.874Z",
-  "lastAttemptAt": "2026-06-30T17:21:38.864Z",
+  "lastAttemptAt": "2026-06-30T19:14:59.033Z",
   "officialOddsMatches": 0,
   "officialHandicapOddsMatches": 0,
   "displayOddsMatches": 24,
@@ -290,6 +290,6 @@
   },
   "cacheInfo": {
     "localHistoryCount": 3123,
-    "lastCacheUpdate": "2026-06-30T17:21:38.964Z"
+    "lastCacheUpdate": "2026-06-30T19:14:59.129Z"
   }
 }
