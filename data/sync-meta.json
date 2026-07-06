@@ -1,19 +1,19 @@
 {
   "version": 1,
   "source": "sporttery",
-  "updatedAt": "2026-07-06T07:58:06.656Z",
-  "capturedAt": "2026-07-06T07:58:06.656Z",
-  "lastAttemptAt": "2026-07-06T07:59:31.199Z",
+  "updatedAt": "2026-07-06T12:01:10.031Z",
+  "capturedAt": "2026-07-06T12:01:10.031Z",
+  "lastAttemptAt": "2026-07-06T12:06:28.722Z",
   "api": {
     "source": "sporttery",
     "freshnessTime": "2026-07-01T06:02:58.003Z",
     "currentFreshnessTime": "2026-07-01T06:02:58.003Z",
     "historyFreshnessTime": "2026-07-01T06:02:58.003Z",
-    "sourceUpdatedAt": "2026-07-06T07:58:06.656Z",
-    "lastAttemptAt": "2026-07-06T07:58:06.656Z",
-    "ageSeconds": 438908,
-    "currentAgeSeconds": 438908,
-    "historyAgeSeconds": 438908,
+    "sourceUpdatedAt": "2026-07-06T12:01:10.031Z",
+    "lastAttemptAt": "2026-07-06T12:01:10.031Z",
+    "ageSeconds": 453492,
+    "currentAgeSeconds": 453492,
+    "historyAgeSeconds": 453492,
     "stale": true,
     "currentStale": true,
     "historyStale": true,
@@ -46,7 +46,7 @@
     "current": 53,
     "history": 3035,
     "teams": 636,
-    "predictionSnapshots": 1952,
+    "predictionSnapshots": 1961,
     "postMatchReviews": 3035,
     "externalSignals": 764,
     "preMatchSignals": 42,
@@ -59,7 +59,7 @@
     "note": "GitHub Pages serves static JSON. The page checks for newer JSON regularly; GitHub Actions refreshes the source files on schedule."
   },
   "attempt": {
-    "capturedAt": "2026-07-06T07:58:06.656Z",
+    "capturedAt": "2026-07-06T12:01:10.031Z",
     "officialOddsMatches": 0,
     "officialHandicapOddsMatches": 0,
     "officialResultMatches": 0,
@@ -75,11 +75,11 @@
     "skipped": "fresh Sporttery odds unavailable; keeping existing 3088 matches"
   },
   "predictionSnapshots": {
-    "total": 1952,
+    "total": 1961,
     "byPhase": {
       "review": 85,
-      "mid": 241,
-      "baseline": 1463,
+      "mid": 244,
+      "baseline": 1469,
       "late": 86,
       "final": 56,
       "locked": 21
@@ -106,7 +106,7 @@
   },
   "externalSignals": {
     "source": "external-signals",
-    "updatedAt": "2026-07-06T07:58:04.998Z",
+    "updatedAt": "2026-07-06T12:01:08.316Z",
     "matches": 764,
     "webConsensusMatches": 0
   },
@@ -307,6 +307,6 @@
   },
   "cacheInfo": {
     "localHistoryCount": 3123,
-    "lastCacheUpdate": "2026-07-06T07:59:31.328Z"
+    "lastCacheUpdate": "2026-07-06T12:06:28.850Z"
   }
 }
