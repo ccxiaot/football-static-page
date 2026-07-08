@@ -1,19 +1,19 @@
 {
   "version": 1,
   "source": "sporttery",
-  "updatedAt": "2026-07-07T23:42:02.668Z",
-  "capturedAt": "2026-07-07T23:42:02.668Z",
-  "lastAttemptAt": "2026-07-07T23:48:09.237Z",
+  "updatedAt": "2026-07-08T01:47:04.313Z",
+  "capturedAt": "2026-07-08T01:47:04.313Z",
+  "lastAttemptAt": "2026-07-08T01:48:59.681Z",
   "api": {
     "source": "sporttery",
     "freshnessTime": "2026-07-01T06:02:58.003Z",
     "currentFreshnessTime": "2026-07-01T06:02:58.003Z",
     "historyFreshnessTime": "2026-07-01T06:02:58.003Z",
-    "sourceUpdatedAt": "2026-07-07T23:42:02.668Z",
-    "lastAttemptAt": "2026-07-07T23:42:02.668Z",
-    "ageSeconds": 581944,
-    "currentAgeSeconds": 581944,
-    "historyAgeSeconds": 581944,
+    "sourceUpdatedAt": "2026-07-08T01:47:04.313Z",
+    "lastAttemptAt": "2026-07-08T01:47:04.313Z",
+    "ageSeconds": 589446,
+    "currentAgeSeconds": 589446,
+    "historyAgeSeconds": 589446,
     "stale": true,
     "currentStale": true,
     "historyStale": true,
@@ -59,7 +59,7 @@
     "note": "GitHub Pages serves static JSON. The page checks for newer JSON regularly; GitHub Actions refreshes the source files on schedule."
   },
   "attempt": {
-    "capturedAt": "2026-07-07T23:42:02.668Z",
+    "capturedAt": "2026-07-08T01:47:04.313Z",
     "officialOddsMatches": 0,
     "officialHandicapOddsMatches": 0,
     "officialResultMatches": 0,
@@ -106,7 +106,7 @@
   },
   "externalSignals": {
     "source": "external-signals",
-    "updatedAt": "2026-07-07T23:42:01.832Z",
+    "updatedAt": "2026-07-08T01:47:03.083Z",
     "matches": 784,
     "webConsensusMatches": 0
   },
@@ -307,6 +307,6 @@
   },
   "cacheInfo": {
     "localHistoryCount": 3123,
-    "lastCacheUpdate": "2026-07-07T23:48:09.370Z"
+    "lastCacheUpdate": "2026-07-08T01:48:59.813Z"
   }
 }
