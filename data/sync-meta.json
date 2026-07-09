@@ -1,19 +1,19 @@
 {
   "version": 1,
   "source": "sporttery",
-  "updatedAt": "2026-07-09T19:01:37.100Z",
-  "capturedAt": "2026-07-09T19:01:37.100Z",
-  "lastAttemptAt": "2026-07-09T19:05:44.082Z",
+  "updatedAt": "2026-07-09T20:58:15.303Z",
+  "capturedAt": "2026-07-09T20:58:15.303Z",
+  "lastAttemptAt": "2026-07-09T21:00:05.104Z",
   "api": {
     "source": "sporttery",
     "freshnessTime": "2026-07-01T06:02:58.003Z",
     "currentFreshnessTime": "2026-07-01T06:02:58.003Z",
     "historyFreshnessTime": "2026-07-01T06:02:58.003Z",
-    "sourceUpdatedAt": "2026-07-09T19:01:37.100Z",
-    "lastAttemptAt": "2026-07-09T19:01:37.100Z",
-    "ageSeconds": 737919,
-    "currentAgeSeconds": 737919,
-    "historyAgeSeconds": 737919,
+    "sourceUpdatedAt": "2026-07-09T20:58:15.303Z",
+    "lastAttemptAt": "2026-07-09T20:58:15.303Z",
+    "ageSeconds": 744917,
+    "currentAgeSeconds": 744917,
+    "historyAgeSeconds": 744917,
     "stale": true,
     "currentStale": true,
     "historyStale": true,
@@ -31,9 +31,9 @@
   "skippedWithoutOfficialOdds": 0,
   "byStatus": {
     "FINISHED": 3035,
-    "PENDING_RESULT": 57,
-    "LIVE": 3,
-    "SCHEDULED": 5
+    "PENDING_RESULT": 60,
+    "LIVE": 1,
+    "SCHEDULED": 4
   },
   "coverage": {
     "first": "2025-11-22",
@@ -60,7 +60,7 @@
     "note": "GitHub Pages serves static JSON. The page checks for newer JSON regularly; GitHub Actions refreshes the source files on schedule."
   },
   "attempt": {
-    "capturedAt": "2026-07-09T19:01:37.100Z",
+    "capturedAt": "2026-07-09T20:58:15.303Z",
     "officialOddsMatches": 0,
     "officialHandicapOddsMatches": 0,
     "officialResultMatches": 0,
@@ -107,7 +107,7 @@
   },
   "externalSignals": {
     "source": "external-signals",
-    "updatedAt": "2026-07-09T19:01:35.947Z",
+    "updatedAt": "2026-07-09T20:58:13.780Z",
     "matches": 824,
     "webConsensusMatches": 0
   },
@@ -308,6 +308,6 @@
   },
   "cacheInfo": {
     "localHistoryCount": 3123,
-    "lastCacheUpdate": "2026-07-09T19:05:44.208Z"
+    "lastCacheUpdate": "2026-07-09T21:00:05.245Z"
   }
 }
