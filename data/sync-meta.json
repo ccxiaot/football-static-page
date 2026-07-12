@@ -1,55 +1,54 @@
 {
   "version": 1,
   "source": "sporttery",
-  "updatedAt": "2026-07-12T01:44:30.336Z",
-  "capturedAt": "2026-07-12T01:44:30.336Z",
-  "lastAttemptAt": "2026-07-12T01:49:49.622Z",
+  "updatedAt": "2026-07-12T05:13:28.446Z",
+  "capturedAt": "2026-07-12T05:13:28.446Z",
+  "lastAttemptAt": "2026-07-12T05:18:29.338Z",
   "api": {
     "source": "sporttery",
     "freshnessTime": "2026-07-01T06:02:58.003Z",
     "currentFreshnessTime": "2026-07-01T06:02:58.003Z",
     "historyFreshnessTime": "2026-07-01T06:02:58.003Z",
-    "sourceUpdatedAt": "2026-07-12T01:44:30.336Z",
-    "lastAttemptAt": "2026-07-12T01:44:30.336Z",
-    "ageSeconds": 934892,
-    "currentAgeSeconds": 934892,
-    "historyAgeSeconds": 934892,
+    "sourceUpdatedAt": "2026-07-12T05:13:28.446Z",
+    "lastAttemptAt": "2026-07-12T05:13:28.446Z",
+    "ageSeconds": 947430,
+    "currentAgeSeconds": 947430,
+    "historyAgeSeconds": 947430,
     "stale": true,
     "currentStale": true,
     "historyStale": true,
     "partialStale": false,
     "syncTriggered": false,
-    "fallbackReason": "fresh Sporttery odds unavailable; keeping existing 3125 matches"
+    "fallbackReason": "fresh Sporttery odds unavailable; keeping existing 3126 matches"
   },
   "officialOddsMatches": 0,
   "officialHandicapOddsMatches": 0,
-  "displayOddsMatches": 86,
-  "displayHandicapOddsMatches": 90,
-  "referenceOddsMatches": 86,
-  "referenceHandicapOddsMatches": 90,
+  "displayOddsMatches": 87,
+  "displayHandicapOddsMatches": 91,
+  "referenceOddsMatches": 87,
+  "referenceHandicapOddsMatches": 91,
   "officialResultMatches": 2966,
   "skippedWithoutOfficialOdds": 0,
   "byStatus": {
     "FINISHED": 3035,
-    "PENDING_RESULT": 75,
-    "LIVE": 1,
-    "SCHEDULED": 14
+    "PENDING_RESULT": 76,
+    "SCHEDULED": 15
   },
   "coverage": {
     "first": "2025-11-22",
-    "last": "2026-07-13"
+    "last": "2026-07-14"
   },
   "window": {
     "backDays": 365,
     "forwardDays": 14
   },
   "files": {
-    "current": 90,
+    "current": 91,
     "history": 3035,
     "teams": 656,
-    "predictionSnapshots": 2215,
+    "predictionSnapshots": 2238,
     "postMatchReviews": 3035,
-    "externalSignals": 949,
+    "externalSignals": 954,
     "preMatchSignals": 42,
     "webConsensusSignals": 0
   },
@@ -60,7 +59,7 @@
     "note": "GitHub Pages serves static JSON. The page checks for newer JSON regularly; GitHub Actions refreshes the source files on schedule."
   },
   "attempt": {
-    "capturedAt": "2026-07-12T01:44:30.336Z",
+    "capturedAt": "2026-07-12T05:13:28.446Z",
     "officialOddsMatches": 0,
     "officialHandicapOddsMatches": 0,
     "officialResultMatches": 0,
@@ -73,20 +72,20 @@
     "rows": 76789,
     "appended": 0,
     "updated": 0,
-    "skipped": "fresh Sporttery odds unavailable; keeping existing 3125 matches"
+    "skipped": "fresh Sporttery odds unavailable; keeping existing 3126 matches"
   },
   "predictionSnapshots": {
-    "total": 2215,
+    "total": 2238,
     "byPhase": {
       "review": 85,
-      "mid": 319,
-      "baseline": 1607,
+      "mid": 322,
+      "baseline": 1627,
       "late": 112,
       "final": 68,
       "locked": 24
     },
     "appended": 0,
-    "updated": 17
+    "updated": 18
   },
   "postMatchReviews": {
     "total": 3035,
@@ -107,8 +106,8 @@
   },
   "externalSignals": {
     "source": "external-signals",
-    "updatedAt": "2026-07-12T01:44:29.270Z",
-    "matches": 949,
+    "updatedAt": "2026-07-12T05:13:27.595Z",
+    "matches": 954,
     "webConsensusMatches": 0
   },
   "preMatchSignals": {
@@ -299,8 +298,8 @@
   "fallback": {
     "keptExisting": true,
     "mergedPartialFresh": true,
-    "reason": "fresh Sporttery odds unavailable; keeping existing 3125 matches",
-    "existingMatches": 3125,
+    "reason": "fresh Sporttery odds unavailable; keeping existing 3126 matches",
+    "existingMatches": 3126,
     "freshPublishableMatches": 15,
     "sportteryPublishableMatches": 0,
     "fiveHundredFallbackMatches": 15,
@@ -308,6 +307,6 @@
   },
   "cacheInfo": {
     "localHistoryCount": 3123,
-    "lastCacheUpdate": "2026-07-12T01:49:49.757Z"
+    "lastCacheUpdate": "2026-07-12T05:18:29.491Z"
   }
 }
