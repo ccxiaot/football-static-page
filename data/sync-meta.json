@@ -1,19 +1,19 @@
 {
   "version": 1,
   "source": "sporttery",
-  "updatedAt": "2026-07-15T10:36:54.177Z",
-  "capturedAt": "2026-07-15T10:36:54.177Z",
-  "lastAttemptAt": "2026-07-15T10:42:32.043Z",
+  "updatedAt": "2026-07-15T12:07:52.923Z",
+  "capturedAt": "2026-07-15T12:07:52.923Z",
+  "lastAttemptAt": "2026-07-15T12:09:45.614Z",
   "api": {
     "source": "sporttery",
     "freshnessTime": "2026-07-01T06:02:58.003Z",
     "currentFreshnessTime": "2026-07-01T06:02:58.003Z",
     "historyFreshnessTime": "2026-07-01T06:02:58.003Z",
-    "sourceUpdatedAt": "2026-07-15T10:36:54.177Z",
-    "lastAttemptAt": "2026-07-15T10:36:54.177Z",
-    "ageSeconds": 1226036,
-    "currentAgeSeconds": 1226036,
-    "historyAgeSeconds": 1226036,
+    "sourceUpdatedAt": "2026-07-15T12:07:52.923Z",
+    "lastAttemptAt": "2026-07-15T12:07:52.923Z",
+    "ageSeconds": 1231494,
+    "currentAgeSeconds": 1231494,
+    "historyAgeSeconds": 1231494,
     "stale": true,
     "currentStale": true,
     "historyStale": true,
@@ -46,7 +46,7 @@
     "current": 103,
     "history": 3035,
     "teams": 666,
-    "predictionSnapshots": 2386,
+    "predictionSnapshots": 2390,
     "postMatchReviews": 3035,
     "externalSignals": 1014,
     "preMatchSignals": 42,
@@ -59,7 +59,7 @@
     "note": "GitHub Pages serves static JSON. The page checks for newer JSON regularly; GitHub Actions refreshes the source files on schedule."
   },
   "attempt": {
-    "capturedAt": "2026-07-15T10:36:54.177Z",
+    "capturedAt": "2026-07-15T12:07:52.923Z",
     "officialOddsMatches": 0,
     "officialHandicapOddsMatches": 0,
     "officialResultMatches": 0,
@@ -75,11 +75,11 @@
     "skipped": "fresh Sporttery odds unavailable; keeping existing 3138 matches"
   },
   "predictionSnapshots": {
-    "total": 2386,
+    "total": 2390,
     "byPhase": {
       "review": 85,
       "mid": 361,
-      "baseline": 1692,
+      "baseline": 1696,
       "late": 132,
       "final": 91,
       "locked": 25
@@ -106,7 +106,7 @@
   },
   "externalSignals": {
     "source": "external-signals",
-    "updatedAt": "2026-07-15T10:36:53.081Z",
+    "updatedAt": "2026-07-15T12:07:51.859Z",
     "matches": 1014,
     "webConsensusMatches": 0
   },
@@ -307,6 +307,6 @@
   },
   "cacheInfo": {
     "localHistoryCount": 3123,
-    "lastCacheUpdate": "2026-07-15T10:42:32.172Z"
+    "lastCacheUpdate": "2026-07-15T12:09:45.755Z"
   }
 }
