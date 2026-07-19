@@ -1,19 +1,19 @@
 {
   "version": 1,
   "source": "sporttery",
-  "updatedAt": "2026-07-18T23:37:37.982Z",
-  "capturedAt": "2026-07-18T23:37:37.982Z",
-  "lastAttemptAt": "2026-07-18T23:42:50.277Z",
+  "updatedAt": "2026-07-19T01:45:37.041Z",
+  "capturedAt": "2026-07-19T01:45:37.041Z",
+  "lastAttemptAt": "2026-07-19T01:47:48.139Z",
   "api": {
     "source": "sporttery",
     "freshnessTime": "2026-07-01T06:02:58.003Z",
     "currentFreshnessTime": "2026-07-01T06:02:58.003Z",
     "historyFreshnessTime": "2026-07-01T06:02:58.003Z",
-    "sourceUpdatedAt": "2026-07-18T23:37:37.982Z",
-    "lastAttemptAt": "2026-07-18T23:37:37.982Z",
-    "ageSeconds": 1532079,
-    "currentAgeSeconds": 1532079,
-    "historyAgeSeconds": 1532079,
+    "sourceUpdatedAt": "2026-07-19T01:45:37.041Z",
+    "lastAttemptAt": "2026-07-19T01:45:37.041Z",
+    "ageSeconds": 1539759,
+    "currentAgeSeconds": 1539759,
+    "historyAgeSeconds": 1539759,
     "stale": true,
     "currentStale": true,
     "historyStale": true,
@@ -59,14 +59,14 @@
     "note": "GitHub Pages serves static JSON. The page checks for newer JSON regularly; GitHub Actions refreshes the source files on schedule."
   },
   "attempt": {
-    "capturedAt": "2026-07-18T23:37:37.982Z",
+    "capturedAt": "2026-07-19T01:45:37.041Z",
     "officialOddsMatches": 0,
     "officialHandicapOddsMatches": 0,
     "officialResultMatches": 0,
     "fallbackResultMatches": 92,
     "publishableMatches": 0,
-    "fiveHundredFallbackMatches": 12,
-    "combinedPublishableMatches": 12
+    "fiveHundredFallbackMatches": 11,
+    "combinedPublishableMatches": 11
   },
   "oddsHistory": {
     "rows": 76789,
@@ -106,7 +106,7 @@
   },
   "externalSignals": {
     "source": "external-signals",
-    "updatedAt": "2026-07-18T23:37:36.757Z",
+    "updatedAt": "2026-07-19T01:45:36.063Z",
     "matches": 1199,
     "webConsensusMatches": 0
   },
@@ -300,13 +300,13 @@
     "mergedPartialFresh": true,
     "reason": "fresh Sporttery odds unavailable; keeping existing 3175 matches",
     "existingMatches": 3175,
-    "freshPublishableMatches": 12,
+    "freshPublishableMatches": 11,
     "sportteryPublishableMatches": 0,
-    "fiveHundredFallbackMatches": 12,
+    "fiveHundredFallbackMatches": 11,
     "fiveHundredResultMatches": 92
   },
   "cacheInfo": {
     "localHistoryCount": 3123,
-    "lastCacheUpdate": "2026-07-18T23:42:50.382Z"
+    "lastCacheUpdate": "2026-07-19T01:47:48.276Z"
   }
 }
