@@ -1,19 +1,19 @@
 {
   "version": 1,
   "source": "sporttery",
-  "updatedAt": "2026-07-21T12:01:42.382Z",
-  "capturedAt": "2026-07-21T12:01:42.382Z",
-  "lastAttemptAt": "2026-07-21T12:06:16.242Z",
+  "updatedAt": "2026-07-21T14:27:41.256Z",
+  "capturedAt": "2026-07-21T14:27:41.256Z",
+  "lastAttemptAt": "2026-07-21T14:30:58.549Z",
   "api": {
     "source": "sporttery",
     "freshnessTime": "2026-07-01T06:02:58.003Z",
     "currentFreshnessTime": "2026-07-01T06:02:58.003Z",
     "historyFreshnessTime": "2026-07-01T06:02:58.003Z",
-    "sourceUpdatedAt": "2026-07-21T12:01:42.382Z",
-    "lastAttemptAt": "2026-07-21T12:01:42.382Z",
-    "ageSeconds": 1749524,
-    "currentAgeSeconds": 1749524,
-    "historyAgeSeconds": 1749524,
+    "sourceUpdatedAt": "2026-07-21T14:27:41.256Z",
+    "lastAttemptAt": "2026-07-21T14:27:41.256Z",
+    "ageSeconds": 1758283,
+    "currentAgeSeconds": 1758283,
+    "historyAgeSeconds": 1758283,
     "stale": true,
     "currentStale": true,
     "historyStale": true,
@@ -31,8 +31,7 @@
   "skippedWithoutOfficialOdds": 0,
   "byStatus": {
     "FINISHED": 3035,
-    "PENDING_RESULT": 140,
-    "LIVE": 3,
+    "PENDING_RESULT": 143,
     "SCHEDULED": 8
   },
   "coverage": {
@@ -47,7 +46,7 @@
     "current": 151,
     "history": 3035,
     "teams": 677,
-    "predictionSnapshots": 2793,
+    "predictionSnapshots": 2799,
     "postMatchReviews": 3035,
     "externalSignals": 1254,
     "preMatchSignals": 42,
@@ -60,14 +59,14 @@
     "note": "GitHub Pages serves static JSON. The page checks for newer JSON regularly; GitHub Actions refreshes the source files on schedule."
   },
   "attempt": {
-    "capturedAt": "2026-07-21T12:01:42.382Z",
+    "capturedAt": "2026-07-21T14:27:41.256Z",
     "officialOddsMatches": 0,
     "officialHandicapOddsMatches": 0,
     "officialResultMatches": 0,
     "fallbackResultMatches": 92,
     "publishableMatches": 0,
-    "fiveHundredFallbackMatches": 11,
-    "combinedPublishableMatches": 11
+    "fiveHundredFallbackMatches": 8,
+    "combinedPublishableMatches": 8
   },
   "oddsHistory": {
     "rows": 76789,
@@ -76,17 +75,17 @@
     "skipped": "fresh Sporttery odds unavailable; keeping existing 3186 matches"
   },
   "predictionSnapshots": {
-    "total": 2793,
+    "total": 2799,
     "byPhase": {
       "review": 85,
-      "mid": 491,
-      "baseline": 1886,
+      "mid": 496,
+      "baseline": 1887,
       "late": 180,
       "final": 121,
       "locked": 30
     },
     "appended": 0,
-    "updated": 11
+    "updated": 7
   },
   "postMatchReviews": {
     "total": 3035,
@@ -107,7 +106,7 @@
   },
   "externalSignals": {
     "source": "external-signals",
-    "updatedAt": "2026-07-21T12:01:41.978Z",
+    "updatedAt": "2026-07-21T14:27:40.853Z",
     "matches": 1254,
     "webConsensusMatches": 0
   },
@@ -301,13 +300,13 @@
     "mergedPartialFresh": true,
     "reason": "fresh Sporttery odds unavailable; keeping existing 3186 matches",
     "existingMatches": 3186,
-    "freshPublishableMatches": 11,
+    "freshPublishableMatches": 8,
     "sportteryPublishableMatches": 0,
-    "fiveHundredFallbackMatches": 11,
+    "fiveHundredFallbackMatches": 8,
     "fiveHundredResultMatches": 92
   },
   "cacheInfo": {
     "localHistoryCount": 3123,
-    "lastCacheUpdate": "2026-07-21T12:06:16.373Z"
+    "lastCacheUpdate": "2026-07-21T14:30:58.651Z"
   }
 }
