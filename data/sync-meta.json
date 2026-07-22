@@ -1,19 +1,19 @@
 {
   "version": 1,
   "source": "sporttery",
-  "updatedAt": "2026-07-22T18:54:19.961Z",
-  "capturedAt": "2026-07-22T18:54:19.961Z",
-  "lastAttemptAt": "2026-07-22T18:58:24.730Z",
+  "updatedAt": "2026-07-22T20:06:35.648Z",
+  "capturedAt": "2026-07-22T20:06:35.648Z",
+  "lastAttemptAt": "2026-07-22T20:10:51.649Z",
   "api": {
     "source": "sporttery",
     "freshnessTime": "2026-07-01T06:02:58.003Z",
     "currentFreshnessTime": "2026-07-01T06:02:58.003Z",
     "historyFreshnessTime": "2026-07-01T06:02:58.003Z",
-    "sourceUpdatedAt": "2026-07-22T18:54:19.961Z",
-    "lastAttemptAt": "2026-07-22T18:54:19.961Z",
-    "ageSeconds": 1860681,
-    "currentAgeSeconds": 1860681,
-    "historyAgeSeconds": 1860681,
+    "sourceUpdatedAt": "2026-07-22T20:06:35.648Z",
+    "lastAttemptAt": "2026-07-22T20:06:35.648Z",
+    "ageSeconds": 1865017,
+    "currentAgeSeconds": 1865017,
+    "historyAgeSeconds": 1865017,
     "stale": true,
     "currentStale": true,
     "historyStale": true,
@@ -31,8 +31,7 @@
   "skippedWithoutOfficialOdds": 0,
   "byStatus": {
     "FINISHED": 3035,
-    "PENDING_RESULT": 150,
-    "LIVE": 3,
+    "PENDING_RESULT": 153,
     "SCHEDULED": 6
   },
   "coverage": {
@@ -60,14 +59,14 @@
     "note": "GitHub Pages serves static JSON. The page checks for newer JSON regularly; GitHub Actions refreshes the source files on schedule."
   },
   "attempt": {
-    "capturedAt": "2026-07-22T18:54:19.961Z",
+    "capturedAt": "2026-07-22T20:06:35.648Z",
     "officialOddsMatches": 0,
     "officialHandicapOddsMatches": 0,
     "officialResultMatches": 0,
     "fallbackResultMatches": 92,
     "publishableMatches": 0,
-    "fiveHundredFallbackMatches": 9,
-    "combinedPublishableMatches": 9
+    "fiveHundredFallbackMatches": 6,
+    "combinedPublishableMatches": 6
   },
   "oddsHistory": {
     "rows": 76789,
@@ -107,7 +106,7 @@
   },
   "externalSignals": {
     "source": "external-signals",
-    "updatedAt": "2026-07-22T18:54:19.599Z",
+    "updatedAt": "2026-07-22T20:06:35.251Z",
     "matches": 1294,
     "webConsensusMatches": 0
   },
@@ -301,13 +300,13 @@
     "mergedPartialFresh": true,
     "reason": "fresh Sporttery odds unavailable; keeping existing 3194 matches",
     "existingMatches": 3194,
-    "freshPublishableMatches": 9,
+    "freshPublishableMatches": 6,
     "sportteryPublishableMatches": 0,
-    "fiveHundredFallbackMatches": 9,
+    "fiveHundredFallbackMatches": 6,
     "fiveHundredResultMatches": 92
   },
   "cacheInfo": {
     "localHistoryCount": 3123,
-    "lastCacheUpdate": "2026-07-22T18:58:24.884Z"
+    "lastCacheUpdate": "2026-07-22T20:10:51.780Z"
   }
 }
