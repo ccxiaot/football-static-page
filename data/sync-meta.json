@@ -1,19 +1,19 @@
 {
   "version": 1,
   "source": "sporttery",
-  "updatedAt": "2026-07-22T23:50:37.832Z",
-  "capturedAt": "2026-07-22T23:50:37.832Z",
-  "lastAttemptAt": "2026-07-22T23:54:59.036Z",
+  "updatedAt": "2026-07-23T01:47:40.375Z",
+  "capturedAt": "2026-07-23T01:47:40.375Z",
+  "lastAttemptAt": "2026-07-23T01:53:45.124Z",
   "api": {
     "source": "sporttery",
     "freshnessTime": "2026-07-01T06:02:58.003Z",
     "currentFreshnessTime": "2026-07-01T06:02:58.003Z",
     "historyFreshnessTime": "2026-07-01T06:02:58.003Z",
-    "sourceUpdatedAt": "2026-07-22T23:50:37.832Z",
-    "lastAttemptAt": "2026-07-22T23:50:37.832Z",
-    "ageSeconds": 1878459,
-    "currentAgeSeconds": 1878459,
-    "historyAgeSeconds": 1878459,
+    "sourceUpdatedAt": "2026-07-23T01:47:40.375Z",
+    "lastAttemptAt": "2026-07-23T01:47:40.375Z",
+    "ageSeconds": 1885482,
+    "currentAgeSeconds": 1885482,
+    "historyAgeSeconds": 1885482,
     "stale": true,
     "currentStale": true,
     "historyStale": true,
@@ -31,9 +31,9 @@
   "skippedWithoutOfficialOdds": 0,
   "byStatus": {
     "FINISHED": 3035,
-    "PENDING_RESULT": 153,
-    "LIVE": 1,
-    "SCHEDULED": 5
+    "PENDING_RESULT": 154,
+    "LIVE": 2,
+    "SCHEDULED": 3
   },
   "coverage": {
     "first": "2025-11-22",
@@ -60,7 +60,7 @@
     "note": "GitHub Pages serves static JSON. The page checks for newer JSON regularly; GitHub Actions refreshes the source files on schedule."
   },
   "attempt": {
-    "capturedAt": "2026-07-22T23:50:37.832Z",
+    "capturedAt": "2026-07-23T01:47:40.375Z",
     "officialOddsMatches": 0,
     "officialHandicapOddsMatches": 0,
     "officialResultMatches": 0,
@@ -107,7 +107,7 @@
   },
   "externalSignals": {
     "source": "external-signals",
-    "updatedAt": "2026-07-22T23:50:37.440Z",
+    "updatedAt": "2026-07-23T01:47:40.005Z",
     "matches": 1294,
     "webConsensusMatches": 0
   },
@@ -308,6 +308,6 @@
   },
   "cacheInfo": {
     "localHistoryCount": 3123,
-    "lastCacheUpdate": "2026-07-22T23:54:59.164Z"
+    "lastCacheUpdate": "2026-07-23T01:53:45.278Z"
   }
 }
