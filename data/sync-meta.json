@@ -1,19 +1,19 @@
 {
   "version": 1,
   "source": "sporttery",
-  "updatedAt": "2026-07-24T16:57:41.662Z",
-  "capturedAt": "2026-07-24T16:57:41.662Z",
-  "lastAttemptAt": "2026-07-24T17:01:01.541Z",
+  "updatedAt": "2026-07-24T18:50:39.849Z",
+  "capturedAt": "2026-07-24T18:50:39.849Z",
+  "lastAttemptAt": "2026-07-24T18:53:26.359Z",
   "api": {
     "source": "sporttery",
     "freshnessTime": "2026-07-01T06:02:58.003Z",
     "currentFreshnessTime": "2026-07-01T06:02:58.003Z",
     "historyFreshnessTime": "2026-07-01T06:02:58.003Z",
-    "sourceUpdatedAt": "2026-07-24T16:57:41.662Z",
-    "lastAttemptAt": "2026-07-24T16:57:41.662Z",
-    "ageSeconds": 2026483,
-    "currentAgeSeconds": 2026483,
-    "historyAgeSeconds": 2026483,
+    "sourceUpdatedAt": "2026-07-24T18:50:39.849Z",
+    "lastAttemptAt": "2026-07-24T18:50:39.849Z",
+    "ageSeconds": 2033261,
+    "currentAgeSeconds": 2033261,
+    "historyAgeSeconds": 2033261,
     "stale": true,
     "currentStale": true,
     "historyStale": true,
@@ -31,9 +31,9 @@
   "skippedWithoutOfficialOdds": 0,
   "byStatus": {
     "FINISHED": 3035,
-    "PENDING_RESULT": 164,
+    "PENDING_RESULT": 165,
     "LIVE": 1,
-    "SCHEDULED": 7
+    "SCHEDULED": 6
   },
   "coverage": {
     "first": "2025-11-22",
@@ -60,7 +60,7 @@
     "note": "GitHub Pages serves static JSON. The page checks for newer JSON regularly; GitHub Actions refreshes the source files on schedule."
   },
   "attempt": {
-    "capturedAt": "2026-07-24T16:57:41.662Z",
+    "capturedAt": "2026-07-24T18:50:39.849Z",
     "officialOddsMatches": 0,
     "officialHandicapOddsMatches": 0,
     "officialResultMatches": 0,
@@ -107,7 +107,7 @@
   },
   "externalSignals": {
     "source": "external-signals",
-    "updatedAt": "2026-07-24T16:57:41.253Z",
+    "updatedAt": "2026-07-24T18:50:39.133Z",
     "matches": 1359,
     "webConsensusMatches": 0
   },
@@ -308,6 +308,6 @@
   },
   "cacheInfo": {
     "localHistoryCount": 3123,
-    "lastCacheUpdate": "2026-07-24T17:01:01.684Z"
+    "lastCacheUpdate": "2026-07-24T18:53:26.490Z"
   }
 }
