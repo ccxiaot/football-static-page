@@ -1,19 +1,19 @@
 {
   "version": 1,
   "source": "sporttery",
-  "updatedAt": "2026-07-29T15:20:48.223Z",
-  "capturedAt": "2026-07-29T15:20:48.223Z",
-  "lastAttemptAt": "2026-07-29T15:25:20.153Z",
+  "updatedAt": "2026-07-29T16:40:43.292Z",
+  "capturedAt": "2026-07-29T16:40:43.292Z",
+  "lastAttemptAt": "2026-07-29T16:45:43.927Z",
   "api": {
     "source": "sporttery",
     "freshnessTime": "2026-07-01T06:02:58.003Z",
     "currentFreshnessTime": "2026-07-01T06:02:58.003Z",
     "historyFreshnessTime": "2026-07-01T06:02:58.003Z",
-    "sourceUpdatedAt": "2026-07-29T15:20:48.223Z",
-    "lastAttemptAt": "2026-07-29T15:20:48.223Z",
-    "ageSeconds": 2452670,
-    "currentAgeSeconds": 2452670,
-    "historyAgeSeconds": 2452670,
+    "sourceUpdatedAt": "2026-07-29T16:40:43.292Z",
+    "lastAttemptAt": "2026-07-29T16:40:43.292Z",
+    "ageSeconds": 2457465,
+    "currentAgeSeconds": 2457465,
+    "historyAgeSeconds": 2457465,
     "stale": true,
     "currentStale": true,
     "historyStale": true,
@@ -23,10 +23,10 @@
   },
   "officialOddsMatches": 0,
   "officialHandicapOddsMatches": 0,
-  "displayOddsMatches": 184,
-  "displayHandicapOddsMatches": 190,
-  "referenceOddsMatches": 184,
-  "referenceHandicapOddsMatches": 190,
+  "displayOddsMatches": 183,
+  "displayHandicapOddsMatches": 189,
+  "referenceOddsMatches": 183,
+  "referenceHandicapOddsMatches": 189,
   "officialResultMatches": 2966,
   "skippedWithoutOfficialOdds": 0,
   "byStatus": {
@@ -44,7 +44,7 @@
     "forwardDays": 14
   },
   "files": {
-    "current": 190,
+    "current": 189,
     "history": 3051,
     "teams": 687,
     "predictionSnapshots": 3253,
@@ -60,7 +60,7 @@
     "note": "GitHub Pages serves static JSON. The page checks for newer JSON regularly; GitHub Actions refreshes the source files on schedule."
   },
   "attempt": {
-    "capturedAt": "2026-07-29T15:20:48.223Z",
+    "capturedAt": "2026-07-29T16:40:43.292Z",
     "officialOddsMatches": 0,
     "officialHandicapOddsMatches": 0,
     "officialResultMatches": 0,
@@ -107,7 +107,7 @@
   },
   "externalSignals": {
     "source": "external-signals",
-    "updatedAt": "2026-07-29T15:20:47.804Z",
+    "updatedAt": "2026-07-29T16:40:42.871Z",
     "matches": 1524,
     "webConsensusMatches": 0
   },
@@ -279,6 +279,6 @@
   },
   "cacheInfo": {
     "localHistoryCount": 3123,
-    "lastCacheUpdate": "2026-07-29T15:25:20.257Z"
+    "lastCacheUpdate": "2026-07-29T16:45:44.059Z"
   }
 }
