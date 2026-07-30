@@ -1,54 +1,54 @@
 {
   "version": 1,
   "source": "sporttery",
-  "updatedAt": "2026-07-30T01:20:39.057Z",
-  "capturedAt": "2026-07-30T01:20:39.057Z",
-  "lastAttemptAt": "2026-07-30T01:27:48.890Z",
+  "updatedAt": "2026-07-30T04:27:46.808Z",
+  "capturedAt": "2026-07-30T04:27:46.808Z",
+  "lastAttemptAt": "2026-07-30T04:31:17.176Z",
   "api": {
     "source": "sporttery",
     "freshnessTime": "2026-07-01T06:02:58.003Z",
     "currentFreshnessTime": "2026-07-01T06:02:58.003Z",
     "historyFreshnessTime": "2026-07-01T06:02:58.003Z",
-    "sourceUpdatedAt": "2026-07-30T01:20:39.057Z",
-    "lastAttemptAt": "2026-07-30T01:20:39.057Z",
-    "ageSeconds": 2488661,
-    "currentAgeSeconds": 2488661,
-    "historyAgeSeconds": 2488661,
+    "sourceUpdatedAt": "2026-07-30T04:27:46.808Z",
+    "lastAttemptAt": "2026-07-30T04:27:46.808Z",
+    "ageSeconds": 2499888,
+    "currentAgeSeconds": 2499888,
+    "historyAgeSeconds": 2499888,
     "stale": true,
     "currentStale": true,
     "historyStale": true,
     "partialStale": false,
     "syncTriggered": false,
-    "fallbackReason": "fresh Sporttery odds unavailable; keeping existing 3240 matches"
+    "fallbackReason": "fresh Sporttery odds unavailable; keeping existing 3246 matches"
   },
   "officialOddsMatches": 0,
   "officialHandicapOddsMatches": 0,
-  "displayOddsMatches": 183,
-  "displayHandicapOddsMatches": 189,
-  "referenceOddsMatches": 183,
-  "referenceHandicapOddsMatches": 189,
+  "displayOddsMatches": 187,
+  "displayHandicapOddsMatches": 194,
+  "referenceOddsMatches": 187,
+  "referenceHandicapOddsMatches": 194,
   "officialResultMatches": 2966,
   "skippedWithoutOfficialOdds": 0,
   "byStatus": {
-    "FINISHED": 3051,
+    "FINISHED": 3053,
     "PENDING_RESULT": 187,
-    "LIVE": 2
+    "SCHEDULED": 6
   },
   "coverage": {
     "first": "2025-11-22",
-    "last": "2026-07-29"
+    "last": "2026-07-30"
   },
   "window": {
     "backDays": 365,
     "forwardDays": 14
   },
   "files": {
-    "current": 189,
-    "history": 3051,
+    "current": 194,
+    "history": 3053,
     "teams": 687,
-    "predictionSnapshots": 3253,
-    "postMatchReviews": 3051,
-    "externalSignals": 1524,
+    "predictionSnapshots": 3260,
+    "postMatchReviews": 3053,
+    "externalSignals": 1554,
     "preMatchSignals": 42,
     "webConsensusSignals": 0
   },
@@ -59,46 +59,46 @@
     "note": "GitHub Pages serves static JSON. The page checks for newer JSON regularly; GitHub Actions refreshes the source files on schedule."
   },
   "attempt": {
-    "capturedAt": "2026-07-30T01:20:39.057Z",
+    "capturedAt": "2026-07-30T04:27:46.808Z",
     "officialOddsMatches": 0,
     "officialHandicapOddsMatches": 0,
     "officialResultMatches": 0,
-    "fallbackResultMatches": 108,
+    "fallbackResultMatches": 110,
     "publishableMatches": 0,
-    "fiveHundredFallbackMatches": 6,
-    "combinedPublishableMatches": 6
+    "fiveHundredFallbackMatches": 10,
+    "combinedPublishableMatches": 10
   },
   "oddsHistory": {
     "rows": 76789,
     "appended": 0,
     "updated": 0,
-    "skipped": "fresh Sporttery odds unavailable; keeping existing 3240 matches"
+    "skipped": "fresh Sporttery odds unavailable; keeping existing 3246 matches"
   },
   "predictionSnapshots": {
-    "total": 3253,
+    "total": 3260,
     "byPhase": {
       "review": 85,
       "mid": 617,
-      "baseline": 2122,
+      "baseline": 2129,
       "late": 235,
       "final": 164,
       "locked": 30
     },
-    "appended": 0,
-    "updated": 3
+    "appended": 1,
+    "updated": 8
   },
   "postMatchReviews": {
-    "total": 3051,
-    "bestWon": 47,
-    "bestLost": 56,
+    "total": 3053,
+    "bestWon": 48,
+    "bestLost": 57,
     "handicapHit": 17,
-    "missedHandicapLane": 22,
+    "missedHandicapLane": 23,
     "diagnosis": {
       "neutral-review": 2945,
-      "best-miss": 56,
+      "best-miss": 57,
       "draw-risk-underestimated": 31,
-      "best-hit": 47,
-      "handicap-lane-suppressed": 22,
+      "best-hit": 48,
+      "handicap-lane-suppressed": 23,
       "handicap-hit": 17,
       "goals-underestimated": 26,
       "goals-overestimated": 13
@@ -106,8 +106,8 @@
   },
   "externalSignals": {
     "source": "external-signals",
-    "updatedAt": "2026-07-30T01:20:38.630Z",
-    "matches": 1524,
+    "updatedAt": "2026-07-30T04:27:46.360Z",
+    "matches": 1554,
     "webConsensusMatches": 0
   },
   "preMatchSignals": {
@@ -118,11 +118,11 @@
   "modelCalibration": {
     "version": "rolling-calibration-v1",
     "sample": {
-      "rows": 79,
+      "rows": 81,
       "oneXTwo": 0,
       "goals": 0,
-      "best": 79,
-      "recommendationPool": 79
+      "best": 81,
+      "recommendationPool": 81
     },
     "metrics": {
       "oneXTwoBrier": null,
@@ -134,33 +134,34 @@
     "scoreCalibration": {
       "version": "score-calibration-v2",
       "sample": {
-        "rows": 16,
-        "recentRows": 2,
-        "totalProjectedRows": 79,
+        "rows": 18,
+        "recentRows": 4,
+        "totalProjectedRows": 81,
         "sampleDays": 14,
         "recentDays": 2,
         "rollingDays": 14,
         "minRows": 12,
         "exactHitRate": 0,
-        "top3ExactHitRate": 0.25,
-        "outcomeHitRate": 0.25,
-        "top3OutcomeHitRate": 0.625,
-        "over25HitRate": 0.25,
-        "top3Over25HitRate": 0.938,
-        "totalBandHitRate": 0.188,
-        "top3TotalBandHitRate": 0.625,
-        "avgActualGoals": 2.81,
+        "top3ExactHitRate": 0.222,
+        "outcomeHitRate": 0.278,
+        "top3OutcomeHitRate": 0.667,
+        "over25HitRate": 0.333,
+        "top3Over25HitRate": 0.944,
+        "totalBandHitRate": 0.222,
+        "top3TotalBandHitRate": 0.611,
+        "avgActualGoals": 2.72,
         "avgProjectedGoals": 2.56,
         "actualOver25Rate": 0.5,
         "projectedOver25Rate": 0.5,
-        "actualBttsRate": 0.688,
-        "projectedBttsRate": 0.75,
+        "actualBttsRate": 0.611,
+        "projectedBttsRate": 0.722,
         "projectedLowScoreRate": 0.5,
         "actualScores": {
           "0-2": 3,
+          "1-0": 3,
           "1-1": 3,
           "1-2": 3,
-          "1-0": 2,
+          "0-3": 1,
           "1-3": 1,
           "2-1": 1,
           "2-3": 1,
@@ -168,33 +169,33 @@
           "4-1": 1
         },
         "projectedScores": {
-          "2-1": 7,
+          "2-1": 8,
+          "2-0": 5,
           "1-1": 4,
-          "2-0": 4,
           "3-1": 1
         },
         "actualBands": {
           "2": 6,
-          "3": 4,
+          "3": 5,
           "4+": 4,
-          "0-1": 2
+          "0-1": 3
         },
         "projectedBands": {
-          "2": 8,
-          "3": 7,
+          "2": 9,
+          "3": 8,
           "4+": 1
         },
         "actualShapes": {
+          "clear-clean-sheet": 4,
           "one-goal-btts": 4,
-          "clear-clean-sheet": 3,
           "draw-btts": 3,
+          "low-0-1": 3,
           "clear-btts-open": 2,
-          "low-0-1": 2,
           "open-4plus": 2
         },
         "projectedShapes": {
-          "one-goal-btts": 7,
-          "clear-clean-sheet": 4,
+          "one-goal-btts": 8,
+          "clear-clean-sheet": 5,
           "draw-btts": 4,
           "clear-btts-open": 1
         }
@@ -207,14 +208,14 @@
         "openScoreRankBoost": 0,
         "bttsRankBoost": 0,
         "bandRankBoosts": {
-          "3": -0.019,
-          "4+": 0.034,
-          "0-1": 0.022
+          "2": -0.017,
+          "3": -0.017,
+          "0-1": 0.03,
+          "4+": 0.03
         },
         "shapeRankBoosts": {
-          "low-0-1": 0.025,
-          "open-4plus": 0.025,
-          "one-goal-btts": -0.017
+          "low-0-1": 0.033,
+          "one-goal-btts": -0.02
         }
       },
       "reasons": [
@@ -269,15 +270,15 @@
   "fallback": {
     "keptExisting": true,
     "mergedPartialFresh": true,
-    "reason": "fresh Sporttery odds unavailable; keeping existing 3240 matches",
-    "existingMatches": 3240,
-    "freshPublishableMatches": 6,
+    "reason": "fresh Sporttery odds unavailable; keeping existing 3246 matches",
+    "existingMatches": 3246,
+    "freshPublishableMatches": 10,
     "sportteryPublishableMatches": 0,
-    "fiveHundredFallbackMatches": 6,
-    "fiveHundredResultMatches": 108
+    "fiveHundredFallbackMatches": 10,
+    "fiveHundredResultMatches": 110
   },
   "cacheInfo": {
     "localHistoryCount": 3123,
-    "lastCacheUpdate": "2026-07-30T01:27:49.017Z"
+    "lastCacheUpdate": "2026-07-30T04:31:17.302Z"
   }
 }
