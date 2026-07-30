@@ -1,19 +1,19 @@
 {
   "version": 1,
   "source": "sporttery",
-  "updatedAt": "2026-07-29T23:51:38.682Z",
-  "capturedAt": "2026-07-29T23:51:38.682Z",
-  "lastAttemptAt": "2026-07-29T23:53:52.049Z",
+  "updatedAt": "2026-07-30T01:20:39.057Z",
+  "capturedAt": "2026-07-30T01:20:39.057Z",
+  "lastAttemptAt": "2026-07-30T01:27:48.890Z",
   "api": {
     "source": "sporttery",
     "freshnessTime": "2026-07-01T06:02:58.003Z",
     "currentFreshnessTime": "2026-07-01T06:02:58.003Z",
     "historyFreshnessTime": "2026-07-01T06:02:58.003Z",
-    "sourceUpdatedAt": "2026-07-29T23:51:38.682Z",
-    "lastAttemptAt": "2026-07-29T23:51:38.682Z",
-    "ageSeconds": 2483320,
-    "currentAgeSeconds": 2483320,
-    "historyAgeSeconds": 2483320,
+    "sourceUpdatedAt": "2026-07-30T01:20:39.057Z",
+    "lastAttemptAt": "2026-07-30T01:20:39.057Z",
+    "ageSeconds": 2488661,
+    "currentAgeSeconds": 2488661,
+    "historyAgeSeconds": 2488661,
     "stale": true,
     "currentStale": true,
     "historyStale": true,
@@ -31,9 +31,8 @@
   "skippedWithoutOfficialOdds": 0,
   "byStatus": {
     "FINISHED": 3051,
-    "PENDING_RESULT": 185,
-    "LIVE": 2,
-    "SCHEDULED": 2
+    "PENDING_RESULT": 187,
+    "LIVE": 2
   },
   "coverage": {
     "first": "2025-11-22",
@@ -60,7 +59,7 @@
     "note": "GitHub Pages serves static JSON. The page checks for newer JSON regularly; GitHub Actions refreshes the source files on schedule."
   },
   "attempt": {
-    "capturedAt": "2026-07-29T23:51:38.682Z",
+    "capturedAt": "2026-07-30T01:20:39.057Z",
     "officialOddsMatches": 0,
     "officialHandicapOddsMatches": 0,
     "officialResultMatches": 0,
@@ -107,7 +106,7 @@
   },
   "externalSignals": {
     "source": "external-signals",
-    "updatedAt": "2026-07-29T23:51:38.267Z",
+    "updatedAt": "2026-07-30T01:20:38.630Z",
     "matches": 1524,
     "webConsensusMatches": 0
   },
@@ -279,6 +278,6 @@
   },
   "cacheInfo": {
     "localHistoryCount": 3123,
-    "lastCacheUpdate": "2026-07-29T23:53:52.171Z"
+    "lastCacheUpdate": "2026-07-30T01:27:49.017Z"
   }
 }
