@@ -1,19 +1,19 @@
 {
   "version": 1,
   "source": "sporttery",
-  "updatedAt": "2026-08-01T14:18:44.447Z",
-  "capturedAt": "2026-08-01T14:18:44.447Z",
-  "lastAttemptAt": "2026-08-01T14:22:36.384Z",
+  "updatedAt": "2026-08-01T15:29:40.809Z",
+  "capturedAt": "2026-08-01T15:29:40.809Z",
+  "lastAttemptAt": "2026-08-01T15:34:32.937Z",
   "api": {
     "source": "sporttery",
     "freshnessTime": "2026-07-01T06:02:58.003Z",
     "currentFreshnessTime": "2026-07-01T06:02:58.003Z",
     "historyFreshnessTime": "2026-07-01T06:02:58.003Z",
-    "sourceUpdatedAt": "2026-08-01T14:18:44.447Z",
-    "lastAttemptAt": "2026-08-01T14:18:44.447Z",
-    "ageSeconds": 2708146,
-    "currentAgeSeconds": 2708146,
-    "historyAgeSeconds": 2708146,
+    "sourceUpdatedAt": "2026-08-01T15:29:40.809Z",
+    "lastAttemptAt": "2026-08-01T15:29:40.809Z",
+    "ageSeconds": 2712402,
+    "currentAgeSeconds": 2712402,
+    "historyAgeSeconds": 2712402,
     "stale": true,
     "currentStale": true,
     "historyStale": true,
@@ -30,10 +30,10 @@
   "officialResultMatches": 2966,
   "skippedWithoutOfficialOdds": 0,
   "byStatus": {
-    "FINISHED": 3064,
+    "FINISHED": 3065,
     "PENDING_RESULT": 189,
     "LIVE": 2,
-    "SCHEDULED": 28
+    "SCHEDULED": 27
   },
   "coverage": {
     "first": "2025-11-22",
@@ -45,10 +45,10 @@
   },
   "files": {
     "current": 224,
-    "history": 3064,
+    "history": 3065,
     "teams": 688,
-    "predictionSnapshots": 3400,
-    "postMatchReviews": 3064,
+    "predictionSnapshots": 3406,
+    "postMatchReviews": 3065,
     "externalSignals": 1739,
     "preMatchSignals": 42,
     "webConsensusSignals": 0
@@ -60,14 +60,14 @@
     "note": "GitHub Pages serves static JSON. The page checks for newer JSON regularly; GitHub Actions refreshes the source files on schedule."
   },
   "attempt": {
-    "capturedAt": "2026-08-01T14:18:44.447Z",
+    "capturedAt": "2026-08-01T15:29:40.809Z",
     "officialOddsMatches": 0,
     "officialHandicapOddsMatches": 0,
     "officialResultMatches": 0,
-    "fallbackResultMatches": 121,
+    "fallbackResultMatches": 122,
     "publishableMatches": 0,
-    "fiveHundredFallbackMatches": 44,
-    "combinedPublishableMatches": 44
+    "fiveHundredFallbackMatches": 43,
+    "combinedPublishableMatches": 43
   },
   "oddsHistory": {
     "rows": 76789,
@@ -76,21 +76,21 @@
     "skipped": "fresh Sporttery odds unavailable; keeping existing 3283 matches"
   },
   "predictionSnapshots": {
-    "total": 3400,
+    "total": 3406,
     "byPhase": {
       "review": 85,
       "mid": 656,
-      "baseline": 2209,
-      "late": 249,
-      "final": 171,
+      "baseline": 2212,
+      "late": 251,
+      "final": 172,
       "locked": 30
     },
     "appended": 0,
-    "updated": 29
+    "updated": 21
   },
   "postMatchReviews": {
-    "total": 3064,
-    "bestWon": 53,
+    "total": 3065,
+    "bestWon": 54,
     "bestLost": 63,
     "handicapHit": 21,
     "missedHandicapLane": 27,
@@ -98,7 +98,7 @@
       "neutral-review": 2945,
       "best-miss": 63,
       "draw-risk-underestimated": 34,
-      "best-hit": 53,
+      "best-hit": 54,
       "handicap-lane-suppressed": 27,
       "handicap-hit": 21,
       "goals-underestimated": 28,
@@ -107,7 +107,7 @@
   },
   "externalSignals": {
     "source": "external-signals",
-    "updatedAt": "2026-08-01T14:18:43.994Z",
+    "updatedAt": "2026-08-01T15:29:40.371Z",
     "matches": 1739,
     "webConsensusMatches": 0
   },
@@ -119,44 +119,44 @@
   "modelCalibration": {
     "version": "rolling-calibration-v1",
     "sample": {
-      "rows": 92,
+      "rows": 93,
       "oneXTwo": 0,
       "goals": 0,
-      "best": 92,
-      "recommendationPool": 92
+      "best": 93,
+      "recommendationPool": 93
     },
     "metrics": {
       "oneXTwoBrier": null,
       "oneXTwoLogLoss": null,
       "oneXTwoHitRate": null,
       "goalsHitRate": null,
-      "bestHitRate": 0.511
+      "bestHitRate": 0.516
     },
     "scoreCalibration": {
       "version": "score-calibration-v2",
       "sample": {
-        "rows": 29,
-        "recentRows": 5,
-        "totalProjectedRows": 92,
+        "rows": 30,
+        "recentRows": 6,
+        "totalProjectedRows": 93,
         "sampleDays": 14,
         "recentDays": 2,
         "rollingDays": 14,
         "minRows": 12,
         "exactHitRate": 0,
-        "top3ExactHitRate": 0.172,
-        "outcomeHitRate": 0.276,
-        "top3OutcomeHitRate": 0.655,
-        "over25HitRate": 0.483,
-        "top3Over25HitRate": 0.966,
-        "totalBandHitRate": 0.207,
-        "top3TotalBandHitRate": 0.621,
-        "avgActualGoals": 2.66,
-        "avgProjectedGoals": 2.41,
-        "actualOver25Rate": 0.517,
-        "projectedOver25Rate": 0.414,
-        "actualBttsRate": 0.448,
-        "projectedBttsRate": 0.655,
-        "projectedLowScoreRate": 0.586,
+        "top3ExactHitRate": 0.2,
+        "outcomeHitRate": 0.3,
+        "top3OutcomeHitRate": 0.667,
+        "over25HitRate": 0.467,
+        "top3Over25HitRate": 0.967,
+        "totalBandHitRate": 0.2,
+        "top3TotalBandHitRate": 0.633,
+        "avgActualGoals": 2.67,
+        "avgProjectedGoals": 2.4,
+        "actualOver25Rate": 0.533,
+        "projectedOver25Rate": 0.4,
+        "actualBttsRate": 0.433,
+        "projectedBttsRate": 0.633,
+        "projectedLowScoreRate": 0.6,
         "actualScores": {
           "0-2": 4,
           "0-3": 3,
@@ -170,6 +170,7 @@
           "2-1": 1,
           "2-2": 1,
           "2-3": 1,
+          "3-0": 1,
           "3-1": 1,
           "3-2": 1,
           "4-0": 1,
@@ -178,25 +179,25 @@
         },
         "projectedScores": {
           "2-1": 11,
-          "2-0": 9,
+          "2-0": 10,
           "1-1": 7,
           "1-0": 1,
           "3-1": 1
         },
         "actualBands": {
           "2": 8,
-          "3": 7,
+          "3": 8,
           "4+": 8,
           "0-1": 6
         },
         "projectedBands": {
-          "2": 16,
+          "2": 17,
           "3": 11,
           "0-1": 1,
           "4+": 1
         },
         "actualShapes": {
-          "clear-clean-sheet": 8,
+          "clear-clean-sheet": 9,
           "low-0-1": 6,
           "draw-btts": 4,
           "one-goal-btts": 4,
@@ -205,7 +206,7 @@
         },
         "projectedShapes": {
           "one-goal-btts": 11,
-          "clear-clean-sheet": 9,
+          "clear-clean-sheet": 10,
           "draw-btts": 7,
           "clear-btts-open": 1,
           "low-0-1": 1
@@ -219,14 +220,14 @@
         "openScoreRankBoost": 0,
         "bttsRankBoost": 0,
         "bandRankBoosts": {
-          "2": -0.028,
-          "4+": 0.043,
-          "0-1": 0.031
+          "2": -0.03,
+          "4+": 0.042,
+          "0-1": 0.03
         },
         "shapeRankBoosts": {
-          "low-0-1": 0.034,
-          "open-4plus": 0.028,
-          "one-goal-btts": -0.022
+          "low-0-1": 0.033,
+          "open-4plus": 0.027,
+          "one-goal-btts": -0.021
         }
       },
       "reasons": [
@@ -283,13 +284,13 @@
     "mergedPartialFresh": true,
     "reason": "fresh Sporttery odds unavailable; keeping existing 3283 matches",
     "existingMatches": 3283,
-    "freshPublishableMatches": 44,
+    "freshPublishableMatches": 43,
     "sportteryPublishableMatches": 0,
-    "fiveHundredFallbackMatches": 44,
-    "fiveHundredResultMatches": 121
+    "fiveHundredFallbackMatches": 43,
+    "fiveHundredResultMatches": 122
   },
   "cacheInfo": {
     "localHistoryCount": 3123,
-    "lastCacheUpdate": "2026-08-01T14:22:36.513Z"
+    "lastCacheUpdate": "2026-08-01T15:34:33.070Z"
   }
 }
