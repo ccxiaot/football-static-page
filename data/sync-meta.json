@@ -1,19 +1,19 @@
 {
   "version": 1,
   "source": "sporttery",
-  "updatedAt": "2026-08-02T15:31:49.705Z",
-  "capturedAt": "2026-08-02T15:31:49.705Z",
-  "lastAttemptAt": "2026-08-02T15:35:08.974Z",
+  "updatedAt": "2026-08-02T16:44:40.448Z",
+  "capturedAt": "2026-08-02T16:44:40.448Z",
+  "lastAttemptAt": "2026-08-02T16:48:12.758Z",
   "api": {
     "source": "sporttery",
     "freshnessTime": "2026-07-01T06:02:58.003Z",
     "currentFreshnessTime": "2026-07-01T06:02:58.003Z",
     "historyFreshnessTime": "2026-07-01T06:02:58.003Z",
-    "sourceUpdatedAt": "2026-08-02T15:31:49.705Z",
-    "lastAttemptAt": "2026-08-02T15:31:49.705Z",
-    "ageSeconds": 2798931,
-    "currentAgeSeconds": 2798931,
-    "historyAgeSeconds": 2798931,
+    "sourceUpdatedAt": "2026-08-02T16:44:40.448Z",
+    "lastAttemptAt": "2026-08-02T16:44:40.448Z",
+    "ageSeconds": 2803302,
+    "currentAgeSeconds": 2803302,
+    "historyAgeSeconds": 2803302,
     "stale": true,
     "currentStale": true,
     "historyStale": true,
@@ -23,16 +23,16 @@
   },
   "officialOddsMatches": 0,
   "officialHandicapOddsMatches": 0,
-  "displayOddsMatches": 209,
-  "displayHandicapOddsMatches": 215,
-  "referenceOddsMatches": 209,
-  "referenceHandicapOddsMatches": 215,
+  "displayOddsMatches": 208,
+  "displayHandicapOddsMatches": 214,
+  "referenceOddsMatches": 208,
+  "referenceHandicapOddsMatches": 214,
   "officialResultMatches": 2966,
   "skippedWithoutOfficialOdds": 0,
   "byStatus": {
     "FINISHED": 3069,
-    "PENDING_RESULT": 202,
-    "LIVE": 5,
+    "PENDING_RESULT": 204,
+    "LIVE": 3,
     "SCHEDULED": 7
   },
   "coverage": {
@@ -44,7 +44,7 @@
     "forwardDays": 14
   },
   "files": {
-    "current": 215,
+    "current": 214,
     "history": 3069,
     "teams": 688,
     "predictionSnapshots": 3503,
@@ -60,7 +60,7 @@
     "note": "GitHub Pages serves static JSON. The page checks for newer JSON regularly; GitHub Actions refreshes the source files on schedule."
   },
   "attempt": {
-    "capturedAt": "2026-08-02T15:31:49.705Z",
+    "capturedAt": "2026-08-02T16:44:40.448Z",
     "officialOddsMatches": 0,
     "officialHandicapOddsMatches": 0,
     "officialResultMatches": 0,
@@ -107,7 +107,7 @@
   },
   "externalSignals": {
     "source": "external-signals",
-    "updatedAt": "2026-08-02T15:31:49.282Z",
+    "updatedAt": "2026-08-02T16:44:39.986Z",
     "matches": 1739,
     "webConsensusMatches": 0
   },
@@ -291,6 +291,6 @@
   },
   "cacheInfo": {
     "localHistoryCount": 3123,
-    "lastCacheUpdate": "2026-08-02T15:35:09.048Z"
+    "lastCacheUpdate": "2026-08-02T16:48:12.883Z"
   }
 }
