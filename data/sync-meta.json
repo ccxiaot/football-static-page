@@ -3,7 +3,7 @@
   "source": "sporttery",
   "updatedAt": "2026-08-07T03:01:21.870Z",
   "capturedAt": "2026-08-07T03:01:21.870Z",
-  "lastAttemptAt": "2026-08-07T06:41:18.885Z",
+  "lastAttemptAt": "2026-08-07T08:06:58.897Z",
   "api": {
     "source": "sporttery",
     "freshnessTime": "2026-07-01T06:02:58.003Z",
@@ -290,6 +290,6 @@
   },
   "cacheInfo": {
     "localHistoryCount": 3123,
-    "lastCacheUpdate": "2026-08-07T06:41:19.030Z"
+    "lastCacheUpdate": "2026-08-07T08:06:59.026Z"
   }
 }
