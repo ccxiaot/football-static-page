@@ -1,19 +1,19 @@
 {
   "version": 1,
   "source": "sporttery",
-  "updatedAt": "2026-08-13T03:35:00.132Z",
-  "capturedAt": "2026-08-13T03:35:00.132Z",
-  "lastAttemptAt": "2026-08-13T03:36:44.371Z",
+  "updatedAt": "2026-08-13T05:23:13.097Z",
+  "capturedAt": "2026-08-13T05:23:13.097Z",
+  "lastAttemptAt": "2026-08-13T05:27:26.477Z",
   "api": {
     "source": "sporttery",
     "freshnessTime": "2026-07-01T06:02:58.003Z",
     "currentFreshnessTime": "2026-07-01T06:02:58.003Z",
     "historyFreshnessTime": "2026-07-01T06:02:58.003Z",
-    "sourceUpdatedAt": "2026-08-13T03:35:00.132Z",
-    "lastAttemptAt": "2026-08-13T03:35:00.132Z",
-    "ageSeconds": 3706322,
-    "currentAgeSeconds": 3706322,
-    "historyAgeSeconds": 3706322,
+    "sourceUpdatedAt": "2026-08-13T05:23:13.097Z",
+    "lastAttemptAt": "2026-08-13T05:23:13.097Z",
+    "ageSeconds": 3712815,
+    "currentAgeSeconds": 3712815,
+    "historyAgeSeconds": 3712815,
     "stale": true,
     "currentStale": true,
     "historyStale": true,
@@ -48,7 +48,7 @@
     "teams": 711,
     "predictionSnapshots": 3868,
     "postMatchReviews": 3072,
-    "externalSignals": 2090,
+    "externalSignals": 2091,
     "preMatchSignals": 42,
     "webConsensusSignals": 0
   },
@@ -59,7 +59,7 @@
     "note": "GitHub Pages serves static JSON. The page checks for newer JSON regularly; GitHub Actions refreshes the source files on schedule."
   },
   "attempt": {
-    "capturedAt": "2026-08-13T03:35:00.132Z",
+    "capturedAt": "2026-08-13T05:23:13.097Z",
     "officialOddsMatches": 0,
     "officialHandicapOddsMatches": 0,
     "officialResultMatches": 0,
@@ -106,8 +106,8 @@
   },
   "externalSignals": {
     "source": "external-signals",
-    "updatedAt": "2026-08-13T03:34:59.636Z",
-    "matches": 2090,
+    "updatedAt": "2026-08-13T05:23:12.613Z",
+    "matches": 2091,
     "webConsensusMatches": 0
   },
   "preMatchSignals": {
@@ -282,6 +282,6 @@
   },
   "cacheInfo": {
     "localHistoryCount": 3123,
-    "lastCacheUpdate": "2026-08-13T03:36:44.498Z"
+    "lastCacheUpdate": "2026-08-13T05:27:26.609Z"
   }
 }
