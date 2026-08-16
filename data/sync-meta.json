@@ -1,19 +1,19 @@
 {
   "version": 1,
   "source": "sporttery",
-  "updatedAt": "2026-08-16T13:44:45.958Z",
-  "capturedAt": "2026-08-16T13:44:45.958Z",
-  "lastAttemptAt": "2026-08-16T13:50:18.810Z",
+  "updatedAt": "2026-08-16T14:09:47.264Z",
+  "capturedAt": "2026-08-16T14:09:47.264Z",
+  "lastAttemptAt": "2026-08-16T14:13:26.272Z",
   "api": {
     "source": "sporttery",
     "freshnessTime": "2026-07-01T06:02:58.003Z",
     "currentFreshnessTime": "2026-07-01T06:02:58.003Z",
     "historyFreshnessTime": "2026-07-01T06:02:58.003Z",
-    "sourceUpdatedAt": "2026-08-16T13:44:45.958Z",
-    "lastAttemptAt": "2026-08-16T13:44:45.958Z",
-    "ageSeconds": 4002107,
-    "currentAgeSeconds": 4002107,
-    "historyAgeSeconds": 4002107,
+    "sourceUpdatedAt": "2026-08-16T14:09:47.264Z",
+    "lastAttemptAt": "2026-08-16T14:09:47.264Z",
+    "ageSeconds": 4003609,
+    "currentAgeSeconds": 4003609,
+    "historyAgeSeconds": 4003609,
     "stale": true,
     "currentStale": true,
     "historyStale": true,
@@ -31,9 +31,9 @@
   "skippedWithoutOfficialOdds": 0,
   "byStatus": {
     "FINISHED": 3081,
-    "PENDING_RESULT": 316,
-    "LIVE": 6,
-    "SCHEDULED": 24
+    "PENDING_RESULT": 319,
+    "LIVE": 5,
+    "SCHEDULED": 22
   },
   "coverage": {
     "first": "2025-11-22",
@@ -47,7 +47,7 @@
     "current": 346,
     "history": 3081,
     "teams": 728,
-    "predictionSnapshots": 4216,
+    "predictionSnapshots": 4225,
     "postMatchReviews": 3081,
     "externalSignals": 2461,
     "preMatchSignals": 42,
@@ -60,7 +60,7 @@
     "note": "GitHub Pages serves static JSON. The page checks for newer JSON regularly; GitHub Actions refreshes the source files on schedule."
   },
   "attempt": {
-    "capturedAt": "2026-08-16T13:44:45.958Z",
+    "capturedAt": "2026-08-16T14:09:47.264Z",
     "officialOddsMatches": 0,
     "officialHandicapOddsMatches": 0,
     "officialResultMatches": 0,
@@ -76,17 +76,17 @@
     "skipped": "fresh Sporttery odds unavailable; keeping existing 3427 matches"
   },
   "predictionSnapshots": {
-    "total": 4216,
+    "total": 4225,
     "byPhase": {
       "review": 85,
       "mid": 914,
       "baseline": 2579,
-      "late": 344,
-      "final": 240,
-      "locked": 54
+      "late": 346,
+      "final": 245,
+      "locked": 56
     },
-    "appended": 0,
-    "updated": 26
+    "appended": 1,
+    "updated": 23
   },
   "postMatchReviews": {
     "total": 3081,
@@ -107,7 +107,7 @@
   },
   "externalSignals": {
     "source": "external-signals",
-    "updatedAt": "2026-08-16T13:44:45.492Z",
+    "updatedAt": "2026-08-16T14:09:46.780Z",
     "matches": 2461,
     "webConsensusMatches": 0
   },
@@ -272,6 +272,6 @@
   },
   "cacheInfo": {
     "localHistoryCount": 3123,
-    "lastCacheUpdate": "2026-08-16T13:50:18.939Z"
+    "lastCacheUpdate": "2026-08-16T14:13:26.402Z"
   }
 }
