@@ -1,19 +1,19 @@
 {
   "version": 1,
   "source": "sporttery",
-  "updatedAt": "2026-08-16T18:48:54.849Z",
-  "capturedAt": "2026-08-16T18:48:54.849Z",
-  "lastAttemptAt": "2026-08-16T18:52:29.694Z",
+  "updatedAt": "2026-08-16T19:10:48.102Z",
+  "capturedAt": "2026-08-16T19:10:48.102Z",
+  "lastAttemptAt": "2026-08-16T19:14:10.801Z",
   "api": {
     "source": "sporttery",
     "freshnessTime": "2026-07-01T06:02:58.003Z",
     "currentFreshnessTime": "2026-07-01T06:02:58.003Z",
     "historyFreshnessTime": "2026-07-01T06:02:58.003Z",
-    "sourceUpdatedAt": "2026-08-16T18:48:54.849Z",
-    "lastAttemptAt": "2026-08-16T18:48:54.849Z",
-    "ageSeconds": 4020356,
-    "currentAgeSeconds": 4020356,
-    "historyAgeSeconds": 4020356,
+    "sourceUpdatedAt": "2026-08-16T19:10:48.102Z",
+    "lastAttemptAt": "2026-08-16T19:10:48.102Z",
+    "ageSeconds": 4021670,
+    "currentAgeSeconds": 4021670,
+    "historyAgeSeconds": 4021670,
     "stale": true,
     "currentStale": true,
     "historyStale": true,
@@ -31,9 +31,9 @@
   "skippedWithoutOfficialOdds": 0,
   "byStatus": {
     "FINISHED": 3081,
-    "PENDING_RESULT": 333,
-    "LIVE": 3,
-    "SCHEDULED": 10
+    "PENDING_RESULT": 335,
+    "LIVE": 2,
+    "SCHEDULED": 9
   },
   "coverage": {
     "first": "2025-11-22",
@@ -60,7 +60,7 @@
     "note": "GitHub Pages serves static JSON. The page checks for newer JSON regularly; GitHub Actions refreshes the source files on schedule."
   },
   "attempt": {
-    "capturedAt": "2026-08-16T18:48:54.849Z",
+    "capturedAt": "2026-08-16T19:10:48.102Z",
     "officialOddsMatches": 0,
     "officialHandicapOddsMatches": 0,
     "officialResultMatches": 0,
@@ -107,7 +107,7 @@
   },
   "externalSignals": {
     "source": "external-signals",
-    "updatedAt": "2026-08-16T18:48:54.395Z",
+    "updatedAt": "2026-08-16T19:10:47.592Z",
     "matches": 2461,
     "webConsensusMatches": 0
   },
@@ -272,6 +272,6 @@
   },
   "cacheInfo": {
     "localHistoryCount": 3123,
-    "lastCacheUpdate": "2026-08-16T18:52:29.772Z"
+    "lastCacheUpdate": "2026-08-16T19:14:10.934Z"
   }
 }
